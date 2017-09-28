@@ -2,7 +2,7 @@
 			<header> 
             	<!-- Logo -->
             	<div id="logo">
-                	<h2>J</h2>
+                	<h2>J3A</h2>
                     <h4>GRAPHIC & WEB DESIGNERS</h4>
                 </div>
                 <!-- /Logo -->
