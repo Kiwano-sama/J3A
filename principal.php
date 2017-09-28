@@ -17,7 +17,7 @@
                     <!-- Personal info section -->
                 	<ul class="personal-info">
 						<li><label>Empresa</label><span>J3A S.A.</span></li>
-                        <li><label>Fundada</label><span>Septiembre 27, 2017</span></li>
+                        <li><label>Fundada</label><span>Septiembre, 2017</span></li>
                         <li><label>Direc.</label><span>Zornotza, Urritxe 4 48150</span></li>
                         <li><label>Email</label><span class="word-wrap">contact@j3a.com</span></li>
                         <li><label>Phone</label><span>+34 616 789 111</span></li>
