@@ -1,14 +1,12 @@
- <!-- Contact -->
+ <!-- Área Clientes -->
                 <section id="clientes">
-                	<div id="map"></div>
                 	<!-- Contact Info -->
                     <div class="contact-info">
-                        <h3 class="main-heading"><span>Contact info</span></h3>
+                        <h3 class="main-heading"><span>Hola ANDER</span></h3>
                     	<ul>
-                            <li>Melbourne Victoria 3000 Australia<br /><br /></li>
-                            <li>Email: John.smith@gmail.com</li>
-                            <li>Phone: +123 456 789 111</li>
-                            <li>Website: www.johnsmith.com</li>
+                            <li>Email: andicuu@gmail.com</li>
+                            <li>Mobil: +34 651 405 555</li>
+                            <li>Website: www.savandy.com</li>
                         </ul>
                     </div>
                     <!-- /Contact Info -->
@@ -35,4 +33,4 @@
                     </div>
                     <!-- /Contact Form -->
                 </section>
-                <!-- /contact -->  
+                <!-- /Área Clientes -->  
