@@ -1,5 +1,5 @@
 <!-- Footer -->
 			<footer>
-            	<div class="copyright">Copyright © 2017 J3A</div>
+            	<div class="copyright"><a href="contacto.php">Contacta con nosotros.</a></div>
             </footer>
             <!-- /Footer --> 
