@@ -1,5 +1,5 @@
  <!-- Contact -->
-                <section id="contact">
+                <section id="clientes">
                 	<div id="map"></div>
                 	<!-- Contact Info -->
                     <div class="contact-info">
