@@ -19,6 +19,7 @@
 	          include 'menu.php';
 	          include 'sobre.php';
 	          include 'nuestroTrabajo.php';
+	          include 'areaCliente.php';
 	          include 'contacto.php';
 	          ?>
 
