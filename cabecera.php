@@ -2,14 +2,14 @@
 			<header> 
             	<!-- Logo -->
             	<div id="logo">
-                	<h2>ANDERSON SMITH</h2>
-                    <h4>GRAPHIC & WEB DESIGNER</h4>
+                	<h2>J</h2>
+                    <h4>GRAPHIC & WEB DESIGNERS</h4>
                 </div>
                 <!-- /Logo -->
                 
                 <!-- Social Icons -->
                 <ul class="socialicons">
-                    <li class="socials-text">Social Profiles</li>
+                    <li class="socials-text">Perfiles Sociales</li>
                 	<li><a href="#" class="transition">&#x2a;</a></li>
                     <li><a href="#" class="transition">&#x2c;</a></li>
                     <li><a href="#" class="transition">&#x2d;</a></li>
