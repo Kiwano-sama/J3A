@@ -20,6 +20,7 @@
 	          include 'sobre.php';
 	          include 'nuestroTrabajo.php';
 	          include 'areaCliente.php';
+	          include 'trabajo.php';
 	          include 'contacto.php';
 	          ?>
 
