@@ -15,22 +15,22 @@
                     
                     <!-- Contact Form -->
                     <div class="contact-form">
-                        <h3 class="main-heading"><span>Let's keep in touch</span></h3>
+                        <h3 class="main-heading"><span>Envianos una sugerencia</span></h3>
                         <div id="contact-status"></div>
                         <form action="" id="contactform">
                             <p>
-                            	<label for="name">Your Name</label>
+                            	<label for="name">Nombre: </label>
                             	<input type="text" name="name" class="input" >
                             </p>
                             <p>
-                            	<label for="email">Your Email</label>
+                            	<label for="email">Email: </label>
                             	<input type="text" name="email" class="input">
                             </p>
                             <p>
-                            	<label for="message">Your Message</label>
+                            	<label for="message">Tu Mensaje: </label>
                                 <textarea name="message" cols="88" rows="6" class="textarea" ></textarea>
                             </p>
-                            <input type="submit" name="submit" value="Send your message" class="button transition">
+                            <input type="submit" name="submit" value="Envía tu mensaje" class="button transition">
                         </form>
                     </div>
                     <!-- /Contact Form -->
