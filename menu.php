@@ -5,6 +5,7 @@
                         <li class="tmenu"><a href="#resume"><i>&#x3a;</i>Qué Hacemos</a></li>
                         <li class="tmenu"><a href="#portfolio"><i>&#x38;</i>Nuestros trabajos</a></li>
                         <li class="tmenu"><a href="#clientes"><i>&#x38;</i>Área clientes</a></li>
+                        <li class="tmenu"><a href="#trabajo"><i>&#x38;</i>Trabaja con nosotros</a></li>
                         <li class="tmenu"><a href="#contact"><i>&#x21;</i>Contacto</a></li>
                     </ul>
                     <a class="prev" id="menu-prev" href="#">&#xe073;</a>
