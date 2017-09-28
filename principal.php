@@ -8,8 +8,8 @@
                                 <li><img src="images/photo1.png" height="186" width="153" /></li>
                             </ul>
                         </div>
-                        <h1>J3A DISE—ADORES</h1>
-                        <h3>GR¡FICOS & WEB</h3>
+                        <h1>J3A DISE√ëADORES</h1>
+                        <h3>GR√ÅFICOS & WEB</h3>
                         <p>I like to make cool and creative designs. My design stash is always full of refreshing ideas. Feel free to take a look around my Vcard.</p>
                     </div>
                     <!-- /About section -->

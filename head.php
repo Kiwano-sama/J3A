@@ -1,6 +1,6 @@
 <head>
     
-    <title>J3A - DiseÒadores Gr·ficos y Web</title>
+    <title>J3A - Dise√±adores Gr√°ficos y Web</title>
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
