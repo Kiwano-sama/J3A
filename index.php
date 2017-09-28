@@ -9,30 +9,21 @@
         
           <?php 
           include 'cabecera.php';
-          
           ?>
             
-            <!-- Content -->
+            <!-- Contenido -->
             <section id="content" >
             
-		  <?php 
-          include 'principal.php';
-          include 'menu.php';
-          include 'sobre.php';
-          include 'nuestroTrabajo.php';
-          include 'contacto.php';
-          ?>
-
-                 
-                
-                
-                                        
-                
-                 
-               
+			  <?php 
+	          include 'principal.php';
+	          include 'menu.php';
+	          include 'sobre.php';
+	          include 'nuestroTrabajo.php';
+	          include 'contacto.php';
+	          ?>
 
             </section>
-            <!-- /Content -->
+            <!-- /Contenido -->
             
             <?php 
             include 'footer.php';
