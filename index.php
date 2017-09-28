@@ -1,4 +1,4 @@
-<html dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<html dir="ltr" lang="es-ES" xmlns="http://www.w3.org/1999/xhtml">
 
 		<?php 
 		include 'head.php';
