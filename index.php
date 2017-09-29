@@ -296,7 +296,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="col-sm-4 col-lg-4 col-md-4">
 				<h4><a href="#">Like our products?</a></h4>
 				<p>Pick your products today to get free shipping!</p>
