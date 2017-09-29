@@ -34,6 +34,9 @@
                     <li>
                         <a href="services.php">Servicios</a>
                     </li>
+                     <li>
+                        <a href="jobs.php">Trabaja con Nosotros</a>
+                    </li>
                     <li>
                         <a href="contact.php">Contáctanos</a>
                     </li>
