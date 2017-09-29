@@ -5,18 +5,31 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="http://html5-templates.com/" />
-    <title>Bootstrap Template</title>
+    <title>J3A - Miembros</title>
 	<meta name="description" content="A minimalist Bootstrap theme by StartBootstrap. Contains everything you need to get started building your website. All you have to do is change the text and images.">
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="../css/modern-business.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
     
     <style>
+    .row.content {height: 1500px}
     
     .sidenav {
       background-color: #f1f1f1;
       height: 100%;
+    }
+    
+    .detalles {
+    	background-color: #d2dde0;
+        border: 10px;
+        border-color: #000;
+    }
+    
+    .boxIzquierda {
+    	text-align: right;
     }
     
     </style>
@@ -117,13 +130,13 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Services
-                    <small>Subheading</small>
+                <h1 class="page-header">Miembros
+                    <small>J3A</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="index.php">Inicio</a>
                     </li>
-                    <li class="active">Services</li>
+                    <li class="active">Miembros</li>
                 </ol>
             </div>
         </div>
@@ -141,10 +154,10 @@
     <div class="col-sm-3 sidenav">
       <h4>John's Blog</h4>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Home</a></li>
-        <li><a href="#section2">Friends</a></li>
-        <li><a href="#section3">Family</a></li>
-        <li><a href="#section3">Photos</a></li>
+        <li class="active"><a href="#section1">Perfil</a></li>
+        <li><a href="#section2">Amigos</a></li>
+        <li><a href="#section3">Configuracion</a></li>
+        <li><a href="#section3">Tickets</a></li>
       </ul><br>
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search Blog..">
@@ -156,58 +169,86 @@
       </div>
     </div>
 
-    <div class="col-sm-9">
-      <h4><small>RECENT POSTS</small></h4>
-      <hr>
-      <h2>I Love Food</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
-      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
-      <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><br>
-      
-      <h4><small>RECENT POSTS</small></h4>
-      <hr>
-      <h2>Officially Blogging</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
-      <h5><span class="label label-success">Lorem</span></h5><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr>
 
-      <h4>Leave a Comment:</h4>
+
+
+    <div class="col-sm-9">
+      <h4><small>Área miembros</small></h4>
+      <hr>
+      <h2>Valeriu Andrei Sanautanu</h2>
+      
+      
+      <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Información básica</h3>
+  </div>
+  <div class="panel-body">
+    Nombre: Valeriu Andrei <br>
+    Apellido: Sanautanu <br>
+    Username: savandy <br>
+    Fecha de Nacimiento: 07/07/1994 
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Detalles cuenta</h3>
+  </div>
+  <div class="panel-body">
+    Miembro desde: 29/09/2017 <br>
+    Rol: Administrador
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Tickets creados</h3>
+  </div>
+  <div class="panel-body">
+    Titulo ticket 1 <br>
+    Titulo ticket 2
+  </div>
+</div>
+           
+      <br>
+      
+
+      <h4>Deja un comentario: </h4>
       <form role="form">
         <div class="form-group">
           <textarea class="form-control" rows="3" required></textarea>
         </div>
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-success">Enviar</button>
       </form>
       <br><br>
       
-      <p><span class="badge">2</span> Comments:</p><br>
+      <p><span class="badge">2</span> comentarios:</p><br>
       
       <div class="row">
         <div class="col-sm-2 text-center">
           <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
         </div>
         <div class="col-sm-10">
-          <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
-          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h4>Julen <small>Sep 29, 2017, 9:12 PM</small></h4>
+          <p>Aupa Ander, me gusta tu perfil. Te he mandado petición de amigos.</p>
           <br>
         </div>
         <div class="col-sm-2 text-center">
           <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
         </div>
         <div class="col-sm-10">
-          <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
-          <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h4>Jon Ander <small>Sep 25, 2017, 8:25 PM</small></h4>
+          <p>Kaixo, tenemos que hablar seriamente sobre un tema. Contactame cuando puedas, que sea cuanto antes. Es muy urgente. He intentado llamarte y tienes el movil apagado.</p>
           <br>
-          <p><span class="badge">1</span> Comment:</p><br>
+          <p><span class="badge">1</span> respuesta:</p><br>
           <div class="row">
             <div class="col-sm-2 text-center">
               <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
             </div>
             <div class="col-xs-10">
-              <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
-              <p>Me too! WOW!</p>
+              <h4><span class="label label-danger">Administrador</span> Ander <small>Sep 25, 2017, 8:28 PM</small> </h4>
+              <p>Tranquilo! Ahora te llamo.</p>
               <br>
             </div>
           </div>
