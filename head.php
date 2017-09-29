@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         
     <link rel="stylesheet" type="text/css" href="css/reset.css"/> 
+    
+    <!--
     <link rel="stylesheet" type="text/css" href="css/blogSection.css"/>
     <link rel="stylesheet" type="text/css" href="css/contactSection.css"/>
     <link rel="stylesheet" type="text/css" href="css/portfolioSection.css"/>
@@ -16,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/widgetSection.css"/>
     <link rel="stylesheet" type="text/css" href="css/trabajoSection.css"/>
     <link rel="stylesheet" type="text/css" href="css/menuSection.css"/>
+    --> 
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"/>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic"/>
