@@ -14,6 +14,7 @@
         }
 
         $link = hacerConexion();
+        $link;
         
         if (!$link) {
             echo ("No se puede conectar a la BBDD!");
