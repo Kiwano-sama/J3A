@@ -171,7 +171,6 @@
                 </div>
              </div>
         </section>
-
         <!-- Footer -->
             <footer>
             <div class="row">
@@ -180,8 +179,6 @@
                 </div>
             </div>
         </footer>
-
-    </div>
     <!-- /.container -->
 
     <!-- jQuery -->
