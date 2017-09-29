@@ -8,6 +8,14 @@
         
     <link rel="stylesheet" type="text/css" href="css/reset.css"/> 
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/blogSection.css"/>
+    <link rel="stylesheet" type="text/css" href="css/contactSection.css"/>
+    <link rel="stylesheet" type="text/css" href="css/portfolioSection.css"/>
+    <link rel="stylesheet" type="text/css" href="css/profileSection.css"/>
+    <link rel="stylesheet" type="text/css" href="css/resumeSection.css"/>
+    <link rel="stylesheet" type="text/css" href="css/topSection.css"/>
+    <link rel="stylesheet" type="text/css" href="css/widgetSection.css"/>
+    <link rel="stylesheet" type="text/css" href="css/trabajoSection.css"/>
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"/>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic"/>
     <!--[if IEMobile]> 

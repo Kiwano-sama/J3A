@@ -4,7 +4,6 @@
                     <div class="trabajo-form">
                         <h3 class="main-heading"><span>Formulario</span></h3>
                         <form action="POST" id="contactform">
-                            
                                     <label for="exampleInputName2" name="nombre" >Nombre: </label>
                                     &nbsp;<input type="text" required class="form-control" id="exampleInputName2" >&nbsp;&nbsp;
                                
