@@ -60,9 +60,9 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('https://placehold.it/1900x1080&text=Image One');"></div>
+                <div class="fill" style="background-image:url('http://web.tecnodus.com/wp-content/uploads/2016/04/lenguajes-de-programacion-para-aprender.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>The first slider caption</h2>
+                    <h2>Desarrollamos programas para empresas</h2>
                 </div>
             </div>
             <div class="item">
