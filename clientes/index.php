@@ -145,7 +145,7 @@
         <!-- Image Header -->
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive" src="https://placehold.it/1200x300" alt="">
+                <img class="img-responsive" src="../img/banner1.jpg" alt="">
             </div>
         </div>
         <!-- /.row -->
