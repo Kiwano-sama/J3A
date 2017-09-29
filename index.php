@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('https://placehold.it/1900x1080&text=Image Two');"></div>
+                <div class="fill" style="background-image:url('https://www.google.es/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiz-I_QpsrWAhWBa1AKHZBfCu4QjRwIBw&url=https%3A%2F%2Fholykaw.alltop.com%2Fhow-to-create-the-perfect-website-infographic&psig=AFQjCNHYeKCWcVjMwQY9WdgzOqfPZXATUQ&ust=1506771281402749');"></div>
                 <div class="carousel-caption">
                     <h2>Second caption</h2>
                 </div>
