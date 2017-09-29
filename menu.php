@@ -8,8 +8,8 @@
                         <li class="tmenu"><a href="#trabajo"><i>&#xe17e;</i>Trabaja con nosotros</a></li>
                         <li class="tmenu"><a href="#contact"><i>&#x21;</i>Contacto</a></li>
                     </ul>
-                    <a class="prev" id="menu-prev" href="#">&#xe073;</a>
-                    <a class="next" id="menu-next" href="#">&#xe076;</a>
+                    	<a class="prev" id="menu-prev" href="#">&#xe073;</a>
+                    	<a class="next" id="menu-next" href="#">&#xe076;</a>
 
                 </nav>
-                <!-- /Men� -->
+<!-- /Men� -->
