@@ -10,6 +10,17 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/modern-business.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <style>
+    
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    </style>
+    
 </head>
 
 <body>
