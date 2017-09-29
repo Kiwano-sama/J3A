@@ -11,9 +11,7 @@
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -31,13 +29,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active">
-                        <a href="about.php">About</a>
+                        <a href="about.php">Sobre Nosotros</a>
                     </li>
                     <li>
-                        <a href="services.php">Services</a>
+                        <a href="services.php">Servicios</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.php">Contáctanos</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>

@@ -11,7 +11,6 @@
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -36,7 +35,7 @@
                         <a href="services.php">Servicios</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contacto</a>
+                        <a href="contact.php">Contáctanos</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
