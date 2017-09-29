@@ -10,7 +10,7 @@
         $opcionElegida = $_POST['opcion'];
 
         function hacerConexion() {
-            return mysqli_connect('MYSQLCONNSTR_localdb', 'azure', '6#vWHD_$', 'usuarios_bbdd');
+            return mysqli_connect('MYSQLCONNSTR_localdb', 'azure', 'password', 'usuarios_bbdd');
         }
 
         $link = hacerConexion();
