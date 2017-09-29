@@ -275,7 +275,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="col-sm-4 col-lg-4 col-md-4">
 				<div class="thumbnail">
 					<img src="https://placehold.it/320x150" alt="">
