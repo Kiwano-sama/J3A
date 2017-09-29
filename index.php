@@ -60,15 +60,15 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('https://www.google.es/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiQxseXpsrWAhWFb1AKHSsKCIAQjRwIBw&url=https%3A%2F%2Fpixabay.com%2Fen%2Fcode-html-digital-coding-web-1076533%2F&psig=AOvVaw0rk9I8eXl2De0Z31yiyfO3&ust=1506770869185815');"></div>
+                <div class="fill" style="background-image:url('https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076533_960_720.jpg');"></div>
                 <div class="carousel-caption">
                     <h3>Desarrollamos programas para empresas</h3>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('https://www.google.es/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiz-I_QpsrWAhWBa1AKHZBfCu4QjRwIBw&url=https%3A%2F%2Fholykaw.alltop.com%2Fhow-to-create-the-perfect-website-infographic&psig=AFQjCNHYeKCWcVjMwQY9WdgzOqfPZXATUQ&ust=1506771281402749');"></div>
+                <div class="fill" style="background-image:url('https://holykaw.alltop.com/wp-content/uploads/2013/11/Screen-Shot-2013-11-12-at-2.08.19-PM.png');"></div>
                 <div class="carousel-caption">
-                    <h2>Second caption</h2>
+                    <h2>Diseñamos tu web</h2>
                 </div>
             </div>
             <div class="item">
