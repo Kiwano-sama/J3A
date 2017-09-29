@@ -13,8 +13,8 @@
 	define('SMTP_PASSWORD','');
 
 	// Messages
-	define('MSG_INVALID_NAME','Por favor, introduce tu nombre.');
-	define('MSG_INVALID_EMAIL','Por favor, inserte un e-mail válido.');
+	define('MSG_INVALID_NAME','Please enter your name.');
+	define('MSG_INVALID_EMAIL','Please enter valid e-mail.');
 	define('MSG_INVALID_MESSAGE','Please enter your message.');
 	define('MSG_SEND_ERROR','Sorry, we can\'t send this message.');
 
