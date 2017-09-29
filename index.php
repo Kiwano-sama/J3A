@@ -303,7 +303,6 @@
 				<a class="btn btn-primary" target="_blank" href="#">Let's go!</a>
 			</div>
 		</div>	
-		
         <!-- Portfolio Section -->
         <div class="row">
             <div class="col-lg-12">
