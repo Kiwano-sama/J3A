@@ -51,46 +51,6 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image:url('http://www.in-tuition.net/wp-content/uploads/2015/11/Malware.png');"></div>
-                <div class="carousel-caption">
-                    <h3>Desarrollamos aplicaciones para empresas</h3>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('https://holykaw.alltop.com/wp-content/uploads/2013/11/Screen-Shot-2013-11-12-at-2.08.19-PM.png');"></div>
-                <div class="carousel-caption">
-                    <h3>Diseñamos tu web a tu gusto</h3>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://avanzamarketing.com/wp-content/uploads/2016/12/pantallazoazul-1024x285.jpg');"></div>
-                <div class="carousel-caption">
-                    <h3>Realizamos mantenimientos de páginas y apps</h3>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
-
     <!-- Page Content -->
     <div class="container">
 

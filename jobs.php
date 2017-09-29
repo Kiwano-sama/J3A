@@ -173,7 +173,13 @@
         </section>
 
         <!-- Footer -->
-      
+            <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website, year | <a href="http://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a></p>
+                </div>
+            </div>
+        </footer>
 
     </div>
     <!-- /.container -->
