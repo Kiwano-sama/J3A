@@ -57,9 +57,14 @@
                     <li>
                         <a href="about.html">About</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="services.html">Services</a>
                     </li>
+                    
+                    <li class="active">
+                        <a href="../miembros.php">Miembros</a>
+                    </li>
+                    
                     <li>
                         <a href="contact.html">Contact</a>
                     </li>
@@ -145,19 +150,19 @@
         <!-- Image Header -->
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive" src="../img/banner1.jpg" alt="">
+                <img class="img-responsive" src="https://placehold.it/1200x300" alt="">
             </div>
         </div>
         <!-- /.row -->
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 sidenav">
-      <h4>John's Blog</h4>
+      <h4>Enlaces perfil</h4>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Perfil</a></li>
-        <li><a href="#section2">Amigos</a></li>
-        <li><a href="#section3">Configuracion</a></li>
-        <li><a href="#section3">Tickets</a></li>
+        <li class="active"><a href="#">Perfil</a></li>
+        <li><a href="./amigos.php">Amigos</a></li>
+        <li><a href="./configuracion.php">Configuracion</a></li>
+        <li><a href="./tickets.php">Tickets</a></li>
       </ul><br>
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search Blog..">
@@ -169,6 +174,21 @@
       </div>
     </div>
 
+
+<?php 
+$link = mysqli_connect('localhost', 'azure', '6#vWHD_$', 'j3a');
+
+$sql = "SELECT * FROM `usuarios_tabla`";
+$result = mysqli_query($link, $sql);
+echo ('<table border="1"><tr><td><b>Usuario</b></td><td><b>Contraseña</b></td></tr>');
+
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+	echo ("<tr>");
+	echo ("<td>" . $row['nom_usuario'] . "</td><td> " . $row['pass'] . "</td>");
+	echo ("</tr>");
+}
+echo ('</table>');
+?>
 
 
 
@@ -210,6 +230,16 @@
     Titulo ticket 2
   </div>
 </div>
+
+<div class="panel panel-danger">
+ <div class="panel-heading">
+    <h3 class="panel-title">Tickets creados</h3>
+  </div>
+  <div class="panel-body">
+    Todavía no eres cliente nuestro. No puedes usar la opción 'tickets'.
+  </div>
+</div>
+
            
       <br>
       
