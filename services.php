@@ -37,7 +37,7 @@
                         <a href="services.php">Servicios</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contáctanos</a>
+                        <a href="contact.php">Contáctanos</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
