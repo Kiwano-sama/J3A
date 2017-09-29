@@ -60,7 +60,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076533_960_720.jpg');"></div>
+                <div class="fill" style="background-image:url('http://www.in-tuition.net/wp-content/uploads/2015/11/Malware.png');"></div>
                 <div class="carousel-caption">
                     <h3>Desarrollamos programas para empresas</h3>
                 </div>
