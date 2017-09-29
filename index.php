@@ -30,10 +30,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">Sobre Nosotros</a>
+                        <a href="about.php">Sobre Nosotros</a>
                     </li>
                     <li>
-                        <a href="services.html">Servicios</a>
+                        <a href="services.php">Servicios</a>
                     </li>
                     <li>
                         <a href="contact.html">Contacto</a>
