@@ -96,7 +96,7 @@
             <div class="contact-section">
                 <div class="container">
                     <h1>Quieres trabajar con nosotros?</h1>
-                    <h3>Rellena este formulario y envianoslo para que podamos valorar tus posibilidades de trabajar con nosOtros</h3>
+                    <h3>Rellena este formulario y envíanoslo para que podamos valorar tus posibilidades de trabajar con nosotros</h3>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <form action="" method="POST" class="form-horizontal">
