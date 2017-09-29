@@ -60,9 +60,9 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('http://web.tecnodus.com/wp-content/uploads/2016/04/lenguajes-de-programacion-para-aprender.jpg');"></div>
+                <div class="fill" style="background-image:url('https://www.google.es/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiFgqbwpcrWAhVCblAKHQE6Cw8QjRwIBw&url=https%3A%2F%2Fpixabay.com%2Fen%2Fcode-html-digital-coding-web-1076533%2F&psig=AOvVaw0rk9I8eXl2De0Z31yiyfO3&ust=1506770869185815');"></div>
                 <div class="carousel-caption">
-                    <h2>Desarrollamos programas para empresas</h2>
+                    <h3>Desarrollamos programas para empresas</h3>
                 </div>
             </div>
             <div class="item">
