@@ -302,7 +302,6 @@
 				<p>Pick your products today to get free shipping!</p>
 				<a class="btn btn-primary" target="_blank" href="#">Let's go!</a>
 			</div>
-
 		</div>	
 		
         <!-- Portfolio Section -->
