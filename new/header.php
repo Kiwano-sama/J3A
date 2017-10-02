@@ -1,6 +1,6 @@
     <header>
-        <div class="container">
-            <div class="row hidden-phone">
+        <div class="container"> 
+           <div class="row hidden-phone">
                 <img class="flip" src="assets/img/panel.jpg" style="float: right;"/><span class="header_social">Siguenos en <span class="badge"><a href="#">Twitter</a></span> y <span class="badge"><a href="#">Facebook</a></span></span>
             </div>
             <div class="row">
