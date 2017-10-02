@@ -163,7 +163,7 @@ include 'header.php';
 </div>
         
         
-    </div>
+    
     <!--/MAIN CONTENT AREA-->
     <!--TWITTER AREA-->
     <div class="twitter-block">
