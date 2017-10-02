@@ -10,6 +10,7 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
+    
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -202,26 +203,7 @@ mysqli_free_result($result);
                             <br>
                             <br>
                             <hr>
-                            <h3>Nuestras redes sociales:</h3>
-                            <table align="center">
-                                <tr class="list-inline banner-social-buttons">
-                                <h3>Siguenos:</h3>
-
-                                <td> <a href="https://twitter.com/?lang=es" id="gh" target="_blank" title="Twitter">Twitter<span class="fa-stack fa-lg">
-                                            <i class="fa fa-square-o fa-stack-2x"></i>
-                                            <i class="fa fa-twitter fa-stack-1x"></i></td>
-                                        </span>
-
-                                        <td> <a href="https://es-es.facebook.com/"  target="_blank" title="Facebook">Facebook<span class="fa-stack fa-lg">
-                                                    <i class="fa fa-square-o fa-stack-2x"></i>
-                                                    <i class="fa fa-facebook fa-stack-1x"></i></td>
-                                                </span>
-                                                <td> <a href="https://plus.google.com/about?hl=es"  target="_blank" title="Google">Google+<span class="fa-stack fa-lg">
-                                                            <i class="fa fa-square-o fa-stack-2x"></i>
-                                                            <i class="fa fa-google fa-stack-1x"></i></td>
-                                                </span>
-                                </tr>
-                            </table>    
+                           
                         </div>
                     </div>
                 </div>
