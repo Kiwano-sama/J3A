@@ -4,6 +4,7 @@
         <title>Agenda</title>
     </head>
     <body>
+    <p>prueba</p>
         <?php
         $nombreRecogido = filter_input(INPUT_POST, 'nombre');
         $passRecogido = filter_input(INPUT_POST, 'pass');
