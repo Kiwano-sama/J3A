@@ -87,9 +87,9 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
   	echo ($row['Username']);
   	echo ("</td>");
   	echo ("<td>");
-  	echo ("Nombre: " . $row['Nombre']);
-  	echo ("Apellido: " . $row['Apellido']);
-  	echo ("Fecha de Nacimiento: " . $row['fechaNac']);
+  	echo ("Nombre: " . '<span class="undercolored">' . $row['Nombre'] . '</span>');
+  	echo (" Apellido: " . '<span class="undercolored">' . $row['Apellido'] . '</span>');
+  	echo (" Fecha de Nacimiento: " . '<span class="undercolored">' . $row['fechaNac'] . '</span>');
   	echo ("</td>");
   	echo ("<td>");
   	
