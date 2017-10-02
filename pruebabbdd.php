@@ -16,9 +16,7 @@
         $link = hacerConexion();
         $link;
         
-        if (!$link) {
-            echo ("No se puede conectar a la BBDD!");
-        } else {
+        
 
             function mostrarAgenda($link) {
                 echo "<br>Mostrando agenda... ";
@@ -34,7 +32,7 @@
                 }
                 echo ('</table>');
                 mysqli_free_result($result);
-            }
+            
 
             if ($opcionElegida !== "consulta") {
                 mostrarAgenda($link);
