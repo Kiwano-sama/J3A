@@ -10,7 +10,7 @@ $pass_db = "Qwerty123_";
 $db_name = "j3a";
 $tbl_name = "usuario";
 
-$conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
+$conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
 
 if ($conexion->connect_error) {
  die("La conexion falló: " . $conexion->connect_error);
