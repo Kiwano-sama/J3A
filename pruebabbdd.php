@@ -10,7 +10,7 @@
         $opcionElegida = $_POST['opcion'];
 
         function hacerConexion() {
-            return mysqli_connect('j3a.mysql.database.azure.com', 'j3a', 'Qwerty123_', 'usuarios_bbdd');
+            return mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'usuarios_bbdd');
         }
 
         $link = hacerConexion();
