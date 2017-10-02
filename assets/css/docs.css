@@ -1749,6 +1749,7 @@ ul.unstyled li { margin-bottom:5px;}
 */
 h1,h2,h3 {
     margin:0 0 35px 0;
+    font-color:"white";
     font-family: 'Patua One', cursive;
     text-transform: uppercase;
     letter-spacing:1px;
@@ -1767,7 +1768,7 @@ a:hover,a:focus{
 }
 #contact{
     background:#333333;
-    color:#ffff;
+    color:#f4f4f4;
     padding-bottom:80px;
 }
 textarea.form-control{
