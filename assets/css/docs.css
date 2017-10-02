@@ -1747,8 +1747,15 @@ ul.unstyled li { margin-bottom:5px;}
     Created on : 02-oct-2017, 10:55:02
     Author     : Jenn
 */
+body{
+    width:100%;
+    height:100%;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
 h1,h2,h3 {
     margin:0 0 35px 0;
+    font-color:"white";
     font-family: 'Patua One', cursive;
     text-transform: uppercase;
     letter-spacing:1px;
