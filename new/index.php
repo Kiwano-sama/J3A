@@ -20,7 +20,7 @@
     	<link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
     <![endif]-->
     <!-- fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/main.ico">
+    <link rel="shortcut icon" href="assets/ico/tab.ico">
     <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-114x114.png">
