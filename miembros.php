@@ -45,12 +45,7 @@
     <!--HEADER-->
 <?php 
 include 'header.php';
-
 $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
-
-
-
-
 ?>
 	<!--/HEADER-->
     <!--AREA BIENVENIDA-->
@@ -80,6 +75,7 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
     </thead>
     <tbody>
   <?php 
+  // Selección de todos los usuarios de la BBDD, excepto contraseña
   $sql = "SELECT Username, Nombre, Apellido, fechaNac, esCliente, esAdmin FROM `usuario`";
   $result = mysqli_query($link, $sql);
   while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
