@@ -46,15 +46,16 @@
 <?php 
 include 'header.php';
 
-$link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
+// Comentado codigo para conexión a bbdd
+// $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
 
-$sql = "SELECT * FROM `usuario`";
-$result = mysqli_query($link, $sql);
-while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
-{
-echo ($row['Username'] . '  ' . $row['Nombre']);
-}
-mysqli_free_result($result);
+// $sql = "SELECT * FROM `usuario`";
+// $result = mysqli_query($link, $sql);
+// while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
+// {
+// echo ($row['Username'] . '  ' . $row['Nombre']);
+// }
+// mysqli_free_result($result);
 
 
 ?>
