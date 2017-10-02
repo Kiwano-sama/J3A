@@ -46,7 +46,7 @@
 <?php 
 include 'header.php';
 
-$link = mysqli_connect('127.0.0.1', 'j3a', 'Qwerty123_', 'j3a');
+$link = mysqli_connect('https://j3a.scm.azurewebsites.net', 'j3a', 'Qwerty123_', 'j3a');
 
 $sql = "SELECT * FROM `usuario`";
 $result = mysqli_query($link, $sql);
@@ -80,7 +80,7 @@ mysqli_free_result($result);
                     <p class="intro">Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.</p>
                     <p><span class="pun"><em>Valera is designed to help people of all skill levels designer or developer, huge nerd or early beginner. Use it as a complete kit or use to start something more complex.</em></span></p>
                     <hr class="visible-desktop">
-                    <h4 class="visible-desktop">Some of Template Features:</h4>
+                    <h4 class="visible-desktop">Alguna de nuestra especialización:</h4>
                     <div class="row visible-desktop">
                         <div class="span2">
                             <ul style="margin-top:10px;" class="unstyled">
