@@ -46,15 +46,15 @@
 <?php 
 include 'header.php';
 
-//$link = mysqli_connect('localhost', 'root', '', 'j3a');
-//
-//$sql = "SELECT * FROM `usuarios`";
-//$result = mysqli_query($link, $sql);
-//while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
-//{
-// echo ($row['idUsuario'] . '  ' . $row['nombre']);
-//}
-//mysqli_free_result($result);
+$link = mysqli_connect('localhost', 'j3a', 'Qwerty123_', 'j3a');
+
+$sql = "SELECT * FROM `usuario`";
+$result = mysqli_query($link, $sql);
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
+{
+echo ($row['Username'] . '  ' . $row['Nombre']);
+}
+mysqli_free_result($result);
 
 
 ?>
