@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>J3A - Diseño Gráfico y Web</title>
+    <title>J3A - Registro</title>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
 	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
     <link href="assets/css/estiloRegistro.css" rel="stylesheet">
 
