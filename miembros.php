@@ -88,8 +88,8 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
   	echo ("</td>");
   	echo ("<td>");
   	echo ("Nombre: " . '<span class="undercolored">' . $row['Nombre'] . '</span>');
-  	echo (" Apellido: " . '<span class="undercolored">' . $row['Apellido'] . '</span>');
-  	echo (" Fecha de Nacimiento: " . '<span class="undercolored">' . $row['fechaNac'] . '</span>');
+  	echo ("# Apellido: " . '<span class="undercolored">' . $row['Apellido'] . '</span>');
+  	echo ("# Fecha de Nacimiento: " . '<span class="undercolored">' . $row['fechaNac'] . '</span>');
   	echo ("</td>");
   	echo ("<td>");
   	
@@ -98,9 +98,9 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
   	}
   	
   	if ($row['esCliente']){
-  		echo ('<span class="label .label-success">Cliente</span>');
+  		echo ('<span class="label label-success">Cliente</span>');
   	} else {
-  		echo ('<span class="label .label-default">Miembro</span>');
+  		echo ('<span class="label label-default">Miembro</span>');
   	}
   	echo ("</td>");
   	echo ("</tr>");
