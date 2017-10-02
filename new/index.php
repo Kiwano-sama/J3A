@@ -100,7 +100,7 @@ mysqli_free_result($result);
                         </div>
                     </div>
                     <hr>
-                    <a href="123" class="btn btn-large btn-success mega"></i> Purchase this theme for 15$</a>
+                    <a href="123" class="btn btn-large btn-success mega"></i> Mira nuestros diseños</a>
                 </div>
                 <div class="span8 mainslider">
                     <div class="flexslider">
