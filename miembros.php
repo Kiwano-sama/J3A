@@ -45,18 +45,7 @@
     <!--HEADER-->
 <?php 
 include 'header.php';
-
 $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
-
-$sql = "SELECT * FROM `usuario`";
-$result = mysqli_query($link, $sql);
-while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
-{
-echo ($row['Username'] . '  ' . $row['Nombre']);
-}
-mysqli_free_result($result);
-
-
 ?>
 	<!--/HEADER-->
     <!--AREA BIENVENIDA-->
@@ -72,6 +61,10 @@ mysqli_free_result($result);
     <!--/AREA BIENVENIDA-->
 
     <!--AREA CONTENIDO-->
+    <div class="container inner_content">
+    
+    <h2 style="margin-top:45px;"><span class="colored"><strong>///</strong></span> Todos los <span class="undercolored">miembros</span></h2>
+    
      <table class="table table-bordered table-striped">
     <thead>
       <tr>
@@ -81,22 +74,45 @@ mysqli_free_result($result);
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>
-          valeriu
-        </td>
-        <td>
-          Nombre: Valeriu Andrei
-          Apellido: Sanautanu
-          Fecha de Nacimiento: 07/07/1994
-        </td>
-        <td>
-         <span class="label label-info">Administrador</span>
-        </td>
-      </tr>
+  <?php 
+  // Selección de todos los usuarios de la BBDD, excepto contraseña
+  $sql = "SELECT Username, Nombre, Apellido, fechaNac, esCliente, esAdmin FROM `usuario`";
+  $result = mysqli_query($link, $sql);
+  while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+  {
+  	
+  	echo ("<tr>");
+  	echo ("<td>");
+  	echo ($row['Username']);
+  	echo ("</td>");
+  	echo ("<td>");
+  	echo ("Nombre: " . '<span class="undercolored">' . $row['Nombre'] . '</span>');
+  	echo (" # Apellido: " . '<span class="undercolored">' . $row['Apellido'] . '</span>');
+  	echo (" # Fecha de Nacimiento: " . '<span class="undercolored">' . $row['fechaNac'] . '</span>');
+  	echo ("</td>");
+  	echo ("<td>");
+  	
+  	if ($row['esAdmin']){
+  	echo ('<span class="label label-info">Administrador</span>');
+  	}
+  	
+  	if ($row['esCliente']){
+  		echo ('<span class="label label-success">Cliente</span>');
+  	} else if (!($row['esAdmin']) && !($row['esCliente'])){
+  		echo ('<span class="label label-default">Miembro</span>');
+  	}
+  	echo ("</td>");
+  	echo ("</tr>");
+  	
+
+  }
+  mysqli_free_result($result);
+  ?>  
+
     </tbody>
   </table>
-    <!--/MAIN CONTENT AREA-->
+  </div>
+    <!--/AREA CONTENIDO-->
     <!--TWITTER AREA-->
     <div class="twitter-block">
         <div class="container">
