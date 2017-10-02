@@ -68,7 +68,7 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
     <!--AREA CONTENIDO-->
     <div class="container inner_content">
     
-    <h2><span class="colored"><strong>///</strong></span> Todos los <span class="undercolored">miembros</span></h2>
+    <h2 style="margin-top:45px;"><span class="colored"><strong>///</strong></span> Todos los <span class="undercolored">miembros</span></h2>
     
      <table class="table table-bordered table-striped">
     <thead>
