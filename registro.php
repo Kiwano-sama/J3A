@@ -17,81 +17,59 @@
         <div class="container">
   <form>
     <div class="row">
-      <h4>Account</h4>
+      <h4>Cuenta</h4>
       <div class="input-group input-group-icon">
-        <input type="text" placeholder="Full Name"/>
+        <input type="text" placeholder="Username"/>
         <div class="input-icon"><i class="fa fa-user"></i></div>
       </div>
       <div class="input-group input-group-icon">
-        <input type="email" placeholder="Email Adress"/>
+        <input type="text" placeholder="Nombre"/>
+        <div class="input-icon"><i class="fa fa-user"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Apellido"/>
+        <div class="input-icon"><i class="fa fa-user"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="email" placeholder="Dirección Email"/>
         <div class="input-icon"><i class="fa fa-envelope"></i></div>
       </div>
       <div class="input-group input-group-icon">
-        <input type="password" placeholder="Password"/>
+        <input type="password" placeholder="Contraseña"/>
         <div class="input-icon"><i class="fa fa-key"></i></div>
       </div>
     </div>
     <div class="row">
       <div class="col-half">
-        <h4>Date of Birth</h4>
+        <h4>Fecha de Nacimiento</h4>
         <div class="input-group">
           <div class="col-third">
-            <input type="text" placeholder="DD"/>
+            <input type="text" placeholder="DIA"/>
           </div>
           <div class="col-third">
-            <input type="text" placeholder="MM"/>
+            <input type="text" placeholder="MES"/>
           </div>
           <div class="col-third">
-            <input type="text" placeholder="YYYY"/>
+            <input type="text" placeholder="AÑO"/>
           </div>
         </div>
       </div>
       <div class="col-half">
-        <h4>Gender</h4>
+        <h4>Genero</h4>
         <div class="input-group">
-          <input type="radio" name="gender" value="male" id="gender-male"/>
-          <label for="gender-male">Male</label>
-          <input type="radio" name="gender" value="female" id="gender-female"/>
-          <label for="gender-female">Female</label>
+          <input type="radio" name="genero" value="male" id="genero-hombre"/>
+          <label for="gender-male">Hombre</label>
+          <input type="radio" name="genero" value="female" id="genero-mujer"/>
+          <label for="gender-female">Mujer</label>
         </div>
       </div>
     </div>
+
     <div class="row">
-      <h4>Payment Details</h4>
-      <div class="input-group">
-        <input type="radio" name="payment-method" value="card" id="payment-method-card" checked="true"/>
-        <label for="payment-method-card"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
-        <input type="radio" name="payment-method" value="paypal" id="payment-method-paypal"/>
-        <label for="payment-method-paypal"> <span><i class="fa fa-cc-paypal"></i>Paypal</span></label>
-      </div>
-      <div class="input-group input-group-icon">
-        <input type="text" placeholder="Card Number"/>
-        <div class="input-icon"><i class="fa fa-credit-card"></i></div>
-      </div>
-      <div class="col-half">
-        <div class="input-group input-group-icon">
-          <input type="text" placeholder="Card CVC"/>
-          <div class="input-icon"><i class="fa fa-user"></i></div>
-        </div>
-      </div>
-      <div class="col-half">
-        <div class="input-group">
-          <select>
-            <option>01 Jan</option>
-            <option>02 Jan</option>
-          </select>
-          <select>
-            <option>2015</option>
-            <option>2016</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <h4>Terms and Conditions</h4>
+      <h4>Terminos y Condiciones</h4>
       <div class="input-group">
         <input type="checkbox" id="terms"/>
-        <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+        <label for="terms">Acepto los términos y condiciones para inscribirme en este servicio y confirmo que he leído la política de privacidad.</label>
       </div>
     </div>
   </form>
