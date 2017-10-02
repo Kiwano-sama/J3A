@@ -42,6 +42,7 @@
                                 </ul>
                             </li>-->
                             <li><a href="sobrenosotros.php">Sobre nosotros</a></li>
+                            <li><a href="trabajaConNosotros.php">Trabaja Con Nosotros</a></li>
                             <li><a href="servicios.php">Qué hacemos</a></li>
                             <li><a href="miembros.php">Miembros</a> 
                                 <ul>
