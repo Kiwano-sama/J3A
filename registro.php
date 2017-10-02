@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>J3A - Diseño Gráfico y Web</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/estiloRegistro.css" rel="stylesheet">
 
 </head>
