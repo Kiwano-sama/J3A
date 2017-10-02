@@ -102,7 +102,7 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
   	
   	if ($row['esCliente']){
   		echo ('<span class="label label-success">Cliente</span>');
-  	} else {
+  	} else if (!($row['esAdmin']) && !($row['esCliente'])){
   		echo ('<span class="label label-default">Miembro</span>');
   	}
   	echo ("</td>");
