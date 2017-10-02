@@ -72,6 +72,7 @@ mysqli_free_result($result);
     <!--/AREA BIENVENIDA-->
 
     <!--AREA CONTENIDO-->
+    <div class="container inner_content">
      <table class="table table-bordered table-striped">
     <thead>
       <tr>
@@ -96,7 +97,8 @@ mysqli_free_result($result);
       </tr>
     </tbody>
   </table>
-    <!--/MAIN CONTENT AREA-->
+  </div>
+    <!--/AREA CONTENIDO-->
     <!--TWITTER AREA-->
     <div class="twitter-block">
         <div class="container">
