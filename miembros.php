@@ -48,13 +48,7 @@ include 'header.php';
 
 $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
 
-$sql = "SELECT * FROM `usuario`";
-$result = mysqli_query($link, $sql);
-while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
-{
-echo ($row['Username'] . '  ' . $row['Nombre']);
-}
-mysqli_free_result($result);
+
 
 
 ?>
@@ -82,19 +76,40 @@ mysqli_free_result($result);
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>
-          valeriu
-        </td>
-        <td>
-          Nombre: Valeriu Andrei
-          Apellido: Sanautanu
-          Fecha de Nacimiento: 07/07/1994
-        </td>
-        <td>
-         <span class="label label-info">Administrador</span>
-        </td>
-      </tr>
+  <?php 
+  $sql = "SELECT Username, Nombre, Apellido, fechaNac, esCliente, esAdmin FROM `usuario`";
+  $result = mysqli_query($link, $sql);
+  while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+  {
+  	
+  	echo ("<tr>");
+  	echo ("<td>");
+  	echo ($row['Username']);
+  	echo ("</td>");
+  	echo ("<td>");
+  	echo ("Nombre: " . $row['Nombre']);
+  	echo ("Apellido: " . $row['Apellido']);
+  	echo ("Fecha de Nacimiento: " . $row['fechaNac']);
+  	echo ("</td>");
+  	echo ("<td>");
+  	
+  	if ($row['esAdmin']){
+  	echo ('<span class="label label-info">Administrador</span>');
+  	}
+  	
+  	if ($row['esCliente']){
+  		echo ('<span class="label .label-success">Cliente</span>');
+  	} else {
+  		echo ('<span class="label .label-default">Miembro</span>');
+  	}
+  	echo ("</td>");
+  	echo ("</tr>");
+  	
+
+  }
+  mysqli_free_result($result);
+  ?>  
+
     </tbody>
   </table>
   </div>
