@@ -11,7 +11,7 @@
         $opcionElegida = $_POST['opcion'];
 
         function hacerConexion() {
-            return mysqli_connect('localhost:56624', 'azure', '6#vWHD_$', 'usuarios_bbdd');
+            return mysqli_connect('127.0.0.1:56624', 'azure', '6#vWHD_$', 'usuarios_bbdd');
         }
 
         $link = hacerConexion();
