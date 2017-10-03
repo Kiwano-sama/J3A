@@ -154,7 +154,7 @@ mysqli_free_result($result);
                         <div class="well-title">
                             <h3>¿Quieres trabajar con nosotros?</h3>
                         </div>
-                        <form>
+                        <form action="trabajaConNosotros.php" method="POST">
                             <!-- Form start -->
                             <div class="row">
                                 <div class="col-md-6">
