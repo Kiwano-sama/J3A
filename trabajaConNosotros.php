@@ -224,7 +224,7 @@ include 'footer.php';
                     </div>
                 </div>
             </div>
-       </div>
+     	 </div>
     </div>
     <!--/BOTTOM LINE-->
     <!-- Le javascript
