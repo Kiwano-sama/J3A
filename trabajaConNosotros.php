@@ -202,11 +202,11 @@ mysqli_free_result($result);
                                     <input required type="file" name="cv">
                                 </div>
                             </div>
-                        </form>
-                        <!-- form end -->
-                         <!-- Buttons -->
+                             <!-- Buttons -->
                          <input  type="submit" value="Enviar">
                          <input type="reset" value="Deshacer">
+                        </form>
+                        <!-- form end -->
                     </div>
                </div>
        	 </div>
