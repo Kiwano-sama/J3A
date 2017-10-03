@@ -149,7 +149,7 @@ mysqli_free_result($result);
     </div>
     <!--FEATURES AREA-->
     <!--MAIN CONTENT AREA-->
-   <div class="container">
+   <div align="center" class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="well-block">
