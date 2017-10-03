@@ -154,7 +154,7 @@ mysqli_free_result($result);
                 <div class="col-md-6">
                     <div class="well-block">
                         <div class="well-title">
-                            <h2>¿Quieres trabajar con nosotros?</h2>
+                            <h3>¿Quieres trabajar con nosotros?</h3>
                         </div>
                         <form>
                             <!-- Form start -->
@@ -184,7 +184,7 @@ mysqli_free_result($result);
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <fieldset>
-                   							 <h3>Selecciona un puesto: </h3>
+                   							 <p>Selecciona un puesto: </p>
                     							<input requiered type="radio" name="opciones" value="desa">Desarrollador de aplicaciones&nbsp;&nbsp;
                    								<input requiered type="radio" name="opciones" value="dise">Diseñador de páginas web&nbsp;&nbsp;
                     							<input requiered type="radio" name="opciones" value="admin">Administrador de páginas web&nbsp;&nbsp;                   
