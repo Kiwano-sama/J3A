@@ -149,86 +149,67 @@ mysqli_free_result($result);
     </div>
     <!--FEATURES AREA-->
     <!--MAIN CONTENT AREA-->
-   <section  id="contact" class="content-section text-center">
-            <div class="contact-section">
-                <div class="container">
-                    <h1>Quieres trabajar con nosotros?</h1>
-                    <h3>Rellena este formulario y envíanoslo para que podamos valorar tus posibilidades de trabajar con nosotros</h3>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <form action="" method="POST" class="form-horizontal">
-                                <div class="form-group">
-                                    <label for="exampleInputName2" name="nombre">Nombre: </label>
-                                    &nbsp;<input type="text" required class="form-control" id="exampleInputName2" >&nbsp;&nbsp;
-                                </div>
-                                <br>
-                                <br>
-                                <div class="form-group">
-                                    <label for="exampleInputName2" name="apellido">Apellidos: </label>
-                                    &nbsp;<input type="text" required class="form-control" id="exampleInputEmail2" >&nbsp;&nbsp;&nbsp;&nbsp;
-                                </div>
-                                <br>
-                                <br>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail2" name="email">Email: </label>
-                                    &nbsp;&nbsp; <input type="email" required class="form-control" id="exampleInputEmail2" placeholder="juan.doe@example.com">
-                                </div>
-                                <br>
-                                <br>
-                                <div class="form-group">
-                                    &nbsp;&nbsp;&nbsp; <label for="exampleInputDNI" name="dni">DNI: </label>&nbsp;
-                                    &nbsp;&nbsp;&nbsp;<input type="text" required class="form-control" id="exampleInputDNI">&nbsp;&nbsp;
-                                </div>
-                                <br>
-                                <br>
-                                <div class="form-group">
-                                    
-                                    <fieldset required>
-                                        <legend>SELECCIONA UN PUESTO DE TRABAJO: </legend>
-                                        <input required type="radio"  name="" value="diseñador">Diseñador de paginas web&nbsp;&nbsp;
-                                        <input required type="radio" name="" value="desarrollador">Desarrollador de software&nbsp;&nbsp;
-                                        <input required type="radio" name="" value="administrador">Administrador de paginas web&nbsp;&nbsp;
-                                    </fieldset>
-                                </div>
-                                <br>
-                                <br>
-                                <div class="form-group ">
-                                    <label for="exampleInputText" name="cv">Inserta tu CV: </label><br><br>
-                                    <input type="file" required name="adjunto" />
-                                </div>
-                                <br>
-                                <br>
-                                <button type="submit" name="enviar" class="btn btn-default">Enviar</button>
-                            </form>
-                            <br>
-                            <br>
-                            <hr>
-                           
-                        </div>
-                    </div>
-                </div>
-             </div>
-        </section>
-    <!--/MAIN CONTENT AREA-->
-    <!--TWITTER AREA-->
-    <div class="twitter-block">
-        <div class="container">
-            <div class="row">
-                <div class="span3 header">
-                    <h5><span class="colored">///</span> Our Twitter Feed</h5>
-                    <p>Find out what's happening, right now, with the people and organizations you care about.</p>
-                </div>
-                <div class="span9">
-                    <div class="well">
-                        <img class="twit_img" src="assets/img/twitter.png" alt="Visit link" />
-                        <div id="jstwitter" class="clearfix">
-                        </div>
-                    </div>
-                </div>
-            </div>
+   <div class="container cont">
+     <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2 main">
+      <form action="#" method="post" class="form-horizontal">
+        <legend><b style="color:#fff">¿Quieres trabajar con nosotros? Deja tu CV aquí</b></legend>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Nombre: </label>
+          <div class="col-md-9">
+            <input type="text" class="form-control">
+          </div>
         </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Email:</label>
+          <div class="col-md-9">
+            <input type="text" class="form-control">
+          </div>
+        </div>
+         <div class="form-group" >
+         <fieldset>
+           <label class="col-md-3 control-label">Elige tu puesto:</label>
+           <br>
+           <br>
+          <div class="col-md-9">
+        <label class="checkbox-inline">
+              <input type="radio">Desarrollador de aplicaciones
+        </label>
+         <label class="checkbox-inline">
+              <input type="radio">Diseñador de páginas web
+            </label>
+            <label class="checkbox-inline">
+              <input type="radio">Administrador de páginas web y BBDD
+            
+            </label>
+            
+         </div>
+         </fieldset>
+         </div>
+         <br>
+         <br>
+         <p>Deja tu CV aquí</p>
+         <br>
+         <input name="myFile" type="file">
+        <div class="form-group">
+          <div class="col-md-5 col-md-offset-7"> 
+            <button class="btn btn-warning pull-right">
+              <span class="glyphicon glyphicon-repeat">Reset</span>
+            </button>
+            <button class="btn btn-primary pull-right save">
+              <span class="glyphicon glyphicon-floppy-disk ">Save</span>
+            </button>
+          </div>  
+        </div>
+      </form>
     </div>
-    <!--/TWITTER AREA-->
+    </div>
+    
+    <script>
+    $(document).ready(function(){
+       
+    });
+    </script>
+    <!--/MAIN CONTENT AREA-->
     
 <?php 
 include 'footer.php';
