@@ -5,12 +5,19 @@
     <title>J3A - Registro</title>
 
 	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-    <link href="../assets/css/estiloRegistro.css" rel="stylesheet">
+    <link href="assets/css/estiloRegistro.css" rel="stylesheet">
 </head>
     <body>
 
 <!--CONTENIDO-->
 <div class="container">
+
+<?php 
+
+echo (filter_input(INPUT_POST, 'nombre'));
+
+?>
+
 
 <div id="alerta" class="alert alert-danger">
   <!-- Aquí irán los errores del submit -->
