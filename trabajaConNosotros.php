@@ -56,8 +56,6 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
 echo ($row['Username'] . '  ' . $row['Nombre']);
 }
 mysqli_free_result($result);
-
-
 ?>
 	<!--/HEADER-->
     <!--AREA BIENVENIDA-->
