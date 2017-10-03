@@ -211,3 +211,29 @@ select option {
     padding-right: 0;
   }
 }
+
+
+/* Caja de mensajes de alerta */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Rojo */
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Boton de cerrar */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* cuando mueves el raton sobre el boton de cerrar */
+.closebtn:hover {
+    color: black;
+}
