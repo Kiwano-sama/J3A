@@ -205,7 +205,7 @@ mysqli_free_result($result);
                         <!-- form end -->
                          <!-- Buttons -->
                          <input  type="submit" value="Enviar">
-                         <input type="reset" value="Deshacer" />
+                         <input type="reset" value="Deshacer">
                     </div>
                </div>
        	 </div>
