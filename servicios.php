@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="row welcome_inner">
                     <div class="span12">
-                        <h1><span class="colored">///</span> Our sevices</h1>
+                        <h1><span class="colored">///</span> Sobre Nosotros</h1>
                     </div>
                 </div>
             </div>
@@ -67,27 +67,27 @@
                     <div class="span7">
                         <div class="row">
                             <div class="span7">
-                                <h2><span class="colored"><strong>///</strong></span> Our awecome <span class="undercolored"><a href="#">services</a></span></h2>
+                                <h2><span class="colored"><strong>///</strong></span> Los <span class="undercolored"><a href="#">servicios</a> que ofrecemos</span></h2>
                                 <hr class="dash">
                                 <div class="intro">
-                                    <p style="margin-bottom:10px;"><em>The standard chunk of Lorem Ipsum used since the 1500s. Powerful WordPress theme very flexible...</em></p>
+                                    <p style="margin-bottom:10px;"><em>Somos una empresa que se dedica al desarrollo y diseño de aplicaciones web, para este fín manejamos varios lenguajes de programación y técnicas de desarrollo punteras en el mercado.</em></p>
                                 </div>
                                 <hr class="dash">
                             </div>
                             <div class="span7 clearfix">
                                 <img src="assets/img/html5.png" class="pull-left" />
                                 <h4>HTML 5 <span class="colored">&amp;</span> CSS 3</h4>
-                                <p><em>Nullam vel tincidunt ligula. Donec ligula mauris, vehicula quis feugiat at, consequat ut velit. Praesent vestibulum orci vitae nibh cursus vulputate. Donec aliquam laoreet commodo. Praesent vestibulum orci vitae nibh!</em><br><br></p>
+                                <p><em> Realizamos aplicaciones con HTML 5 y CSS 3, para adaptarnos a las últimas tecnologías. </em><br><br></p>
                             </div>
                             <div class="span7 clearfix">
                                 <img src="assets/img/resp.png" class="pull-left" />
                                 <h4>Responsive Design</h4>
-                                <p><em> Nullam vel tincidunt ligula. Donec ligula mauris, vehicula quis feugiat at, consequat ut velit. Praesent vestibulum orci vitae nibh cursus vulputate. Donec aliquam laoreet commodo. Praesent vestibulum orci vitae nibh.</em><br><br></p>
+                                <p><em> Creamos diseños responsivos que se adaptan a las distintas pantallas y dispositivos, como smartphones o tablets. </em><br><br></p>
                             </div>
                             <div class="span7 clearfix">
                                 <img src="assets/img/doc.png" class="pull-left" />
-                                <h4>Well Documented</h4>
-                                <p><em>Nullam vel tincidunt ligula. Donec ligula mauris, vehicula quis feugiat at, consequat ut velit. Praesent vestibulum orci vitae nibh cursus vulputate. Donec aliquam laoreet commodo. Praesent vestibulum orci vitae nibh.</em><br><br><br></p>
+                                <h4>Lenguajes de Programación</h4>
+                                <p><em> Utilizamos varios lenguajes de programación para crear nuestras aplicaciones, dominamos JAVA, JavaScript, PHP y aún más importante, Scratch. </em><br><br><br></p>
                             </div>
                         </div>
                     </div>
