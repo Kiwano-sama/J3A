@@ -183,20 +183,20 @@
                         <hr class="visible-phone">
                     </div>
                     <div class="span3">
-                        <h5><span class="colored">///</span> Valera Company</h5>
-                        <p>Valera is designed to help people of all skill levels designer or developer, huge nerd or early beginner. Use it as a complete kit or use to start something more complex.</p>
+                        <h5><span class="colored">///</span> J3A Company</h5>
+                        <p>Ponte en contacto con nosotros para hacernos encargos o para ofrecerte como trabajador.</p>
                         <hr class="visible-phone">
                     </div>
                     <div class="span3 flickr">
-                        <h5><span class="colored">///</span> Contact info</h5>
-                        <span><strong class="colored"> Aress:</strong> 123456 Street Name, Los Angeles</span>
+                        <h5><span class="colored">///</span> Información de Contacto</h5>
+                        <span><strong class="colored"> Dirección:</strong> Zornotza FP S/N, Zornotza</span>
                         <hr class=" hidden-phone"><br class="visible-phone">
-                        <span><strong class="colored">Phone:</strong> (1800) 765-4321</span>
+                        <span><strong class="colored">Teléfono:</strong> 666 52 58 46</span>
                         <hr class="visible-phone">
                     </div>
                     <div class="span3 soc_icons">
-                        <h5><span class="colored">///</span> Stay in touch</h5>
-                        <span>Find out what's happening:</span>
+                        <h5><span class="colored">///</span> Mantente informado</h5>
+                        <span>Descúbre lo que está ocurriendo:</span>
                         <hr>
                         <a href="#"><div class="icon_t"></div></a>
                         <a href="#"><div class="icon_facebook"></div></a>
@@ -216,7 +216,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="span6">
-                                <span>Copyright 2012 Valera - Company. Design by <span class="undercolored"><a href="#">OrangeIde</a></span></span>
+                                <span>Copyright 2017 J3A - Company. Design by <span class="undercolored"><a href="#">J3A Design Team</a></span></span>
                             </div>
                             <div class="span6">
                                 <span class="pull-right visible-desktop"><span class="undercolored"><a href="#">Home</a></span> / <span class="undercolored"><a href="#">Features</a></span> / <span class="undercolored"><a href="#">Pages</a></span> / <span class="undercolored"><a href="#">Portfolio</a></span> / <span class="undercolored"><a href="#">Blog</a></span> / <span class="undercolored"><a href="#">Typography</a></span> / <span class="undercolored"><a href="#">Contact</a></span></span>
