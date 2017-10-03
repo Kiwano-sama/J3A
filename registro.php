@@ -5,15 +5,21 @@
     <title>J3A - Registro</title>
 
 	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-    <link href="../assets/css/estiloRegistro.css" rel="stylesheet">
-    <script src="../assets/js/registro.js"></script>
+    <link href="assets/css/estiloRegistro.css" rel="stylesheet">
 </head>
     <body>
 
 <!--CONTENIDO-->
 <div class="container">
 
-<div id="alerta" class="alert alert-danger">
+<?php 
+
+echo (filter_input(INPUT_POST, 'nombre'));
+
+?>
+
+
+<div id="alerta" class="alert">
   <!-- Aquí irán los errores del submit -->
 </div>
 
@@ -78,6 +84,8 @@
   </form>
 </div>
 <!--/CONTENIDO -->
+    
+    <script src="../assets/js/registro.js"></script>
     
 </body>
 </html>

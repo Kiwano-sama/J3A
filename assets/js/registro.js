@@ -20,9 +20,9 @@
 
 
 function validarForm() {
-	var x = document.forms["miForm"]["username"].value;
+	var x = document.miForm.username.value;
 	if (x == "") {
-		document.getElementById("errorBox").innerHTML = "<strong>Error:</strong> El campo username no puede estar vacio.";
+		document.getElementById("alerta").innerHTML = "<strong>Error:</strong> El campo username no puede estar vacio.";
 		return false;
 	}
 }

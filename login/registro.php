@@ -11,17 +11,7 @@
 
 <!--CONTENIDO-->
 
-<?php 
 
-function validarForm() {
-	var x = document.forms["myForm"]["fname"].value;
-	if (x == "") {
-		alert("Name must be filled out");
-		return false;
-	}
-}
-
-?>
 
 <div class="container">
   <form name="miForm" action="registro.php" onsubmit="return validarForm()" method="post">
