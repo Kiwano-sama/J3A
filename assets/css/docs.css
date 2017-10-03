@@ -1761,7 +1761,7 @@ ul.unstyled li { margin-bottom:5px;}
        border-left:1px inset gray !important;
     }
     body{
-        background:url(https://static.pexels.com/photos/248797/pexels-photo-248797.jpeg);
+       
         background-color:rgba(0,0,0,0.5);
         background-blend-mode:multiply;
         background-size:auto;
@@ -1783,7 +1783,7 @@ ul.unstyled li { margin-bottom:5px;}
       background:transparent !important;
     }
     .save{
-      margin-right:10px;
+      margin-right:-10px;
     }
     .btn:hover{
        background:#f60 !important; 
