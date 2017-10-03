@@ -202,7 +202,6 @@ mysqli_free_result($result);
     </div>   
     <script>
     $(document).ready(function(){
-       
     });
     </script>
     <!--/MAIN CONTENT AREA-->
