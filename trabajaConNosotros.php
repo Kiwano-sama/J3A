@@ -160,20 +160,20 @@ mysqli_free_result($result);
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="name">Nombre: </label>
-                                        <input requiered id="name" name="nombre" type="text"  class="form-control input-md">
+                                        <input required id="name" name="nombre" type="text"  class="form-control input-md">
                                     </div>
                                 </div>
                                 <!-- Text input-->
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="email">Email: </label>
-                                        <input requiered id="email" name="email" type="text" placeholder="juan@tuemail.com" class="form-control input-md">
+                                        <input required id="email" name="email" type="text" placeholder="juan@tuemail.com" class="form-control input-md">
                                     </div>
                                 </div>
                                   <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="email">Número de contacto: </label>
-                                        <input requiered id="numero" name="numero" type="text" class="form-control input-md">
+                                        <input required id="numero" name="numero" type="text" class="form-control input-md">
                                     </div>
                                 </div>
                                 <br>
@@ -183,9 +183,9 @@ mysqli_free_result($result);
                                     <div class="form-group">
                                         <fieldset>
                    							 <p>Selecciona un puesto: </p>
-                    							<input requiered type="radio" name="opciones" value="desa">Desarrollador de aplicaciones&nbsp;&nbsp;
-                   								<input requiered type="radio" name="opciones" value="dise">Diseñador de páginas web&nbsp;&nbsp;
-                    							<input requiered type="radio" name="opciones" value="admin">Administrador de páginas web&nbsp;&nbsp;                   
+                    							<input required type="radio" name="opciones" value="desa">Desarrollador de aplicaciones&nbsp;&nbsp;
+                   								<input required type="radio" name="opciones" value="dise">Diseñador de páginas web&nbsp;&nbsp;
+                    							<input required type="radio" name="opciones" value="admin">Administrador de páginas web&nbsp;&nbsp;                   
                 						</fieldset>
                                     </div>
                                 </div>
@@ -194,7 +194,7 @@ mysqli_free_result($result);
                                 <!-- Select Basic -->
                                 <div class="col-md-12">
                                 <p>Mandanos tu CV aquí: </p>
-                                    <input requiered type="file" name="cv">
+                                    <input required type="file" name="cv">
                                 </div>
                             </div>
                         </form>
