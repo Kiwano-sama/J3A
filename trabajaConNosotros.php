@@ -179,16 +179,13 @@ mysqli_free_result($result);
             </label>
             <label class="checkbox-inline">
               <input type="radio">Administrador de páginas web y BBDD
-            
             </label>
-            
          </div>
          </fieldset>
          </div>
          <br>
          <br>
          <p>Deja tu CV aquí</p>
-         <br>
          <input name="myFile" type="file">
         <div class="form-group">
           <div class="col-md-5 col-md-offset-7"> 
@@ -202,8 +199,7 @@ mysqli_free_result($result);
         </div>
       </form>
     </div>
-    </div>
-    
+    </div>   
     <script>
     $(document).ready(function(){
        
