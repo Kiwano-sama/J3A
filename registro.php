@@ -6,7 +6,6 @@
 
 	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
     <link href="../assets/css/estiloRegistro.css" rel="stylesheet">
-    <script src="../assets/js/registro.js"></script>
 </head>
     <body>
 
@@ -78,6 +77,8 @@
   </form>
 </div>
 <!--/CONTENIDO -->
+    
+    <script src="../assets/js/registro.js"></script>
     
 </body>
 </html>
