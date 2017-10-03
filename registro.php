@@ -71,7 +71,7 @@
         <label for="terms">Acepto los términos y condiciones para inscribirme en este servicio y confirmo que he leído la política de privacidad.</label>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+    <input class="btn btn-primary" type="submit" value="Registrarse">
   </form>
 </div>
     <!--/CONTENIDO -->

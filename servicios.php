@@ -103,10 +103,10 @@
             <section>
                 <div class="row portfolio">
                     <div class="span12">
-                        <h2><span class="colored"><strong>///</strong></span> Recent <span class="undercolored"><a href="#">Projects</a></span></h2>
+                        <h2><span class="colored"><strong>///</strong></span><span class="undercolored"><a href="#">Proyectos</a> Recientes</span></h2>
                         <hr class="dash">
                         <div class="intro">
-                            <p style="margin-bottom:10px;"><em>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</em></p>
+                            <p style="margin-bottom:10px;"><em>Estos son algunos de los trabajos que hemos realizado anteriormente, y os los mostramos como ejemplo de la calidad de nuestros servicios.</em></p>
                         </div>
                         <hr class="dash">
                     </div>
