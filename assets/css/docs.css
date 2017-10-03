@@ -1754,6 +1754,7 @@ h1,h2,h3 {
     letter-spacing:1px;
 }
 p{
+	 font-color:"white";
     margin:0 0 25px;
     font-size:18px;
     line-height:1.6em;
@@ -1766,7 +1767,7 @@ a:hover,a:focus{
     color:#26a5d3;
 }
 #contact{
-    background:#333333;
+    background:"white";
     color:#f4f4f4;
     padding-bottom:80px;
 }
