@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>J3A - Registro</title>
 
-
 	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
     <link href="assets/css/estiloRegistro.css" rel="stylesheet">
 
@@ -58,9 +57,9 @@
         <h4>Genero</h4>
         <div class="input-group">
           <input type="radio" name="genero" value="male" id="genero-hombre"/>
-          <label for="gender-male">Hombre</label>
+          <label for="genero-hombre">Hombre</label>
           <input type="radio" name="genero" value="female" id="genero-mujer"/>
-          <label for="gender-female">Mujer</label>
+          <label for="genero-mujer">Mujer</label>
         </div>
       </div>
     </div>
