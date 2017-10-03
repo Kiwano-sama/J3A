@@ -115,7 +115,7 @@
                             <a href="assets/img/gal/2.jpg" rel="prettyPhoto"><img src="assets/img/gal/2.jpg" alt="" /></a>
                             <div class="mask">
                                 <a href="assets/img/gal/2.jpg" rel="prettyPhoto" class="info"><img src="assets/img/plus.png" alt="Hanging Note Sign Psd" /></a>
-                                <a href="#" class="link"><img src="assets/img/link.png" alt="Visit link" /></a>
+                                <a href="assets/img/gal/2.jpg" class="link"><img src="assets/img/link.png" alt="Visit link" /></a>
                             </div>
                         </div>
                         <h5><i class="icon-picture"></i> <a href="#">Psd Retro Badges Vintage</a></h5>
@@ -128,10 +128,10 @@
                             <a href="assets/img/gal/12.jpg" rel="prettyPhoto"><img src="assets/img/gal/12.jpg" alt="" /></a>
                             <div class="mask">
                                 <a href="assets/img/gal/12.jpg" rel="prettyPhoto" class="info"><img src="assets/img/plus.png" alt="Hanging Note Sign Psd" /></a>
-                                <a href="#" class="link"><img src="assets/img/link.png" alt="Visit link" /></a>
+                                <a href="assets/img/gal/12.jpg" class="link"><img src="assets/img/link.png" alt="Visit link" /></a>
                             </div>
                         </div>
-                        <h5><i class="icon-picture"></i> <a href="assets/img/gal/12.jpg">Psd Retro Badges Vintage</a></h5>
+                        <h5><i class="icon-picture"></i> <a href="#">Psd Retro Badges Vintage</a></h5>
                         <div class="description">
                             <p class="clo">A set of 6 original vintage and retro badges.</p>
                         </div>
@@ -141,7 +141,7 @@
                             <a href="assets/img/gal/11.jpg" rel="prettyPhoto"><img src="assets/img/gal/11.jpg" alt="" /></a>
                             <div class="mask">
                                 <a href="assets/img/gal/11.jpg" rel="prettyPhoto" class="info"><img src="assets/img/plus.png" alt="Hanging Note Sign Psd" /></a>
-                                <a href="#" class="link"><img src="assets/img/link.png" alt="Visit link" /></a>
+                                <a href="assets/img/gal/11.jpg" class="link"><img src="assets/img/link.png" alt="Visit link" /></a>
                             </div>
                         </div>
                         <h5><i class="icon-picture"></i> <a href="#">Psd Retro Badges Vintage</a></h5>
