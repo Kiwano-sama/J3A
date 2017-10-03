@@ -151,65 +151,144 @@ mysqli_free_result($result);
     <br>
     <!--FEATURES AREA-->
     <!--MAIN CONTENT AREA-->
-   <div align="center" class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="well-block">
-                        <div class="well-title">
-                            <h3>¿Quieres trabajar con nosotros?</h3>
+     <section  id="contact" class="content-section text-center">
+            <div class="contact-section">
+                <div class="container">
+                    <h1>Quieres trabajar con nosotros?</h1>
+                    <h3>Rellena este formulario y envianoslo para que podamos valorar tus posibilidades de trabajar con nosOtros</h3>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <form action="" method="POST" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="exampleInputName2" name="nombre">Nombre: </label>
+                                    &nbsp;<input type="text" required class="form-control" id="exampleInputName2" >&nbsp;&nbsp;
+                                </div>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                    <label for="exampleInputName2" name="apellido">Apellidos: </label>
+                                    &nbsp;<input type="text" required class="form-control" id="exampleInputEmail2" >&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2" name="email">Email: </label>
+                                    &nbsp;&nbsp; <input type="email" required class="form-control" id="exampleInputEmail2" placeholder="juan.doe@example.com">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                    &nbsp;&nbsp;&nbsp; <label for="exampleInputDNI" name="dni">DNI: </label>&nbsp;
+                                    &nbsp;&nbsp;&nbsp;<input type="text" required class="form-control" id="exampleInputDNI">&nbsp;&nbsp;
+                                </div>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                    
+                                    <fieldset required>
+                                        <legend>SELECCIONA UN PUESTO DE TRABAJO: </legend>
+                                        <input required type="radio"  name="" value="diseñador">Diseñador de paginas web&nbsp;&nbsp;
+                                        <input required type="radio" name="" value="desarrollador">Desarrollador de software&nbsp;&nbsp;
+                                        <input required type="radio" name="" value="administrador">Administrador de paginas web&nbsp;&nbsp;
+                                    </fieldset>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="form-group ">
+                                    <label for="exampleInputText" name="cv">Inserta tu CV: </label><br><br>
+                                    <input type="file" required name="adjunto" />
+                                </div>
+                                <br>
+                                <br>
+                                <button type="submit" name="enviar" class="btn btn-default">Enviar</button>
+                            </form>
+                            <br>
+                            <br>
+                            <hr>
+                            <h3>Nuestras redes sociales:</h3>
+                            <table align="center">
+                                <tr class="list-inline banner-social-buttons">
+                                <h3>Siguenos:</h3>
+
+                                <td> <a href="https://twitter.com/?lang=es" id="gh" target="_blank" title="Twitter">Twitter<span class="fa-stack fa-lg">
+                                            <i class="fa fa-square-o fa-stack-2x"></i>
+                                            <i class="fa fa-twitter fa-stack-1x"></i></td>
+                                        </span>
+
+                                        <td> <a href="https://es-es.facebook.com/"  target="_blank" title="Facebook">Facebook<span class="fa-stack fa-lg">
+                                                    <i class="fa fa-square-o fa-stack-2x"></i>
+                                                    <i class="fa fa-facebook fa-stack-1x"></i></td>
+                                                </span>
+                                                <td> <a href="https://plus.google.com/about?hl=es"  target="_blank" title="Google">Google+<span class="fa-stack fa-lg">
+                                                            <i class="fa fa-square-o fa-stack-2x"></i>
+                                                            <i class="fa fa-google fa-stack-1x"></i></td>
+                                                </span>
+                                </tr>
+                            </table>    
                         </div>
-                        <form action="" method="POST">
+                    </div>
+                </div>
+             </div>
+        </section>
+<!--    <div align="center" class="container"> -->
+<!--             <div class="row"> -->
+<!--                 <div class="col-md-6"> -->
+<!--                     <div class="well-block"> -->
+<!--                         <div class="well-title"> -->
+<!--                             <h3>¿Quieres trabajar con nosotros?</h3> -->
+<!--                         </div> -->
+<!--                         <form action="" method="POST"> -->
                             <!-- Form start -->
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label  class="control-label" for="name">Nombre: </label>
-                                        <input required id="name" name="nombre" type="text"  class="form-control input-md">
-                                    </div>
-                                </div>
+<!--                             <div class="row"> -->
+<!--                                 <div class="col-md-6"> -->
+<!--                                     <div class="form-group"> -->
+<!--                                         <label  class="control-label" for="name">Nombre: </label> -->
+<!--                                         <input required id="name" name="nombre" type="text"  class="form-control input-md"> -->
+<!--                                     </div> -->
+<!--                                 </div> -->
                                 <!-- Text input-->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label  class="control-label" for="email">Email: </label>
-                                        <input required id="email" name="email" type="text" placeholder="juan@tuemail.com" class="form-control input-md">
-                                    </div>
-                                </div>
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label  class="control-label" for="email">Número de contacto: </label>
-                                        <input required id="numero" name="numero" type="text" class="form-control input-md">
-                                    </div>
-                                </div>
-                                <br>
-                                <br>
+<!--                                 <div class="col-md-6"> -->
+<!--                                     <div class="form-group"> -->
+<!--                                         <label  class="control-label" for="email">Email: </label> -->
+<!--                                         <input required id="email" name="email" type="text" placeholder="juan@tuemail.com" class="form-control input-md"> -->
+<!--                                     </div> -->
+<!--                                 </div> -->
+<!--                                   <div class="col-md-6"> -->
+<!--                                     <div class="form-group"> -->
+<!--                                         <label  class="control-label" for="email">Número de contacto: </label> -->
+<!--                                         <input required id="numero" name="numero" type="text" class="form-control input-md"> -->
+<!--                                     </div> -->
+<!--                                 </div> -->
+<!--                                 <br> -->
+<!--                                 <br> -->
                                 <!-- Select Basic -->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <fieldset>
-                   							 <p>Selecciona un puesto: </p>
-                    							<input required type="radio" name="opciones" value="desa">Desarrollador de aplicaciones&nbsp;&nbsp;
-                   								<input required type="radio" name="opciones" value="dise">Diseñador de páginas web&nbsp;&nbsp;
-                    							<input required type="radio" name="opciones" value="admin">Administrador de páginas web&nbsp;&nbsp;                   
-                						</fieldset>
-                                    </div>
-                                </div>
-                                <br>
-                                <br>
+<!--                                 <div class="col-md-6"> -->
+<!--                                     <div class="form-group"> -->
+<!--                                         <fieldset> -->
+<!--                    							 <p>Selecciona un puesto: </p> -->
+<!--                     							<input required type="radio" name="opciones" value="desa">Desarrollador de aplicaciones&nbsp;&nbsp; -->
+<!--                    								<input required type="radio" name="opciones" value="dise">Diseñador de páginas web&nbsp;&nbsp; -->
+<!--                     							<input required type="radio" name="opciones" value="admin">Administrador de páginas web&nbsp;&nbsp;                    -->
+<!--                 						</fieldset> -->
+<!--                                     </div> -->
+<!--                                 </div> -->
+<!--                                 <br> -->
+<!--                                 <br> -->
                                 <!-- Select Basic -->
-                                <div class="col-md-12">
-                                <p>Mandanos tu CV aquí: </p>
-                                    <input required type="file" name="cv">
-                                </div>
-                            </div>
-                        </form>
+<!--                                 <div class="col-md-12"> -->
+<!--                                 <p>Mandanos tu CV aquí: </p> -->
+<!--                                     <input required type="file" name="cv"> -->
+<!--                                 </div> -->
+<!--                             </div> -->
+<!--                         </form> -->
                         <!-- form end -->
                          <!-- Buttons -->
-                         <input  type="submit" value="Enviar">
-                         <input type="reset" value="Deshacer">
-                    </div>
-               </div>
-       	 </div>
-     </div>
+<!--                          <input  type="submit" value="Enviar"> -->
+<!--                          <input type="reset" value="Deshacer"> -->
+<!--                     </div> -->
+<!--                </div> -->
+<!--        	 </div> -->
+<!--      </div> -->
      <br>
      <br>
      <br>
