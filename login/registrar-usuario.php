@@ -30,7 +30,7 @@ if ($count == 1) {
 }
 else{
 	
-	$query = "INSERT INTO Usuarios (nombre_usuario, password)
+	$query = "INSERT INTO usuario (username, password)
            VALUES ('$_POST[username]', '$hash')";
 	
 	if ($conexion->query($query) === TRUE) {
