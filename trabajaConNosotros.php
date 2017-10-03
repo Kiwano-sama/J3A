@@ -154,7 +154,7 @@ mysqli_free_result($result);
                 <div class="col-md-6">
                     <div class="well-block">
                         <div class="well-title">
-                            <h2>¿Quieres trabajar con nosotros? Déjanos aquí tu CV</h2>
+                            <h2>¿Quieres trabajar con nosotros?</h2>
                         </div>
                         <form>
                             <!-- Form start -->
@@ -178,11 +178,13 @@ mysqli_free_result($result);
                                         <input requiered id="numero" name="numero" type="text" class="form-control input-md">
                                     </div>
                                 </div>
+                                <br>
+                                <br>
                                 <!-- Select Basic -->
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <fieldset>
-                   							 <legend>Selecciona un puesto: </legend>
+                   							 <h3>Selecciona un puesto: </h3>
                     							<input requiered type="radio" name="opciones" value="desa">Desarrollador de aplicaciones&nbsp;&nbsp;
                    								<input requiered type="radio" name="opciones" value="dise">Diseñador de páginas web&nbsp;&nbsp;
                     							<input requiered type="radio" name="opciones" value="admin">Administrador de páginas web&nbsp;&nbsp;                   
@@ -201,10 +203,9 @@ mysqli_free_result($result);
                          <input  type="submit" value="Enviar">
                          <input type="reset" value="Deshacer" />
                     </div>
-                </div>
-        </div>
-        </div>
-Created by <a href="http://jituchauhan.com/">Jitu Chauhan</a>
+               </div>
+       	 </div>
+     </div>
     <script>
     $(document).ready(function(){
     });
