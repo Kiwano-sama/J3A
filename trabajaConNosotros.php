@@ -184,16 +184,18 @@ mysqli_free_result($result);
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <fieldset>
-                   							 <p>Selecciona un puesto: </p>
+                   							 <>Selecciona un puesto: </p>
                     							<input requiered type="radio" name="opciones" value="desa">Desarrollador de aplicaciones&nbsp;&nbsp;
                    								<input requiered type="radio" name="opciones" value="dise">Diseñador de páginas web&nbsp;&nbsp;
                     							<input requiered type="radio" name="opciones" value="admin">Administrador de páginas web&nbsp;&nbsp;                   
                 						</fieldset>
                                     </div>
                                 </div>
+                                <br>
+                                <br>
                                 <!-- Select Basic -->
                                 <div class="col-md-12">
-                                <p>Mandanos tu CV aquí</p>
+                                <p>Mandanos tu CV aquí: </p>
                                     <input requiered type="file" name="cv">
                                 </div>
                             </div>
