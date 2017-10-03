@@ -1762,6 +1762,7 @@ h1,h2,h3 {
     letter-spacing:1px;
 }
 p{
+	 font-color:"white";
     margin:0 0 25px;
     font-size:18px;
     line-height:1.6em;
