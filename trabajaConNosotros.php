@@ -192,7 +192,7 @@ mysqli_free_result($result);
                                 <!-- Select Basic -->
                                 <div class="col-md-12">
                                 <p>Mandanos tu CV aquí</p>
-                                    <input type="file" name="cv">
+                                    <input requiered type="file" name="cv">
                                 </div>
                             </div>
                         </form>
