@@ -131,7 +131,7 @@
                                 <a href="#" class="link"><img src="assets/img/link.png" alt="Visit link" /></a>
                             </div>
                         </div>
-                        <h5><i class="icon-picture"></i> <a href="#">Psd Retro Badges Vintage</a></h5>
+                        <h5><i class="icon-picture"></i> <a href="assets/img/gal/12.jpg">Psd Retro Badges Vintage</a></h5>
                         <div class="description">
                             <p class="clo">A set of 6 original vintage and retro badges.</p>
                         </div>
