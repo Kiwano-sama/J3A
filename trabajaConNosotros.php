@@ -162,7 +162,7 @@ mysqli_free_result($result);
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="name">Nombre: </label>
-                                        <input requiered id="name" name="name" type="text" placeholder="Name" class="form-control input-md">
+                                        <input requiered id="name" name="nombre" type="text"  class="form-control input-md">
                                     </div>
                                 </div>
                                 <!-- Text input-->
@@ -174,19 +174,18 @@ mysqli_free_result($result);
                                 </div>
                                   <div class="col-md-6">
                                     <div class="form-group">
-                                        <label  class="control-label" for="email">Numero de contacto: </label>
-                                        <input requiered id="email" name="email" type="text" class="form-control input-md">
+                                        <label  class="control-label" for="email">Número de contacto: </label>
+                                        <input requiered id="numero" name="numero" type="text" class="form-control input-md">
                                     </div>
                                 </div>
-                               
                                 <!-- Select Basic -->
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <fieldset>
                    							 <legend>Selecciona un puesto: </legend>
-                    							<input requiered type="radio" name="opciones" value="alta">Desarrollador de aplicaciones&nbsp;&nbsp;
-                   								<input requiered type="radio" name="opciones" value="baja">Diseñador de páginas web&nbsp;&nbsp;
-                    							<input requiered type="radio" name="opciones" value="modificar">Administrador de páginas web&nbsp;&nbsp;                   
+                    							<input requiered type="radio" name="opciones" value="desa">Desarrollador de aplicaciones&nbsp;&nbsp;
+                   								<input requiered type="radio" name="opciones" value="dise">Diseñador de páginas web&nbsp;&nbsp;
+                    							<input requiered type="radio" name="opciones" value="admin">Administrador de páginas web&nbsp;&nbsp;                   
                 						</fieldset>
                                     </div>
                                 </div>
