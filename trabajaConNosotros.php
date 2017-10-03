@@ -145,6 +145,9 @@ mysqli_free_result($result);
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
     <!--FEATURES AREA-->
     <!--MAIN CONTENT AREA-->
    <div align="center" class="container">
