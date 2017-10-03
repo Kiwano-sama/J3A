@@ -145,6 +145,10 @@ mysqli_free_result($result);
             </div>
         </div>
     </div>
+    
+    <br>
+    <br>
+    <br>
     <!--FEATURES AREA-->
     <!--MAIN CONTENT AREA-->
    <div align="center" class="container">
@@ -154,7 +158,7 @@ mysqli_free_result($result);
                         <div class="well-title">
                             <h3>¿Quieres trabajar con nosotros?</h3>
                         </div>
-                        <form action="trabajaConNosotros.php" method="POST">
+                        <form action="" method="POST">
                             <!-- Form start -->
                             <div class="row">
                                 <div class="col-md-6">
@@ -201,7 +205,7 @@ mysqli_free_result($result);
                         <!-- form end -->
                          <!-- Buttons -->
                          <input  type="submit" value="Enviar">
-                         <input type="reset" value="Deshacer" />
+                         <input type="reset" value="Deshacer">
                     </div>
                </div>
        	 </div>
