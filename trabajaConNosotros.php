@@ -285,8 +285,3 @@ include 'footer.php';
 	</body>
 </html>
     <!-- Page Content -->
-
-       
-
-
-
