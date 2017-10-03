@@ -210,6 +210,8 @@ mysqli_free_result($result);
      </div>
      <br>
      <br>
+     <br>
+     <br>
     <script>
     $(document).ready(function(){
     });
