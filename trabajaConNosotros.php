@@ -184,7 +184,7 @@ mysqli_free_result($result);
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <fieldset>
-                   							 <>Selecciona un puesto: </p>
+                   							 <p>Selecciona un puesto: </p>
                     							<input requiered type="radio" name="opciones" value="desa">Desarrollador de aplicaciones&nbsp;&nbsp;
                    								<input requiered type="radio" name="opciones" value="dise">Diseñador de páginas web&nbsp;&nbsp;
                     							<input requiered type="radio" name="opciones" value="admin">Administrador de páginas web&nbsp;&nbsp;                   
@@ -208,6 +208,8 @@ mysqli_free_result($result);
                </div>
        	 </div>
      </div>
+     <br>
+     <br>
     <script>
     $(document).ready(function(){
     });
