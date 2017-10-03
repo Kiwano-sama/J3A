@@ -204,7 +204,7 @@ mysqli_free_result($result);
                 </div>
              
         </div>
-        
+        </div>
 Created by <a href="http://jituchauhan.com/">Jitu Chauhan</a>
     <script>
     $(document).ready(function(){
