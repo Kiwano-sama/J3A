@@ -248,7 +248,6 @@ Created by <a href="http://jituchauhan.com/">Jitu Chauhan</a>
     });
     </script>
     <!--/MAIN CONTENT AREA-->
-    
 <?php 
 include 'footer.php';
 ?>
