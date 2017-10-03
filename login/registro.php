@@ -5,39 +5,46 @@
     <title>J3A - Registro</title>
 
 	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-    <link href="../assets/css/estiloRegistro.css" rel="stylesheet">
-    <script src="../assets/js/registro.js"></script>
+    <link href="assets/css/estiloRegistro.css" rel="stylesheet">
 </head>
     <body>
 
 <!--CONTENIDO-->
+
+<?php 
+
+function validarForm() {
+	var x = document.forms["myForm"]["fname"].value;
+	if (x == "") {
+		alert("Name must be filled out");
+		return false;
+	}
+}
+
+?>
+
 <div class="container">
-
-<div id="alerta" class="alert alert-danger">
-  <!-- Aquí irán los errores del submit -->
-</div>
-
   <form name="miForm" action="registro.php" onsubmit="return validarForm()" method="post">
     <div class="row">
       <h4>Nueva Cuenta</h4>
       <div class="input-group input-group-icon">
-        <input type="text" name="username" placeholder="Username"/>
+        <input type="text" placeholder="Username"/>
         <div class="input-icon"><i class="fa fa-user"></i></div>
       </div>
       <div class="input-group input-group-icon">
-        <input type="text" name="nombre" placeholder="Nombre"/>
+        <input type="text" placeholder="Nombre"/>
         <div class="input-icon"><i class="fa fa-user"></i></div>
       </div>
       <div class="input-group input-group-icon">
-        <input type="text" name="apellido" placeholder="Apellido"/>
+        <input type="text" placeholder="Apellido"/>
         <div class="input-icon"><i class="fa fa-user"></i></div>
       </div>
       <div class="input-group input-group-icon">
-        <input type="email" name="email" placeholder="Dirección Email"/>
+        <input type="email" placeholder="Dirección Email"/>
         <div class="input-icon"><i class="fa fa-envelope"></i></div>
       </div>
       <div class="input-group input-group-icon">
-        <input type="password" name="pass" placeholder="Contraseña"/>
+        <input type="password" placeholder="Contraseña"/>
         <div class="input-icon"><i class="fa fa-key"></i></div>
       </div>
     </div>
