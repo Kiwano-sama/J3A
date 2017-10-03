@@ -1733,72 +1733,7 @@ ul.unstyled li { margin-bottom:5px;}
 	border-radius:5px;
 }
 
-	-------------------------------------------
- /* CSS para el formulrio trabaja con nosotros*/
-		---------------------------
-/* 
-    Created on : 02-oct-2017, 10:55:02
-    Author     : Jenn
-*/
- html, body {
-      height:100%;
-    }
-    .form-control{
-      background:transparent;
-      border-top:2px inset gray;
-      border-left:2px inset gray;
-      color:white;
-    }
-    option{
-      background-color:#f60;
-      opacity:0.9;
-      color:white !important;
-    }
-    select{
-       background-color:transparent !important;
-       color:#fff !important;
-       border-top:1px inset gray !important;
-       border-left:1px inset gray !important;
-    }
-    body{
-        background:url(https://static.pexels.com/photos/248797/pexels-photo-248797.jpeg);
-        background-color:rgba(0,0,0,0.5);
-        background-blend-mode:multiply;
-        background-size:auto;
-        background-repeat:no-repeat;
-       
-    }
-    .main{
-      background:transparent;
-      border-top-left-radius:5px; 
-      border-top-right-radius:30px; 
-      border-bottom-right-radius:10px;
-      border-bottom-left-radius:30px;
-      padding:10px;
-      border:1px solid gray;
-      box-shadow:2px 2px 10px gray;
-      color:white !important;
-    }.btn{
-      border-radius:0px !important;
-      background:transparent !important;
-    }
-    .save{
-      margin-right:10px;
-    }
-    .btn:hover{
-       background:#f60 !important; 
-    }
-    .control-label{
-        text-align:left !important;
-    }
-    .cont{ 
-          min-height:100%;
-          min-width:100%;
-          display:flex;
-          align-items:center;
-        }
-
------------------------------------------		
+	
 
 /*-------------------------------------------------------------------------------------------------*/
 	/*TWITTER FEED */

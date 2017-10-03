@@ -9,8 +9,8 @@
     <!-- styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
-    
+     <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/css/cssTrabajaConNosotros.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -56,8 +56,6 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
 echo ($row['Username'] . '  ' . $row['Nombre']);
 }
 mysqli_free_result($result);
-
-
 ?>
 	<!--/HEADER-->
     <!--AREA BIENVENIDA-->
@@ -149,68 +147,74 @@ mysqli_free_result($result);
     </div>
     <!--FEATURES AREA-->
     <!--MAIN CONTENT AREA-->
-   <div class="container cont">
-     <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2 main">
-      <form action="#" method="post" class="form-horizontal">
-        <legend><b style="color:#fff">¿Quieres trabajar con nosotros? Deja tu CV aquí</b></legend>
-        <div class="form-group">
-          <label class="col-md-3 control-label">Nombre: </label>
-          <div class="col-md-9">
-            <input type="text" class="form-control">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-md-3 control-label">Email:</label>
-          <div class="col-md-9">
-            <input type="text" class="form-control">
-          </div>
-        </div>
-         <div class="form-group" >
-         <fieldset>
-           <label class="col-md-3 control-label">Elige tu puesto:</label>
-           <br>
-           <br>
-          <div class="col-md-9">
-        <label class="checkbox-inline">
-              <input type="radio">Desarrollador de aplicaciones
-        </label>
-         <label class="checkbox-inline">
-              <input type="radio">Diseñador de páginas web
-            </label>
-            <label class="checkbox-inline">
-              <input type="radio">Administrador de páginas web y BBDD
-            
-            </label>
-            
-         </div>
-         </fieldset>
-         </div>
-         <br>
-         <br>
-         <p>Deja tu CV aquí</p>
-         <br>
-         <input name="myFile" type="file">
-        <div class="form-group">
-          <div class="col-md-5 col-md-offset-7"> 
-            <button class="btn btn-warning pull-right">
-              <span class="glyphicon glyphicon-repeat">Reset</span>
-            </button>
-            <button class="btn btn-primary pull-right save">
-              <span class="glyphicon glyphicon-floppy-disk ">Save</span>
-            </button>
-          </div>  
-        </div>
-      </form>
-    </div>
-    </div>
-    
+   <div align="center" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="well-block">
+                        <div class="well-title">
+                            <h3>¿Quieres trabajar con nosotros?</h3>
+                        </div>
+                        <form action="trabajaConNosotros.php" method="POST">
+                            <!-- Form start -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label  class="control-label" for="name">Nombre: </label>
+                                        <input required id="name" name="nombre" type="text"  class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label  class="control-label" for="email">Email: </label>
+                                        <input required id="email" name="email" type="text" placeholder="juan@tuemail.com" class="form-control input-md">
+                                    </div>
+                                </div>
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label  class="control-label" for="email">Número de contacto: </label>
+                                        <input required id="numero" name="numero" type="text" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <!-- Select Basic -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <fieldset>
+                   							 <p>Selecciona un puesto: </p>
+                    							<input required type="radio" name="opciones" value="desa">Desarrollador de aplicaciones&nbsp;&nbsp;
+                   								<input required type="radio" name="opciones" value="dise">Diseñador de páginas web&nbsp;&nbsp;
+                    							<input required type="radio" name="opciones" value="admin">Administrador de páginas web&nbsp;&nbsp;                   
+                						</fieldset>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <!-- Select Basic -->
+                                <div class="col-md-12">
+                                <p>Mandanos tu CV aquí: </p>
+                                    <input required type="file" name="cv">
+                                </div>
+                            </div>
+                        </form>
+                        <!-- form end -->
+                         <!-- Buttons -->
+                         <input  type="submit" value="Enviar">
+                         <input type="reset" value="Deshacer" />
+                    </div>
+               </div>
+       	 </div>
+     </div>
+     <br>
+     <br>
+     <br>
+     <br>
     <script>
     $(document).ready(function(){
-       
     });
     </script>
     <!--/MAIN CONTENT AREA-->
-    
 <?php 
 include 'footer.php';
 ?>
@@ -229,7 +233,7 @@ include 'footer.php';
                     </div>
                 </div>
             </div>
-        </div>
+     	 </div>
     </div>
     <!--/BOTTOM LINE-->
     <!-- Le javascript
@@ -279,8 +283,3 @@ include 'footer.php';
 	</body>
 </html>
     <!-- Page Content -->
-
-       
-
-
-
