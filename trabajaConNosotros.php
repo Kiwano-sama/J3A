@@ -202,7 +202,6 @@ mysqli_free_result($result);
                          <input type="reset" value="Deshacer" />
                     </div>
                 </div>
-             
         </div>
         </div>
 Created by <a href="http://jituchauhan.com/">Jitu Chauhan</a>
