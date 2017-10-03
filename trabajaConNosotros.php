@@ -9,8 +9,7 @@
     <!-- styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
-    
+    <link href="assets/css/cssTrabajaConNosotros.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -149,57 +148,101 @@ mysqli_free_result($result);
     </div>
     <!--FEATURES AREA-->
     <!--MAIN CONTENT AREA-->
-   <div class="container cont">
-     <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2 main">
-      <form action="#" method="post" class="form-horizontal">
-        <legend><b style="color:#fff">¿Quieres trabajar con nosotros? Deja tu CV aquí</b></legend>
-        <div class="form-group">
-          <label class="col-md-3 control-label">Nombre: </label>
-          <div class="col-md-9">
-            <input type="text" class="form-control">
-          </div>
+   <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="well-block">
+                        <div class="well-title">
+                            <h2>Questions? Book an Appointment</h2>
+                        </div>
+                        <form>
+                            <!-- Form start -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name">Name</label>
+                                        <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">Email</label>
+                                        <input id="email" name="email" type="text" placeholder="E-Mail" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="date">Preferred Date</label>
+                                        <input id="date" name="date" type="text" placeholder="Preferred Date" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Select Basic -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="time">Preferred Time</label>
+                                        <select id="time" name="time" class="form-control">
+                                            <option value="8:00 to 9:00">8:00 to 9:00</option>
+                                            <option value="9:00 to 10:00">9:00 to 10:00</option>
+                                            <option value="10:00 to 1:00">10:00 to 1:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Select Basic -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="appointmentfor">Appointment For</label>
+                                        <select id="appointmentfor" name="appointmentfor" class="form-control">
+                                            <option value="Service#1">Service#1</option>
+                                            <option value="Service#2">Service#2</option>
+                                            <option value="Service#3">Service#3</option>
+                                            <option value="Service#4">Service#4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <button id="singlebutton" name="singlebutton" class="btn btn-default">Make An Appointment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- form end -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="well-block">
+                        <div class="well-title">
+                            <h2>Why Appointment with Us</h2>
+                        </div>
+                        <div class="feature-block">
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">24/7 Hours Available</h4>
+                                <div class="feature-content">
+                                    <p>Integer nec nisi sed mi hendrerit mattis. Vestibulum mi nunc, ultricies quis vehicula et, iaculis in magnestibulum.</p>
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Experienced Staff Available</h4>
+                                <div class="feature-content">
+                                    <p>Aliquam sit amet mi eu libero fermentum bibendum pulvinar a turpis. Vestibulum quis feugiat risus. </p>
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Low Price & Fees</h4>
+                                <div class="feature-content">
+                                    <p>Praesent eu sollicitudin nunc. Cras malesuada vel nisi consequat pretium. Integer auctor elementum nulla suscipit in.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-          <label class="col-md-3 control-label">Email:</label>
-          <div class="col-md-9">
-            <input type="text" class="form-control">
-          </div>
-        </div>
-         <div class="form-group" >
-         <fieldset>
-           <label class="col-md-3 control-label">Elige tu puesto:</label>
-           <br>
-           <br>
-          <div class="col-md-9">
-        <label class="checkbox-inline">
-              <input type="radio">Desarrollador de aplicaciones
-        </label>
-         <label class="checkbox-inline">
-              <input type="radio">Diseñador de páginas web
-            </label>
-            <label class="checkbox-inline">
-              <input type="radio">Administrador de páginas web y BBDD
-            </label>
-         </div>
-         </fieldset>
-         </div>
-         <br>
-         <br>
-         <p>Deja tu CV aquí</p>
-         <input name="myFile" type="file">
-        <div class="form-group">
-          <div class="col-md-5 col-md-offset-7"> 
-            <button class="btn btn-warning pull-right">
-              <span class="glyphicon glyphicon-repeat">Reset</span>
-            </button>
-            <button class="btn btn-primary pull-right save">
-              <span class="glyphicon glyphicon-floppy-disk ">Save</span>
-            </button>
-          </div>  
-        </div>
-      </form>
-    </div>
-    </div>   
+        
+Created by <a href="http://jituchauhan.com/">Jitu Chauhan</a>
     <script>
     $(document).ready(function(){
     });
