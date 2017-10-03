@@ -118,9 +118,9 @@
                                 <a href="assets/img/gal/2.jpg" class="link"><img src="assets/img/link.png" alt="Visit link" /></a>
                             </div>
                         </div>
-                        <h5><i class="icon-picture"></i> <a href="#">Psd Retro Badges Vintage</a></h5>
+                        <h5><i class="icon-picture"></i> <a href="#">Aplicación de Comercio</a></h5>
                         <div class="description">
-                            <p class="clo">A set of 6 original vintage and retro badges.</p>
+                            <p class="clo">Una web para el comercio con dashboard.</p>
                         </div>
                     </div>
                     <div class="span4 block">
@@ -131,9 +131,9 @@
                                 <a href="assets/img/gal/12.jpg" class="link"><img src="assets/img/link.png" alt="Visit link" /></a>
                             </div>
                         </div>
-                        <h5><i class="icon-picture"></i> <a href="#">Psd Retro Badges Vintage</a></h5>
+                        <h5><i class="icon-picture"></i> <a href="#">Aplicación de Servicios Sociales</a></h5>
                         <div class="description">
-                            <p class="clo">A set of 6 original vintage and retro badges.</p>
+                            <p class="clo">Una web para información de servicios para personas de la tercera edad.</p>
                         </div>
                     </div>
                     <div class="span4 block">
@@ -144,9 +144,9 @@
                                 <a href="assets/img/gal/11.jpg" class="link"><img src="assets/img/link.png" alt="Visit link" /></a>
                             </div>
                         </div>
-                        <h5><i class="icon-picture"></i> <a href="#">Psd Retro Badges Vintage</a></h5>
+                        <h5><i class="icon-picture"></i> <a href="#">Aplicación Sanitaria</a></h5>
                         <div class="description">
-                            <p class="clo">A set of 6 original vintage and retro badges.</p>
+                            <p class="clo">Una web diseñada para una clínica privada.</p>
                         </div>
                     </div>
                 </div>
