@@ -220,7 +220,7 @@ mysqli_free_result($result);
                                                     <i class="fa fa-facebook fa-stack-1x"></i></td>
                                                 </span>
                                                 <td> <a href="https://plus.google.com/about?hl=es"  target="_blank" title="Google">Google+<span class="fa-stack fa-lg">
-                                                            <i class="fa fa-square-o fa-stack-2x"></i>
+                                                           <i class="fa fa-square-o fa-stack-2x"></i>
                                                            <i class="fa fa-google fa-stack-1x"></i></td>
                                                 </span>
                                 </tr>
