@@ -62,7 +62,7 @@
             <section>
                 <div class="row">
                     <div class="span8">
-                        <h2><span class="colored"><strong>///</strong></span> Porqué elegir  <span class="undercolored"><a href="#">J3A</a></span></h2>
+                        <h2><span class="colored"><strong>///</strong></span> Por qué elegir  <span class="undercolored"><a href="#">J3A</a></span></h2>
                         <hr class="dash">
                         <div class="intro">
                             <p style="margin-bottom:10px;"><em>Powerful WordPress theme very flexible, easy for customizing and well documented, approaches for.</em></p>
