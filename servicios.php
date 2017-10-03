@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="row welcome_inner">
                     <div class="span12">
-                        <h1><span class="colored">///</span> Sobre Nosotros</h1>
+                        <h1><span class="colored">///</span> Qué Hacemos</h1>
                     </div>
                 </div>
             </div>
