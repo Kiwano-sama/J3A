@@ -187,7 +187,7 @@ mysqli_free_result($result);
                                      <div class="form-group">
                                     
                                     <fieldset>
-                                        <legend>SELECCIONA UN PUESTO DE TRABAJO: </legend>
+                                        <legend>Selecciona un puesto de trabajo:  </legend>
                                         <input required type="radio"  name="" value="diseñador">Diseñador de paginas web&nbsp;&nbsp;
                                         <input required type="radio" name="" value="desarrollador">Desarrollador de software&nbsp;&nbsp;
                                         <input required type="radio" name="" value="administrador">Administrador de paginas web&nbsp;&nbsp;
