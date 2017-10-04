@@ -46,7 +46,7 @@ function comprobarNombre(e) {
 	if(letras.indexOf(teclado)==-1 && !teclado_especial){
 		return false;
 		}
-	}
+	
 }
 // Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
