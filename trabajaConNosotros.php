@@ -288,6 +288,7 @@ include 'footer.php';
 			});
 		}
     </script>
-	</body>	
+	</body>
+		
 </html>
     <!-- Page Content -->
