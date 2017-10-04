@@ -179,8 +179,7 @@ mysqli_free_result($result);
                                     <div class="form-group">
                                         <label  class="control-label" for="number">Número de contacto: </label>
                                         <input required  onKeyPress="return comprobarTecla(event)" id="numero" name="numero" type="text" class="form-control input-md">
-                                    </div>
-                                    
+                                    </div>                           
                                 </div>
                                 <br>
                                 <br>                        

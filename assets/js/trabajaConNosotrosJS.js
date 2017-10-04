@@ -59,7 +59,7 @@ function numero(e){
         alert("El numero insertado " + miNumero + " es erroneo");
     }
 }
-	 function comprobarTecla(e){
+function comprobarTecla(e){
 	
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
