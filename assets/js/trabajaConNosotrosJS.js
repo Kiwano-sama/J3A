@@ -22,18 +22,19 @@ function validar(){
 //Funcion para comprobar que se haya insertado un nombre y que no se pueda introducir numeros en este campo
 function comprobarNombre() {
 	var nombre = document.getElementById('nombre').value
-	 var miNombre=document.trabaja.nombre.value;
+	var patron = /^[a-zA-Z]*$/;
 	if (nombre == NULL) {
 		return true;
 	} else {
 		alert("Por favor, introduzca su nombre");
 		return false;
 	}
-	  if (/\D/.test(miNombre) && (miNombre.length)){
-	        return true;
-	    }else {
-	        alert("El numero insertado " + miNumero + " es erroneo");
-	    }
+	  // En caso de querer validar cadenas con espacios usar: /^[a-zA-Z\s]*$/
+	  if(!cadena.search(patron))
+	    return true;
+	  else
+	    return false;
+	}
 }
 //Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
