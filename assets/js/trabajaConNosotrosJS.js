@@ -20,7 +20,7 @@ function validar(){
 }
 // Funcion para comprobar que se haya insertado un nombre y que no se pueda
 // introducir numeros en este campo
-function comprobarNombre() {
+function nombre() {
 	var nombre = document.getElementById('nombre').value
 	
 	if (nombre == NULL) {
@@ -29,12 +29,17 @@ function comprobarNombre() {
 		alert("Por favor, introduzca su nombre");
 		return false;
 	}
-	   var miNombre=document.trabaja.nombre.value;
-	    if (/^\D{20}/.test(miNombre) && (miNombre.length <= 20)){
-	        return true;
-	    }else {
-	    	return false;
-	    	}
+}
+function comprobarTeclaNom(e){
+	
+	teclanum = e.which;
+	keychar = String.fromCharCode(teclanum);
+	
+	if(keychar < '0' || keychar >'9'){
+		return false;
+	}else{
+		return true;
+	}
 }
 // Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
@@ -49,7 +54,7 @@ function validarEmail() {
 }
 // Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de
 // contacto'
-function numero(e){
+function numero(){
     var miNumero=document.trabaja.numero.value;
     var keychar;
 	var teclanum;
@@ -59,32 +64,21 @@ function numero(e){
         alert("El numero insertado " + miNumero + " es erroneo");
     }  
 }
-function comprobarTecla(e){
-	
-	teclanum = e.which;
-	keychar = String.fromCharCode(teclanum);
-	
-	if(keychar < '0' || keychar >'9'){
-		return false;
-	}else{
-		return true;
-	}
-}
 //Funcion para que no se pueda insertar mas de una '@'
-	function comprobarArroba(e){
-		var caracterTecla;
-	    var codigoTecla;
+function comprobarArroba(e){
+	var caracterTecla;
+    var codigoTecla;
 
-	    if (window.event){ 
-	        codigoTecla = e.keyCode;
-	    }else if (e.which){
-	        codigoTecla = e.which;
-	    }
-	    caracterTecla = String.fromCharCode(codigoTecla);
+    if (window.event){ 
+        codigoTecla = e.keyCode;
+    }else if (e.which){
+        codigoTecla = e.which;
+    }
+    caracterTecla = String.fromCharCode(codigoTecla);
 
-	    if (caracterTecla == "@") { 
-	        if (document.encuesta.correo.value.indexOf('@') >= 0) {
-	            return false;
-	        }
-	    }
+    if (caracterTecla == "@") { 
+        if (document.encuesta.correo.value.indexOf('@') >= 0) {
+            return false;
+        }
+    }
 }
