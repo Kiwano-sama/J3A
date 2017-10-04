@@ -7,9 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- styles -->
+    <script src="assets/js/trabajaConNosotrosJS.js"></script>
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-     <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/css/cssTrabajaConNosotros.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
@@ -158,27 +159,28 @@ mysqli_free_result($result);
                         <div class="well-title">
                             <h3>¿Quieres trabajar con nosotros?</h3>
                         </div>
-                        <form action="" method="POST">
+                        <form name="trabaja" action="" method="POST" onSubmit="return validar()">
                             <!-- Form start -->
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="name">Nombre: </label>
-                                        <input required id="name" name="nombre" type="text"  class="form-control input-md">
-                                    </div>
+                                        <input required onKeyPress="return comprobarNombre()" id="nombre" name="nombre" type="text"  class="form-control input-md">
+                                    </div>                                   
                                 </div>
                                 <!-- Text input-->
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="email">Email: </label>
-                                        <input required id="email" name="email" type="text" placeholder="juan@tuemail.com" class="form-control input-md">
+                                        <input required onKeyPress="return comprobarArroba(event)" id="email" name="email" type="text" placeholder="juan@tuemail.com" class="form-control input-md">
                                     </div>
                                 </div>
                                   <div class="col-md-6">
                                     <div class="form-group">
-                                        <label  class="control-label" for="email">Número de contacto: </label>
-                                        <input required id="numero" name="numero" type="text" class="form-control input-md">
+                                        <label  class="control-label" for="number">Número de contacto: </label>
+                                        <input required  onKeyPress="return comprobarNumero(event)" id="numero" name="numero" type="text" class="form-control input-md">
                                     </div>
+                                    
                                 </div>
                                 <br>
                                 <br>                        
@@ -205,7 +207,7 @@ mysqli_free_result($result);
                             <br>
                             <br>
                              <!-- Buttons -->
-                         <input  type="submit" value="Enviar">
+                         <input onSubmit="return Enviar()" type="submit" value="Enviar">
                          <input type="reset" value="Deshacer">
                         </form>
                         <!-- form end -->
