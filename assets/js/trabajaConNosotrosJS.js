@@ -21,7 +21,7 @@ function validar(){
 }
 // Funcion para comprobar que se haya insertado un nombre y que no se pueda
 // introducir numeros en este campo
-function comprobarNombre(e) {
+function comprobarNombre() {
 	var nombre = document.getElementById('nombre').value
 	
 	if (nombre == NULL) {
@@ -30,23 +30,6 @@ function comprobarNombre(e) {
 		alert("Por favor, introduzca su nombre");
 		return false;
 	}
-	key=e.keyCode || e.which;
-	
-	teclado = String.fromCharCode(key).toLowerCase();
-	letras="abcdefghijklmñopqrstuvwxyz";
-	
-	especiales="8-37-38-46-164";
-	teclado_especial=false;
-	
-	for(var i in especiales){
-		if(key ==especiales[i]){
-			teclado_especial= false;break;
-			}
-		}
-	if(letras.indexOf(teclado)==-1 && !teclado_especial){
-		return false;
-		}
-	
 }
 // Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
