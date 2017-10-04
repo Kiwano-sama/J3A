@@ -18,9 +18,8 @@ echo (filter_input(INPUT_POST, 'nombre'));
 
 ?>
 
-
+<!-- Aquí irán los errores del submit -->
 <div id="alerta" class="alert alert-error collapse" role="alert">
-  <!-- Aquí irán los errores del submit -->
 </div>
 
   <form name="miForm" action="registro.php" onsubmit="return validarForm()" method="post">
