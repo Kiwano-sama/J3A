@@ -1,80 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="utf-8">
-    <title>J3A - Registro</title>
+    <head>
+        <meta charset="utf-8">
+        <title>J3A - Registro</title>
 
-	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-    <link href="assets/css/estiloRegistro.css" rel="stylesheet">
-</head>
+        <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+        <link href="assets/css/estiloRegistro.css" rel="stylesheet">
+    </head>
     <body>
 
-<!--CONTENIDO-->
+        <!--CONTENIDO-->
+        <div class="container">
+
+            <?php
+            // COMENTADO DATOS RECOGIDOS
+//            echo (filter_input(INPUT_POST, 'username'));
+//            echo (filter_input(INPUT_POST, 'nombre'));
+//            echo (filter_input(INPUT_POST, 'apellido'));
+//            echo (filter_input(INPUT_POST, 'email'));
+//            echo (filter_input(INPUT_POST, 'pass'));
+//            echo (filter_input(INPUT_POST, 'dia'));
+//            echo (filter_input(INPUT_POST, 'mes'));
+//            echo (filter_input(INPUT_POST, 'anio'));
+//            echo (filter_input(INPUT_POST, 'genero'));
+
+            require_once 'config.php';
+
+            $response = array();
+
+            if ($_POST) {
+
+                $username = (filter_input(INPUT_POST, 'username'));
+                $nombre = (filter_input(INPUT_POST, 'nombre'));
+                $apellido = (filter_input(INPUT_POST, 'apellido'));
+                $email = (filter_input(INPUT_POST, 'email'));
+                $pass = (filter_input(INPUT_POST, 'password'));
+                $dia = (filter_input(INPUT_POST, 'dia'));
+                $mes = (filter_input(INPUT_POST, 'mes'));
+                $anio = (filter_input(INPUT_POST, 'anio'));
+                $genero = (filter_input(INPUT_POST, 'genero'));
+
+                $fechaNac = $anio . "/" . $mes . "/" . $dia;
+
+                // sha256 password hashing
+                $password = hash('sha256', $pass);
+
+                $link = mysqli_connect('localhost', 'j3a', 'Qwerty123_', 'j3a');
+                $sql = "SELECT * FROM usuario WHERE username='$username' LIMIT 1";
+                $result = mysqli_query($link, $sql);
 
 
+                if (mysqli_num_rows($result) > 0) {
+                    echo('<p class="texto-rojo"><b>Error!</b> Usuario ' . $username . ' ya ha sido registrado</p>');
+                    echo "<a href='registro.php'>Por favor escoja otro username</a>";
+                } else {
+                    $stmt = $DB_con->prepare('INSERT INTO usuario(username,nombre,apellido,email,password,fechaNac,genero) VALUES(:username, :nombre, :apellido, :email, :pass, :fechanacimiento, :genero)');
+                    $stmt->bindParam(':username', $username);
+                    $stmt->bindParam(':nombre', $nombre);
+                    $stmt->bindParam(':apellido', $apellido);
+                    $stmt->bindParam(':email', $email);
+                    $stmt->bindParam(':pass', $password);
+                    $stmt->bindParam(':fechanacimiento', $fechaNac);
+                    $stmt->bindParam(':genero', $genero);
+                    $stmt->execute();
 
-<div class="container">
-  <form name="miForm" action="registro.php" onsubmit="return validarForm()" method="post">
-    <div class="row">
-      <h4>Nueva Cuenta</h4>
-      <div class="input-group input-group-icon">
-        <input type="text" placeholder="Username"/>
-        <div class="input-icon"><i class="fa fa-user"></i></div>
-      </div>
-      <div class="input-group input-group-icon">
-        <input type="text" placeholder="Nombre"/>
-        <div class="input-icon"><i class="fa fa-user"></i></div>
-      </div>
-      <div class="input-group input-group-icon">
-        <input type="text" placeholder="Apellido"/>
-        <div class="input-icon"><i class="fa fa-user"></i></div>
-      </div>
-      <div class="input-group input-group-icon">
-        <input type="email" placeholder="Dirección Email"/>
-        <div class="input-icon"><i class="fa fa-envelope"></i></div>
-      </div>
-      <div class="input-group input-group-icon">
-        <input type="password" placeholder="Contraseña"/>
-        <div class="input-icon"><i class="fa fa-key"></i></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-half">
-        <h4>Fecha de Nacimiento</h4>
-        <div class="input-group">
-          <div class="col-third">
-            <input type="text" placeholder="DIA"/>
-          </div>
-          <div class="col-third">
-            <input type="text" placeholder="MES"/>
-          </div>
-          <div class="col-third">
-            <input type="text" placeholder="AÑO"/>
-          </div>
+                    // check for successfull registration
+                    if ($stmt->rowCount() == 1) {
+                        
+                        echo ('<p>Registrado correctamente. <a href="login.php">Ya te puedes loguear</a>.</p>');
+                    } else {
+                        echo ('<p class="texto-rojo">No se pudo registrar, intentalo de nuevo más tarde.</p>');
+                    }
+                }
+            }
+            ?>
+
         </div>
-      </div>
-      <div class="col-half">
-        <h4>Genero</h4>
-        <div class="input-group">
-          <input type="radio" name="genero" value="hombre" id="genero-hombre"/>
-          <label for="genero-hombre">Hombre</label>
-          <input type="radio" name="genero" value="mujer" id="genero-mujer"/>
-          <label for="genero-mujer">Mujer</label>
-        </div>
-      </div>
-    </div>
+        <!--/CONTENIDO -->
 
-    <div class="row">
-      <h4>Terminos y Condiciones</h4>
-      <div class="input-group">
-        <input type="checkbox" id="terms"/>
-        <label for="terms">Acepto los términos y condiciones para inscribirme en este servicio y confirmo que he leído la política de privacidad.</label>
-      </div>
-    </div>
-    <input class="btn btn-success" type="submit" value="Registrarse">
-  </form>
-</div>
-<!--/CONTENIDO -->
-    
-</body>
+        <script src="../assets/js/registro.js"></script>
+
+    </body>
 </html>
