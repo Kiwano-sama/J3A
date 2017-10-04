@@ -86,7 +86,7 @@ include 'header.php';
                         <div class="span2">
                             <ul style="margin-top:10px;" class="unstyled">
                                 <li><i class="icon-user"></i> Diseñadas para todo el mundo</li>
-                                <li><i class="icon-th"></i> Estructura de 12 columnas</li>
+                                <li><i class="icon-th"></i> Cuadrícula de 12 columnas</li>
                                 <li><i class="icon-resize-horizontal"></i> Anchura máxima de 1200px</li>
                                 <li><i class="icon-book"></i> Librería en continua evolución</li>
                             </ul>
@@ -168,11 +168,11 @@ include 'header.php';
                         <h2><span class="colored"><strong>///</strong></span> From <span class="undercolored"><a href="#">Portfolio</a></span></h2>
                         <hr class="dash">
                         <div>
-                            <p><em>The fluid grid system uses percents for column widths instead of fixed pixels. It has the responsive variations, ensuring proper proportions for key screen resolutions and devices.</em></p>
+                            <p><em>El sistema de cuadrículas fluído usa porcentajes como anchura de página en vez de pixels. Tiene variaciones responsivas, garantizando que funcione bien en otros dispositivos y resoluciones.</em></p>
                         </div>
                         <hr class="dash">
                         <div class="well visible-desktop center">
-                            <a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> View Portfolio</a> <a class="btn btn-success btn-small" data-toggle="modal" href="#myModal" ><i class="icon-download icon-white"></i> Download PDF</a>
+                            <a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver Portfolio</a> <a class="btn btn-success btn-small" data-toggle="modal" href="#myModal" ><i class="icon-download icon-white"></i> Download PDF</a>
                         </div>
                     </div>
                 </div>
@@ -208,10 +208,10 @@ include 'header.php';
                 <div class="span6">
                     <div class="row">
                     <div class="span6">
-                        <h2><span class="colored"><strong>///</strong></span> About <span class="undercolored"><a href="#">valera</a></span></h2>
+                        <h2><span class="colored"><strong>///</strong></span> Sobre nuestras <span class="undercolored"><a href="#">páginas</a></span></h2>
                         <hr class="dash">
                         <div class="intro">
-                            <p style="margin-bottom:10px;"><em>Powerful WordPress theme very flexible, easy for customizing and well documented, approaches for.</em></p>
+                            <p style="margin-bottom:10px;"><em> Son páginas potentes con base WordPress muy flexibles, fáciles de personalizar y bien documentadas para tal fin.</em></p>
                         </div>
                         <hr class="dash intro">
                     </div>
@@ -220,29 +220,29 @@ include 'header.php';
                             <img src="assets/img/frame.png" />
                         </div>
                         <div>
-                            <h5>12-column grid</h5>
-                            <p>Grid systems aren't everything, but having a durable and flexible one at the core of your work can make development much simpler.</p>
+                            <h5>Cuadrícula de 12 columnas</h5>
+                            <p> El sistema de cuadrículas no lo es todo, pero teniendo uno de base simple y robusta puede hacer desarrollar tu página web mucho más sencillo.</p>
                         </div>
                         <div class="clearfix"></div>
                         <div class="about_icons pull-left">
                             <img src="assets/img/skills.png" />
                         </div>
                         <div>
-                            <h5>All skill levels</h5>
-                            <p>Bootstrap is designed to help people of all skill levels designer or developer, huge nerd or early beginner.</p>
+                            <h5>Para todos los públicos</h5>
+                            <p>Bootstrap ha sido diseñado para ayudar a la gente de cualquier nivel de conocimiento en diseño y desarrollo, nuestra páginas están preparadas para poder ser modificadas por el cliente aunque su conocimiento sea limitado.</p>
                         </div>
                     </div>
                     <div class="span3">
                         <div class="well">
-                            <h6>Web design</h6>
+                            <h6>Diseño Web</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
                                 <div class="bar" style="width: 90%"></div>
                             </div>
-                            <h6>Programming</h6>
+                            <h6>Programación</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
                                 <div class="bar" style="width: 70%"></div>
                             </div>
-                            <h6>Social marketing</h6>
+                            <h6>Marketing social</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
                                 <div class="bar" style="width: 80%"></div>
                             </div>
