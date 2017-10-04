@@ -76,18 +76,18 @@
                             </div>
                             <div class="span7 clearfix">
                                 <img src="assets/img/html5.png" class="pull-left" />
-                                <h4>HTML 5 <span class="colored">&amp;</span> CSS 3</h4>
-                                <p><em> Realizamos aplicaciones con HTML 5 y CSS 3, para adaptarnos a las últimas tecnologías. </em><br><br></p>
+                                <h4>Diseños <span class="colored">adaptados</span> a las necesidades de los clientes</h4>
+                                <p><em> Realizamos aplicaciones con HTML 5 y CSS 3, según las especificaciones del cliente, especialmente aquellas especificaciones que hagan la página más accesible a gente con problemas de visión, daltonismo... </em><br><br></p>
                             </div>
                             <div class="span7 clearfix">
                                 <img src="assets/img/resp.png" class="pull-left" />
-                                <h4>Responsive Design</h4>
-                                <p><em> Creamos diseños responsivos que se adaptan a las distintas pantallas y dispositivos, como smartphones o tablets. </em><br><br></p>
+                                <h4>Mantenimiento/gestión de páginas y aplicaciones</h4>
+                                <p><em> Creamos planes de mantenimiento y gestionamos las páginas que creamos, previo acuerdo con el cliente, ya sea mediante hostear la página o bases de datos y/o modificar la página según las nuevas necesidades vayan apareciendo.  </em><br><br></p>
                             </div>
                             <div class="span7 clearfix">
                                 <img src="assets/img/doc.png" class="pull-left" />
-                                <h4>Lenguajes de Programación</h4>
-                                <p><em> Utilizamos varios lenguajes de programación para crear nuestras aplicaciones, dominamos JAVA, JavaScript, PHP y aún más importante, Scratch. </em><br><br><br></p>
+                                <h4>Contratación de gente con problemas</h4>
+                                <p><em> Debido a nuestro empeño en hacer todo nuestro contenido accesible a aquellos que necesitan de unos diseños y opciones especiales nos comprometemos a contratar a profesionales sin tener en cuenta dicho tipo de limitaciones, contratamos a gente con discapacidades o problemas sin tener en cuenta dichas limitaciones, solo teniendo en cuenta su calidad como profesional. </em><br><br><br></p>
                             </div>
                         </div>
                     </div>

@@ -66,7 +66,7 @@ include 'header.php';
             <div class="row welcome">
                 <div class="span12">
                     <h1>J3A - Empresa de <span class="undercolored">diseño</span> <span class="undercolored">gráfico</span> <span class="colored">&amp;</span> <span class="undercolored">web</span></h1>
-                    <p><em>Hacemos diseños de páginas web con HTML5 / CSS3 template very flexible, very easy for customizing and well documented, approaches for personal and professional use.</em></p>
+                    <p><em>Hacemos diseños de páginas web con HTML5 / CSS3 muy flexibles, fáciles de customizar y bien documentadas, nuestras páginas están pensadas para uso personal y profesional.</em></p>
                 </div>
             </div>
         </div>
@@ -77,26 +77,26 @@ include 'header.php';
         <div class="container">
             <div class="row">
                 <div class="span4 hidden-phone">
-                    <h2><span class="label">Designed for everyone!</span></h2>
-                    <p class="intro">Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.</p>
-                    <p><span class="pun"><em>Valera is designed to help people of all skill levels designer or developer, huge nerd or early beginner. Use it as a complete kit or use to start something more complex.</em></span></p>
+                    <h2><span class="label">Diseños para todo el mundo!</span></h2>
+                    <p class="intro">HTML flexible, CSS, Javascript para componentes de interfaz de usuario e interacciones populares.</p>
+                    <p><span class="pun"><em>Nuestras páginas están diseñadas para gente con todo tipo de limitaciones, por lo que se adaptan a las posibles dependencias de los usuarios. Pueden usarse como un kit completo o como bases ampliables según las necesidades de los clientes.</em></span></p>
                     <hr class="visible-desktop">
-                    <h4 class="visible-desktop">Alguna de nuestra especialización:</h4>
+                    <h4 class="visible-desktop">Alguna de nuestras especializacións:</h4>
                     <div class="row visible-desktop">
                         <div class="span2">
                             <ul style="margin-top:10px;" class="unstyled">
-                                <li><i class="icon-user"></i> Built for and by nerds</li>
-                                <li><i class="icon-th"></i> 12-column grid</li>
-                                <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
-                                <li><i class="icon-book"></i> Growing library</li>
+                                <li><i class="icon-user"></i> Diseñadas para todo el mundo</li>
+                                <li><i class="icon-th"></i> Estructura de 12 columnas</li>
+                                <li><i class="icon-resize-horizontal"></i> Anchura máxima de 1200px</li>
+                                <li><i class="icon-book"></i> Librería en continua evolución</li>
                             </ul>
                         </div>
                         <div class="span2">
                             <ul style="margin-top:10px;" class="unstyled">
-                                <li><i class="icon-resize-small"></i> Responsive design</li>
-                                <li><i class="icon-eye-open"></i> Cross-everything</li>
-                                <li><i class="icon-list-alt"></i> Styleguide docs</li>
-                                <li><i class="icon-cog"></i> jQuery plugins</li>
+                                <li><i class="icon-resize-small"></i> Diseño responsivo</li>
+                                <li><i class="icon-eye-open"></i> Multi-plataforma</li>
+                                <li><i class="icon-list-alt"></i> Documentos de guía de estilos</li>
+                                <li><i class="icon-cog"></i> plugins jQuery</li>
                             </ul>
                         </div>
                     </div>
@@ -132,17 +132,17 @@ include 'header.php';
                 <div class="span4 clearfix">
                         <img src="assets/img/html5.png" class="pull-left" />
                         <h3>HTML 5 <span class="colored">&amp;</span> CSS 3</h3>
-                        <p><em>Built to support new HTML5 elements and syntax. Progressively enhanced components for ultimate style. Yes, Valera is awesome!</em></p>
+                        <p><em> Realizamos aplicaciones con HTML 5 y CSS 3, para adaptarnos a las últimas tecnologías. </em></p>
                 </div>
                 <div class="span4 clearfix">
                         <img src="assets/img/resp.png" class="pull-left" />
                         <h3>Responsive Design</h3>
-                        <p><em> Our components are scaled according to a range of resolutions and devices to provide a consistent experience, no matter what.</em></p>
+                        <p><em> Creamos diseños responsivos que se adaptan a las distintas pantallas y dispositivos, como smartphones o tablets.</em></p>
                 </div>
                 <div class="span4 clearfix">
                         <img src="assets/img/doc.png" class="pull-left" />
-                        <h3>Well Documented</h3>
-                        <p><em>Valera was designed first and foremost as a styleguide to document not only our features, but best practices and living.</em></p>
+                        <h3>Bien Documentedados</h3>
+                        <p><em>Utilizamos varios lenguajes de programación para crear nuestras aplicaciones, dominamos JAVA, JavaScript, PHP y aún más importante, Scratch. </em></p>
                 </div>
             </div>
         </div>
