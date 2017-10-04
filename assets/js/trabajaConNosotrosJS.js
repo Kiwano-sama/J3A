@@ -30,9 +30,8 @@ function comprobarNombre() {
 		alert("Por favor, introduzca su nombre");
 		return false;
 	}
-	   var miNombre=document.encuesta.cod_postal.value;
+	   var miNombre=document.trabaja.nombre.value;
 	    if (/^\D{20}/.test(miNombre) && (miNombre.length <= 20)){
-	        
 	        return true;
 	    }else {
 	    	return false;
@@ -59,16 +58,12 @@ function numero(){
         alert("El numero insertado " + miNumero + " es erroneo");
     }
 }
-
-// Funcion para que no se pueda insertar mas de una '@'
-function comprobarTecla(e){
+	function comprobarTecla(e){
 	var keychar;
 	var teclanum;
 	
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
-// alert("teclanum"+teclanum);
-// alert("keychar"+keychar);
 	
 	if(keychar < '0' || keychar >'9'){
 		return false;
@@ -76,6 +71,7 @@ function comprobarTecla(e){
 		return true;
 	}
 }
+//Funcion para que no se pueda insertar mas de una '@'
 	function comprobarArroba(e){
 		var caracterTecla;
 	    var codigoTecla;
