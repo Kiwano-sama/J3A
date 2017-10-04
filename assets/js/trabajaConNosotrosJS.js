@@ -34,7 +34,7 @@ function comprobarNombre() {
 	        return true;
 	    }else {
 	    	return false;
-	    }
+	    	}
 }
 // Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
