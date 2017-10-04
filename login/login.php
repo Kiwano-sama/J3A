@@ -51,9 +51,9 @@ if ($result->num_rows > 0) {
     echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
 
  } else { 
-   echo "Username o Password estan incorrectos.";
+   echo '<p class="texto-rojo">Username o Password estan incorrectos.</p>';
 
-   echo "<br><a href='login.html'>Volver a Intentarlo</a>";
+   echo "<br><a href='index.html'>Volver a Intentarlo</a>";
  }
  mysqli_close($conexion); 
  ?>
