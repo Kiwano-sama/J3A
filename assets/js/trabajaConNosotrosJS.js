@@ -9,7 +9,7 @@ function Enviar() {
 		return true;
 	}
 }
-//Funcion que comprueba que todos los datos han cumplido los requisitos
+// Funcion que comprueba que todos los datos han cumplido los requisitos
 function validar(){
 	if (validarEmail() && comprobarNombre() && numero()){
 		alert("Sus datos son correcto, enviando...");
@@ -19,24 +19,36 @@ function validar(){
 		return false;
 	}
 }
-//Funcion para comprobar que se haya insertado un nombre y que no se pueda introducir numeros en este campo
-function comprobarNombre() {
+// Funcion para comprobar que se haya insertado un nombre y que no se pueda
+// introducir numeros en este campo
+function comprobarNombre(e) {
 	var nombre = document.getElementById('nombre').value
-	var patron = /^[a-zA-Z]*$/;
+	
 	if (nombre == NULL) {
 		return true;
 	} else {
 		alert("Por favor, introduzca su nombre");
 		return false;
 	}
-	  // En caso de querer validar cadenas con espacios usar: /^[a-zA-Z\s]*$/
-	  if(!cadena.search(patron))
-	    return true;
-	  else
-	    return false;
+	key=e.keyCode || e.which;
+	
+	teclado = String.fromCharCode(key).toLowerCase();
+	letras="abcdefghijklmñopqrstuvwxyz";
+	
+	especiales="8-37-38-46-164";
+	teclado_especial=false;
+	
+	for(var i in especiales){
+		if(key ==especiales[i]){
+			teclado_especial= false;break;
+			}
+		}
+	if(letras.indexOf(teclado)==-1 && !teclado_especial){
+		return false;
+		}
 	}
 }
-//Funcion para comprobar que el email cumple con los requisitos
+// Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
 	var valor = document.getElementById('email').value
 	
@@ -47,7 +59,8 @@ function validarEmail() {
 		return false;
 	}
 }
-//Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de contacto'
+// Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de
+// contacto'
 function numero(){
     var miNumero=document.trabaja.numero.value;
     if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
@@ -64,8 +77,8 @@ function comprobarTecla(e){
 	
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
-//alert("teclanum"+teclanum);
-//alert("keychar"+keychar);
+// alert("teclanum"+teclanum);
+// alert("keychar"+keychar);
 	
 	if(keychar < '0' || keychar >'9'){
 		return false;
