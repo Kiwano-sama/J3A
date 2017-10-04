@@ -196,11 +196,14 @@ mysqli_free_result($result);
                                 </div>
                                 <br>
                                 <br>
+                                <br>
                                 <div class="col-md-12">
                                 <p>Mandanos tu CV aquí: </p>
                                     <input required type="file" name="cv">
                                 </div>
                             </div>
+                            <br>
+                            <br>
                              <!-- Buttons -->
                          <input  type="submit" value="Enviar">
                          <input type="reset" value="Deshacer">
