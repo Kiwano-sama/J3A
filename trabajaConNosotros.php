@@ -189,10 +189,9 @@ mysqli_free_result($result);
                                         <input required type="radio"  value="diseñador">Diseñador de paginas web&nbsp;&nbsp;
                                         <input required type="radio"  value="desarrollador">Desarrollador de software&nbsp;&nbsp;
                                         <input required type="radio"  value="administrador">Administrador de paginas web&nbsp;&nbsp;
+                                    <br>
+                                    <br>
                                     </fieldset>
-                                    <br>
-                                    <br>
-                                    <legend></legend>
                                 	</div>
                                 </div>
                                 <br>
