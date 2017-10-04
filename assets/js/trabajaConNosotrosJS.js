@@ -57,8 +57,7 @@ function numero(e){
         return true;
     }else {
         alert("El numero insertado " + miNumero + " es erroneo");
-    } 
-    
+    }  
 }
 function comprobarTecla(e){
 	
