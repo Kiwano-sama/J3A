@@ -29,7 +29,7 @@ function comprobarNombre() {
 		alert("Por favor, introduzca su nombre");
 		return false;
 	}
-	  if (/^\D/.test(miNombre) && (miNombre.length)){
+	  if (/^\D{20}/.test(miNombre) && (miNombre.length)){
 	        return true;
 	    }else {
 	        alert("El numero insertado " + miNumero + " es erroneo");
