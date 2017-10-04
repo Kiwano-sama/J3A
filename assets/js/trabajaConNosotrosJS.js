@@ -41,7 +41,6 @@ function validarEmail() {
 		alert("La dirección de email es incorrecta, por favor, compruebe que el email sea correcto.");
 		return false;
 	}
-	
 }
 // Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de
 // contacto'
