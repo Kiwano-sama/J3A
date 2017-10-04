@@ -289,5 +289,6 @@ include 'footer.php';
 		}
     </script>
 	</body>
+	
 </html>
     <!-- Page Content -->
