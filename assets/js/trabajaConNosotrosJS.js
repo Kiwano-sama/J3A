@@ -9,7 +9,6 @@ function Enviar() {
 		return true;
 	}
 }
-
 //Funcion que comprueba que todos los datos han cumplido los requisitos
 function validar(){
 	if (validarEmail() && comprobarNombre() && numero()){
@@ -20,15 +19,21 @@ function validar(){
 		return false;
 	}
 }
-//Funcion para comprobar que se haya insertado un nombre
+//Funcion para comprobar que se haya insertado un nombre y que no se pueda introducir numeros en este campo
 function comprobarNombre() {
 	var nombre = document.getElementById('nombre').value
+	 var miNombre=document.trabaja.nombre.value;
 	if (nombre == NULL) {
 		return true;
 	} else {
 		alert("Por favor, introduzca su nombre");
 		return false;
 	}
+	  if (/^\d{9}/.test(miNombre) && (miNombre.length <= 9)){
+	        return true;
+	    }else {
+	        alert("El numero insertado " + miNumero + " es erroneo");
+	    }
 }
 //Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
