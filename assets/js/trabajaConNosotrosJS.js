@@ -1,6 +1,18 @@
+//Funcion que una vez pulsado el boton 'enviar' envia los datos del formulario
+function Enviar() {
+	var Vnombre = document.getElementsByName("nombre");
+	var Vemail = document.getElementsByName("email");
+	var Vnumero = document.getElementsByName("numero");
+	if (Vcorreo == null() && Vcorreo == "0"() && Vnombre == null() && Vnumero== "0" ) {
+		return false;
+	} else {
+		return true;
+	}
+}
+
 //Funcion que comprueba que todos los datos han cumplido los requisitos
 function validar(){
-	if (validarEmail() && comprobarNombre()  && numero()){
+	if (validarEmail() && comprobarNombre() && numero()){
 		alert("Sus datos son correcto, enviando...");
 		return true;
 	}else {
@@ -29,7 +41,7 @@ function validarEmail() {
 		return false;
 	}
 }
-//Funcion para que no se pueda insertar letras en vez de numeros en 
+//Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de contacto'
 function numero(){
     var miNumero=document.trabaja.numero.value;
     if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
