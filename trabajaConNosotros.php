@@ -168,8 +168,7 @@ mysqli_free_result($result);
                                         <input required onKeyPress="return comprobarTeclaNom(e)" id="nombre" name="nombre" type="text"  class="form-control input-md">
                                     </div>                                   
                                 </div>
-                                <!-- Text input-->
-                                
+                                <!-- Text input-->                                
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="email">Email: </label>

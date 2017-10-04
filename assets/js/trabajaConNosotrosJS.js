@@ -74,6 +74,7 @@ function comprobarArroba(e){
     }else if (e.which){
         codigoTecla = e.which;
     }
+    
     caracterTecla = String.fromCharCode(codigoTecla);
     
     if (caracterTecla == "@") { 
