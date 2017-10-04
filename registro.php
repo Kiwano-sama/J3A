@@ -19,7 +19,7 @@ echo (filter_input(INPUT_POST, 'nombre'));
 ?>
 
 
-<div id="alerta" class="alert">
+<div id="alerta" class="alert collapse">
   <!-- Aquí irán los errores del submit -->
 </div>
 
