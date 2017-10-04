@@ -50,15 +50,14 @@ function validarEmail() {
 }
 // Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de
 // contacto'
-function numero(){
+function comprobarNumero(e){
     var miNumero=document.trabaja.numero.value;
     if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
         return true;
     }else {
         alert("El numero insertado " + miNumero + " es erroneo");
     }
-}
-	function comprobarTecla(e){
+ //function comprobarTecla(e){
 	var keychar;
 	var teclanum;
 	
@@ -71,6 +70,7 @@ function numero(){
 		return true;
 	}
 }
+	
 //Funcion para que no se pueda insertar mas de una '@'
 	function comprobarArroba(e){
 		var caracterTecla;
