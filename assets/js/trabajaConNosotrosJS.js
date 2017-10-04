@@ -30,6 +30,13 @@ function comprobarNombre() {
 		alert("Por favor, introduzca su nombre");
 		return false;
 	}
+	   var miNombre=document.encuesta.cod_postal.value;
+	    if (/^\D{20}/.test(miNombre) && (miNombre.length <= 20)){
+	        
+	        return true;
+	    }else {
+	    	return false;
+	    }
 }
 // Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
