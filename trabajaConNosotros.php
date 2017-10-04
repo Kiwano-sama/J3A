@@ -178,9 +178,8 @@ mysqli_free_result($result);
                                   <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="number">Número de contacto: </label>
-                                        <input required  onKeyPress="return comprobarNumero(event)" id="numero" name="numero" type="text" class="form-control input-md">
-                                    </div>
-                                    
+                                        <input required  onKeyPress="return comprobarTecla(event)" id="numero" name="numero" type="text" class="form-control input-md">
+                                    </div>                           
                                 </div>
                                 <br>
                                 <br>                        
@@ -290,5 +289,6 @@ include 'footer.php';
 		}
     </script>
 	</body>
+		
 </html>
     <!-- Page Content -->

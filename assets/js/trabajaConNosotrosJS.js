@@ -1,14 +1,13 @@
 //Funcion que una vez pulsado el boton 'enviar' envia los datos del formulario
 function Enviar() {
-	var Vnombre = document.getElementsByName("nombre");
 	var Vemail = document.getElementsByName("email");
-	var Vnumero = document.getElementsByName("numero");
-	if (Vcorreo == null() && Vnombre == null() && Vnumero== "0" Vnumero== <9 ) {
+	if (Vemail == null() && Vemail == "0"()) {
 		return false;
 	} else {
 		return true;
 	}
 }
+
 // Funcion que comprueba que todos los datos han cumplido los requisitos
 function validar(){
 	if (validarEmail() && comprobarNombre() && numero()){
@@ -35,7 +34,7 @@ function comprobarNombre() {
 	        return true;
 	    }else {
 	    	return false;
-	    }
+	    	}
 }
 // Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
@@ -50,16 +49,17 @@ function validarEmail() {
 }
 // Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de
 // contacto'
-function comprobarNumero(e){
+function numero(e){
     var miNumero=document.trabaja.numero.value;
+    var keychar;
+	var teclanum;
     if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
         return true;
     }else {
         alert("El numero insertado " + miNumero + " es erroneo");
-    }
- //function comprobarTecla(e){
-	var keychar;
-	var teclanum;
+    }  
+}
+function comprobarTecla(e){
 	
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
@@ -70,7 +70,6 @@ function comprobarNumero(e){
 		return true;
 	}
 }
-	
 //Funcion para que no se pueda insertar mas de una '@'
 	function comprobarArroba(e){
 		var caracterTecla;
