@@ -3,7 +3,7 @@ function Enviar() {
 	var Vnombre = document.getElementsByName("nombre");
 	var Vemail = document.getElementsByName("email");
 	var Vnumero = document.getElementsByName("numero");
-	if (Vcorreo == null() && Vcorreo == "0"() && Vnombre == null() && Vnumero== "0" Vnumero== <9 ) {
+	if (Vcorreo == null() && Vnombre == null() && Vnumero== "0" Vnumero== <9 ) {
 		return false;
 	} else {
 		return true;
