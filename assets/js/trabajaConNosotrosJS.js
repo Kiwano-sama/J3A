@@ -61,7 +61,6 @@ function numero(e){
 }
 function comprobarTecla(e){
 	
-	
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
 	
