@@ -5,7 +5,7 @@
         <title>J3A - Registro</title>
 
         <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-        <link href="assets/css/estiloRegistro.css" rel="stylesheet">
+        <link href="../assets/css/estiloRegistro.css" rel="stylesheet">
     </head>
     <body>
 
@@ -45,7 +45,7 @@
                 // sha256 password hashing
                 $password = hash('sha256', $pass);
 
-                $link = mysqli_connect('localhost', 'j3a', 'Qwerty123_', 'j3a');
+                $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
                 $sql = "SELECT * FROM usuario WHERE username='$username' LIMIT 1";
                 $result = mysqli_query($link, $sql);
 
@@ -67,7 +67,7 @@
                     // check for successfull registration
                     if ($stmt->rowCount() == 1) {
                         
-                        echo ('<p>Registrado correctamente. <a href="login.php">Ya te puedes loguear</a>.</p>');
+                        echo ('<p>Registrado correctamente. <a href="./index.html">Ya te puedes loguear</a>.</p>');
                     } else {
                         echo ('<p class="texto-rojo">No se pudo registrar, intentalo de nuevo más tarde.</p>');
                     }
