@@ -34,7 +34,7 @@
                 $nombre = (filter_input(INPUT_POST, 'nombre'));
                 $apellido = (filter_input(INPUT_POST, 'apellido'));
                 $email = (filter_input(INPUT_POST, 'email'));
-                $pass = (filter_input(INPUT_POST, 'password'));
+                $pass = (filter_input(INPUT_POST, 'pass'));
                 $dia = (filter_input(INPUT_POST, 'dia'));
                 $mes = (filter_input(INPUT_POST, 'mes'));
                 $anio = (filter_input(INPUT_POST, 'anio'));

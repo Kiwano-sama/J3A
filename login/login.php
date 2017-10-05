@@ -38,7 +38,7 @@ $result = $conexion->query($sql);
 
 
 if ($result->num_rows > 0) {     
- }
+ 
  $row = $result->fetch_array(MYSQLI_ASSOC);
  if (password_verify($password, $row['password'])) { 
  
@@ -55,6 +55,7 @@ if ($result->num_rows > 0) {
 
    echo "<br><a href='index.html'>Volver a Intentarlo</a>";
  }
+}
  mysqli_close($conexion); 
  ?>
 
