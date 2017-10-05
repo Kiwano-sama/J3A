@@ -37,11 +37,13 @@ $sql = "SELECT * FROM $tbl_name WHERE username = '$username'";
 $result = $conexion->query($sql);
 
 
-if ($result->num_rows > 0) {     
+if ($result->num_rows > 0) {
+    echo ("num rows > 0");
  
  $row = $result->fetch_array(MYSQLI_ASSOC);
  if (password_verify($password, $row['password'])) { 
  
+     echo ("password verificado");
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $username;
     $_SESSION['start'] = time();
@@ -55,7 +57,7 @@ if ($result->num_rows > 0) {
 
    echo "<br><a href='index.html'>Volver a Intentarlo</a>";
  }
-}
+ }
  mysqli_close($conexion); 
  ?>
 
@@ -66,9 +68,3 @@ if ($result->num_rows > 0) {
 
     </body>
 </html>
-
-
-
-
-
-
