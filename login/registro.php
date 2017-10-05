@@ -5,7 +5,7 @@
         <title>J3A - Registro</title>
 
         <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-        <link href="../assets/css/estiloRegistro.css" rel="stylesheet">
+        <link href="assets/css/estiloRegistro.css" rel="stylesheet">
     </head>
     <body>
 
@@ -23,7 +23,6 @@
 //            echo (filter_input(INPUT_POST, 'mes'));
 //            echo (filter_input(INPUT_POST, 'anio'));
 //            echo (filter_input(INPUT_POST, 'genero'));
-
             require_once 'config.php';
 
             $response = array();
@@ -42,9 +41,13 @@
 
                 $fechaNac = $anio . "/" . $mes . "/" . $dia;
 
-                
-                $hash = password_hash($pass, PASSWORD_DEFAULT);
+                // sha256 password hashing
+                //$password = hash('sha256', $pass);
 
+
+
+                $hash = password_hash($pass, PASSWORD_DEFAULT);
+                
                 $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
                 $sql = "SELECT * FROM usuario WHERE username='$username' LIMIT 1";
                 $result = mysqli_query($link, $sql);
@@ -66,8 +69,8 @@
 
                     // check for successfull registration
                     if ($stmt->rowCount() == 1) {
-                        
-                        echo ('<p>Registrado correctamente. <a href="./index.html">Ya te puedes loguear</a>.</p>');
+
+                        echo ('<p>Registrado correctamente. <a href="login.php">Ya te puedes loguear</a>.</p>');
                     } else {
                         echo ('<p class="texto-rojo">No se pudo registrar, intentalo de nuevo más tarde.</p>');
                     }
