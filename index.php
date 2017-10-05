@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>J3A - Diseño Gráfico y Web</title>
+    <script src="assets/js/index.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -124,6 +125,14 @@ include 'header.php';
             </div>
         </div>
     </div>
+    <p>¿Quieres cambiar el color de la fuente? Aquí te dejamos una paleta para que selecciones el color que deseas</p>
+    	<form name="formPaleta" action="" method="get">
+		<input name="paleta" type="color" value=""
+			 />
+		<input name="botonModificar" type="button" value="modificar Color"
+			onclick="cambiarColor()" />
+			
+	</form>
     <!--/AREA SLIDER-->
     <!--FEATURES AREA-->
     <div class="gray_bg">
