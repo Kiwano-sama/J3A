@@ -72,6 +72,13 @@ include 'header.php';
             </div>
         </div>
     </div>
+        <p>¿Quieres cambiar el color de la fuente? Aquí te dejamos una paleta para que selecciones el color que deseas</p>
+    	<form name="formPaleta" action="" method="get">
+		<input name="paleta" type="color" value=""/>
+		<input name="botonModificar" type="button" value="modificar Color"
+			onclick="cambiarColor()">
+			
+	</form>
     <!--/AREA BIENVENIDA-->
     <!--AREA SLIDER-->
     <div class="slider_area">
@@ -125,13 +132,7 @@ include 'header.php';
             </div>
         </div>
     </div>
-    <p>¿Quieres cambiar el color de la fuente? Aquí te dejamos una paleta para que selecciones el color que deseas</p>
-    	<form name="formPaleta" action="" method="get">
-		<input name="paleta" type="color" value=""/>
-		<input name="botonModificar" type="button" value="modificar Color"
-			onclick="cambiarColor()">
-			
-	</form>
+
     <!--/AREA SLIDER-->
     <!--FEATURES AREA-->
     <div class="gray_bg">

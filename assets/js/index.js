@@ -15,8 +15,8 @@ function cambiarColor() {
 		for (var i = 0; i < Ps.length; i++)
 			Ps[i].style.color = colorElegido;
 		break;
-	case 'etiquetaTitulos':// con este case hacemos que solo los textos con el name
-						// 'textop' cambie de color
+	case 'etiquetaTitulos':// con este case hacemos que solo los textos con el tagName
+						// '' cambie de color
 		var na = document.getElementsByTagName('h1','h2','h3');
 		for (var i = 0; i < na.length; i++)
 			na[i].style.color = colorElegido;
