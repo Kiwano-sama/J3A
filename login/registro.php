@@ -59,7 +59,7 @@
                     $stmt->bindParam(':nombre', $nombre);
                     $stmt->bindParam(':apellido', $apellido);
                     $stmt->bindParam(':email', $email);
-                    $stmt->bindParam(':pass', $password);
+                    $stmt->bindParam(':pass', $hash);
                     $stmt->bindParam(':fechanacimiento', $fechaNac);
                     $stmt->bindParam(':genero', $genero);
                     $stmt->execute();
