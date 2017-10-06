@@ -158,28 +158,27 @@ mysqli_free_result($result);
                     <div class="well-block">
                         <div class="well-title">
                             <h3>¿Quieres trabajar con nosotros?</h3>
-                        </div>
-                        
+                        </div>                        
                         <form name="trabaja" action="" method="POST" onSubmit="return validar()">
                             <!-- Form start -->
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="name">Nombre: </label>
-                                        <input required onKeyPress="return comprobarTeclaNom(event)" id="nombre" name="nombre" type="text"  class="form-control input-md">
+                                        <input required  id="nombre" name="nombre" type="text"  class="form-control input-md" onKeyPress="return comprobarTeclaNom(event)">
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="email">Email: </label>
-                                        <input required onKeyPress="return comprobarArroba(event)" id="email" name="email" type="text" placeholder="juan@tuemail.com" class="form-control input-md">
+                                        <input required  id="email" name="email" type="text" placeholder="juan@tuemail.com" class="form-control input-md" onKeyPress="return comprobarArroba(event)">
                                     </div>
                                 </div>
                                   <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="number">Número de contacto: </label>
-                                        <input required  onKeyPress="return numero(event)" id="numero" name="numero" type="text" class="form-control input-md">
+                                        <input required  id="numero" name="numero" type="text" class="form-control input-md"  onKeyPress="return numero(event)">
                                     </div>                           
                                 </div>
                                 <br>
@@ -188,9 +187,12 @@ mysqli_free_result($result);
                                      <div class="form-group">                                   
                                     <fieldset>
                                         <legend>Selecciona un puesto de trabajo:  </legend>
-                                        <input required type="radio"  value="diseñador">Diseñador de paginas web&nbsp;&nbsp;
-                                        <input required type="radio"  value="desarrollador">Desarrollador de software&nbsp;&nbsp;
-                                        <input required type="radio"  value="administrador">Administrador de paginas web&nbsp;&nbsp;
+                                       	<label>Diseñador de paginas web</label>
+                                        <input required type="radio"  value="diseñador">
+                                        <label>Desarrollador de software</label>
+                                        <input required type="radio"  value="desarrollador">
+                                        <label>Administrador de paginas web</label>
+                                        <input required type="radio"  value="administrador">
                                     <br>
                                     <br>
                                     </fieldset>
