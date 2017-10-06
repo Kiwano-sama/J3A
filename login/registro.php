@@ -70,7 +70,7 @@
                     // check for successfull registration
                     if ($stmt->rowCount() == 1) {
 
-                        echo ('<p>Registrado correctamente. <a href="login.php">Ya te puedes loguear</a>.</p>');
+                        echo ('<p>Registrado correctamente. <a href="index.html">Ya te puedes loguear</a>.</p>');
                     } else {
                         echo ('<p class="texto-rojo">No se pudo registrar, intentalo de nuevo más tarde.</p>');
                     }

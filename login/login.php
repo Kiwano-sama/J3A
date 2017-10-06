@@ -40,7 +40,7 @@ $sql = "SELECT * FROM $tbl_name WHERE username = '$username'";
 $result = $conexion->query($sql);
 
 if ($result->num_rows > 0) {     
- }
+ 
  $row = $result->fetch_array(MYSQLI_ASSOC);
  if (password_verify($password, $row['password'])) { 
  
@@ -57,6 +57,9 @@ if ($result->num_rows > 0) {
 
    echo "<br><a href='index.html'>Volver a Intentarlo</a>";
  }
+}else {
+	echo ($username . ' no está registrado. <a href="index.html">Registrate o vuelve a intentarlo con otro usuario</a>.');
+}
  mysqli_close($conexion); 
  ?>
  </div>
