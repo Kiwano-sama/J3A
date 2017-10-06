@@ -65,7 +65,7 @@
                         <h2><span class="colored"><strong>///</strong></span> Por qué elegir  <span class="undercolored"><a href="#">J3A</a></span></h2>
                         <hr class="dash">
                         <div class="intro">
-                            <p style="margin-bottom:10px;"><em>Powerful WordPress theme very flexible, easy for customizing and well documented, approaches for.</em></p>
+                            <p style="margin-bottom:10px;"><em>Empresa dedicada a la creacion y mantenimiento de paginas web.</em></p>
                         </div>
                         <hr class="dash intro">
                         <div class="about_icons pull-left">
@@ -95,58 +95,20 @@
                     <hr style="margin-bottom:0px;">
                 </div>
             </div>
-
+            <br>
+            <!--/Informacion Sobre Nuestros Empleados-->
+			<h1>Nuestros Empleados</h1>
             <section>
+            <h2>Julen</h2>
                 <div class="row">
+                   
                     <div class="span4">
-                        <h2><span class="colored"><strong>///</strong></span> Our <span class="undercolored"><a href="#">Skills</a></span></h2>
-                        <hr class="dash">
-                        <div class="intro">
-                            <p style="margin-bottom:10px;"><em>The standard chunk of Lorem Ipsum used since the 1500s. Powerful WordPress theme very flexible...</em></p>
-                        </div>
-                        <hr class="dash">
-                        <div class="well">
-                            <h6>Web design</h6>
-                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 90%"></div>
-                            </div>
-                            <h6>Programming</h6>
-                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 70%"></div>
-                            </div>
-                            <h6>Social marketing</h6>
-                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 80%"></div>
-                            </div>
-                            <h6>SEO</h6>
-                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 50%"></div>
-                            </div>
-                        </div>
+
+									<img alt="" src="img\Julen2.png">
+                                    <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
                     </div>
                     <div class="span4">
-                        <div class="tabbable">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#1" data-toggle="tab">Marketing</a></li>
-                                <li><a href="#2" data-toggle="tab">Programming</a></li>
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="1">
-                                    <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                    <blockquote>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci, condimentum ultrices consequat eu. Aenean nisl orci, cosequat.</p>
-                                        <small>HTML5</small>
-                                    </blockquote>
-                                    <p style="margin-top:20px;"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci, condimentum ultrices consequat eu. Aenean nisl orci, cosequat eu.</em><br><br><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> View Portfolio</a></p>
-                                </div>
-                                <div class="tab-pane" id="2">
-                                    <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci, condimentum ultrices consequat eu. Aenean nisl orci, cosequat eu.</em></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <h2><span class="colored"><strong>///</strong></span> Another <span class="undercolored"><a href="#">block</a></span></h2>
+                        <h2><span class="colored"><strong>///</strong></span>Información</span></h2>
                         <hr class="dash">
                         <div class="intro">
                             <p style="margin-bottom:10px;"><em>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br><br> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</em></p>
@@ -168,6 +130,224 @@
                                     <li><i class="icon-list-alt"></i> Styleguide docs</li>
                                     <li><i class="icon-cog"></i> jQuery plugins</li>
                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="span4">
+                        <h2><span class="colored"><strong>///</strong></span> Nivel De Estudio</h2>
+                        <hr class="dash">
+                        <div class="intro">
+                            <p style="margin-bottom:10px;"><em>The standard chunk of Lorem Ipsum used since the 1500s. Powerful WordPress theme very flexible...</em></p>
+                        </div>
+                        <hr class="dash">
+                        <div class="well">
+                            <h6>Diseño Web</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 90%"></div>
+                            </div>
+                            <h6>Programación</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 70%"></div>
+                            </div>
+                            <h6>Marketing social</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 80%"></div>
+                            </div>
+                            <h6>SEO</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+            <h2>Jon Ander</h2>
+                <div class="row">
+                   
+                    <div class="span4">
+
+									<img alt="" src="img\Julen2.png">
+                                    <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
+                    </div>
+                    <div class="span4">
+                        <h2><span class="colored"><strong>///</strong></span>Información</span></h2>
+                        <hr class="dash">
+                        <div class="intro">
+                            <p style="margin-bottom:10px;"><em>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br><br> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</em></p>
+                        </div>
+                        <hr class="dash">
+                        <div class="row">
+                            <div class="span2">
+                                <ul style="margin-top:10px;" class="unstyled">
+                                    <li><i class="icon-user"></i> Built for and by nerds</li>
+                                    <li><i class="icon-th"></i> 12-column grid</li>
+                                    <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
+                                    <li><i class="icon-book"></i> Growing library</li>
+                                </ul>
+                            </div>
+                            <div class="span2">
+                                <ul style="margin-top:10px;" class="unstyled">
+                                    <li><i class="icon-resize-small"></i> Responsive design</li>
+                                    <li><i class="icon-eye-open"></i> Cross-everything</li>
+                                    <li><i class="icon-list-alt"></i> Styleguide docs</li>
+                                    <li><i class="icon-cog"></i> jQuery plugins</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="span4">
+                        <h2><span class="colored"><strong>///</strong></span> Nivel De Estudio</h2>
+                        <hr class="dash">
+                        <div class="intro">
+                            <p style="margin-bottom:10px;"><em>The standard chunk of Lorem Ipsum used since the 1500s. Powerful WordPress theme very flexible...</em></p>
+                        </div>
+                        <hr class="dash">
+                        <div class="well">
+                            <h6>Diseño Web</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 90%"></div>
+                            </div>
+                            <h6>Programación</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 70%"></div>
+                            </div>
+                            <h6>Marketing social</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 80%"></div>
+                            </div>
+                            <h6>SEO</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+            <h2>Ander</h2>
+                <div class="row">
+                   
+                    <div class="span4">
+
+									<img alt="" src="img\Julen2.png">
+                                    <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
+                    </div>
+                    <div class="span4">
+                        <h2><span class="colored"><strong>///</strong></span>Información</span></h2>
+                        <hr class="dash">
+                        <div class="intro">
+                            <p style="margin-bottom:10px;"><em>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br><br> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</em></p>
+                        </div>
+                        <hr class="dash">
+                        <div class="row">
+                            <div class="span2">
+                                <ul style="margin-top:10px;" class="unstyled">
+                                    <li><i class="icon-user"></i> Built for and by nerds</li>
+                                    <li><i class="icon-th"></i> 12-column grid</li>
+                                    <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
+                                    <li><i class="icon-book"></i> Growing library</li>
+                                </ul>
+                            </div>
+                            <div class="span2">
+                                <ul style="margin-top:10px;" class="unstyled">
+                                    <li><i class="icon-resize-small"></i> Responsive design</li>
+                                    <li><i class="icon-eye-open"></i> Cross-everything</li>
+                                    <li><i class="icon-list-alt"></i> Styleguide docs</li>
+                                    <li><i class="icon-cog"></i> jQuery plugins</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="span4">
+                        <h2><span class="colored"><strong>///</strong></span> Nivel De Estudio</h2>
+                        <hr class="dash">
+                        <div class="intro">
+                            <p style="margin-bottom:10px;"><em>The standard chunk of Lorem Ipsum used since the 1500s. Powerful WordPress theme very flexible...</em></p>
+                        </div>
+                        <hr class="dash">
+                        <div class="well">
+                            <h6>Diseño Web</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 90%"></div>
+                            </div>
+                            <h6>Programación</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 70%"></div>
+                            </div>
+                            <h6>Marketing social</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 80%"></div>
+                            </div>
+                            <h6>SEO</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+            <h2>Jennifer</h2>
+                <div class="row">
+                   
+                    <div class="span4">
+
+									<img alt="" src="img\Julen2.png">
+                                    <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
+                    </div>
+                    <div class="span4">
+                        <h2><span class="colored"><strong>///</strong></span>Información</span></h2>
+                        <hr class="dash">
+                        <div class="intro">
+                            <p style="margin-bottom:10px;"><em>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br><br> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</em></p>
+                        </div>
+                        <hr class="dash">
+                        <div class="row">
+                            <div class="span2">
+                                <ul style="margin-top:10px;" class="unstyled">
+                                    <li><i class="icon-user"></i> Built for and by nerds</li>
+                                    <li><i class="icon-th"></i> 12-column grid</li>
+                                    <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
+                                    <li><i class="icon-book"></i> Growing library</li>
+                                </ul>
+                            </div>
+                            <div class="span2">
+                                <ul style="margin-top:10px;" class="unstyled">
+                                    <li><i class="icon-resize-small"></i> Responsive design</li>
+                                    <li><i class="icon-eye-open"></i> Cross-everything</li>
+                                    <li><i class="icon-list-alt"></i> Styleguide docs</li>
+                                    <li><i class="icon-cog"></i> jQuery plugins</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="span4">
+                        <h2><span class="colored"><strong>///</strong></span> Nivel De Estudio</h2>
+                        <hr class="dash">
+                        <div class="intro">
+                            <p style="margin-bottom:10px;"><em>The standard chunk of Lorem Ipsum used since the 1500s. Powerful WordPress theme very flexible...</em></p>
+                        </div>
+                        <hr class="dash">
+                        <div class="well">
+                            <h6>Diseño Web</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 90%"></div>
+                            </div>
+                            <h6>Programación</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 70%"></div>
+                            </div>
+                            <h6>Marketing social</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 80%"></div>
+                            </div>
+                            <h6>SEO</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 50%"></div>
                             </div>
                         </div>
                     </div>
