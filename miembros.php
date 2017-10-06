@@ -60,6 +60,31 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
     </div>
     <!--/AREA BIENVENIDA-->
 
+<?php
+session_start();
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+	
+} else {
+	echo "Esta pagina es solo para usuarios registrados.<br>";
+	echo "<br><a href='login/index.html'>Login</a>";
+	echo "<br><br><a href='login/index.html'>Registrarme</a>";
+	
+	exit;
+}
+
+$now = time();
+
+if($now > $_SESSION['expire']) {
+	session_destroy();
+	
+	echo "Su sesion a terminado,
+<a href='index.html'>Necesita Hacer Login</a>";
+	exit;
+}
+?>
+
+
     <!--AREA CONTENIDO-->
     <div class="container inner_content">
     
