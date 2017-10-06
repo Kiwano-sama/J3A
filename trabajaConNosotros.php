@@ -159,13 +159,14 @@ mysqli_free_result($result);
                         <div class="well-title">
                             <h3>¿Quieres trabajar con nosotros?</h3>
                         </div>
+                        
                         <form name="trabaja" action="" method="POST" onSubmit="return validar()">
                             <!-- Form start -->
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="name">Nombre: </label>
-                                        <input required onKeyPress="return comprobarTeclaNom(e)" id="nombre" name="nombre" type="text"  class="form-control input-md">
+                                        <input required onKeyPress="return comprobarTeclaNom(event)" id="nombre" name="nombre" type="text"  class="form-control input-md">
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
@@ -178,7 +179,7 @@ mysqli_free_result($result);
                                   <div class="col-md-6">
                                     <div class="form-group">
                                         <label  class="control-label" for="number">Número de contacto: </label>
-                                        <input required  onKeyPress="return comprobarTecla(event)" id="numero" name="numero" type="text" class="form-control input-md">
+                                        <input required  onKeyPress="return numero(event)" id="numero" name="numero" type="text" class="form-control input-md">
                                     </div>                           
                                 </div>
                                 <br>

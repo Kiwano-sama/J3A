@@ -3,8 +3,10 @@ function cambiarColor() {
 	// los radio button
 	var colorElegido = document.formPaleta.paleta.value;
 	var Ps = document.getElementsByTagName('p');
+	var na = document.getElementsByTagName('h1','h2','h3');
 	var vElegido = document.formPaleta.button.value;
-
+	
+	
 	switch (vElegido) {
 
 	case 'etiquetaP':// con este case hacemos que todos los parrafos con la
@@ -22,5 +24,4 @@ function cambiarColor() {
 			na[i].style.color = colorElegido;
 		break;
 	}
-	
 }

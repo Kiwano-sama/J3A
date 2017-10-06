@@ -7,7 +7,6 @@ function Enviar() {
 		return true;
 	}
 }
-
 // Funcion que comprueba que todos los datos han cumplido los requisitos
 function validar(){
 	if (validarEmail() && comprobarNombre() && numero()){
@@ -30,6 +29,7 @@ function nombre() {
 		return false;
 	}
 }
+
 function comprobarTeclaNom(e){
 	
 	teclanum = e.which;
@@ -54,7 +54,7 @@ function validarEmail() {
 }
 // Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de
 // contacto'
-function numero(){
+function numero(e){
     var miNumero=document.trabaja.numero.value;
     var keychar;
 	var teclanum;
