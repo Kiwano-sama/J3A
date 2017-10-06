@@ -164,8 +164,8 @@ mysqli_free_result($result);
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label  class="control-label" for="name">Nombre: </label>
-                                        <input required  id="nombre" name="nombre" type="text" onKeyPress="return comprobarTeclaNom(event)" class="form-control input-md">
+                                         <label  class="control-label" for="nome">Nombre: </label>
+                                        <input required  id="numero" name="numero" type="text"  onKeyPress="return numero(event)"class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
@@ -177,8 +177,9 @@ mysqli_free_result($result);
                                 </div>
                                   <div class="col-md-6">
                                     <div class="form-group">
-                                        <label  class="control-label" for="number">Número de contacto: </label>
-                                        <input required  id="numero" name="numero" type="text"  onKeyPress="return numero(event)"class="form-control input-md"  >
+                                    <label  class="control-label" for="number">Numero de Contacto: </label>
+                                        <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarTeclaNom(event)" class="form-control input-md">
+                                       
                                     </div>                           
                                 </div>
                                 <br>
