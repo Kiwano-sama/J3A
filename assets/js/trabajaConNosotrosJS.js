@@ -75,6 +75,8 @@ function comprobarArroba(e){
     if (caracterTecla == "@") { 
         if (document.trabaja.email.value.indexOf('@') >= 0) {
             return false;
+        }else{
+        	return true;
         }
     }
 }

@@ -164,22 +164,19 @@ mysqli_free_result($result);
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                         <label  class="control-label" for="nome">Nombre: </label>
-                                        <input required  id="numero" name="numero" type="text"  onKeyPress="return numero(event)"class="form-control input-md"  >
+                                         Nombre: <input required  id="numero" name="numero" type="text"  onKeyPress="return numero(event)"class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label  class="control-label" for="email">Email: </label>
-                                        <input required  id="email" name="email" type="text" onKeyPress="return comprobarArroba(event)" placeholder="juan@tuemail.com" class="form-control input-md" >
+                                        Email: <input required  id="email" name="email" type="text" onKeyPress="return comprobarArroba(event)" placeholder="juan@tuemail.com" class="form-control input-md" >
                                     </div>
                                 </div>
                                   <div class="col-md-6">
                                     <div class="form-group">
-                                    <label  class="control-label" for="number">Numero de Contacto: </label>
-                                        <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarTeclaNom(event)" class="form-control input-md">
-                                       
+                                    <label  class="control-label" for="number"></label>
+                                        Numero de Contacto: <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarTeclaNom(event)" class="form-control input-md">
                                     </div>                           
                                 </div>
                                 <br>
