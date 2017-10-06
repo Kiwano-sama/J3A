@@ -47,7 +47,7 @@ if ($result->num_rows > 0) {
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $username;
     $_SESSION['start'] = time();
-    $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+    $_SESSION['expire'] = $_SESSION['start'] + (30 * 60);
 
     echo "Bienvenido! " . $_SESSION['username'];
     echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
