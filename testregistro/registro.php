@@ -48,7 +48,7 @@
 
                 $hash = password_hash($pass, PASSWORD_DEFAULT);
                 
-                $link = mysqli_connect('localhost', 'j3a', 'Qwerty123_', 'j3a');
+                $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
                 $sql = "SELECT * FROM usuario WHERE username='$username' LIMIT 1";
                 $result = mysqli_query($link, $sql);
 
