@@ -72,13 +72,13 @@ include 'header.php';
             </div>
         </div>
     </div>
-        <p>¿Quieres cambiar el color de la fuente? Aquí te dejamos una paleta para que selecciones el color que deseas</p>
+    <fieldset>
+    	<p>¿Quieres cambiar el color de la fuente? Aquí te dejamos una paleta para que selecciones el color que deseas</p>
     	<form name="formPaleta" action="" method="get">
-		<input name="paleta" type="color" value=""/>
-		<input name="botonModificar" type="button" value="modificar Color"
-			onclick="cambiarColor()">
-			
-	</form>
+			<input name="paleta" type="color" value="" onChange="misColores()">
+			<input name="botonModificar" type="button" value="modificar Color" onclick="cambiarColor()">	
+		</form>
+   	</fieldset>        
     <!--/AREA BIENVENIDA-->
     <!--AREA SLIDER-->
     <div class="slider_area">
