@@ -158,8 +158,7 @@ mysqli_free_result($result);
                     <div class="well-block">
                         <div class="well-title">
                             <h3>¿Quieres trabajar con nosotros?</h3>
-                        </div>
-                        
+                        </div>                        
                         <form name="trabaja" action="" method="POST" onSubmit="return validar()">
                             <!-- Form start -->
                             <div class="row">
@@ -188,9 +187,12 @@ mysqli_free_result($result);
                                      <div class="form-group">                                   
                                     <fieldset>
                                         <legend>Selecciona un puesto de trabajo:  </legend>
-                                        <input required type="radio"  value="diseñador">Diseñador de paginas web&nbsp;&nbsp;
-                                        <input required type="radio"  value="desarrollador">Desarrollador de software&nbsp;&nbsp;
-                                        <input required type="radio"  value="administrador">Administrador de paginas web&nbsp;&nbsp;
+                                       	<label>Diseñador de paginas web&nbsp;&nbsp;</label>
+                                        <input required type="radio"  value="diseñador">
+                                        <label>Desarrollador de software&nbsp;&nbsp;</label>
+                                        <input required type="radio"  value="desarrollador">
+                                        <label>Administrador de paginas web&nbsp;&nbsp;</label>
+                                        <input required type="radio"  value="administrador">
                                     <br>
                                     <br>
                                     </fieldset>
