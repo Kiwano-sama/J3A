@@ -171,7 +171,7 @@ mysqli_free_result($result);
                                 <!-- Text input-->                                
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                       
+                                       <label  class="control-label" for="email">Email: </label>
                                         <input required  id="email" name="email" type="text" onKeyPress="return comprobarArroba(event)" placeholder="juan@tuemail.com" class="form-control input-md" >
                                     </div>
                                 </div>
