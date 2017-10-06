@@ -72,16 +72,16 @@
                             <img src="assets/img/frame.png" />
                         </div>
                         <div>
-                            <h5>12-column grid</h5>
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                            <h5>Quienes Somos?</h5>
+                            <p>Somos una empresa que se dedica al desarrollo y diseño de aplicaciones web, para este fín manejamos varios lenguajes de programación y técnicas de desarrollo punteras en el mercado.</p>
                         </div>
                         <div class="clearfix"></div>
                         <div class="about_icons pull-left">
                             <img src="assets/img/skills.png" />
                         </div>
                         <div>
-                            <h5>All skill levels</h5>
-                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                            <h5>Donde Estamos</h5>
+                            <p>Nos Encontramos en el sector de Urritxe situado a las afueras de Amorebieta-Etxano, a unos 24 KM de la capital de Bizakaia, Bilbao. Aunque tambien recogemos, incidencias de nuestros clientes y los gestionamos desde ditintos puntos de compañia.</p>
                         </div>
                     </div>
                     <div class="span4">
@@ -117,8 +117,8 @@
                         <div class="row">
                             <div class="span2">
                                 <ul style="margin-top:10px;" class="unstyled">
-                                    <li><i class="icon-user"></i> Built for and by nerds</li>
-                                    <li><i class="icon-th"></i> 12-column grid</li>
+                                    <li><i class="icon-user"></i> Julen Estivez</li>
+                                    <li><i class="icon-th"></i> 12 Proyectos</li>
                                     <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
                                     <li><i class="icon-book"></i> Growing library</li>
                                 </ul>
@@ -147,11 +147,11 @@
                             </div>
                             <h6>Programación</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 70%"></div>
+                                <div class="bar" style="width: 90%"></div>
                             </div>
                             <h6>Marketing social</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 80%"></div>
+                                <div class="bar" style="width: 60%"></div>
                             </div>
                             <h6>SEO</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
@@ -181,8 +181,8 @@
                         <div class="row">
                             <div class="span2">
                                 <ul style="margin-top:10px;" class="unstyled">
-                                    <li><i class="icon-user"></i> Built for and by nerds</li>
-                                    <li><i class="icon-th"></i> 12-column grid</li>
+                                    <li><i class="icon-user"></i> Jon Ander Valdisangre</li>
+                                    <li><i class="icon-th"></i> 10 Proyectos</li>
                                     <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
                                     <li><i class="icon-book"></i> Growing library</li>
                                 </ul>
@@ -245,8 +245,8 @@
                         <div class="row">
                             <div class="span2">
                                 <ul style="margin-top:10px;" class="unstyled">
-                                    <li><i class="icon-user"></i> Built for and by nerds</li>
-                                    <li><i class="icon-th"></i> 12-column grid</li>
+                                    <li><i class="icon-user"></i> Ander Savandy</li>
+                                    <li><i class="icon-th"></i> 24 Proyectos</li>
                                     <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
                                     <li><i class="icon-book"></i> Growing library</li>
                                 </ul>
@@ -309,8 +309,8 @@
                         <div class="row">
                             <div class="span2">
                                 <ul style="margin-top:10px;" class="unstyled">
-                                    <li><i class="icon-user"></i> Built for and by nerds</li>
-                                    <li><i class="icon-th"></i> 12-column grid</li>
+                                    <li><i class="icon-user"></i> Jennerys Targaryen</li>
+                                    <li><i class="icon-th"></i> 8 Proyectos</li>
                                     <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
                                     <li><i class="icon-book"></i> Growing library</li>
                                 </ul>
