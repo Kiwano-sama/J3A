@@ -29,6 +29,7 @@ function nombre() {
 		return false;
 	}
 }
+
 function comprobarTeclaNom(e){
 	
 	teclanum = e.which;

@@ -99,6 +99,7 @@ include 'header.php';
                                 <li><i class="icon-book"></i> Librería en continua evolución</li>
                             </ul>
                         </div>
+                        
                         <div class="span2">
                             <ul style="margin-top:10px;" class="unstyled">
                                 <li><i class="icon-resize-small"></i> Diseño responsivo</li>

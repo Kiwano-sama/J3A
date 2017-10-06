@@ -24,5 +24,4 @@ function cambiarColor() {
 			na[i].style.color = colorElegido;
 		break;
 	}
-	
 }

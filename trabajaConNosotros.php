@@ -159,6 +159,7 @@ mysqli_free_result($result);
                         <div class="well-title">
                             <h3>¿Quieres trabajar con nosotros?</h3>
                         </div>
+                        
                         <form name="trabaja" action="" method="POST" onSubmit="return validar()">
                             <!-- Form start -->
                             <div class="row">
