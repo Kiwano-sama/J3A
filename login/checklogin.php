@@ -4,7 +4,7 @@ session_start();
 
 <?php
 
-$host_db = "127.0.0.1:56624";
+$host_db = "localhost";
 $user_db = "j3a";
 $pass_db = "Qwerty123_";
 $db_name = "j3a";
