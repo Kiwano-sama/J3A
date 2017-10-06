@@ -7,10 +7,9 @@ function Enviar() {
 		return true;
 	}
 }
-
 // Funcion que comprueba que todos los datos han cumplido los requisitos
 function validar(){
-	if (validarEmail() && comprobarNombre() && numero()){
+	if (validarEmail() && nombre() && numero()){
 		alert("Sus datos son correcto, enviando...");
 		return true;
 	}else {
@@ -30,17 +29,6 @@ function nombre() {
 		return false;
 	}
 }
-function comprobarTeclaNom(e){
-	
-	teclanum = e.which;
-	keychar = String.fromCharCode(teclanum);
-	
-	if(keychar < '0' || keychar >'9'){
-		return false;
-	}else{
-		return true;
-	}
-}
 // Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
 	var valor = document.getElementById('email').value
@@ -54,8 +42,16 @@ function validarEmail() {
 }
 // Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de
 // contacto'
-function numero(){
-    var miNumero=document.trabaja.numero.value;
+function numero(e){ 
+	var miNumero=document.trabaja.numero.value;
+	teclanum = e.which;
+	keychar = String.fromCharCode(teclanum);
+	
+	if(keychar < '0' || keychar >'9'){
+		return false;
+	}else{
+		return true;
+	}
     var keychar;
 	var teclanum;
     if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
@@ -74,12 +70,13 @@ function comprobarArroba(e){
     }else if (e.which){
         codigoTecla = e.which;
     }
-    
     caracterTecla = String.fromCharCode(codigoTecla);
-    
+
     if (caracterTecla == "@") { 
-        if (document.encuesta.correo.value.indexOf('@') >= 0) {
+        if (document.trabaja.email.value.indexOf('@') >= 0) {
             return false;
+        }else{
+        	return true;
         }
     }
 }

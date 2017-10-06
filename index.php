@@ -72,13 +72,13 @@ include 'header.php';
             </div>
         </div>
     </div>
-        <p>¿Quieres cambiar el color de la fuente? Aquí te dejamos una paleta para que selecciones el color que deseas</p>
+    <fieldset>
+    	<p>¿Quieres cambiar el color de la fuente? Aquí te dejamos una paleta para que selecciones el color que deseas</p>
     	<form name="formPaleta" action="" method="get">
-		<input name="paleta" type="color" value=""/>
-		<input name="botonModificar" type="button" value="modificar Color"
-			onclick="cambiarColor()">
-			
-	</form>
+			<input name="paleta" type="color" value="" onChange="misColores()">
+			<input name="botonModificar" type="button" value="modificar Color" onclick="cambiarColor()">	
+		</form>
+   	</fieldset>        
     <!--/AREA BIENVENIDA-->
     <!--AREA SLIDER-->
     <div class="slider_area">
@@ -99,6 +99,7 @@ include 'header.php';
                                 <li><i class="icon-book"></i> Librería en continua evolución</li>
                             </ul>
                         </div>
+                        
                         <div class="span2">
                             <ul style="margin-top:10px;" class="unstyled">
                                 <li><i class="icon-resize-small"></i> Diseño responsivo</li>

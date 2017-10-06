@@ -1,11 +1,13 @@
 <?php
 session_start();
 ?>
+
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>J3A - Comprobando login...</title>
+        <title>J3A - Registro</title>
 
         <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
         <link href="../assets/css/estiloRegistro.css" rel="stylesheet">
@@ -15,7 +17,8 @@ session_start();
         <!--CONTENIDO-->
         <div class="container">
 
-            <?php
+
+<?php
 
 $host_db = "127.0.0.1:56624";
 $user_db = "j3a";
@@ -36,38 +39,33 @@ $sql = "SELECT * FROM $tbl_name WHERE username = '$username'";
 
 $result = $conexion->query($sql);
 
-
 if ($result->num_rows > 0) {     
- }
+ 
  $row = $result->fetch_array(MYSQLI_ASSOC);
  if (password_verify($password, $row['password'])) { 
  
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $username;
     $_SESSION['start'] = time();
-    $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+    $_SESSION['expire'] = $_SESSION['start'] + (30 * 60);
 
     echo "Bienvenido! " . $_SESSION['username'];
-    echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
+    echo '<br><br><a href="../index.php>Portal</a> "<a href="panel-control.php">Panel de Control</a>'; 
 
  } else { 
-   echo '<p class="texto-rojo">Username o Password estan incorrectos.</p>';
+   echo "Username o Password estan incorrectos.";
 
    echo "<br><a href='index.html'>Volver a Intentarlo</a>";
  }
+}else {
+	echo ($username . ' no está registrado. <a href="index.html">Registrate o vuelve a intentarlo con otro usuario</a>.');
+}
  mysqli_close($conexion); 
  ?>
-
-        </div>
+ </div>
         <!--/CONTENIDO -->
 
         <script src="../assets/js/registro.js"></script>
 
     </body>
 </html>
-
-
-
-
-
-

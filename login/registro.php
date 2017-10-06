@@ -23,7 +23,6 @@
 //            echo (filter_input(INPUT_POST, 'mes'));
 //            echo (filter_input(INPUT_POST, 'anio'));
 //            echo (filter_input(INPUT_POST, 'genero'));
-
             require_once 'config.php';
 
             $response = array();
@@ -34,7 +33,7 @@
                 $nombre = (filter_input(INPUT_POST, 'nombre'));
                 $apellido = (filter_input(INPUT_POST, 'apellido'));
                 $email = (filter_input(INPUT_POST, 'email'));
-                $pass = (filter_input(INPUT_POST, 'password'));
+                $pass = (filter_input(INPUT_POST, 'pass'));
                 $dia = (filter_input(INPUT_POST, 'dia'));
                 $mes = (filter_input(INPUT_POST, 'mes'));
                 $anio = (filter_input(INPUT_POST, 'anio'));
@@ -43,8 +42,12 @@
                 $fechaNac = $anio . "/" . $mes . "/" . $dia;
 
                 // sha256 password hashing
-                $password = hash('sha256', $pass);
+                //$password = hash('sha256', $pass);
 
+
+
+                $hash = password_hash($pass, PASSWORD_DEFAULT);
+                
                 $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
                 $sql = "SELECT * FROM usuario WHERE username='$username' LIMIT 1";
                 $result = mysqli_query($link, $sql);
@@ -59,15 +62,15 @@
                     $stmt->bindParam(':nombre', $nombre);
                     $stmt->bindParam(':apellido', $apellido);
                     $stmt->bindParam(':email', $email);
-                    $stmt->bindParam(':pass', $password);
+                    $stmt->bindParam(':pass', $hash);
                     $stmt->bindParam(':fechanacimiento', $fechaNac);
                     $stmt->bindParam(':genero', $genero);
                     $stmt->execute();
 
                     // check for successfull registration
                     if ($stmt->rowCount() == 1) {
-                        
-                        echo ('<p>Registrado correctamente. <a href="./index.html">Ya te puedes loguear</a>.</p>');
+
+                        echo ('<p>Registrado correctamente. <a href="index.html">Ya te puedes loguear</a>.</p>');
                     } else {
                         echo ('<p class="texto-rojo">No se pudo registrar, intentalo de nuevo más tarde.</p>');
                     }

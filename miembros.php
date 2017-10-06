@@ -60,8 +60,44 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
     </div>
     <!--/AREA BIENVENIDA-->
 
+
+
+
     <!--AREA CONTENIDO-->
     <div class="container inner_content">
+    
+    <?php
+session_start();
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+	
+} else {
+	
+	echo('<div class="alert alert-danger">');
+	echo('<a class="close" data-dismiss="alert">×</a>');
+	echo('<h4 class="alert-heading">Error!</h4>');
+	echo('Esta página solo puede verse por los usuarios registrados. <a href="login">Logueate</a>.');
+	echo('</div>');
+	echo('</div>');
+	
+	exit;
+}
+
+$now = time();
+
+if($now > $_SESSION['expire']) {
+	session_destroy();
+	
+	echo('<div class="alert alert-block">');
+	echo('<a class="close" data-dismiss="alert">×</a>');
+	echo('<h4 class="alert-heading">Error!</h4>');
+	echo('Tu sesion ha terminado. <a href="login">Logueate</a>.');
+	echo('</div>');
+	echo('</div>');
+	exit;
+}
+?>
+    
     
     <h2 style="margin-top:45px;"><span class="colored"><strong>///</strong></span> Todos los <span class="undercolored">miembros</span></h2>
     

@@ -158,27 +158,28 @@ mysqli_free_result($result);
                     <div class="well-block">
                         <div class="well-title">
                             <h3>¿Quieres trabajar con nosotros?</h3>
-                        </div>
+                        </div>                        
                         <form name="trabaja" action="" method="POST" onSubmit="return validar()">
                             <!-- Form start -->
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label  class="control-label" for="name">Nombre: </label>
-                                        <input required onKeyPress="return comprobarTeclaNom(e)" id="nombre" name="nombre" type="text"  class="form-control input-md">
+                                         <label  class="control-label" for="nome">Nombre: </label>
+                                        <input required  id="numero" name="numero" type="text"  onKeyPress="return numero(event)"class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label  class="control-label" for="email">Email: </label>
-                                        <input required onKeyPress="return comprobarArroba(event)" id="email" name="email" type="text" placeholder="juan@tuemail.com" class="form-control input-md">
+                                       <label  class="control-label" for="email">Email: </label>
+                                        <input required  id="email" name="email" type="text" onKeyPress="return comprobarArroba(event)" placeholder="juan@tuemail.com" class="form-control input-md" >
                                     </div>
                                 </div>
                                   <div class="col-md-6">
                                     <div class="form-group">
-                                        <label  class="control-label" for="number">Número de contacto: </label>
-                                        <input required  onKeyPress="return comprobarTecla(event)" id="numero" name="numero" type="text" class="form-control input-md">
+                                    <label  class="control-label" for="number">Numero de Contacto: </label>
+                                        <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarTeclaNom(event)" class="form-control input-md">
+                                       
                                     </div>                           
                                 </div>
                                 <br>
@@ -187,9 +188,9 @@ mysqli_free_result($result);
                                      <div class="form-group">                                   
                                     <fieldset>
                                         <legend>Selecciona un puesto de trabajo:  </legend>
-                                        <input required type="radio"  value="diseñador">Diseñador de paginas web&nbsp;&nbsp;
-                                        <input required type="radio"  value="desarrollador">Desarrollador de software&nbsp;&nbsp;
-                                        <input required type="radio"  value="administrador">Administrador de paginas web&nbsp;&nbsp;
+                                     	<input required type="radio"  value="diseñador">Diseñador de paginas Web&nbsp;&nbsp; 
+                                     	<input required type="radio"  value="desarrollador">Desarrollador de Software&nbsp;&nbsp; 
+                                     	<input required type="radio"  value="administrador">Administrador de paginas Web&nbsp;&nbsp; 
                                     <br>
                                     <br>
                                     </fieldset>
