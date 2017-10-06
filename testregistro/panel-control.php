@@ -17,13 +17,13 @@ if($now > $_SESSION['expire']) {
 	session_destroy();
 	
 	echo "Su sesion a terminado,
-<a href='login.html'>Necesita Hacer Login</a>";
+<a href='index.html'>Necesita Hacer Login</a>";
 	exit;
 }
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 <title>Panel de Control</title>
