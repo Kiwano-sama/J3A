@@ -9,6 +9,7 @@
     background-color: #fff;
     border: 1px solid #e9e6e8;
     padding: 40px;
+    display: inline-block;
 }
 
 .well-title {
