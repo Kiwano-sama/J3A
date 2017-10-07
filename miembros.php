@@ -65,6 +65,7 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
 
     <!--AREA CONTENIDO-->
     <div class="container inner_content">
+    <section>
     
     <?php
 session_start();
@@ -147,6 +148,7 @@ if($now > $_SESSION['expire']) {
 
     </tbody>
   </table>
+  </section>
   </div>
     <!--/AREA CONTENIDO-->
     <!--TWITTER AREA-->
