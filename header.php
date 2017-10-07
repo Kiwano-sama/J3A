@@ -15,6 +15,7 @@ $first_part = $components[1];
                     <a href="index.php"><img src="assets/img/logo.png" alt="logo" style="margin-bottom:7px; margin-top:7px;" /></a>
                 </div>
                 <div class="span8">
+                <!-- MENU PRINCIPAL -->
                     <nav id="main-nav">
                         <ul id="menu">
                             <li <?php if (($first_part=="") || ($first_part=="index.php")) {echo ' class=current';}?>><a href="index.php">Portal</a>
@@ -26,16 +27,17 @@ $first_part = $components[1];
                             <li<?php if ($first_part=="sobrenosotros.php") {echo (' class="current"');}?>><a href="sobrenosotros.php">Sobre nosotros</a></li>
                             <li<?php if ($first_part=="trabajaConNosotros.php") {echo (' class="current"');}?>><a href="trabajaConNosotros.php">Trabaja Con Nosotros</a></li>
                             <li<?php if ($first_part=="servicios.php") {echo (' class="current"');}?>><a href="servicios.php">Qué hacemos</a></li>
-                            <li<?php if ($first_part=="miembros.php") {echo (' class="current"');}?>><a href="miembros.php">Miembros</a> 
+                            <li><a href="miembros.php">Miembros</a> 
                                 <ul>
-                                    <li><a href="miembros.php">Ver miembros</a></li>
-                                    <li><a href="miperfil.php">Mi perfil</a></li>
-                                    <li><a href="ajustes.php">Ajustes</a></li>
+                                    <li<?php if ($first_part=="miembros.php") {echo (' class="current"');}?>><a href="miembros.php">Ver miembros</a></li>
+                                    <li<?php if ($first_part=="miperfil.php") {echo (' class="current"');}?>><a href="miperfil.php">Mi perfil</a></li>
+                                    <li<?php if ($first_part=="ajustes.php") {echo (' class="current"');}?>><a href="ajustes.php">Ajustes</a></li>
                                 </ul>
                             </li>
                             <li<?php if ($first_part=="contacto.php") {echo (' class="current"');}?>><a href="contacto.php">Contacto</a></li>
                         </ul>
-                    </nav><!-- end #main-nav -->
+                    </nav>
+                    <!-- MENU PRINCIPAL -->
                 </div>
             </div>
 		</div>
