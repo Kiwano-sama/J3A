@@ -29,15 +29,15 @@ $first_part = $components[1];
                             <li<?php if ($first_part=="servicios.php") {echo (' class="current"');}?>><a href="servicios.php">Qué hacemos</a></li>
                             <li><a href="miembros.php">Miembros</a> 
                                 <ul>
-                                    <li<?php if ($first_part=="miembros.php") {echo (' class="current"');}?>><a href="miembros.php">Ver miembros</a></li>
-                                    <li<?php if ($first_part=="miperfil.php") {echo (' class="current"');}?>><a href="miperfil.php">Mi perfil</a></li>
-                                    <li<?php if ($first_part=="ajustes.php") {echo (' class="current"');}?>><a href="ajustes.php">Ajustes</a></li>
+                                    <li><a href="miembros.php">Ver miembros</a></li>
+                                    <li><a href="miperfil.php">Mi perfil</a></li>
+                                    <li><a href="ajustes.php">Ajustes</a></li>
                                 </ul>
                             </li>
                             <li<?php if ($first_part=="contacto.php") {echo (' class="current"');}?>><a href="contacto.php">Contacto</a></li>
                         </ul>
                     </nav>
-                    <!-- MENU PRINCIPAL -->
+                    <!-- /MENU PRINCIPAL -->
                 </div>
             </div>
 		</div>
