@@ -36,6 +36,9 @@ $first_part = $components[1];
                             <li<?php if ($first_part=="contacto") {echo ('class="current"');}?>><a href="contacto.php">Contacto</a></li>
                         </ul>
                     </nav><!-- end #main-nav -->
+                    <?php
+                    echo ("class='current'");
+                    ?>
                 </div>
             </div>
 		</div>
