@@ -100,7 +100,7 @@ if($now > $_SESSION['expire']) {
 ?>
     
     
-    <h2 style="margin-top:45px;"><span class="colored"><strong>///</strong></span> Todos los <span class="undercolored">miembros</span></h2>
+    <h2><span class="colored"><strong>///</strong></span> Todos los <span class="undercolored">miembros</span></h2>
     
      <table class="table table-bordered table-striped">
     <thead>
