@@ -38,6 +38,8 @@ $first_part = $components[1];
                     </nav><!-- end #main-nav -->
                     <?php
                     echo ("class='current'");
+                    if ($first_part=="sobrenosotros") {echo ("class='current'");}
+                    if ($first_part=="sobrenosotros.php") {echo ("class='currentttt'");}
                     ?>
                 </div>
             </div>
