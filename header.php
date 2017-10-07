@@ -23,7 +23,7 @@ $first_part = $components[1];
                                     <li><a href="index_compact.html">Compact</a></li>
                                 </ul>
                             </li>
-                            <li<?php if ($first_part=="sobrenosotros") {echo ('class="current"');}?>><a href="sobrenosotros.php">Sobre nosotros</a></li>
+                            <li<?php if ($first_part=="sobrenosotros") {echo ("class='current'");}?>><a href="sobrenosotros.php">Sobre nosotros</a></li>
                             <li<?php if ($first_part=="trabajaConNosotros") {echo ('class="current"');}?>><a href="trabajaConNosotros.php">Trabaja Con Nosotros</a></li>
                             <li<?php if ($first_part=="servicios") {echo ('class="current"');}?>><a href="servicios.php">Qué hacemos</a></li>
                             <li<?php if ($first_part=="miembros") {echo ('class="current"');}?>><a href="miembros.php">Miembros</a> 
