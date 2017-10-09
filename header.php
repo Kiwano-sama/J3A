@@ -27,7 +27,7 @@ $first_part = $components[1];
                             <li<?php if ($first_part=="sobrenosotros.php") {echo (' class="current"');}?>><a href="sobrenosotros.php">Sobre nosotros</a></li>
                             <li<?php if ($first_part=="trabajaConNosotros.php") {echo (' class="current"');}?>><a href="trabajaConNosotros.php">Trabaja Con Nosotros</a></li>
                             <li<?php if ($first_part=="servicios.php") {echo (' class="current"');}?>><a href="servicios.php">Qué hacemos</a></li>
-                            <li><a href="miembros.php">Miembros</a> 
+                            <li<?php if ($first_part=="miembros.php") {echo (' class="current"');}?>><a href="miembros.php">Miembros</a> 
                                 <ul>
                                     <li><a href="miembros.php">Ver miembros</a></li>
                                     <li><a href="miperfil.php">Mi perfil</a></li>
