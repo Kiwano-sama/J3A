@@ -44,6 +44,7 @@ td a{width:100%;display:block;}
 .profile-userbuttons {
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .profile-userbuttons .btn {
