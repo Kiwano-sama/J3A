@@ -145,8 +145,7 @@ mysqli_free_result($result);
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div>    
     <br>
     <br>
     <br>
