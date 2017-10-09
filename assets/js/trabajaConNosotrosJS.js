@@ -1,8 +1,11 @@
 //Funcion que una vez pulsado el boton 'enviar' envia los datos del formulario
 function Enviar() {
 	var Vemail = document.getElementsByName("email");
-	if (Vemail == null() && Vemail == "0"()) {
+	var Vnombre = document.getElementsByName("nombre");
+	var Vnumero = document.getElemntsByName("numero");
+	if (Vemail == null() && Vemail == "0"() && Vnombre == null() && Vnumero =="0" () ) {
 		return false;
+		alert('Error al enviar formulario')
 	} else {
 		return true;
 	}
