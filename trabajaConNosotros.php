@@ -146,11 +146,10 @@ mysqli_free_result($result);
      <br>
      <br>
      <br>
-     <!--    <script>
+    <script>
     $(document).ready(function(){
     });
-    </script> -->
-  
+    </script>
     <!--/MAIN CONTENT AREA-->
 <?php 
 include 'footer.php';
@@ -209,14 +208,14 @@ include 'footer.php';
         runFancy = false;
     </script>
     <![endif]-->
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
 		if (runFancy) {
 			jQuery.noConflict()(function($){
 			$(".view").preloader();
 			$(".flexslider").preloader();
 			});
 		}
-    </script>  -->
+    </script>
 	</body>		
 </html>
     <!-- Page Content -->

@@ -26,7 +26,7 @@ function validar(){
 function nombre() {
 		alert('hola prueba nombre');
 	var nombre = document.getElementByName('nombre').value
-	if (nombre ! = NULL) {
+	if (nombre != NULL) {
 		return true; 
 	} else {
 		alert("Por favor, introduzca su nombre");
