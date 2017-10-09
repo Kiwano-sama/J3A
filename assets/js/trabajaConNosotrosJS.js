@@ -54,7 +54,7 @@ function comprobarNumero(e){
 	
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
-	
+
 	if(keychar < '0' || keychar >'9'){
 		return false;
 	}else{
