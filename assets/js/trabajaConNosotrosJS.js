@@ -45,13 +45,13 @@ function validarEmail() {
 // Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de
 // contacto'
 function numero(){ 
-	var miNumero=document.trabaja.numero.value;
-	
-	if(keychar < '0' || keychar >'9'){
-		return false;
-	}else{
-		return true;
-	}	
+//	var miNumero=document.trabaja.numero.value;
+//	
+//	if(keychar < '0' || keychar >'9'){
+//		return false;
+//	}else{
+//		return true;
+//	}	
     var keychar;
 	var teclanum;
 	
