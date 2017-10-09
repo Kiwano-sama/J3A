@@ -73,7 +73,7 @@ mysqli_free_result($result);
     </div>
     <!--/AREA BIENVENIDA-->
     
-    <br>
+    <br> 
     <br>
     <br>
     <!--FEATURES AREA-->
