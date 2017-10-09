@@ -164,31 +164,24 @@ if($now > $_SESSION['expire']) {
             <th></th>
           </tr>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+          <th>Campo</th>
+            <th>Contenido</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>Username:</td>
+            <td>savandy</td>
           </tr>
           <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>Nombre:</td>
+            <td>Valeriu</td>
           </tr>
           <tr>
-            <td>3</td>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <td>Apellido:</td>
+            <td>Sanautanu</td>
           </tr>
+         
         </tbody>        
       </table>
       
