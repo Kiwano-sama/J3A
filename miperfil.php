@@ -106,7 +106,7 @@ if($now > $_SESSION['expire']) {
       <!--Contenido Sidebar-->
       	<table class="table table-bordered table-condensed">
       	<tr>
-      	<td>
+      	<td class="profile-sidebar">
       	<div class="profile-userpic">
 					<img src="assets/img/miembros/savandy.jpg" class="img-responsive" alt="">
 				</div>
@@ -134,8 +134,8 @@ if($now > $_SESSION['expire']) {
 				<!-- /BOTONES SIDEBAR -->
       	</td>
       	</tr>
-  			<tr class="profile-usermenu">
-  			<td style="background-color:#C0C0C0;">Perfil</td>
+  			<tr>
+  			<td class="profile-usermenu" style="background-color:#C0C0C0;">Perfil</td>
   			</tr>
   			<tr>
   			<td><a href="amigos.php">Amigos</a></td>
