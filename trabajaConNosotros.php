@@ -78,9 +78,10 @@
     	var keychar;
     	var teclanum;
     	var miNumero = document.getElementsById('numero');
-    	
+    	alert('holaa prueba 2 comprobarNumero');
     	teclanum = e.which;
     	keychar = String.fromCharCode(teclanum);
+    	
     	alert('holaa prueba comprobarNumero');
     	if(keychar < '0' || keychar >'9'){
     		alert('holaa prueba 1 comprobarNumero');
