@@ -192,99 +192,42 @@ if($now > $_SESSION['expire']) {
         </tbody>
       </table>
       
+      <ul class="comments">
+				<li class="clearfix">
+				  <img src="https://bootdey.com/img/Content/user_1.jpg" class="avatar" alt="">
+				  <div class="post-comments">
+				      <p class="meta">Dec 18, 2014 <a href="#">JohnDoe</a> says : <i class="pull-right"><a href="#"><small>Reply</small></a></i></p>
+				      <p>
+				          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				          Etiam a sapien odio, sit amet
+				      </p>
+				  </div>
+				</li>
+				<li class="clearfix">
+				  <img src="https://bootdey.com/img/Content/user_2.jpg" class="avatar" alt="">
+				  <div class="post-comments">
+				      <p class="meta">Dec 19, 2014 <a href="#">JohnDoe</a> says : <i class="pull-right"><a href="#"><small>Reply</small></a></i></p>
+				      <p>
+				          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				          Etiam a sapien odio, sit amet
+				      </p>
+				  </div>
+				
+				  <ul class="comments">
+				      <li class="clearfix">
+				          <img src="https://bootdey.com/img/Content/user_3.jpg" class="avatar" alt="">
+				          <div class="post-comments">
+				              <p class="meta">Dec 20, 2014 <a href="#">JohnDoe</a> says : <i class="pull-right"><a href="#"><small>Reply</small></a></i></p>
+				              <p>
+				                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				                  Etiam a sapien odio, sit amet
+				              </p>
+				          </div>
+				      </li>
+				  </ul>
+				</li>
+				</ul>
       
-      <h4><small>Área miembros</small></h4>
-      <hr>
-      <h2>Valeriu Andrei Sanautanu</h2>
-      
-      
-      <div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Información básica</h3>
-  </div>
-  <div class="panel-body">
-    Nombre: Valeriu Andrei <br>
-    Apellido: Sanautanu <br>
-    Username: savandy <br>
-    Fecha de Nacimiento: 07/07/1994 
-  </div>
-</div>
-
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Detalles cuenta</h3>
-  </div>
-  <div class="panel-body">
-    Miembro desde: 29/09/2017 <br>
-    Rol: Administrador
-  </div>
-</div>
-
-
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Tickets creados</h3>
-  </div>
-  <div class="panel-body">
-    Titulo ticket 1 <br>
-    Titulo ticket 2
-  </div>
-</div>
-
-<div class="panel panel-danger">
- <div class="panel-heading">
-    <h3 class="panel-title">Tickets creados</h3>
-  </div>
-  <div class="panel-body">
-    Todavía no eres cliente nuestro. No puedes usar la opción 'tickets'.
-  </div>
-</div>
-
-           
-      <br>
-      
-
-      <h4>Deja un comentario: </h4>
-      <form role="form">
-        <div class="form-group">
-          <textarea class="form-control" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Enviar</button>
-      </form>
-      <br><br>
-      
-      <p><span class="badge">2</span> comentarios:</p><br>
-      
-      <div class="row">
-        <div class="col-sm-2 text-center">
-          <img src="assets/img/miembros/savandy.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>Julen <small>Sep 29, 2017, 9:12 PM</small></h4>
-          <p>Aupa Ander, me gusta tu perfil. Te he mandado petición de amigos.</p>
-          <br>
-        </div>
-        <div class="col-sm-2 text-center">
-          <img src="assets/img/miembros/savandy.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>Jon Ander <small>Sep 25, 2017, 8:25 PM</small></h4>
-          <p>Kaixo, tenemos que hablar seriamente sobre un tema. Contactame cuando puedas, que sea cuanto antes. Es muy urgente. He intentado llamarte y tienes el movil apagado.</p>
-          <br>
-          <p><span class="badge">1</span> respuesta:</p><br>
-          <div class="row">
-            <div class="col-sm-2 text-center">
-              <img src="assets/img/miembros/savandy.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-            </div>
-            <div class="col-xs-10">
-              <h4><span class="label label-danger">Administrador</span> Ander <small>Sep 25, 2017, 8:28 PM</small> </h4>
-              <p>Tranquilo! Ahora te llamo.</p>
-              <br>
-            </div>
-          </div>
-        </div>
-      </div>
-  
                 
     </div>
   </div>
