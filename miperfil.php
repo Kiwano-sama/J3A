@@ -105,6 +105,16 @@ if($now > $_SESSION['expire']) {
     <div class="span2">
       <!--Contenido Sidebar-->
       	<table class="table table-bordered table-condensed">
+      	<tr>
+      	<td>
+      	<!-- BOTONES SIDEBAR -->
+				<div class="profile-userbuttons">
+					<button type="button" class="btn btn-success btn-sm">Añadir</button>
+					<button type="button" class="btn btn-danger btn-sm">Mensaje</button>
+				</div>
+				<!-- /BOTONES SIDEBAR -->
+      	</td>
+      	</tr>
   			<tr>
   			<td style="background-color:#C0C0C0;">Perfil</td>
   			</tr>
@@ -147,12 +157,7 @@ if($now > $_SESSION['expire']) {
 					</div>
 				</div>
 				<!-- END SIDEBAR USER TITLE -->
-				<!-- SIDEBAR BUTTONS -->
-				<div class="profile-userbuttons">
-					<button type="button" class="btn btn-success btn-sm">Follow</button>
-					<button type="button" class="btn btn-danger btn-sm">Message</button>
-				</div>
-				<!-- END SIDEBAR BUTTONS -->
+				
 				<!-- SIDEBAR MENU -->
 				<div class="profile-usermenu">
 					<ul class="nav">
