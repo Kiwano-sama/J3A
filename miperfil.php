@@ -54,7 +54,7 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
         <div class="container">
             <div class="row welcome_inner">
                 <div class="span12">
-                    <h1><span class="colored">///</span> MIEMBROS J3A</h1>
+                    <h1><span class="colored">///</span> PERFIL</h1>
                 </div>
             </div>
         </div>
