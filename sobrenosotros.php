@@ -227,6 +227,70 @@
             </section>
             
             <section>
+            <h2>Jennifer</h2>
+                <div class="row">
+                   
+                    <div class="span4">
+
+									<img alt="" src="img\Jenny.png">
+                                    <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
+                    </div>
+                    <div class="span4">
+                        <h2><span class="colored"><strong>///</strong></span>Información</span></h2>
+                        <hr class="dash">
+                        <div class="intro">
+                            <p style="margin-bottom:10px;"><em>Conocida por posicionar los anuncios en todas las búsquedas en google, tuvo que cambiarse el nombre y de domicilio por la cantidad de gente que le mandaba amenazas de forma diaria.<br><br>Gracias a que causó que Google ganara mucho dinero le ofrecieron cambiarse de identidad totalmente mediante cirujía plástica para parecer otra persona.</em></p>
+                        </div>
+                        <hr class="dash">
+                        <div class="row">
+                            <div class="span2">
+                                <ul style="margin-top:10px;" class="unstyled">
+                                    <li><i class="icon-user"></i> Jennifer Hernández</li>
+                                    <li><i class="icon-th"></i> 8 Proyectos</li>
+                                    <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
+                                    <li><i class="icon-book"></i> Growing library</li>
+                                </ul>
+                            </div>
+                            <div class="span2">
+                                <ul style="margin-top:10px;" class="unstyled">
+                                    <li><i class="icon-resize-small"></i> Responsive design</li>
+                                    <li><i class="icon-eye-open"></i> Cross-everything</li>
+                                    <li><i class="icon-list-alt"></i> Styleguide docs</li>
+                                    <li><i class="icon-cog"></i> jQuery plugins</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div class="span4">
+                        <h2><span class="colored"><strong>///</strong></span> Nivel De Estudio</h2>
+                        <hr class="dash">
+                        <div class="intro">
+                            <p style="margin-bottom:10px;"><em>Procede de España, solo una española podría ganar dinero de una forma tán desalmada.</em></p>
+                        </div>
+                        <hr class="dash">
+                        <div class="well">
+                            <h6>Diseño Web</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 80%"></div>
+                            </div>
+                            <h6>Programación</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 60%"></div>
+                            </div>
+                            <h6>Marketing social</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 50%"></div>
+                            </div>
+                            <h6>SEO</h6>
+                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
+                                <div class="bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                        <section>
             <h2>Ander</h2>
                 <div class="row">
                    
@@ -239,7 +303,7 @@
                         <h2><span class="colored"><strong>///</strong></span>Información</span></h2>
                         <hr class="dash">
                         <div class="intro">
-                            <p style="margin-bottom:10px;"><em>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br><br> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</em></p>
+                            <p style="margin-bottom:10px;"><em>Un hacker que frecuenta la deep web y estaba metido en todos los asuntos turbios de la red.<br><br>Debido a que entregó a todos sus asociados ahora está bajo la protección de la CIA, y ha limpiado los antecedentes del resto de integrantes de J3A para conseguir mano de obra barata, ya que trabajan por muestras de aprecio o un bocadillo.</em></p>
                         </div>
                         <hr class="dash">
                         <div class="row">
@@ -265,7 +329,7 @@
                         <h2><span class="colored"><strong>///</strong></span> Nivel De Estudio</h2>
                         <hr class="dash">
                         <div class="intro">
-                            <p style="margin-bottom:10px;"><em>The standard chunk of Lorem Ipsum used since the 1500s. Powerful WordPress theme very flexible...</em></p>
+                            <p style="margin-bottom:10px;"><em>Dice proceder de Rumanía, pero esta información también podría ser un medio de confusión.</em></p>
                         </div>
                         <hr class="dash">
                         <div class="well">
@@ -284,70 +348,6 @@
                             <h6>SEO</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
                                 <div class="bar" style="width: 60%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section>
-            <h2>Jennifer</h2>
-                <div class="row">
-                   
-                    <div class="span4">
-
-									<img alt="" src="img\Jenny.png">
-                                    <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
-                    </div>
-                    <div class="span4">
-                        <h2><span class="colored"><strong>///</strong></span>Información</span></h2>
-                        <hr class="dash">
-                        <div class="intro">
-                            <p style="margin-bottom:10px;"><em>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br><br> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</em></p>
-                        </div>
-                        <hr class="dash">
-                        <div class="row">
-                            <div class="span2">
-                                <ul style="margin-top:10px;" class="unstyled">
-                                    <li><i class="icon-user"></i> Jennifer Hernández</li>
-                                    <li><i class="icon-th"></i> 8 Proyectos</li>
-                                    <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
-                                    <li><i class="icon-book"></i> Growing library</li>
-                                </ul>
-                            </div>
-                            <div class="span2">
-                                <ul style="margin-top:10px;" class="unstyled">
-                                    <li><i class="icon-resize-small"></i> Responsive design</li>
-                                    <li><i class="icon-eye-open"></i> Cross-everything</li>
-                                    <li><i class="icon-list-alt"></i> Styleguide docs</li>
-                                    <li><i class="icon-cog"></i> jQuery plugins</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="span4">
-                        <h2><span class="colored"><strong>///</strong></span> Nivel De Estudio</h2>
-                        <hr class="dash">
-                        <div class="intro">
-                            <p style="margin-bottom:10px;"><em>The standard chunk of Lorem Ipsum used since the 1500s. Powerful WordPress theme very flexible...</em></p>
-                        </div>
-                        <hr class="dash">
-                        <div class="well">
-                            <h6>Diseño Web</h6>
-                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 80%"></div>
-                            </div>
-                            <h6>Programación</h6>
-                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 60%"></div>
-                            </div>
-                            <h6>Marketing social</h6>
-                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 50%"></div>
-                            </div>
-                            <h6>SEO</h6>
-                            <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 90%"></div>
                             </div>
                         </div>
                     </div>
