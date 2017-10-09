@@ -156,15 +156,11 @@ if($now > $_SESSION['expire']) {
     
     <div class="span10">
     asdasd
-     <div class="panel panel-info">
-     
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Nombre y Apellido(s)</h3>
-                    </div>
-                    <div class="panel-body">
-                        Valeriu Andrei Sanautanu
-                    </div>
-     </div>
+    
+     <div class="panel panel-default">
+  <div class="panel-heading">Panel Heading</div>
+  <div class="panel-body">Panel Content</div>
+</div>
                 
     </div>
   </div>
