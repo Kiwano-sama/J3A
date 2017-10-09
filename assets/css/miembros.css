@@ -12,8 +12,8 @@ td a{width:100%;display:block;}
 }
 
 .profile-userpic {
-	height: 100%;
 	width: 100%;
+	display:block;
 }
 
 .profile-userpic img {
