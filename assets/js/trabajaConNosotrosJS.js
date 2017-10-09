@@ -10,7 +10,7 @@ function Enviar() {
 	} else {
 		return true;
 	}
-}
+} 
 // Funcion que comprueba que todos los datos han cumplido los requisitos
 function validar(){
 	alert('hola validar'); 

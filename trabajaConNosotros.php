@@ -72,7 +72,7 @@ mysqli_free_result($result);
         </div>
     </div>
     <!--/AREA BIENVENIDA-->
-       
+    
     <br>
     <br>
     <br>
@@ -85,7 +85,8 @@ mysqli_free_result($result);
                         <div class="well-title">
                             <h3>¿Quieres trabajar con nosotros?</h3>
                         </div>                        
-                        <form name="trabaja" action="trabajaConNosotros.php" method="post" onSubmit="return validar()">
+                       <form name="trabaja" action="http://www.google.es/" onSubmit="return validar()">
+                        <!-- <form name="trabaja" action="trabajaConNosotros.php" method="post" onSubmit="return validar()"> -->
                             <!-- Form start -->
                             <div class="row">
                                 <div class="col-md-6">
