@@ -20,6 +20,7 @@ function validar(){
 		return false;
 	}
 }
+
 // Funcion para comprobar que se haya insertado un nombre
 function nombre() {
 	var nombre = document.getElementByName('nombre').value
