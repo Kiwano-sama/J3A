@@ -190,8 +190,7 @@ mysqli_free_result($result);
                                         <legend>Selecciona un puesto de trabajo:  </legend>
                                      	<input required type="radio"  value="diseñador">Diseñador de paginas Web&nbsp;&nbsp; 
                                      	<input required type="radio"  value="desarrollador">Desarrollador de Software&nbsp;&nbsp; 
-                                     	<input required type="radio"  value="administrador">Administrador de paginas Web&nbsp;&nbsp; 
-                                    
+                                     	<input required type="radio"  value="administrador">Administrador de paginas Web&nbsp;&nbsp;                                     
                                     <br>
                                     <br>
                                     </fieldset>

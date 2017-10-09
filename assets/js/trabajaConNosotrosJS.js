@@ -67,8 +67,6 @@ function comprobarNumero(e){
 	        return false;
 	    }  
 }
-// 
-
 // Funcion para que no se pueda insertar mas de una '@'
 function comprobarArroba(e){
 	var caracterTecla;
