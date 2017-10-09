@@ -155,8 +155,9 @@ if($now > $_SESSION['expire']) {
     
     
     <div class="span10">
-    
+    asdasd
      <div class="panel panel-info">
+     
                     <div class="panel-heading">
                         <h3 class="panel-title">Nombre y Apellido(s)</h3>
                     </div>
