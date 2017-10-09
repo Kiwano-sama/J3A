@@ -175,7 +175,7 @@
                         <h2><span class="colored"><strong>///</strong></span>Información</span></h2>
                         <hr class="dash">
                         <div class="intro">
-                            <p style="margin-bottom:10px;"><em>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br><br> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</em></p>
+                            <p style="margin-bottom:10px;"><em>Se escapó de una cárcel estadounidense con un clip y una cuchara, y se dedicó a convencer a la gente en las redes sociales a que vendieran sus órganos a un módico precio.<br><br>Nadie sabe de donde procede este tipo, y todo el mundo tiene miedo de preguntar.</em></p>
                         </div>
                         <hr class="dash">
                         <div class="row">
@@ -201,7 +201,7 @@
                         <h2><span class="colored"><strong>///</strong></span> Nivel De Estudio</h2>
                         <hr class="dash">
                         <div class="intro">
-                            <p style="margin-bottom:10px;"><em>The standard chunk of Lorem Ipsum used since the 1500s. Powerful WordPress theme very flexible...</em></p>
+                            <p style="margin-bottom:10px;"><em>Lo que mejor se le da es el marketing social, se ve que los criminales están de moda.</em></p>
                         </div>
                         <hr class="dash">
                         <div class="well">
