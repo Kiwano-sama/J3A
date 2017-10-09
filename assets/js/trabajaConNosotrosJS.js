@@ -24,8 +24,8 @@ function validar(){
 }
 // Funcion para comprobar que se haya insertado un nombre
 function nombre() {
+		alert('hola prueba nombre');
 	var nombre = document.getElementByName('nombre').value
-	
 	if (nombre ! = NULL) {
 		return true;
 	} else {
@@ -57,14 +57,14 @@ function comprobarNumero(e){
 	
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
-	alert('holaa');
+	alert('holaa prueba comprobarNumero');
 	if(keychar < '0' || keychar >'9'){
-		alert('holaa prueba 1');
+		alert('holaa prueba 1 comprobarNumero');
 		return false;
 	}else{
 		return true;
 	}
-	alert('holaa prueba 2');
+	alert('holaa prueba 2 comprobarNumero');
 	 if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
 	        return true;
 	    }else {
