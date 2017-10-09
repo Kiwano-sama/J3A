@@ -180,6 +180,8 @@ if($now > $_SESSION['expire']) {
         </tbody>        
       </table>
       
+      <hr>
+      <h3><span class="colored">///</span> 3 Comments:</h3>
       <div class="blog-comment">
       <ul class="comments">
 				<li class="clearfix">
