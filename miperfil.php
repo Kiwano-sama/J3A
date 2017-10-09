@@ -159,11 +159,6 @@ if($now > $_SESSION['expire']) {
     <table class="table table-striped table-bordered table-condensed">
         <thead>
           <tr>
-            <th></th>
-            <th colspan="2">Full name</th>
-            <th></th>
-          </tr>
-          <tr>
           <th>Campo</th>
             <th>Contenido</th>
           </tr>
