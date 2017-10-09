@@ -112,17 +112,17 @@ if($now > $_SESSION['expire']) {
 				<!-- SIDEBAR USER TITLE -->
 				<div class="profile-usertitle">
 					<div class="profile-usertitle-name">
-						Marcus Doe
+						<?php echo ($_SESSION['username']);?>
 					</div>
 					<div class="profile-usertitle-job">
-						Developer
+						Administrador
 					</div>
 				</div>
 				<!-- END SIDEBAR USER TITLE -->
 				<!-- SIDEBAR BUTTONS -->
 				<div class="profile-userbuttons">
-					<button type="button" class="btn btn-success btn-sm">Follow</button>
-					<button type="button" class="btn btn-danger btn-sm">Message</button>
+					<button type="button" class="btn btn-success btn-sm">Añadir</button>
+					<button type="button" class="btn btn-danger btn-sm">Mensaje</button>
 				</div>
 				<!-- END SIDEBAR BUTTONS -->
 				<!-- SIDEBAR MENU -->
@@ -131,70 +131,26 @@ if($now > $_SESSION['expire']) {
 						<li class="active">
 							<a href="#">
 							<i class="glyphicon glyphicon-home"></i>
-							Overview </a>
+							Perfil </a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="amigos.php">
 							<i class="glyphicon glyphicon-user"></i>
-							Account Settings </a>
+							Amigos </a>
 						</li>
 						<li>
-							<a href="#" target="_blank">
+							<a href="tickets.php" target="_blank">
 							<i class="glyphicon glyphicon-ok"></i>
-							Tasks </a>
+							Tickets </a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="configuracion.php">
 							<i class="glyphicon glyphicon-flag"></i>
-							Help </a>
+							Configuración </a>
 						</li>
 					</ul>
 				</div>
-      
-      	<table class="table table-bordered table-condensed">
-      	<tr>
-      	<td>
-      	<div class="profile-userpic">
-					<img src="assets/img/miembros/savandy.jpg" class="img-responsive" alt="">
-				</div>
-      	</td>
-      	</tr>
-      	<tr>
-      	<td>
-      	<div class="profile-usertitle">
-					<div class="profile-usertitle-name">
-						<?php echo ($_SESSION['username']);?>
-					</div>
-					<div class="profile-usertitle-job">
-						Administrador
-					</div>
-				</div>
-      	</td>
-      	</tr>
-      	<tr>
-      	<td>
-      	<!-- BOTONES SIDEBAR -->
-				<div class="profile-userbuttons">
-					<button type="button" class="btn btn-success btn-mini">Añadir</button>
-					<button type="button" class="btn btn-danger btn-mini">Mensaje</button>
-				</div>
-				<!-- /BOTONES SIDEBAR -->
-      	</td>
-      	</tr>
-  			<tr>
-  			<td style="background-color:#C0C0C0;">Perfil</td>
-  			</tr>
-  			<tr>
-  			<td><a href="amigos.php">Amigos</a></td>
-  			</tr>
-  			<tr>
-  			<td><a href="conf.php">Configuración</a></td>
-  			</tr>
-  			<tr>
-  			<td><a href="tickets.php">Tickets</a></td>
-  			</tr>
-		</table>
-      
+            
     </div>
     <div class="span10">
      
