@@ -12,6 +12,7 @@
 //	}
 //} 
 // Funcion que comprueba que todos los datos han cumplido los requisitos
+alert('hola');
 function validar(){
 	alert('hola validar'); 
 	if (validarEmail() /*&& nombre() && numero()*/){
