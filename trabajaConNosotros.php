@@ -71,7 +71,7 @@ mysqli_free_result($result);
             </div>
         </div>
     </div>
-    <!--/AREA BIENVENIDA-->
+    <!--/AREA BIENVENIDA--> 
     
     <br> 
     <br>
