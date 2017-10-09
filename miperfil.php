@@ -222,11 +222,9 @@ if($now > $_SESSION['expire']) {
       
        <h3><span class="colored">///</span> Deja un comentario</h3>
                 <div class="row" style="margin-top:20px;">
-                	<div class="span8">
+                	<div class="span12">
                         <form class="form">
-                            <input type="text" class="span4" style="margin-right:25px;" placeholder="Email" />
-                            <input  class="span4" placeholder="Nombre" />
-                            <textarea type="text" placeholder="Comentario" rows="5" class="span8"></textarea>
+                            <textarea type="text" placeholder="Comentario" rows="5" class="span12"></textarea>
                             <button type="submit"  class="btn btn-success">Enviar</button>
                         </form>
                     </div>
