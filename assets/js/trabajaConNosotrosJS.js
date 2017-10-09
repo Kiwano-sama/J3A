@@ -33,7 +33,7 @@ function nombre() {
 		alert("Por favor, introduzca su nombre");
 		return false;
 	} 
-}
+} 
 // Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
 	alert('hola prueba validarEmail');
@@ -42,7 +42,7 @@ function validarEmail() {
 	if (/\w+@\w+.\w+/.test(valor)) {
 		return true;
 	} else {
-		alert("La dirección de email es incorrecta, por favor, compruebe que el email sea correcto.");
+		alert("La dirección lllllllde email es incorrecta, por favor, compruebe que el email sea correcto.");
 		return false;
 	}
 }
