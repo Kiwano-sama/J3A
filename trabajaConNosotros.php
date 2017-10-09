@@ -102,18 +102,17 @@
     function comprobarLetra(e){  
     	var keychar;
     	var teclanum;
-    	//var miNumero = document.getElementById('numero');
-    	//alert('holaa prueba 2 comprobarNumero');
+    	
     	teclanum = e.which;
     	keychar = String.fromCharCode(teclanum);
     	
     	alert(keychar);
-    	//if(keychar < '0' || keychar >'9'){
-    //		alert('holaa prueba 1 comprobarNumero');
-    //		return false;
-    //	}else{
-   // 		return true;
-   // 	} 
+    	if((keychar >= 'a' && keychar <='z') || (keychar >= 'A' && keychar <='Z'))
+    
+    	return true;
+    	}else{
+   		return false;
+   	} 
     //	alert('holaa prueba 2 comprobarNumero'); 
     }  
     // Funcion para que no se pueda insertar mas de una '@'
