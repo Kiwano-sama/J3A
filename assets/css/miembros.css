@@ -12,6 +12,7 @@ td a{width:100%;display:block;}
 }
 
 .profile-userpic img {
+  text-align: center;
   float: none;
   margin: 0 auto;
   width: 50%;
