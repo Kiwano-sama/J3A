@@ -124,7 +124,7 @@ mysqli_free_result($result);
                                 	</div>
                                 </div>
                                 <br>
-                                <br>
+                                <br> 
                                 <br>
                                 <div class="col-md-12">
                                 <p>Mandanos tu CV aquí: </p>
