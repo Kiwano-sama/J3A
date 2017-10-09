@@ -180,7 +180,7 @@ mysqli_free_result($result);
                                     <label  class="control-label" for="number">Numero de Contacto: </label>
                                         <input onKeyPress="return comprobarNumero(event)"  required  id="numero" name="numero" type="text" class="form-control input-md">
                                        
-                                    </div>                           
+                                    </div>                          
                                 </div>
                                 <br>                                
                                 <br>                        

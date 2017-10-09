@@ -1,5 +1,6 @@
 //Funcion que una vez pulsado el boton 'enviar' envia los datos del formulario
 function Enviar() {
+	alert('hola prueba Enviar');
 	var Vemail = document.getElementsByName("email");
 //	var Vnombre = document.getElementsByName("nombre");
 //	var Vnumero = document.getElemntsByName("numero");
@@ -13,7 +14,7 @@ function Enviar() {
 // Funcion que comprueba que todos los datos han cumplido los requisitos
 function validar(){
 	alert('hola validar');
-	if (validarEmail() && nombre() && numero()){
+	if (validarEmail() /*&& nombre() && numero()*/){
 		alert("Sus datos son correcto, enviando...");
 		return true;
 	}else {
@@ -34,6 +35,7 @@ function nombre() {
 }
 // Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
+	alert('hola prueba validarEmail');
 	var valor = document.getElementById('email').value
 	
 	if (/\w+@\w+.\w+/.test(valor)) {
