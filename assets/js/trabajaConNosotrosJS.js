@@ -27,7 +27,7 @@ function nombre() {
 		alert('hola prueba nombre');
 	var nombre = document.getElementByName('nombre').value
 	if (nombre ! = NULL) {
-		return true;
+		return true; 
 	} else {
 		alert("Por favor, introduzca su nombre");
 		return false;
