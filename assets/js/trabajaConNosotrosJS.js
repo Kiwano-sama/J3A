@@ -31,7 +31,7 @@ function nombre() {
 	} else {
 		alert("Por favor, introduzca su nombre");
 		return false;
-	}
+	}  
 }
 // Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
