@@ -65,7 +65,7 @@ function comprobarNumero(e){
 	    }else {
 	        alert("El numero insertado " + miNumero + " es erroneo");
 	        return false;
-	    }  
+	    }
 }
 // Funcion para que no se pueda insertar mas de una '@'
 function comprobarArroba(e){
