@@ -257,7 +257,7 @@ if($now > $_SESSION['expire']) {
       
       <div class="row">
         <div class="col-sm-2 text-center">
-          <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+          <img src="assets/img/miembros/savandy.jpg" class="img-circle" height="65" width="65" alt="Avatar">
         </div>
         <div class="col-sm-10">
           <h4>Julen <small>Sep 29, 2017, 9:12 PM</small></h4>
@@ -265,7 +265,7 @@ if($now > $_SESSION['expire']) {
           <br>
         </div>
         <div class="col-sm-2 text-center">
-          <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+          <img src="assets/img/miembros/savandy.jpg" class="img-circle" height="65" width="65" alt="Avatar">
         </div>
         <div class="col-sm-10">
           <h4>Jon Ander <small>Sep 25, 2017, 8:25 PM</small></h4>
@@ -274,7 +274,7 @@ if($now > $_SESSION['expire']) {
           <p><span class="badge">1</span> respuesta:</p><br>
           <div class="row">
             <div class="col-sm-2 text-center">
-              <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+              <img src="assets/img/miembros/savandy.jpg" class="img-circle" height="65" width="65" alt="Avatar">
             </div>
             <div class="col-xs-10">
               <h4><span class="label label-danger">Administrador</span> Ander <small>Sep 25, 2017, 8:28 PM</small> </h4>
