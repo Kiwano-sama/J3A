@@ -134,7 +134,7 @@ mysqli_free_result($result);
                             <br>
                             <br>
                              <!-- Buttons -->	
-                         <input onSubmit="return Enviar()" type="submit" value="Enviar">
+                         <input  type="submit" value="Enviar">
                          <input type="reset" value="Deshacer">
                         </form>
                         <!-- form end -->
