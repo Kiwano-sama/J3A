@@ -155,7 +155,7 @@ if($now > $_SESSION['expire']) {
     
     
     <div class="span10">
-    
+    <h3><span class="colored">///</span> Tu información:</h3>
     <table class="table table-striped table-bordered table-condensed">
         <thead>
           <tr>
