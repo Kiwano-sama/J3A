@@ -164,7 +164,7 @@ mysqli_free_result($result);
                                 <div class="col-md-6">
                                     <div class="form-group">
                                          <label  class="control-label" for="nome">Nombre: </label>
-                                        <input required  id="numero" name="numero" type="text"  onKeyPress="return numero(event)"class="form-control input-md"  >
+                                        <input required  id="numero" name="numero" type="text"  onKeyPress="return nombre()"class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
