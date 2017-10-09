@@ -91,7 +91,7 @@ mysqli_free_result($result);
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                         <label  class="control-label" for="nombre">Nombre: </label>
+                                         <label  class="control-label" for="nombre">Nombreiiiiii: </label>
                                         <input  required  id="numero" name="numero" onKeyPress="return nombre()" type="text"  class="form-control input-md"  >
                                     </div>                                   
                                 </div>
