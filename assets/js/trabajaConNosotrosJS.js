@@ -52,6 +52,7 @@ function numero(){
 //	}else{
 //		return true;
 //	}	
+	
     var keychar;
 	var teclanum;
 	
