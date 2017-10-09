@@ -147,7 +147,7 @@
                             </div>
                             <h6>Programación</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 90%"></div>
+                                <div class="bar" style="width: 80%"></div>
                             </div>
                             <h6>Marketing social</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
@@ -207,19 +207,19 @@
                         <div class="well">
                             <h6>Diseño Web</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 90%"></div>
+                                <div class="bar" style="width: 70%"></div>
                             </div>
                             <h6>Programación</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 70%"></div>
+                                <div class="bar" style="width: 50%"></div>
                             </div>
                             <h6>Marketing social</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 80%"></div>
+                                <div class="bar" style="width: 95%"></div>
                             </div>
                             <h6>SEO</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 50%"></div>
+                                <div class="bar" style="width: 60%"></div>
                             </div>
                         </div>
                     </div>
@@ -271,19 +271,19 @@
                         <div class="well">
                             <h6>Diseño Web</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 90%"></div>
+                                <div class="bar" style="width: 80%"></div>
                             </div>
                             <h6>Programación</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 70%"></div>
+                                <div class="bar" style="width: 90%"></div>
                             </div>
                             <h6>Marketing social</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 80%"></div>
+                                <div class="bar" style="width: 50%"></div>
                             </div>
                             <h6>SEO</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 50%"></div>
+                                <div class="bar" style="width: 60%"></div>
                             </div>
                         </div>
                     </div>
@@ -335,19 +335,19 @@
                         <div class="well">
                             <h6>Diseño Web</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 90%"></div>
+                                <div class="bar" style="width: 80%"></div>
                             </div>
                             <h6>Programación</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 70%"></div>
+                                <div class="bar" style="width: 60%"></div>
                             </div>
                             <h6>Marketing social</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 80%"></div>
+                                <div class="bar" style="width: 50%"></div>
                             </div>
                             <h6>SEO</h6>
                             <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-                                <div class="bar" style="width: 50%"></div>
+                                <div class="bar" style="width: 90%"></div>
                             </div>
                         </div>
                     </div>
