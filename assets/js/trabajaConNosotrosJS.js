@@ -63,7 +63,7 @@ function comprobarNumero(e){
 		return false;
 	}else{
 		return true;
-	}
+	} 
 	alert('holaa prueba 2 comprobarNumero');
 	 if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
 	        return true;
