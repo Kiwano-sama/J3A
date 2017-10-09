@@ -106,7 +106,7 @@ if($now > $_SESSION['expire']) {
       <!--Contenido Sidebar-->
       	<table class="table table-bordered table-condensed">
   			<tr>
-  			<td style="background-color:#7DAF27;">Perfil</td>
+  			<td style="background-color:#C0C0C0;">Perfil</td>
   			</tr>
   			<tr>
   			<td><a href="amigos.php">Amigos</a></td>
