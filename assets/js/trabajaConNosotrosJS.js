@@ -42,7 +42,6 @@ function validarEmail() {
 		return false;
 	}
 }
-
 // Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de
 // contacto'
 function numero(){ 
