@@ -130,22 +130,22 @@ if($now > $_SESSION['expire']) {
 					<ul class="nav">
 						<li class="active">
 							<a href="#">
-							<i class="glyphicon glyphicon-home"></i>
+							<i class="icon-home"></i>
 							Perfil </a>
 						</li>
 						<li>
 							<a href="amigos.php">
-							<i class="glyphicon glyphicon-user"></i>
+							<i class="icon-user"></i>
 							Amigos </a>
 						</li>
 						<li>
 							<a href="tickets.php" target="_blank">
-							<i class="glyphicon glyphicon-ok"></i>
+							<i class="icon-book"></i>
 							Tickets </a>
 						</li>
 						<li>
 							<a href="configuracion.php">
-							<i class="glyphicon glyphicon-flag"></i>
+							<i class="icon-cog"></i>
 							Configuración </a>
 						</li>
 					</ul>
