@@ -104,20 +104,18 @@ if($now > $_SESSION['expire']) {
   <div class="row-fluid">
     <div class="span2">
       <!--Contenido Sidebar-->
-      	<table class="table table-striped table-bordered table-condensed">
+      	<table class="table table-bordered table-condensed">
   			<tr>
   			<td style="background-color:#7DAF27;">Perfil</td>
   			</tr>
   			<tr>
-  			<td>
-  			<a href="amigos.php">Amigos</a>
-  			</td>
+  			<td><a href="amigos.php">Amigos</a></td>
   			</tr>
   			<tr>
-  			<td>Configuración</td>
+  			<td><a href="conf.php">Configuración</a></td>
   			</tr>
   			<tr>
-  			<td>Tickets</td>
+  			<td><a href="tickets.php">Tickets</a></td>
   			</tr>
 		</table>
       
