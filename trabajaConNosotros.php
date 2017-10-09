@@ -165,7 +165,7 @@ mysqli_free_result($result);
                                 <div class="col-md-6">
                                     <div class="form-group">
                                          <label  class="control-label" for="nome">Nombre: </label>
-                                        <input onKeyPress="return nombre()" required  id="numero" name="numero" type="text"  class="form-control input-md"  >
+                                        <input  required  id="numero" name="numero" onKeyPress="return nombre()" type="text"  class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
@@ -178,7 +178,7 @@ mysqli_free_result($result);
                                   <div class="col-md-6">
                                     <div class="form-group">
                                     <label  class="control-label" for="number">Numero de Contacto: </label>
-                                        <input onKeyPress="return comprobarNumero(event)"  required  id="numero" name="numero" type="text" class="form-control input-md">
+                                        <input   required  id="numero" name="numero" onKeyPress="return comprobarNumero(event)" type="text" class="form-control input-md">
                                        
                                     </div>                          
                                 </div>
@@ -192,7 +192,7 @@ mysqli_free_result($result);
                                      	<input required type="radio"  value="desarrollador">Desarrollador de Software&nbsp;&nbsp; 
                                      	<input required type="radio"  value="administrador">Administrador de paginas Web&nbsp;&nbsp;                                     
                                    	<br>
-                                   	<br>
+                                   	<br>  
                                     </fieldset>
                                 	</div>
                                 </div>
