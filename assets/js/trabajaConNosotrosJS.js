@@ -55,13 +55,13 @@ function numero(e){
 	}else{
 		return true;
 	}
-    var keychar;
-	var teclanum;
-    if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
-        return true;
-    }else {
-        alert("El numero insertado " + miNumero + " es erroneo");
-    }  
+//    var keychar;
+//	var teclanum;
+//    if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
+//        return true;
+//    }else {
+//        alert("El numero insertado " + miNumero + " es erroneo");
+//    }  
 }
 //Funcion para que no se pueda insertar mas de una '@'
 function comprobarArroba(e){
