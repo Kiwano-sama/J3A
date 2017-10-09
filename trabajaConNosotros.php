@@ -34,6 +34,7 @@
     <link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Days+One|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">alert('hola 2')</script>
     <!--/GOOGLE FONTS-->
 </head>
     <body>
