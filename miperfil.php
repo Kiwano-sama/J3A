@@ -108,7 +108,7 @@ if($now > $_SESSION['expire']) {
       	<tr>
       	<td>
       	<div class="profile-userpic">
-					<img src="img/miembros/savandy.jpg" class="img-responsive" alt="">
+					<img src="assets/img/miembros/savandy.jpg" class="img-responsive" alt="">
 				</div>
       	</td>
       	</tr>
