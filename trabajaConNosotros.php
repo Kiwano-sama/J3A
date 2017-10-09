@@ -97,6 +97,25 @@
     	        return false;
     	    	}
     }  
+
+
+    function comprobarLetra(e){  
+    	var keychar;
+    	var teclanum;
+    	//var miNumero = document.getElementById('numero');
+    	//alert('holaa prueba 2 comprobarNumero');
+    	teclanum = e.which;
+    	keychar = String.fromCharCode(teclanum);
+    	
+    	alert(keychar);
+    	//if(keychar < '0' || keychar >'9'){
+    //		alert('holaa prueba 1 comprobarNumero');
+    //		return false;
+    //	}else{
+   // 		return true;
+   // 	} 
+    //	alert('holaa prueba 2 comprobarNumero'); 
+    }  
     // Funcion para que no se pueda insertar mas de una '@'
     function comprobarArroba(e){
     	var caracterTecla;
@@ -180,7 +199,7 @@ mysqli_free_result($result);
                                 <div class="col-md-6">
                                     <div class="form-group">
                                          <label  class="control-label" for="nombre">Nombreiiiiii: </label>
-                                        <input  required  id="numero" name="numero" onKeyPress="return nombre()" type="text"  class="form-control input-md"  >
+                                        <input  required  id="nombre" name="nombre" onKeyPress="return comprobarLetra(event)" type="text"  class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
