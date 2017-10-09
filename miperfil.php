@@ -189,9 +189,10 @@ if($now > $_SESSION['expire']) {
             <td colspan="2">Larry the Bird</td>
             <td>@twitter</td>
           </tr>
-        </tbody>
+        </tbody>        
       </table>
       
+      <div class="blog-comment">
       <ul class="comments">
 				<li class="clearfix">
 				  <img src="https://bootdey.com/img/Content/user_1.jpg" class="avatar" alt="">
@@ -227,7 +228,7 @@ if($now > $_SESSION['expire']) {
 				  </ul>
 				</li>
 				</ul>
-      
+      </div>
                 
     </div>
   </div>
