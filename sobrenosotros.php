@@ -107,23 +107,23 @@
 									<img alt="" src="img\Julen2.png">
                                     <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
                     </div>
-                    
+                    </div>
            <h2>Ander</h2>
-                
+                <div class="row">
                     <div class="span4">
 
 									<img alt="" src="img\Ander.png">
                                     <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
                     </div>
-                    
+                    </div>
           <h2>Jon Ander</h2>
-                
+                <div class="row">
                     <div class="span4">
 
 									<img alt="" src="img\JonAnder.png">
                                     <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
                     </div>
-                    
+                    </div>
           <h2>Jennifer</h2>
                 <div class="row">
                     <div class="span4">
