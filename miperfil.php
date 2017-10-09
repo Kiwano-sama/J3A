@@ -108,10 +108,8 @@ if($now > $_SESSION['expire']) {
       	<tr>
       	<td>
       	<!-- BOTONES SIDEBAR -->
-				<div class="profile-userbuttons">
 					<button type="button" class="btn btn-success btn-mini">Añadir</button>
 					<button type="button" class="btn btn-danger btn-mini">Mensaje</button>
-				</div>
 				<!-- /BOTONES SIDEBAR -->
       	</td>
       	</tr>
