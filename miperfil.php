@@ -155,16 +155,136 @@ if($now > $_SESSION['expire']) {
     
     
     <div class="span10">
-    asdasd
-     <div class="panel panel-info">
-     
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Nombre y Apellido(s)</h3>
-                    </div>
-                    <div class="panel-body">
-                        Valeriu Andrei Sanautanu
-                    </div>
-     </div>
+    
+    <table class="table table-striped table-bordered table-condensed">
+        <thead>
+          <tr>
+            <th></th>
+            <th colspan="2">Full name</th>
+            <th></th>
+          </tr>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      
+      <h4><small>Área miembros</small></h4>
+      <hr>
+      <h2>Valeriu Andrei Sanautanu</h2>
+      
+      
+      <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Información básica</h3>
+  </div>
+  <div class="panel-body">
+    Nombre: Valeriu Andrei <br>
+    Apellido: Sanautanu <br>
+    Username: savandy <br>
+    Fecha de Nacimiento: 07/07/1994 
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Detalles cuenta</h3>
+  </div>
+  <div class="panel-body">
+    Miembro desde: 29/09/2017 <br>
+    Rol: Administrador
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Tickets creados</h3>
+  </div>
+  <div class="panel-body">
+    Titulo ticket 1 <br>
+    Titulo ticket 2
+  </div>
+</div>
+
+<div class="panel panel-danger">
+ <div class="panel-heading">
+    <h3 class="panel-title">Tickets creados</h3>
+  </div>
+  <div class="panel-body">
+    Todavía no eres cliente nuestro. No puedes usar la opción 'tickets'.
+  </div>
+</div>
+
+           
+      <br>
+      
+
+      <h4>Deja un comentario: </h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">2</span> comentarios:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Julen <small>Sep 29, 2017, 9:12 PM</small></h4>
+          <p>Aupa Ander, me gusta tu perfil. Te he mandado petición de amigos.</p>
+          <br>
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Jon Ander <small>Sep 25, 2017, 8:25 PM</small></h4>
+          <p>Kaixo, tenemos que hablar seriamente sobre un tema. Contactame cuando puedas, que sea cuanto antes. Es muy urgente. He intentado llamarte y tienes el movil apagado.</p>
+          <br>
+          <p><span class="badge">1</span> respuesta:</p><br>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+            <div class="col-xs-10">
+              <h4><span class="label label-danger">Administrador</span> Ander <small>Sep 25, 2017, 8:28 PM</small> </h4>
+              <p>Tranquilo! Ahora te llamo.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+  
                 
     </div>
   </div>
