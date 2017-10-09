@@ -50,7 +50,7 @@ function validarEmail() {
  insertar letras en vez de numeros en 'Numero de
  contacto'
 */
-function comprobarNumero(e){ 
+function comprobarNumero(e){  
 	var keychar;
 	var teclanum;
 	var miNumero = document.getElementsById('numero');
