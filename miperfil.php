@@ -152,8 +152,19 @@ if($now > $_SESSION['expire']) {
 				</div>
             
     </div>
+    
+    
     <div class="span10">
-     
+    
+     <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Nombre y Apellido(s)</h3>
+                    </div>
+                    <div class="panel-body">
+                        Valeriu Andrei Sanautanu
+                    </div>
+     </div>
+                
     </div>
   </div>
 </div>
