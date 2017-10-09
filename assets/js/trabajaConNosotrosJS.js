@@ -54,12 +54,14 @@ function comprobarNumero(e){
 	
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
-
+	alert('holaa');
 	if(keychar < '0' || keychar >'9'){
+		alert('holaa prueba 1');
 		return false;
 	}else{
 		return true;
 	}
+	alert('holaa prueba 2');
 	 if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
 	        return true;
 	    }else {
