@@ -13,7 +13,7 @@
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/css/cssTrabajaConNosotros.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet"  />
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -159,13 +159,13 @@ mysqli_free_result($result);
                         <div class="well-title">
                             <h3>¿Quieres trabajar con nosotros?</h3>
                         </div>                        
-                        <form name="trabaja" action="" method="POST" onSubmit="return validar()">
+                        <form name="trabaja" action="trabajaConNosotros.php" method="post" onSubmit="return validar()">
                             <!-- Form start -->
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                          <label  class="control-label" for="nome">Nombre: </label>
-                                        <input required  id="numero" name="numero" type="text"  onKeyPress="return nombre()"class="form-control input-md"  >
+                                        <input onKeyPress="return nombre()" required  id="numero" name="numero" type="text"  class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
@@ -178,11 +178,11 @@ mysqli_free_result($result);
                                   <div class="col-md-6">
                                     <div class="form-group">
                                     <label  class="control-label" for="number">Numero de Contacto: </label>
-                                        <input required  id="numero" name="numero" type="text" onKeyPress="return numero()" class="form-control input-md">
+                                        <input onKeyPress="return comprobarNumero(event)"  required  id="numero" name="numero" type="text" class="form-control input-md">
                                        
-                                    </div>                           
+                                    </div>                          
                                 </div>
-                                <br>
+                                <br>                                
                                 <br>                        
                                 <div class="col-md-6">
                                      <div class="form-group">                                   
@@ -190,10 +190,9 @@ mysqli_free_result($result);
                                         <legend>Selecciona un puesto de trabajo:  </legend>
                                      	<input required type="radio"  value="diseñador">Diseñador de paginas Web&nbsp;&nbsp; 
                                      	<input required type="radio"  value="desarrollador">Desarrollador de Software&nbsp;&nbsp; 
-                                     	<input required type="radio"  value="administrador">Administrador de paginas Web&nbsp;&nbsp; 
-                                    
-                                    <br>
-                                    <br>
+                                     	<input required type="radio"  value="administrador">Administrador de paginas Web&nbsp;&nbsp;                                     
+                                   	<br>
+                                   	<br>
                                     </fieldset>
                                 	</div>
                                 </div>
@@ -207,7 +206,7 @@ mysqli_free_result($result);
                             </div>
                             <br>
                             <br>
-                             <!-- Buttons -->
+                             <!-- Buttons -->	
                          <input onSubmit="return Enviar()" type="submit" value="Enviar">
                          <input type="reset" value="Deshacer">
                         </form>
@@ -290,7 +289,6 @@ include 'footer.php';
 			});
 		}
     </script>
-	</body>
-		
+	</body>		
 </html>
     <!-- Page Content -->

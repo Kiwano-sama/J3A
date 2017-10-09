@@ -1,18 +1,20 @@
 //Funcion que una vez pulsado el boton 'enviar' envia los datos del formulario
 function Enviar() {
+	alert('hola prueba Enviar');
 	var Vemail = document.getElementsByName("email");
-	var Vnombre = document.getElementsByName("nombre");
-	var Vnumero = document.getElemntsByName("numero");
-	if (Vemail == null() && Vemail == "0"() && Vnombre == null() && Vnumero =="0" () ) {
+//	var Vnombre = document.getElementsByName("nombre");
+//	var Vnumero = document.getElemntsByName("numero");
+	if (Vemail == null() && Vemail == "0"(){ //&& Vnombre == null() && Vnumero =="0" () ) 
 		return false;
-		alert('Error al enviar formulario')
+		alert('Error al enviar formulario');
 	} else {
 		return true;
 	}
 }
 // Funcion que comprueba que todos los datos han cumplido los requisitos
 function validar(){
-	if (validarEmail() && nombre() && numero()){
+	alert('hola validar');
+	if (validarEmail() /*&& nombre() && numero()*/){
 		alert("Sus datos son correcto, enviando...");
 		return true;
 	}else {
@@ -20,7 +22,7 @@ function validar(){
 		return false;
 	}
 }
-// Funcion para comprobar que se haya insertado un nombre 
+// Funcion para comprobar que se haya insertado un nombre
 function nombre() {
 	var nombre = document.getElementByName('nombre').value
 	
@@ -33,6 +35,7 @@ function nombre() {
 }
 // Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
+	alert('hola prueba validarEmail');
 	var valor = document.getElementById('email').value
 	
 	if (/\w+@\w+.\w+/.test(valor)) {
@@ -42,31 +45,34 @@ function validarEmail() {
 		return false;
 	}
 }
-// Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de
-// contacto'
-function numero(){ 
-//	var miNumero=document.trabaja.numero.value;
-//	
-//	if(keychar < '0' || keychar >'9'){
-//		return false;
-//	}else{
-//		return true;
-//	}	
-	
-    var keychar;
+/* Funcion para determinar que parametros tiene que tener el 'Numero de
+ contacto' y que debe tener 9 numeros si no da error y que no se pueda
+ insertar letras en vez de numeros en 'Numero de
+ contacto'
+*/
+function comprobarNumero(e){ 
+	var keychar;
 	var teclanum;
+	var miNumero = document.getElementsById('numero');
 	
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
-	
-    if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
-        return true;
-    }else {
-        alert("El numero insertado " + miNumero + " es erroneo");
-        return false;
-    }  
-}
-//Funcion para que no se pueda insertar mas de una '@'
+	alert('holaa');
+	if(keychar < '0' || keychar >'9'){
+		alert('holaa prueba 1');
+		return false;
+	}else{
+		return true;
+	}
+	alert('holaa prueba 2');
+	 if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
+	        return true;
+	    }else {
+	        alert("El numero insertado " + miNumero + " es erroneo");
+	        return false;
+	    	}
+} 
+// Funcion para que no se pueda insertar mas de una '@'
 function comprobarArroba(e){
 	var caracterTecla;
     var codigoTecla;
