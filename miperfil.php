@@ -54,7 +54,7 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
         <div class="container">
             <div class="row welcome_inner">
                 <div class="span12">
-                    <h1><span class="colored">///</span> MIEMBROS J3A</h1>
+                    <h1><span class="colored">///</span> PERFIL</h1>
                 </div>
             </div>
         </div>
@@ -104,50 +104,53 @@ if($now > $_SESSION['expire']) {
   <div class="row-fluid">
     <div class="span2">
       <!--Contenido Sidebar-->
-      	<table class="table table-bordered table-condensed">
-      	<tr>
-      	<td>
-      	<div class="profile-userpic">
+      
+      <div class="profile-userpic">
 					<img src="assets/img/miembros/savandy.jpg" class="img-responsive" alt="">
 				</div>
-      	</td>
-      	</tr>
-      	<tr>
-      	<td>
-      	<div class="profile-usertitle">
+				<!-- END SIDEBAR USERPIC -->
+				<!-- SIDEBAR USER TITLE -->
+				<div class="profile-usertitle">
 					<div class="profile-usertitle-name">
-						Savandy
+						<?php echo ($_SESSION['username']);?>
 					</div>
 					<div class="profile-usertitle-job">
 						Administrador
 					</div>
 				</div>
-      	</td>
-      	</tr>
-      	<tr>
-      	<td>
-      	<!-- BOTONES SIDEBAR -->
+				<!-- END SIDEBAR USER TITLE -->
+				<!-- SIDEBAR BUTTONS -->
 				<div class="profile-userbuttons">
-					<button type="button" class="btn btn-success btn-mini">Añadir</button>
-					<button type="button" class="btn btn-danger btn-mini">Mensaje</button>
+					<button type="button" class="btn btn-success btn-sm">Añadir</button>
+					<button type="button" class="btn btn-danger btn-sm">Mensaje</button>
 				</div>
-				<!-- /BOTONES SIDEBAR -->
-      	</td>
-      	</tr>
-  			<tr>
-  			<td style="background-color:#C0C0C0;">Perfil</td>
-  			</tr>
-  			<tr>
-  			<td><a href="amigos.php">Amigos</a></td>
-  			</tr>
-  			<tr>
-  			<td><a href="conf.php">Configuración</a></td>
-  			</tr>
-  			<tr>
-  			<td><a href="tickets.php">Tickets</a></td>
-  			</tr>
-		</table>
-      
+				<!-- END SIDEBAR BUTTONS -->
+				<!-- SIDEBAR MENU -->
+				<div class="profile-usermenu">
+					<ul class="nav">
+						<li class="active">
+							<a href="#">
+							<i class="glyphicon glyphicon-home"></i>
+							Perfil </a>
+						</li>
+						<li>
+							<a href="amigos.php">
+							<i class="glyphicon glyphicon-user"></i>
+							Amigos </a>
+						</li>
+						<li>
+							<a href="tickets.php" target="_blank">
+							<i class="glyphicon glyphicon-ok"></i>
+							Tickets </a>
+						</li>
+						<li>
+							<a href="configuracion.php">
+							<i class="glyphicon glyphicon-flag"></i>
+							Configuración </a>
+						</li>
+					</ul>
+				</div>
+            
     </div>
     <div class="span10">
      
@@ -156,65 +159,7 @@ if($now > $_SESSION['expire']) {
 </div>
   </section>
   
-  
-  <div class="container">
-    <div class="row profile">
-		<div class="col-md-3">
-			<div class="profile-sidebar">
-				<!-- SIDEBAR USERPIC -->
-				<div class="profile-userpic">
-					<img src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive" alt="">
-				</div>
-				<!-- END SIDEBAR USERPIC -->
-				<!-- SIDEBAR USER TITLE -->
-				<div class="profile-usertitle">
-					<div class="profile-usertitle-name">
-						Marcus Doe
-					</div>
-					<div class="profile-usertitle-job">
-						Developer
-					</div>
-				</div>
-				<!-- END SIDEBAR USER TITLE -->
-				
-				<!-- SIDEBAR MENU -->
-				<div class="profile-usermenu">
-					<ul class="nav">
-						<li class="active">
-							<a href="#">
-							<i class="glyphicon glyphicon-home"></i>
-							Overview </a>
-						</li>
-						<li>
-							<a href="#">
-							<i class="glyphicon glyphicon-user"></i>
-							Account Settings </a>
-						</li>
-						<li>
-							<a href="#" target="_blank">
-							<i class="glyphicon glyphicon-ok"></i>
-							Tasks </a>
-						</li>
-						<li>
-							<a href="#">
-							<i class="glyphicon glyphicon-flag"></i>
-							Help </a>
-						</li>
-					</ul>
-				</div>
-				<!-- END MENU -->
-			</div>
-		</div>
-		<div class="col-md-9">
-            <div class="profile-content">
-			   Some user related content goes here...
-            </div>
-		</div>
-	</div>
-</div>
-  
-  
-  
+ 
   
   </div>
     <!--/AREA CONTENIDO-->
