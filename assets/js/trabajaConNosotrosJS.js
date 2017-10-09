@@ -22,7 +22,7 @@ function validar(){
 		alert("Datos incorrectos, compruebe que todos los datos sean correctos");
 		return false;
 	}
-} 
+}
 // Funcion para comprobar que se haya insertado un nombre
 function nombre() {
 		alert('hola prueba nombre');

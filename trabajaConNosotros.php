@@ -49,7 +49,7 @@
     // Funcion para comprobar que se haya insertado un nombre
     function nombre() {
     		alert('hola prueba nombre');
-    	var nombre = document.getElementByName('nombre').value
+    	var nombre = document.getElementsByName('nombre').value
     	if (nombre != NULL) {
     		return true; 
     	} else {
@@ -77,7 +77,7 @@
     function comprobarNumero(e){  
     	var keychar;
     	var teclanum;
-    	var miNumero = document.getElementsById('numero');
+    	var miNumero = document.getElementById('numero');
     	alert('holaa prueba 2 comprobarNumero');
     	teclanum = e.which;
     	keychar = String.fromCharCode(teclanum);
