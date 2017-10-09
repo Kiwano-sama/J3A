@@ -12,6 +12,7 @@ function Enviar() {
 }
 // Funcion que comprueba que todos los datos han cumplido los requisitos
 function validar(){
+	alert('hola validar');
 	if (validarEmail() && nombre() && numero()){
 		alert("Sus datos son correcto, enviando...");
 		return true;
