@@ -20,12 +20,11 @@ function validar(){
 		return false;
 	}
 }
-// Funcion para comprobar que se haya insertado un nombre y que no se pueda
-// introducir numeros en este campo
+// Funcion para comprobar que se haya insertado un nombre 
 function nombre() {
-	var nombre = document.getElementById('nombre').value
+	var nombre = document.getElementByName('nombre').value
 	
-	if (nombre == NULL) {
+	if (nombre ! = NULL) {
 		return true;
 	} else {
 		alert("Por favor, introduzca su nombre");
@@ -43,26 +42,29 @@ function validarEmail() {
 		return false;
 	}
 }
-
 // Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de
 // contacto'
-function numero(e){ 
-	var miNumero=document.trabaja.numero.value;
+function numero(){ 
+//	var miNumero=document.trabaja.numero.value;
+//	
+//	if(keychar < '0' || keychar >'9'){
+//		return false;
+//	}else{
+//		return true;
+//	}	
+	
+    var keychar;
+	var teclanum;
+	
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
 	
-	if(keychar < '0' || keychar >'9'){
-		return false;
-	}else{
-		return true;
-	}
-//    var keychar;
-//	var teclanum;
-//    if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
-//        return true;
-//    }else {
-//        alert("El numero insertado " + miNumero + " es erroneo");
-//    }  
+    if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
+        return true;
+    }else {
+        alert("El numero insertado " + miNumero + " es erroneo");
+        return false;
+    }  
 }
 //Funcion para que no se pueda insertar mas de una '@'
 function comprobarArroba(e){

@@ -11,6 +11,11 @@ td a{width:100%;display:block;}
   background: #fff;
 }
 
+.profile-userpic {
+	width: 100%;
+	display:block;
+}
+
 .profile-userpic img {
   float: none;
   margin: 0 auto;
