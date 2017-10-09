@@ -107,27 +107,6 @@
 									<img alt="" src="img\Julen2.png">
                                     <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
                     </div>
-           <h2>Ander</h2>
-                    <div class="span4">
-
-									<img alt="" src="img\Ander.png">
-                                    <p><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
-                    </div>
-                    </div>
-          <h2>Jon Ander</h2>
-                <div class="row">
-                    <div class="span4">
-
-									<img alt="" src="img\JonAnder.png">
-                                    <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
-                    </div>
-          <h2>Jennifer</h2>
-                    <div class="span4">
-
-									<img alt="" src="img\Jenny.png">
-                                    <p><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
-                    </div>
-                    </div>
                     <div class="span4">
                         <h2><span class="colored"><strong>///</strong></span>Información</span></h2>
                         <hr class="dash">
@@ -189,7 +168,7 @@
                    
                     <div class="span4">
 
-									<img alt="" src="img\Julen2.png">
+									<img alt="" src="img\JonAnder.png">
                                     <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
                     </div>
                     <div class="span4">
@@ -202,7 +181,7 @@
                         <div class="row">
                             <div class="span2">
                                 <ul style="margin-top:10px;" class="unstyled">
-                                    <li><i class="icon-user"></i> Jon Ander Valdisangre</li>
+                                    <li><i class="icon-user"></i> Jon Ander Valdivieso</li>
                                     <li><i class="icon-th"></i> 10 Proyectos</li>
                                     <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
                                     <li><i class="icon-book"></i> Growing library</li>
@@ -253,7 +232,7 @@
                    
                     <div class="span4">
 
-									<img alt="" src="img\Julen2.png">
+									<img alt="" src="img\Ander.png">
                                     <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
                     </div>
                     <div class="span4">
@@ -266,7 +245,7 @@
                         <div class="row">
                             <div class="span2">
                                 <ul style="margin-top:10px;" class="unstyled">
-                                    <li><i class="icon-user"></i> Ander Savandy</li>
+                                    <li><i class="icon-user"></i> Ander Valeriu</li>
                                     <li><i class="icon-th"></i> 24 Proyectos</li>
                                     <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
                                     <li><i class="icon-book"></i> Growing library</li>
@@ -317,7 +296,7 @@
                    
                     <div class="span4">
 
-									<img alt="" src="img\Julen2.png">
+									<img alt="" src="img\Jenny.png">
                                     <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
                     </div>
                     <div class="span4">
@@ -330,7 +309,7 @@
                         <div class="row">
                             <div class="span2">
                                 <ul style="margin-top:10px;" class="unstyled">
-                                    <li><i class="icon-user"></i> Jennerys Targaryen</li>
+                                    <li><i class="icon-user"></i> Jennifer Hernández</li>
                                     <li><i class="icon-th"></i> 8 Proyectos</li>
                                     <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
                                     <li><i class="icon-book"></i> Growing library</li>
