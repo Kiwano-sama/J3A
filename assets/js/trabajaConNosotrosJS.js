@@ -10,10 +10,10 @@ function Enviar() {
 	} else {
 		return true;
 	}
-}
+} 
 // Funcion que comprueba que todos los datos han cumplido los requisitos
 function validar(){
-	alert('hola validar');
+	alert('hola validar'); 
 	if (validarEmail() /*&& nombre() && numero()*/){
 		alert("Sus datos son correcto, enviando...");
 		return true;
@@ -27,11 +27,11 @@ function nombre() {
 		alert('hola prueba nombre');
 	var nombre = document.getElementByName('nombre').value
 	if (nombre ! = NULL) {
-		return true;
+		return true; 
 	} else {
 		alert("Por favor, introduzca su nombre");
 		return false;
-	}
+	} 
 }
 // Funcion para comprobar que el email cumple con los requisitos
 function validarEmail() {
@@ -50,7 +50,7 @@ function validarEmail() {
  insertar letras en vez de numeros en 'Numero de
  contacto'
 */
-function comprobarNumero(e){ 
+function comprobarNumero(e){  
 	var keychar;
 	var teclanum;
 	var miNumero = document.getElementsById('numero');

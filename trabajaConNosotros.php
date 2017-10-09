@@ -72,81 +72,7 @@ mysqli_free_result($result);
         </div>
     </div>
     <!--/AREA BIENVENIDA-->
-    <!--AREA SLIDER-->
-    <div class="slider_area">
-        <div class="container">
-            <div class="row">
-                <div class="span4 hidden-phone">
-                    <h2><span class="label">Designed for everyone!</span></h2>
-                    <p class="intro">Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.</p>
-                    <p><span class="pun"><em>Valera is designed to help people of all skill levels designer or developer, huge nerd or early beginner. Use it as a complete kit or use to start something more complex.</em></span></p>
-                    <hr class="visible-desktop">
-                    <h4 class="visible-desktop">Alguna de nuestra especialización:</h4>
-                    <div class="row visible-desktop">
-                        <div class="span2">
-                            <ul style="margin-top:10px;" class="unstyled">
-                                <li><i class="icon-user"></i> Built for and by nerds</li>
-                                <li><i class="icon-th"></i> 12-column grid</li>
-                                <li><i class="icon-resize-horizontal"></i> Max-width 1200px</li>
-                                <li><i class="icon-book"></i> Growing library</li>
-                            </ul>
-                        </div>
-                        <div class="span2">
-                            <ul style="margin-top:10px;" class="unstyled">
-                                <li><i class="icon-resize-small"></i> Responsive design</li>
-                                <li><i class="icon-eye-open"></i> Cross-everything</li>
-                                <li><i class="icon-list-alt"></i> Styleguide docs</li>
-                                <li><i class="icon-cog"></i> jQuery plugins</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr>
-                    <a href="123" class="btn btn-large btn-success mega"> Mira nuestros diseños</a>
-                </div>
-                <div class="span8 mainslider">
-                    <div class="flexslider">
-                        <ul class="slides">
-                            <li>
-                                <img src="assets/img/slide2.jpg" />
-                            </li>
-                            <li>
-                                <a href="http://flex.madebymufffin.com"><img src="assets/img/slide3.jpg" /></a>
-                            </li>
-                            <li>
-                                <img src="assets/img/slide4.jpg" />
-                            </li>
-                            <li>
-                                <img src="assets/img/slide5.jpg" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/AREA SLIDER-->
-    <!--FEATURES AREA-->
-    <div class="gray_bg">
-        <div class="container">
-            <div class="row m25">
-                <div class="span4 clearfix">
-                        <img src="assets/img/html5.png" class="pull-left" />
-                        <h3>HTML 5 <span class="colored">&amp;</span> CSS 3</h3>
-                        <p><em>Built to support new HTML5 elements and syntax. Progressively enhanced components for ultimate style. Yes, Valera is awesome!</em></p>
-                </div>
-                <div class="span4 clearfix">
-                        <img src="assets/img/resp.png" class="pull-left" />
-                        <h3>Responsive Design</h3>
-                        <p><em> Our components are scaled according to a range of resolutions and devices to provide a consistent experience, no matter what.</em></p>
-                </div>
-                <div class="span4 clearfix">
-                        <img src="assets/img/doc.png" class="pull-left" />
-                        <h3>Well Documented</h3>
-                        <p><em>Valera was designed first and foremost as a styleguide to document not only our features, but best practices and living.</em></p>
-                </div>
-            </div>
-        </div>
-    </div>    
+    
     <br>
     <br>
     <br>
@@ -159,17 +85,18 @@ mysqli_free_result($result);
                         <div class="well-title">
                             <h3>¿Quieres trabajar con nosotros?</h3>
                         </div>                        
-                        <form name="trabaja" action="trabajaConNosotros.php" method="post" onSubmit="return validar()">
+                       <form name="trabaja" action="http://www.google.es/" onSubmit="return validar()">
+                        <!-- <form name="trabaja" action="trabajaConNosotros.php" method="post" onSubmit="return validar()"> -->
                             <!-- Form start -->
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                         <label  class="control-label" for="nome">Nombre: </label>
+                                         <label  class="control-label" for="nombre">Nombre: </label>
                                         <input  required  id="numero" name="numero" onKeyPress="return nombre()" type="text"  class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
-                                <div class="col-md-6">
+                                <div class="col-md-6"> 
                                     <div class="form-group">
                                        <label  class="control-label" for="email">Email: </label>
                                         <input required  id="email" name="email" type="text" onKeyPress="return comprobarArroba(event)" placeholder="juan@tuemail.com" class="form-control input-md" >
@@ -177,21 +104,21 @@ mysqli_free_result($result);
                                 </div>
                                   <div class="col-md-6">
                                     <div class="form-group">
-                                    <label  class="control-label" for="number">Numero de Contacto: </label>
+                                    <label  class="control-label" for="numero">Numero de Contacto: </label>
                                         <input   required  id="numero" name="numero" onKeyPress="return comprobarNumero(event)" type="text" class="form-control input-md">
                                        
                                     </div>                          
                                 </div>
-                                <br>                                
+                                <br>                                 
                                 <br>                        
                                 <div class="col-md-6">
                                      <div class="form-group">                                   
                                     <fieldset>
                                         <legend>Selecciona un puesto de trabajo:  </legend>
-                                     	<input required type="radio"  value="diseñador">Diseñador de paginas Web&nbsp;&nbsp; 
-                                     	<input required type="radio"  value="desarrollador">Desarrollador de Software&nbsp;&nbsp; 
-                                     	<input required type="radio"  value="administrador">Administrador de paginas Web&nbsp;&nbsp;                                     
-                                   	<br>
+                                     	<input required type="radio"  value="diseñador"> Diseñador de paginas Web&nbsp;&nbsp; 
+                                     	<input required type="radio"  value="desarrollador"> Desarrollador de Software&nbsp;&nbsp; 
+                                     	<input required type="radio"  value="administrador"> Administrador de paginas Web&nbsp;&nbsp;                                     
+                                   	<br> 
                                    	<br>  
                                     </fieldset>
                                 	</div>
