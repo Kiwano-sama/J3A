@@ -108,6 +108,21 @@
                                     <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
                     </div>
                     <div class="span4">
+
+									<img alt="" src="img\Ander.png">
+                                    <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
+                    </div>
+                    <div class="span4">
+
+									<img alt="" src="img\JonAnder.png">
+                                    <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
+                    </div>
+                    <div class="span4">
+
+									<img alt="" src="img\Jenny.png">
+                                    <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
+                    </div>
+                    <div class="span4">
                         <h2><span class="colored"><strong>///</strong></span>Información</span></h2>
                         <hr class="dash">
                         <div class="intro">
