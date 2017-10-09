@@ -159,13 +159,13 @@ mysqli_free_result($result);
                         <div class="well-title">
                             <h3>¿Quieres trabajar con nosotros?</h3>
                         </div>                        
-                        <form name="trabaja" action="" method="POST" onSubmit="return validar()">
+                        <form name="trabaja" action="trabajaConNosotros.php" method="post" onSubmit="return validar()">
                             <!-- Form start -->
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                          <label  class="control-label" for="nome">Nombre: </label>
-                                        <input required  id="numero" name="numero" type="text"  onKeyPress="return nombre()"class="form-control input-md"  >
+                                        <input onKeyPress="return nombre()" required  id="numero" name="numero" type="text"  class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
@@ -178,7 +178,7 @@ mysqli_free_result($result);
                                   <div class="col-md-6">
                                     <div class="form-group">
                                     <label  class="control-label" for="number">Numero de Contacto: </label>
-                                        <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarNumero(event)" class="form-control input-md">
+                                        <input onKeyPress="return comprobarNumero(event)"  required  id="numero" name="numero" type="text" class="form-control input-md">
                                        
                                     </div>                           
                                 </div>
