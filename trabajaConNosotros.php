@@ -97,8 +97,6 @@
     	        return false;
     	    	}
     }  
-
-
     function comprobarLetra(e){  
     	var keychar;
     	var teclanum;
