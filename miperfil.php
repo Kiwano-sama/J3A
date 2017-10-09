@@ -107,6 +107,13 @@ if($now > $_SESSION['expire']) {
       	<table class="table table-bordered table-condensed">
       	<tr>
       	<td>
+      	<div class="profile-userpic">
+					<img src="assets/img/miembros/savandy.jpg" class="img-responsive" alt="">
+				</div>
+      	</td>
+      	</tr>
+      	<tr>
+      	<td>
       	<div class="profile-usertitle">
 					<div class="profile-usertitle-name">
 						Savandy
