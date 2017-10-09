@@ -104,6 +104,7 @@ td a{width:100%;display:block;}
   min-height: 460px;
 }
 
+/* Comentarios perfil */
 .blog-comment::before,
 .blog-comment::after,
 .blog-comment-form::before,
@@ -114,8 +115,8 @@ td a{width:100%;display:block;}
 }
 
 .blog-comment{
-    padding-left: 15%;
-	padding-right: 15%;
+    padding-left: 3%;
+	padding-right: 3%;
 }
 
 .blog-comment ul{
@@ -172,8 +173,8 @@ td a{width:100%;display:block;}
 }
 
 .blog-comment-form{
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 15%;
+	padding-right: 15%;
 	padding-top: 40px;
 }
 

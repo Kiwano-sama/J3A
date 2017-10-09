@@ -155,7 +155,7 @@ if($now > $_SESSION['expire']) {
     
     
     <div class="span10">
-    
+    <h3><span class="colored">///</span> Tu información:</h3>
     <table class="table table-striped table-bordered table-condensed">
         <thead>
           <tr>
@@ -181,7 +181,7 @@ if($now > $_SESSION['expire']) {
       </table>
       
       <hr>
-      <h3><span class="colored">///</span> 3 Comments:</h3>
+      <h3><span class="colored">///</span> 3 Comentario(s):</h3>
       <div class="blog-comment">
       <ul class="comments">
 				<li class="clearfix">
@@ -219,6 +219,17 @@ if($now > $_SESSION['expire']) {
 				</li>
 				</ul>
       </div>
+      
+       <h3><span class="colored">///</span> Deja un comentario</h3>
+                <div class="row" style="margin-top:20px;">
+                	<div class="span12">
+                        <form class="form">
+                            <textarea type="text" placeholder="Comentario" rows="5" class="span12"></textarea>
+                            <button type="submit"  class="btn btn-success">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+      
                 
     </div>
   </div>
