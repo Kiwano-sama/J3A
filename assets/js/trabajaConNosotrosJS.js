@@ -5,7 +5,7 @@ function Enviar() {
 	var Vnumero = document.getElemntsByName("numero");
 	if (Vemail == null() && Vemail == "0"() && Vnombre == null() && Vnumero =="0" () ) {
 		return false;
-		alert('Error al enviar formulario')
+		alert('Error al enviar formulario');
 	} else {
 		return true;
 	}
@@ -20,7 +20,7 @@ function validar(){
 		return false;
 	}
 }
-// Funcion para comprobar que se haya insertado un nombre 
+// Funcion para comprobar que se haya insertado un nombre
 function nombre() {
 	var nombre = document.getElementByName('nombre').value
 	
@@ -42,31 +42,34 @@ function validarEmail() {
 		return false;
 	}
 }
-// Funcion para que no se pueda insertar letras en vez de numeros en 'Numero de
-// contacto'
-function numero(){ 
-//	var miNumero=document.trabaja.numero.value;
-//	
-//	if(keychar < '0' || keychar >'9'){
-//		return false;
-//	}else{
-//		return true;
-//	}	
-	
-    var keychar;
+/* Funcion para determinar que parametros tiene que tener el 'Numero de
+ contacto' y que debe tener 9 numeros si no da error y que no se pueda
+ insertar letras en vez de numeros en 'Numero de
+ contacto'
+*/
+function comprobarNumero(e){ 
+	var keychar;
 	var teclanum;
+	var miNumero = document.getElementsById('numero');
 	
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
 	
-    if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
-        return true;
-    }else {
-        alert("El numero insertado " + miNumero + " es erroneo");
-        return false;
-    }  
+	if(keychar < '0' || keychar >'9'){
+		return false;
+	}else{
+		return true;
+	}
+	 if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
+	        return true;
+	    }else {
+	        alert("El numero insertado " + miNumero + " es erroneo");
+	        return false;
+	    }  
 }
-//Funcion para que no se pueda insertar mas de una '@'
+// 
+
+// Funcion para que no se pueda insertar mas de una '@'
 function comprobarArroba(e){
 	var caracterTecla;
     var codigoTecla;
