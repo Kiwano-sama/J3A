@@ -195,7 +195,7 @@ mysqli_free_result($result);
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                         <label  class="control-label" for="nombre">Nombreiiiiii: </label>
+                                         <label  class="control-label" for="nombre">Nombrei: </label>
                                         <input  required  id="nombre" name="nombre" onKeyPress="return comprobarLetra(event)" type="text"  class="form-control input-md"  >
                                     </div>                                   
                                 </div>
