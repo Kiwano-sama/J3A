@@ -48,10 +48,9 @@ td a{width:100%;display:block;}
 
 .profile-userbuttons .btn {
   text-transform: uppercase;
-  font-size: 10px;
-  font-weight: 600;
-  padding: 6px 15px;
-  margin-right: 5px;
+
+  padding: 6px 5px;
+  margin-right: 4px;
 }
 
 .profile-userbuttons .btn:last-child {
