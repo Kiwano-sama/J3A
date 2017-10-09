@@ -457,8 +457,8 @@
                         <h5><span class="colored">///</span> Stay in touch</h5>
                         <span>Find out what's happening:</span>
                         <hr>
-                        <a href="#"><div class="icon_t"></div></a>
-                        <a href="#"><div class="icon_facebook"></div></a>
+                        <a href="https://twitter.com/j3a_design"><div class="icon_t"></div></a>
+                        <a href="https://www.facebook.com/jtresa.designdevelopment.5"><div class="icon_facebook"></div></a>
                         <a href="#"><div class="icon_dribbble"></div></a>
                         <a href="#"><div class="icon_google"></div></a>
                         <a href="#"><div class="icon_in"></div></a>
