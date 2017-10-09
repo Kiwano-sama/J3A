@@ -106,7 +106,7 @@ if($now > $_SESSION['expire']) {
       <!--Contenido Sidebar-->
       
       <div class="profile-userpic">
-					<img src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive" alt="">
+					<img src="assets/img/miembros/savandy.jpg" class="img-responsive" alt="">
 				</div>
 				<!-- END SIDEBAR USERPIC -->
 				<!-- SIDEBAR USER TITLE -->
