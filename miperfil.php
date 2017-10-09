@@ -107,6 +107,18 @@ if($now > $_SESSION['expire']) {
       	<table class="table table-bordered table-condensed">
       	<tr>
       	<td>
+      	<div class="profile-usertitle">
+					<div class="profile-usertitle-name">
+						Savandy
+					</div>
+					<div class="profile-usertitle-job">
+						Administrador
+					</div>
+				</div>
+      	</td>
+      	</tr>
+      	<tr>
+      	<td>
       	<!-- BOTONES SIDEBAR -->
 				<div class="profile-userbuttons">
 					<button type="button" class="btn btn-success btn-mini">Añadir</button>
