@@ -106,7 +106,7 @@ mysqli_free_result($result);
                                     <label  class="control-label" for="numero">Numero de Contacto: </label>
                                         <input   required  id="numero" name="numero" onKeyPress="return comprobarNumero(event)" type="text" class="form-control input-md">
                                        
-                                    </div>                           
+                                    </div>                          
                                 </div>
                                 <br>                                 
                                 <br>                        
