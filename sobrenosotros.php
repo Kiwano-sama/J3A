@@ -105,7 +105,7 @@
                     <div class="span4">
 
 									<img alt="" src="img\Julen.png">
-                                    <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="#"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
+                                    <p style="margin-top:20px;"><a class="btn btn-success btn-small" style="margin-right:10%" href="img\Julen.png"><i class="icon-picture icon-white"></i> Ver  Curriculum</a></p>
                     </div>
                     <div class="span4">
                         <h2><span class="colored"><strong>///</strong></span>Información</span></h2>
