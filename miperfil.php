@@ -182,76 +182,86 @@ if($now > $_SESSION['expire']) {
       
       <hr>
       <h3><span class="colored">///</span> 3 Comentario(s):</h3>
-      <div class="comment">
-                    <div class="row">
-                        <div class="span8">
-                        	<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>
-                            <div>
-                            <h5><a href="#">OrangeIdea</a> April 28, 2012 <span class="small"><a class="badge" href="#">Replay</a></span></h5>
-                            <em>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt.</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="comment  pull-right">
-                    <div class="row">
-                        <div class="span7">
-                        	<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>
-                            <div>
-                            <h5><a href="#">OrangeIdea</a> April 28, 2012 <span class="small"><a class="badge" href="#">Replay</a></span></h5>
-                            <em>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt.</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="comment  pull-right">
-                    <div class="row">
-                        <div class="span7">
-                        	<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>
-                            <div>
-                            <h5><a href="#">OrangeIdea</a> April 28, 2012 <span class="small"><a class="badge" href="#">Replay</a></span></h5>
-                            <em>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt.</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="comment  pull-right">
-                    <div class="row">
-                        <div class="span6">
-                        	<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>
-                            <div>
-                            <h5><a href="#">OrangeIdea</a> April 28, 2012 <span class="small"><a class="badge" href="#">Replay</a></span></h5>
-                            <em>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt.</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                	<div class="span8"><hr></div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="comment">
-                    <div class="row">
-                        <div class="span8">
-                        	<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>
-                            <div>
-                            <h5><a href="#">OrangeIdea</a> April 28, 2012 <span class="small"><a class="badge" href="#">Replay</a></span></h5>
-                            <em>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt.</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="comment  pull-right">
-                    <div class="row">
-                        <div class="span7">
-                        	<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>
-                            <div>
-                            <h5><a href="#">OrangeIdea</a> April 28, 2012 <span class="small"><a class="badge" href="#">Replay</a></span></h5>
-                            <em>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt.</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      
+      <?php 
+  // Selección de todos los comentarios de la BBDD, para éste usuario
+  $sql = "SELECT * FROM `comentario`";
+  $result = mysqli_query($link, $sql);
+  while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+  {
+
+  	echo ('<div class="comment">');
+                    echo ('<div class="row">');
+  			echo ('<div class="span8">');
+                        	echo ('<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>');
+                        	echo ('<div>');
+                        	echo ('<h5><a href="#">' . $row['username'] . '</a>' . $row['fecha'] . ' <span class="small"><a class="badge" href="#">Replay</a></span></h5>');
+                            echo ('<em>' . $row['comentario'] . '</em>');
+                            echo ('</div>');
+                            		echo ('</div>');
+                    echo ('</div>');
+                  echo ('</div>');
+//                 <div class="comment  pull-right">
+//                     <div class="row">
+//                         <div class="span7">
+//                         	<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>
+//                             <div>
+//                             <h5><a href="#">OrangeIdea</a> April 28, 2012 <span class="small"><a class="badge" href="#">Replay</a></span></h5>
+//                             <em>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt.</em>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 <div class="comment  pull-right">
+//                     <div class="row">
+//                         <div class="span7">
+//                         	<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>
+//                             <div>
+//                             <h5><a href="#">OrangeIdea</a> April 28, 2012 <span class="small"><a class="badge" href="#">Replay</a></span></h5>
+//                             <em>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt.</em>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 <div class="comment  pull-right">
+//                     <div class="row">
+//                         <div class="span6">
+//                         	<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>
+//                             <div>
+//                             <h5><a href="#">OrangeIdea</a> April 28, 2012 <span class="small"><a class="badge" href="#">Replay</a></span></h5>
+//                             <em>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt.</em>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 <div class="row">
+//                 	<div class="span8"><hr></div>
+//                 </div>
+//                 <div class="clearfix"></div>
+//                 <div class="comment">
+//                     <div class="row">
+//                         <div class="span8">
+//                         	<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>
+//                             <div>
+//                             <h5><a href="#">OrangeIdea</a> April 28, 2012 <span class="small"><a class="badge" href="#">Replay</a></span></h5>
+//                             <em>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt.</em>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 <div class="comment  pull-right">
+//                     <div class="row">
+//                         <div class="span7">
+//                         	<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>
+//                             <div>
+//                             <h5><a href="#">OrangeIdea</a> April 28, 2012 <span class="small"><a class="badge" href="#">Replay</a></span></h5>
+//                             <em>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt.</em>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+  }
+  ?>
                 <div class="row">
                 	<div class="span8"><hr></div>
                 </div>
