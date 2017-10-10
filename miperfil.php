@@ -187,7 +187,7 @@ $username = $_SESSION['username'];
       
       <?php 
   // Selección de todos los comentarios de la BBDD, para éste usuario
-      $sql = "SELECT * FROM 'comentario' WHERE enPerfilUsuario = '$username'";
+      $sql = "SELECT * FROM comentario WHERE enPerfilUsuario = '$username'";
   $result = mysqli_query($link, $sql);
   
 
@@ -209,7 +209,7 @@ $username = $_SESSION['username'];
             echo ('</div>');
             echo ('</div>');
                  
-            $sqlcom = "SELECT * FROM 'comentario' WHERE respuestaAcomentario = '$idComentario'";
+            $sqlcom = "SELECT * FROM comentario WHERE respuestaAcomentario = '$idComentario'";
             $resultado = mysqli_query($link, $sqlcom);
                   while ($row = mysqli_fetch_array($resultado, MYSQLI_ASSOC))
                   {                  	
