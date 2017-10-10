@@ -211,8 +211,10 @@ $username = $_SESSION['username'];
                  
             $sqlcom = "SELECT * FROM comentario WHERE respuestaAcomentario = '$idComentario'";
             $resultado = mysqli_query($link, $sqlcom);
-                  while ($row = mysqli_fetch_array($resultado, MYSQLI_ASSOC))
-                  {                  	
+                  while ($row = mysqli_fetch_array($resultado, MYSQLI_ASSOC)){
+                  
+                  	echo ('<div class="comment  pull-right">');
+                  	echo ('<div class="row">');
                   	echo ('<div class="span8">');
                   	echo ('<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>');
                   	echo ('<div>');
