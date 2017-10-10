@@ -151,7 +151,7 @@ include 'header.php';
                 </div>
                 <div class="span4 clearfix">
                         <img src="assets/img/doc.png" class="pull-left" />
-                        <h3>Bien Documentedados</h3>
+                        <h3>Bien Documentados</h3>
                         <p><em>Utilizamos varios lenguajes de programación para crear nuestras aplicaciones, dominamos JAVA, JavaScript, PHP y aún más importante, Scratch. </em></p>
                 </div>
             </div>
