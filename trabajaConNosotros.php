@@ -152,16 +152,6 @@
     <!--HEADER-->
 <?php 
 include 'header.php';
-
-$link = mysqli_connect('https://j3a.scm.azurewebsites.net', 'j3a', 'Qwerty123_', 'j3a');
-
-$sql = "SELECT * FROM `usuario`";
-$result = mysqli_query($link, $sql);
-while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
-{
-echo ($row['Username'] . '  ' . $row['Nombre']);
-}
-mysqli_free_result($result);
 ?>
 	<!--/HEADER-->
     <!--AREA BIENVENIDA-->
@@ -175,13 +165,131 @@ mysqli_free_result($result);
             </div>
         </div>
     </div>
+<<<<<<< HEAD
+    <!--/AREA BIENVENIDA-->
+    <!--AREA SLIDER-->
+    <div class="slider_area">
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <h2><span class="label">¿Quieres trabajar con nosotros?</span></h2>
+                    
+                    <hr>
+                    
+                    <div class="well-block">                       
+                        <form name="trabaja" action="" method="POST" onSubmit="return validar()">
+                            <!-- Form start -->
+                            <div class="row-fluid">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                         <label  class="control-label" for="nome">Nombre: </label>
+                                        <input required  id="numero" name="numero" type="text"  onKeyPress="return numero(event)"class="form-control input-md"  >
+                                    </div>                                   
+                                </div>
+                                <!-- Text input-->                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                       <label  class="control-label" for="email">Email: </label>
+                                        <input required  id="email" name="email" type="text" onKeyPress="return comprobarArroba(event)" placeholder="juan@tuemail.com" class="form-control input-md" >
+                                    </div>
+                                </div>
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                    <label  class="control-label" for="number">Numero de Contacto: </label>
+                                        <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarTeclaNom(event)" class="form-control input-md">
+                                       
+                                    </div>                           
+                                </div>
+                                <br>
+                                <br>                        
+                                <div class="col-md-6">
+                                     <div class="form-group">                                   
+                                    <fieldset>
+                                        <legend>Selecciona un puesto de trabajo:  </legend>
+                                     	<input required type="radio"  value="diseñador">Diseñador de paginas Web&nbsp;&nbsp; 
+                                     	<input required type="radio"  value="desarrollador">Desarrollador de Software&nbsp;&nbsp; 
+                                     	<input required type="radio"  value="administrador">Administrador de paginas Web&nbsp;&nbsp; 
+                                    <br>
+                                    <br>
+                                    </fieldset>
+                                	</div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="col-md-12">
+                                <p>Mandanos tu CV aquí: </p>
+                                    <input required type="file" name="cv">
+                                </div>
+                            </div>
+                            
+                            <br>
+                             <!-- Buttons -->
+                         
+                         <input onSubmit="return Enviar()" type="submit" value="Enviar" class="btn-large btn-success mega" style="width:500px">
+                         
+                        </form>
+                        <!-- form end -->
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="span6 mainslider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <img src="assets/img/Julen2.jpg" />
+                            </li>
+                            <li>
+                                <a href="http://flex.madebymufffin.com"><img src="assets/img/slide3.jpg" /></a>
+                            </li>
+                            <li>
+                                <img src="assets/img/slide4.jpg" />
+                            </li>
+                            <li>
+                                <img src="assets/img/slide5.jpg" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/AREA SLIDER-->
+    <!--FEATURES AREA-->
+    <div class="gray_bg">
+        <div class="container">
+            <div class="row m25">
+                <div class="span4 clearfix">
+                        <img src="assets/img/html5.png" class="pull-left" />
+                        <h3>HTML 5 <span class="colored">&amp;</span> CSS 3</h3>
+                        <p><em>Built to support new HTML5 elements and syntax. Progressively enhanced components for ultimate style. Yes, Valera is awesome!</em></p>
+                </div>
+                <div class="span4 clearfix">
+                        <img src="assets/img/resp.png" class="pull-left" />
+                        <h3>Responsive Design</h3>
+                        <p><em> Our components are scaled according to a range of resolutions and devices to provide a consistent experience, no matter what.</em></p>
+                </div>
+                <div class="span4 clearfix">
+                        <img src="assets/img/doc.png" class="pull-left" />
+                        <h3>Well Documented</h3>
+                        <p><em>Valera was designed first and foremost as a styleguide to document not only our features, but best practices and living.</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+=======
     <!--/AREA BIENVENIDA--> 
+>>>>>>> branch 'master' of https://github.com/Kiwano-sama/J3A.git
     
     <br> 
     <br>
     <br>
     <!--FEATURES AREA-->
     <!--MAIN CONTENT AREA-->
+<<<<<<< HEAD
+=======
    <div align="center" class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -248,6 +356,7 @@ mysqli_free_result($result);
      </div>
      <br>
      <br>
+>>>>>>> branch 'master' of https://github.com/Kiwano-sama/J3A.git
      <br>
      <br>
     <script>
