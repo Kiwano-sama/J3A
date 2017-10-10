@@ -165,7 +165,6 @@ include 'header.php';
             </div>
         </div>
     </div>
-<<<<<<< HEAD
     <!--/AREA BIENVENIDA-->
     <!--AREA SLIDER-->
     <div class="slider_area">
@@ -279,84 +278,12 @@ include 'header.php';
             </div>
         </div>
     </div>
-=======
     <!--/AREA BIENVENIDA--> 
->>>>>>> branch 'master' of https://github.com/Kiwano-sama/J3A.git
-    
-    <br> 
+
     <br>
     <br>
     <!--FEATURES AREA-->
     <!--MAIN CONTENT AREA-->
-<<<<<<< HEAD
-=======
-   <div align="center" class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="well-block">
-                        <div class="well-title">
-                            <h3>¿Quieres trabajar con nosotros?</h3>
-                        </div>                        
-                       <form name="trabaja" action="http://www.google.es/" onSubmit="return validar()">
-                        <!-- <form name="trabaja" action="trabajaConNosotros.php" method="post" onSubmit="return validar()"> -->
-                            <!-- Form start -->
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                         <label  class="control-label" for="nombre">Nombrei: </label>
-                                        <input  required  id="nombre" name="nombre" onKeyPress="return comprobarLetra(event)" type="text"  class="form-control input-md"  >
-                                    </div>                                   
-                                </div>
-                                <!-- Text input-->                                
-                                <div class="col-md-6"> 
-                                    <div class="form-group">
-                                       <label  class="control-label" for="email">Email: </label>
-                                        <input required  id="email" name="email" type="text" onKeyPress="return comprobarArroba(event)" placeholder="juan@tuemail.com" class="form-control input-md" >
-                                    </div>
-                                </div>
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                    <label  class="control-label" for="numero">Numero de Contacto: </label>
-                                        <input   required  id="numero" name="numero" onKeyPress="return comprobarNumero(event)" type="text" class="form-control input-md">
-                                       
-                                    </div>                          
-                                </div>
-                                <br>                                 
-                                <br>                        
-                                <div class="col-md-6">
-                                     <div class="form-group">                                   
-                                    <fieldset>
-                                        <legend>Selecciona un puesto de trabajo:  </legend>
-                                     	<input required type="radio"  value="diseñador"> Diseñador de paginas Web&nbsp;&nbsp; 
-                                     	<input required type="radio"  value="desarrollador"> Desarrollador de Software&nbsp;&nbsp; 
-                                     	<input required type="radio"  value="administrador"> Administrador de paginas Web&nbsp;&nbsp;                                     
-                                   	<br> 
-                                   	<br>  
-                                    </fieldset>
-                                	</div>
-                                </div>
-                                <br>
-                                <br> 
-                                <br>
-                                <div class="col-md-12">
-                                <p>Mandanos tu CV aquí: </p>
-                                    <input required type="file" name="cv">
-                                </div>
-                            </div>
-                            <br>
-                            <br>
-                             <!-- Buttons -->	
-                         <input  type="submit" value="Enviar">
-                         <input type="reset" value="Deshacer">
-                        </form>
-                        <!-- form end -->
-                    </div>
-               </div>
-       	 </div>
-     </div>
-     <br>
-     <br>
->>>>>>> branch 'master' of https://github.com/Kiwano-sama/J3A.git
      <br>
      <br>
     <script>
