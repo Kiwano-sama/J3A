@@ -7,23 +7,23 @@
                 <hr class="visible-phone">
                 </div>
                 <div class="span3">
-                    <h5><span class="colored">///</span> Empresa J3A</h5>
-                    <p>Valera is designed to help people of all skill levels designer or developer, huge nerd or early beginner. Use it as a complete kit or use to start something more complex.</p>
+                    <h5><span class="colored">///</span> J3A Company</h5>
+                    <p>Ponte en contacto con nosotros para hacernos encargos o para ofrecerte como trabajador.</p>
                     <hr class="visible-phone">
                 </div>
                 <div class="span3 flickr">
-                    <h5><span class="colored">///</span> Contact info</h5>
-                    <span><strong class="colored"> Aress:</strong> 123456 Street Name, Los Angeles</span>
+                    <h5><span class="colored">///</span> Información de Contacto</h5>
+                    <span><strong class="colored"> Dirección:</strong> Zornotza FP S/N, Zornotza</span>
                     <hr class=" hidden-phone"><br class="visible-phone">
-                    <span><strong class="colored">Phone:</strong> (1800) 765-4321</span>
+                    <span><strong class="colored">Teléfono:</strong> 666 52 58 46</span>
                     <hr class="visible-phone">
                 </div>
                 <div class="span3 soc_icons">
-                    <h5><span class="colored">///</span> Stay in touch</h5>
-                    <span>Find out what's happening:</span>
+                    <h5><span class="colored">///</span> Mantente en Contacto</h5>
+                    <span>Descúbre lo que está ocurriendo:</span>
                     <hr>
-                    <a href="#"><div class="icon_t"></div></a>
-                    <a href="#"><div class="icon_facebook"></div></a>
+                    <a href="https://twitter.com/j3a_design"><div class="icon_t"></div></a>
+                    <a href="https://www.facebook.com/jtresa.designdevelopment.5"><div class="icon_facebook"></div></a>
                     <a href="#"><div class="icon_dribbble"></div></a>
                     <a href="#"><div class="icon_google"></div></a>
                     <a href="#"><div class="icon_in"></div></a>
