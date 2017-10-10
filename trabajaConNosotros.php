@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- styles -->
-    <script src="assets/js/trabajaConNosotrosJS.js"></script>
+   <!-- <script src="assets/js/trabajaConNosotrosJS.js"></script>  --> 
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -34,6 +34,110 @@
     <link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Days+One|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+    alert('hola');
+    function validar(){
+    	alert('hola validar'); 
+    	if (validarEmail() /*&& nombre() && numero()*/){
+    		alert("Sus datos son correcto, enviando...");
+    		return true;
+    	}else {
+    		alert("Datos incorrectos, compruebe que todos los datos sean correctos");
+    		return false;
+    	}
+    } 
+    // Funcion para comprobar que se haya insertado un nombre
+    function nombre() {
+    		alert('hola prueba nombre');
+    	var nombre = document.getElementsByName('nombre').value
+    	if (nombre != NULL) {
+    		return true; 
+    	} else {
+    		alert("Por favor, introduzca su nombre");
+    		return false;
+    	} 
+    }
+    // Funcion para comprobar que el email cumple con los requisitos
+    function validarEmail() {
+    	alert('hola prueba validarEmail');
+    	var valor = document.getElementById('email').value
+    	
+    	if (/\w+@\w+.\w+/.test(valor)) {
+    		return true;
+    	} else {
+    		alert("La dirección lllllllde email es incorrecta, por favor, compruebe que el email sea correcto.");
+    		return false;
+    	}
+    }
+    /* Funcion para determinar que parametros tiene que tener el 'Numero de
+     contacto' y que debe tener 9 numeros si no da error y que no se pueda
+     insertar letras en vez de numeros en 'Numero de
+     contacto'
+    */
+    function comprobarNumero(e){  
+    	var keychar;
+    	var teclanum;
+    	var miNumero = document.getElementById('numero');
+    	alert('holaa prueba 2 comprobarNumero');
+    	teclanum = e.which;
+    	keychar = String.fromCharCode(teclanum);
+    	
+    	alert('holaa prueba comprobarNumero');
+    	if(keychar < '0' || keychar >'9'){
+    		alert('holaa prueba 1 comprobarNumero');
+    		return false;
+    	}else{
+    		return true;
+    	} 
+    	alert('holaa prueba 2 comprobarNumero');
+    	 if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)){
+    	        return true;
+    	    }else {
+    	        alert("El numero insertado " + miNumero + " es erroneo");
+    	        return false;
+    	    	}
+    }  
+    function comprobarLetra(e){  
+    	var keychar;
+    	var teclanum;
+    	
+    	teclanum = e.which;
+    	keychar = String.fromCharCode(teclanum);
+    	
+    	alert(keychar);
+    	if((keychar >= 'a' && keychar <='z') || (keychar >= 'A' && keychar <='Z'))
+    
+    	return true;
+    	}else{
+   		return false;
+   	} 
+    //	alert('holaa prueba 2 comprobarNumero'); 
+    }  
+    // Funcion para que no se pueda insertar mas de una '@'
+    function comprobarArroba(e){
+    	var caracterTecla;
+        var codigoTecla;
+
+        if (window.event){ 
+            codigoTecla = e.keyCode;
+        }else if (e.which){
+            codigoTecla = e.which;
+        }
+        caracterTecla = String.fromCharCode(codigoTecla);
+
+        if (caracterTecla == "@") { 
+            if (document.trabaja.email.value.indexOf('@') >= 0) {
+                return false;
+            }else{
+            	return true;
+            }
+        }
+    }
+    
+   
+    
+    
+    </script>
     <!--/GOOGLE FONTS-->
 </head>
     <body>
@@ -71,9 +175,9 @@ mysqli_free_result($result);
             </div>
         </div>
     </div>
-    <!--/AREA BIENVENIDA-->
+    <!--/AREA BIENVENIDA--> 
     
-    <br>
+    <br> 
     <br>
     <br>
     <!--FEATURES AREA-->
@@ -91,8 +195,8 @@ mysqli_free_result($result);
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                         <label  class="control-label" for="nombre">Nombreiiiiii: </label>
-                                        <input  required  id="numero" name="numero" onKeyPress="return nombre()" type="text"  class="form-control input-md"  >
+                                         <label  class="control-label" for="nombre">Nombrei: </label>
+                                        <input  required  id="nombre" name="nombre" onKeyPress="return comprobarLetra(event)" type="text"  class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
