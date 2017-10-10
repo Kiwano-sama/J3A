@@ -1,5 +1,5 @@
 
-    alert('hola');
+    alert('Hola, bienvenido a nuestra seccion trabaja con nosotros, a continuacion, se te mostrará un formulario que deberás rellenar con todos tus datos y enviarnoslo');
     function validar(){
     	alert('hola validar'); 
     	if (validarEmail() /*&& comprobarnombre() && numero()*/){
@@ -10,7 +10,7 @@
     		alert("Datos incorrectos, compruebe que todos los datos sean correctos");
     		return false;
     	}
-    	alert('fin');
+    	
     } 
 //     // Funcion para comprobar que el email cumple con los requisitos
     function validarEmail() {
