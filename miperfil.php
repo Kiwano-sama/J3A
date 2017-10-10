@@ -98,6 +98,8 @@ if($now > $_SESSION['expire']) {
 	echo('</div>');
 	exit;
 }
+
+$username = $_SESSION['username'];
 ?>
   
   <div class="container-fluid">
@@ -185,22 +187,47 @@ if($now > $_SESSION['expire']) {
       
       <?php 
   // Selección de todos los comentarios de la BBDD, para éste usuario
-  $sql = "SELECT * FROM `comentario`";
+      $sql = "SELECT * FROM comentario WHERE enPerfilUsuario = '$username'";
   $result = mysqli_query($link, $sql);
+  
+
+  
   while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
   {
 
-  	echo ('<div class="comment">');
-                    echo ('<div class="row">');
+  	if (($row['respuestaAcomentario'] === NULL)) {
+  		$idComentario = $row['idComentario'];
+  			echo ('<div class="comment">');
+            echo ('<div class="row">');
   			echo ('<div class="span8">');
-                        	echo ('<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>');
-                        	echo ('<div>');
-                        	echo ('<h5><a href="#">' . $row['username'] . '</a>' . $row['fecha'] . ' <span class="small"><a class="badge" href="#">Replay</a></span></h5>');
-                            echo ('<em>' . $row['comentario'] . '</em>');
-                            echo ('</div>');
-                            		echo ('</div>');
-                    echo ('</div>');
-                  echo ('</div>');
+            echo ('<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>');
+            echo ('<div>');
+            echo ('<h5><a href="#">' . $row['username'] . '</a> ' . $row['fecha'] . ' <span class="small"><a class="badge" href="#">Replay</a></span></h5>');
+            echo ('<em>' . $row['comentario'] . '</em>');
+            echo ('</div>');
+            echo ('</div>');
+            echo ('</div>');
+            echo ('</div>');
+                 
+            $sqlcom = "SELECT * FROM comentario WHERE respuestaAcomentario = '$idComentario'";
+            $resultado = mysqli_query($link, $sqlcom);
+                  while ($row = mysqli_fetch_array($resultado, MYSQLI_ASSOC)){
+                  
+                  	echo ('<div class="comment  pull-right">');
+                  	echo ('<div class="row">');
+                  	echo ('<div class="span8">');
+                  	echo ('<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>');
+                  	echo ('<div>');
+                  	echo ('<h5><a href="#">' . $row['username'] . '</a> ' . $row['fecha'] . ' <span class="small"><a class="badge" href="#">Replay</a></span></h5>');
+                  	echo ('<em>' . $row['comentario'] . '</em>');
+                  	echo ('</div>');
+                  	echo ('</div>');
+                  	echo ('</div>');
+                  	echo ('</div>');                  
+                  }
+  	}
+                  
+                  
 //                 <div class="comment  pull-right">
 //                     <div class="row">
 //                         <div class="span7">
