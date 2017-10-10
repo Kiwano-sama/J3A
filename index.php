@@ -75,8 +75,8 @@ include 'header.php';
     <fieldset>
     	<p class="intro">¿Quieres cambiar el color de la fuente? Aquí te dejamos una paleta para que selecciones el color que deseas</p>
     	<form name="formPaleta" action="" method="get">
-			<input name="paleta" type="color" value="" onChange="misColores()">
-			<input name="botonModificar" type="button" value="modificar Color" onclick="cambiarColor()">	
+			<input name="paleta" type="color" value="" onChange="cambiarColor()"/>
+	
 		</form>
    	</fieldset>        
     <!--/AREA BIENVENIDA-->
