@@ -54,7 +54,7 @@ require_once 'conf/conexion.php';
         <div class="container">
             <div class="row welcome_inner">
                 <div class="span12">
-                    <h1><span class="colored">///</span> PERFIL</h1>
+                    <h1><span class="colored">///</span> MI PERFIL</h1>
                 </div>
             </div>
         </div>
@@ -226,9 +226,9 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
   $sql = "SELECT * FROM comentario WHERE enPerfilUsuario = '$username'";
   $result = mysqli_query($link, $sql);
   
+  // Contar el total de comentarios del perfil:
   $sqlComentarios = "SELECT count(enPerfilUsuario) from comentario where enPerfilUsuario = '$username'";
   $resultComentarios = mysqli_query($link, $sql);
-  
   $cantidadComentarios = (mysqli_num_rows($resultComentarios));
   
   echo ('<h3><span class="colored">///</span> ' . $cantidadComentarios . ' Comentario(s):</h3>');
@@ -274,10 +274,10 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
                 </div>
       
        <h3><span class="colored">///</span> Deja un comentario</h3>
-                <div class="row" style="margin-top:20px;">
+                <div class="row" style="margin-top: 20px;">
                 	<div class="span10">
-                        <form class="form">
-                            <textarea type="text" placeholder="Comentario" rows="5" class="span12"></textarea>
+                        <form class="form" action="miperfil.php">
+                            <textarea placeholder="Comentario" rows="5" class="span12" cols=""></textarea>
                             <button type="submit"  class="btn btn-success">Enviar</button>
                         </form>
                     </div>
@@ -339,31 +339,31 @@ include 'footer.php';
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>	
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/google-code-prettify/prettify.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-modal.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/bootstrap-tab.js"></script>
-    <script src="assets/js/bootstrap-tooltip.js"></script>
-    <script src="assets/js/bootstrap-popover.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/bootstrap-collapse.js"></script>
-    <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>
-    <script src="assets/js/jquery.easing.1.3.js"></script>
-    <script src="assets/js/jquery.slabtext.min.js"></script>
-    <script src="assets/js/jquery.flexslider-min.js"></script>
-    <script src="assets/js/superfish-menu/superfish.js"></script>
-    <script src="assets/js/plugin.js"></script>
-    <script src="assets/js/jquery.prettyPhoto.js"></script>
-    <script src="assets/js/twitter.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="assets/js/jquery.gmap.min.js"></script>
-    <script src="assets/js/jquery.preloader.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/jquery.js" type="text/javascript"></script>
+    <script src="assets/js/google-code-prettify/prettify.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-transition.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-alert.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-modal.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-dropdown.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-scrollspy.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-tab.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-tooltip.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-popover.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-button.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-collapse.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-carousel.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-typeahead.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.slabtext.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="assets/js/superfish-menu/superfish.js" type="text/javascript"></script>
+    <script src="assets/js/plugin.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <script src="assets/js/twitter.js" type="text/javascript"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script src="assets/js/jquery.gmap.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.preloader.js" type="text/javascript"></script>
+    <script src="assets/js/custom.js" type="text/javascript"></script>
 	<script type="text/javascript">var runFancy = true;</script>
     <!--[if IE]>
     <script type="text/javascript">
