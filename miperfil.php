@@ -226,9 +226,10 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
   $sql = "SELECT * FROM comentario WHERE enPerfilUsuario = '$username'";
   $result = mysqli_query($link, $sql);
   
-  $cantidadComentarios = (mysqli_num_rows($result) + mysqli_num_rows($resultInfoUsuario));
-  echo ('<h3><span class="colored">///</span> ' . (mysqli_num_rows($result)) . ' Comentario(s):</h3>');
-  echo ('<h3><span class="colored">///</span> ' . (mysqli_num_rows($resultInfoUsuario)) . ' respuestas a comentario(s):</h3>');
+  $sqlComentarios = "SELECT count(enPerfilUsuario) from comentario where enPerfilUsuario = '$username'";
+  $resultComentarios = mysqli_query($link, $sql);
+  
+  $cantidadComentarios = (mysqli_num_rows($resultComentarios));
   
   echo ('<h3><span class="colored">///</span> ' . $cantidadComentarios . ' Comentario(s):</h3>');
   
