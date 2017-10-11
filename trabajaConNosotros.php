@@ -38,15 +38,6 @@
     <link href='http://fonts.googleapis.com/css?family=Days+One|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
     <!--/GOOGLE FONTS-->
-    
-    <!-- PopUp de bienvenida a la pagina  -->
-    <script type="text/javascript">
-
-    swal("Here's a message!");
-    </script>
-   
-    
-
 </head>
     <body>
     <!--TOP-->
