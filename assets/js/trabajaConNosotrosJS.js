@@ -63,7 +63,7 @@ function validarEmail() {
 	alert('hola prueba validarEmail');
 	var valor = document.getElementById('email').value
 
-	if (/\w+@\w+.\w+/.test(valor)) {
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/test(valor)) {
 		return true;
 	} else {
 		alert("La dirección lllllllde email es incorrecta, por favor, compruebe que el email sea correcto.");
