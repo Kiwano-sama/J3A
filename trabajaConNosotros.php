@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- styles -->
-   <!-- <script src="assets/js/trabajaConNosotrosJS.js"></script>  --> 
+   <script src="assets/js/trabajaConNosotrosJS.js"></script>   
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
