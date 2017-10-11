@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,7 +72,6 @@ require_once 'conf/conexion.php';
     <section>
     
     <?php
-session_start();
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 	
@@ -222,6 +224,20 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
       
       
       <?php 
+      echo (now());
+      if ($_POST) {
+      	
+      	$usernameComentario = $_SESSION['username'];
+      	$comentario = (filter_input(INPUT_POST, 'comentario'));
+      	
+      	
+      	$insertarComentario = ("INSERT INTO comentario (enPerfilUsuario, username, comentario, fecha) VALUES ('$usernameComentario', '$usernameComentario', '$comentario', 'now()'");
+      	mysqli_query($link, $insertarComentario);
+      	
+     
+      }
+      
+      
   // Selección de todos los comentarios de la BBDD, para éste usuario
   $sql = "SELECT * FROM comentario WHERE enPerfilUsuario = '$username'";
   $result = mysqli_query($link, $sql);
@@ -267,7 +283,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
                   	echo ('</div>');                  
                   }
   	}
-  }
+  }  
   ?>
                 <div class="row">
                 	<div class="span10"><hr></div>
@@ -276,8 +292,8 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
        <h3><span class="colored">///</span> Deja un comentario</h3>
                 <div class="row" style="margin-top: 20px;">
                 	<div class="span10">
-                        <form class="form" action="miperfil.php">
-                            <textarea placeholder="Comentario" rows="5" class="span10" cols=""></textarea>
+                        <form name="loginForm" class="form" action="miperfil.php" method="post">
+                            <textarea name="comentario" placeholder="comentario" rows="5" class="span10" cols=""></textarea>
                             <button type="submit"  class="btn btn-success">Enviar</button>
                         </form>
                     </div>
