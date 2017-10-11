@@ -64,7 +64,7 @@ include 'header.php';
     		<div class="row">
             	<div class="span4">
                 	<div class="well">
-					<h4><span class="colored">///</span> Información de Contact</h4>
+					<h4><span class="colored">///</span> Información de Contacto</h4>
                     <p>Puedes ponerte en contacto con nosotros ya sea vía e-mail, por teléfono o visitando nuestra oficina física, si lo que buscas es trabajar con nosotros puedes rellenar el formulario en dicho apartado.</p>
                 	<hr>
                     <span><strong class="colored"> Dirección:</strong>  Zornotza FP S/N, Zornotza</span>
