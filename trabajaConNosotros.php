@@ -40,7 +40,7 @@
     <!--/GOOGLE FONTS-->
     
 </head>
-    <body onload="swal('Here's a message!')">
+    <body onload="alert('Here's a message!')">
     <!--TOP-->
     <div class="top_line"></div>
     <div class="panel hidden-phone">
