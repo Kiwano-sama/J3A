@@ -104,7 +104,7 @@ $username = $_SESSION['username'];
 $sqlInfoUsuario = "SELECT Nombre, Apellido, fechaNac, genero, esCliente, esAdmin FROM `usuario` WHERE username = '$username'";
 $resultInfoUsuario = mysqli_query($link, $sql);
 
-if (mysqli_num_rows($resultInfoUsuario) > 0) {
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))  {
 	$nombre = $row['Nombre'];
 	$apellido = $row['Apellido'];
 	$fechaNac = $row['fechaNac'];
