@@ -22,6 +22,7 @@
     		alert("La dirección de email es incorrecta, por favor, compruebe que el email sea correcto.");
     		return false;
     	}
+    }
 //Funcion que una vez pulsado el boton 'enviar' envia los datos del formulario
 //function Enviar() {
 //	alert('hola prueba Enviar');
@@ -106,8 +107,9 @@ function comprobarArroba(e){
         codigoTecla = e.keyCode;
     }else if (e.which){
         codigoTecla = e.which;
->>>>>>> branch 'master' of https://github.com/Kiwano-sama/J3A.git
+
     }
+}
 //     /* Funcion para determinar que parametros tiene que tener el 'Numero de
 //      contacto' y que debe tener 9 numeros si no da error y que no se pueda
 //      insertar letras en vez de numeros en 'Numero de
