@@ -36,7 +36,7 @@
 
 
 		<form name="miForm" action="registro.php"
-			onsubmit="return validarForm()" method="post">
+			onsubmit="return validarForm()" method="post" enctype="multipart/form-data">
 			<div class="row">
 				<h2>Nueva Cuenta</h2>
 				<h4>Datos</h4>
@@ -74,6 +74,15 @@
 						<i class="fa fa-key"></i>
 					</div>
 				</div>
+				
+				<div class="input-group input-group-icon">
+					<input class="input-group" type="file" name="user_image" accept="image/*" />
+					<div class="input-icon">
+						<i class="fa fa-file-image-o"></i>
+					</div>
+				</div>
+				
+				
 			</div>
 			<div class="row">
 				<div class="col-half">

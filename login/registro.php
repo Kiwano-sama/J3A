@@ -40,6 +40,11 @@
                 $genero = (filter_input(INPUT_POST, 'genero'));
 
                 $fechaNac = $anio . "/" . $mes . "/" . $dia;
+                
+                // Imagen de perfil:
+                $imgFile = $_FILES['user_image']['name'];
+                $tmp_dir = $_FILES['user_image']['tmp_name'];
+                $imgSize = $_FILES['user_image']['size'];
 
                 // sha256 password hashing
                 //$password = hash('sha256', $pass);
