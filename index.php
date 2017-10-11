@@ -175,7 +175,7 @@ include 'header.php';
                         </div>
                     </div>
                     <div>
-                        <h2><span class="colored"><strong>///</strong></span> From <span class="undercolored"><a href="#">Portfolio</a></span></h2>
+                        <h2><span class="colored"><strong>///</strong></span> Desde nuestro <span class="undercolored"><a href="#">Portfolio</a></span></h2>
                         <hr class="dash">
                         <div>
                             <p><em>El sistema de cuadrículas fluído usa porcentajes como anchura de página en vez de pixels. Tiene variaciones responsivas, garantizando que funcione bien en otros dispositivos y resoluciones.</em></p>
@@ -274,26 +274,26 @@ include 'header.php';
                                             <ul class="slides">
                                                 <li>
                                                     <blockquote>
-                                                        <p>Built to support new HTML5 elements and syntax.</p>
-                                                        <small>HTML5</small>
+                                                        <p>Trabajan bien, el bocadillo era de chopped y lo repartieron entre los tres, a Ander le tuve que dar dinero.</p>
+                                                        <small>Pescador Bermeano</small>
                                                     </blockquote>
                                                 </li>
                                                 <li>
                                                     <blockquote>
-                                                        <p>Progressively enhanced components for ultimate style.</p>
-                                                        <small>CSS3</small>
+                                                        <p>No miréis a los ojos al del traje rosa, da miedo.</p>
+                                                        <small>Bilbaína Aleatoria</small>
                                                     </blockquote>
                                                 </li>
                                                 <li>
                                                     <blockquote>
-                                                        <p>Built for and maintained by the community via GitHub.</p>
-                                                        <small>Open-source</cite></small>
+                                                        <p>Mal pero bien.</p>
+                                                        <small>Hombre expresivo</cite></small>
                                                     </blockquote>
                                                 </li>
                                                 <li>
                                                     <blockquote>
-                                                        <p>Brought to you by an experienced engineer and designer.</p>
-                                                        <small>Made at Twitter</small>
+                                                        <p>Es una mejor empresa que ENTIC Software.</p>
+                                                        <small>J3A Company</small>
                                                     </blockquote>
                                                 </li>
                                             </ul>
@@ -305,7 +305,7 @@ include 'header.php';
                     </div>
                 </div>
                 <div class="span6">
-                    <h2><span class="colored"><strong>///</strong></span> From our <span class="undercolored"><a href="#">blog</a></span></h2>
+                    <h2><span class="colored"><strong>///</strong></span> Nuestras <span class="undercolored"><a href="#">Noticias</a></span></h2>
                     <hr class="dash">
                 </div>
                 <div class="span6">
@@ -389,8 +389,8 @@ include 'header.php';
         <div class="container">
             <div class="row">
                 <div class="span3 header">
-                    <h5><span class="colored">///</span> Our Twitter Feed</h5>
-                    <p>Find out what's happening, right now, with the people and organizations you care about.</p>
+                    <h5><span class="colored">///</span> Nuestro Contenido en Twitter</h5>
+                    <p>Descubre lo que está ocurriendo, al momento, con la gente y la empresa que os interesa.</p>
                 </div>
                 <div class="span9">
                     <div class="well">
