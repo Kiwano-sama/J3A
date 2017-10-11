@@ -200,6 +200,45 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
         </tbody>        
       </table>
       
+      
+      
+      
+   
+					          	<div class="timeline-badge primary"></div>
+					          	<div class="timeline-panel">
+					          		<h1>Personal Info</h1>
+					          		<div class="hr-left"></div>
+
+					          		<div class="btn-group">
+									  	<button type="button" disabled class="btn btn-primary">Name</button>
+									  	<button type="button" disabled class="btn btn-default">JONATHAN DOE</button>
+									</div>
+									<div class="btn-group">
+									  	<button type="button" disabled class="btn btn-primary">date of birth</button>
+									  	<button type="button" disabled class="btn btn-default">Desember 09, 1990</button>
+									</div>
+									<div class="btn-group">
+									  	<button type="button" disabled class="btn btn-primary">email</button>
+									  	<button type="button" disabled class="btn btn-default">info@yourdomain.com</button>
+									</div>
+									<div class="btn-group">
+									  	<button type="button" disabled class="btn btn-primary">Address</button>
+									  	<button type="button" disabled class="btn btn-default">222 St. Newmon UK</button>
+									</div>
+									<div class="btn-group">
+									  	<button type="button" disabled class="btn btn-primary">Phone</button>
+									  	<button type="button" disabled class="btn btn-default">023-2314 1231</button>
+									</div>
+									<div class="btn-group">
+									  	<button type="button" disabled class="btn btn-primary">Website</button>
+									  	<button type="button" disabled class="btn btn-default">www.wrapbootstrap.com</button>
+									</div>
+					          	</div>
+					        
+      
+      
+      
+      
       <hr>
       
       
