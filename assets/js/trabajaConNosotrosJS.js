@@ -9,8 +9,7 @@
         	
     		alert("Datos incorrectos, compruebe que todos los datos sean correctos");
     		return false;
-    	}
-    	
+    	}    	
     } 
 //     // Funcion para comprobar que el email cumple con los requisitos
     function validarEmail() {
@@ -27,8 +26,8 @@
 //function Enviar() {
 //	alert('hola prueba Enviar');
 //	var Vemail = document.getElementsByName("email");
-////	var Vnombre = document.getElementsByName("nombre");
-////	var Vnumero = document.getElemntsByName("numero");
+//	var Vnombre = document.getElementsByName("nombre");
+//	var Vnumero = document.getElemntsByName("numero");
 //	if (Vemail == null() && Vemail == "0"(){ //&& Vnombre == null() && Vnumero =="0" () ) 
 //		return false;
 //		alert('Error al enviar formulario');
@@ -36,8 +35,8 @@
 //		return true;
 //	}
 //} 
+    
 // Funcion que comprueba que todos los datos han cumplido los requisitos
-alert('hola');
 function validar(){
 	alert('hola validar'); 
 	if (validarEmail() /*&& nombre() && numero()*/){
