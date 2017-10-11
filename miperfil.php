@@ -277,7 +277,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
                 <div class="row" style="margin-top: 20px;">
                 	<div class="span10">
                         <form class="form" action="miperfil.php">
-                            <textarea placeholder="Comentario" rows="5" class="span12" cols=""></textarea>
+                            <textarea placeholder="Comentario" rows="5" class="span10" cols=""></textarea>
                             <button type="submit"  class="btn btn-success">Enviar</button>
                         </form>
                     </div>
