@@ -419,8 +419,8 @@
             <div class="container">
                 <div class="row">
                     <div class="span3 header">
-                        <h5><span class="colored">///</span> Our Twitter Feed</h5>
-                        <p>Find out what's happening, right now, with the people and organizations you care about.</p>
+                        <h5><span class="colored">///</span> Nuestro Contenido en Twitter</h5>
+                        <p>Descubre lo que está ocurriendo, al momento, con la gente y la empresa que os interesa.</p>
                     </div>
                     <div class="span9">
                         <div class="well">
@@ -445,7 +445,7 @@ include 'footer.php';
                     <div class="container">
                         <div class="row">
                             <div class="span6">
-                                <span>Copyright 2012 Valera - Company. Design by <span class="undercolored"><a href="#">OrangeIde</a></span></span>
+                            <span>Copyright 2017 J3A - Diseñado por <span class="undercolored"><a href="#">Julen, Jon Ander, Jenifer y Ander</a></span></span>
                             </div>
                             <div class="span6">
                                 <span class="pull-right visible-desktop"><span class="undercolored"><a href="#">Home</a></span> / <span class="undercolored"><a href="#">Features</a></span> / <span class="undercolored"><a href="#">Pages</a></span> / <span class="undercolored"><a href="#">Portfolio</a></span> / <span class="undercolored"><a href="#">Blog</a></span> / <span class="undercolored"><a href="#">Typography</a></span> / <span class="undercolored"><a href="#">Contact</a></span></span>
