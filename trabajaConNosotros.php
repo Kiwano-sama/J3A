@@ -7,7 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- styles -->
-   <script src="assets/js/trabajaConNosotrosJS.js"></script>   
+   <script src="assets/js/trabajaConNosotrosJS.js"></script>
+   <script src="assets/js/sweetalert.min.js"></script>
+   <link href="assets/css/sweetalert.css" rel="stylesheet">      
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -36,30 +38,6 @@
     <link href='http://fonts.googleapis.com/css?family=Days+One|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
     <!--/GOOGLE FONTS-->
-    <script>
-    //Customizacion de las ventanas emergentes 'Alerts' 
-function CustomAlert(){
-    this.render = function(dialog){
-        var winW = window.innerWidth;
-        var winH = window.innerHeight;
-        var dialogoverlay = document.getElementById('dialogoverlay');
-        var dialogbox = document.getElementById('dialogbox');
-        dialogoverlay.style.display = "block";
-        dialogoverlay.style.height = winH+"px";
-        dialogbox.style.left = (winW/2) - (550 * .5)+"px";
-        dialogbox.style.top = "100px";
-        dialogbox.style.display = "block";
-        document.getElementById('dialogboxhead').innerHTML = "Acknowledge This Message";
-        document.getElementById('dialogboxbody').innerHTML = dialog;
-        document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">OK</button>';
-    }
-    this.ok = function(){
-        document.getElementById('dialogbox').style.display = "none";
-        document.getElementById('dialogoverlay').style.display = "none";
-    }
-}
-var Alert = new CustomAlert();
-</script>
 </head>
     <body>
     <!--TOP-->
