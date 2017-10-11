@@ -330,8 +330,19 @@ include 'header.php';
                                                         <p>Me pagaron la coca al primer aviso y sin recurrir al plata o plomo.</p>
                                                         <small>Pablo Emilio Escobar Gaviria</cite></small>
                                                     </blockquote>
-                                                </li>                                                
+                                                </li>   
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Me pagaron la coca al primer aviso y sin recurrir al plata o plomo.</p>
+                                                        <small>Pablo Emilio Escobar Gaviria</cite></small>
                                                     </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Visca Catalonya Lliure! Visca Gothic!</p>
+                                                        <small>The Quadels</cite></small>
+                                                    </blockquote>
+                                                </li>                                                                                                                                             
                                             </ul>
                                         </div>
                                     </div>
