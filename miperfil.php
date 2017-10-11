@@ -102,7 +102,7 @@ if($now > $_SESSION['expire']) {
 $username = $_SESSION['username'];
 
 $sqlInfoUsuario = "SELECT Nombre, Apellido, fechaNac, genero, esCliente, esAdmin FROM `usuario` WHERE username = '$username'";
-$resultInfoUsuario = mysqli_query($link, $sql);
+$resultInfoUsuario = mysqli_query($link, $sqlInfoUsuario);
 
 while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
 	$nombre = $row['Nombre'];
