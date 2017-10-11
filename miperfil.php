@@ -177,68 +177,30 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
         </thead>
         <tbody>
           <tr>
-            <td>Username:</td>
+            <td class="text-right">Username:</td>
             <td><?php echo $username; ?></td>
           </tr>
           <tr>
-            <td>Nombre:</td>
+            <td class="text-right">Nombre:</td>
             <td><?php echo $nombre; ?></td>
           </tr>
           <tr>
-            <td>Apellido:</td>
+            <td class="text-right">Apellido:</td>
             <td><?php echo $apellido; ?></td>
           </tr>
           <tr>
-            <td>Genero:</td>
+            <td class="text-right">Genero:</td>
             <td><?php echo $genero; ?></td>
           </tr>
           <tr>
-            <td>Fecha de nacimiento:</td>
+            <td class="text-right">Fecha de nacimiento:</td>
             <td><?php echo $fechaNac; ?></td>
           </tr>
          
         </tbody>        
       </table>
       
-      
-      
-      
-   
-					          	<div class="timeline-badge primary"></div>
-					          	<div class="timeline-panel">
-					          		<h1>Personal Info</h1>
-					          		<div class="hr-left"></div>
 
-					          		<div class="btn-group">
-									  	<button type="button" disabled class="btn btn-primary">Name</button>
-									  	<button type="button" disabled class="btn btn-default">JONATHAN DOE</button>
-									</div>
-									<div class="btn-group">
-									  	<button type="button" disabled class="btn btn-primary">date of birth</button>
-									  	<button type="button" disabled class="btn btn-default">Desember 09, 1990</button>
-									</div>
-									<div class="btn-group">
-									  	<button type="button" disabled class="btn btn-primary">email</button>
-									  	<button type="button" disabled class="btn btn-default">info@yourdomain.com</button>
-									</div>
-									<div class="btn-group">
-									  	<button type="button" disabled class="btn btn-primary">Address</button>
-									  	<button type="button" disabled class="btn btn-default">222 St. Newmon UK</button>
-									</div>
-									<div class="btn-group">
-									  	<button type="button" disabled class="btn btn-primary">Phone</button>
-									  	<button type="button" disabled class="btn btn-default">023-2314 1231</button>
-									</div>
-									<div class="btn-group">
-									  	<button type="button" disabled class="btn btn-primary">Website</button>
-									  	<button type="button" disabled class="btn btn-default">www.wrapbootstrap.com</button>
-									</div>
-					          	</div>
-					        
-      
-      
-      
-      
       <hr>
       
       
