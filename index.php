@@ -307,7 +307,42 @@ include 'header.php';
                                                         <small>El gallego Breixo Cabreira</cite></small>
                                                     </blockquote>
                                                 </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Detuvieron a los caminantes sin vidriagón.</p>
+                                                        <small>Jon Nieve</cite></small>
                                                     </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Hicieron a America grande de nuevo.</p>
+                                                        <small>Donald Trump</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>No me pisaron lo barrido por lo que no tuve que sacar el hacha.</p>
+                                                        <small>Hombre de la escoba de la casa en ruinas</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Me pagaron la coca al primer aviso y sin recurrir al plata o plomo.</p>
+                                                        <small>Pablo Emilio Escobar Gaviria</cite></small>
+                                                    </blockquote>
+                                                </li>   
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Me pagaron la coca al primer aviso y sin recurrir al plata o plomo.</p>
+                                                        <small>Pablo Emilio Escobar Gaviria</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Visca Catalonya Lliure! Visca Gothic!</p>
+                                                        <small>The Quadels</cite></small>
+                                                    </blockquote>
+                                                </li>                                                                                                                                             
                                             </ul>
                                         </div>
                                     </div>
