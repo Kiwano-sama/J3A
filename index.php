@@ -294,20 +294,20 @@ include 'header.php';
                                                     <blockquote>
                                                         <p>Es una mejor empresa que ENTIC Software.</p>
                                                         <small>J3A Company</small>
+                                                </li>
                                                 <li>
                                                     <blockquote>
                                                         <p>La única empresa del mundo que trabaja por abrazos!</p>
                                                         <small>Acusado por Acoso</cite></small>
                                                     </blockquote>
                                                 </li>
-                                                                                                <li>
+                                                <li>
                                                     <blockquote>
                                                         <p>Saben apreciar el verdadero valor de las cabras.</p>
                                                         <small>El gallego Breixo Cabreira</cite></small>
                                                     </blockquote>
                                                 </li>
                                                     </blockquote>
-                                                </li>
                                             </ul>
                                         </div>
                                     </div>
