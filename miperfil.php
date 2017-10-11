@@ -126,9 +126,20 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
 					<div class="profile-usertitle-name">
 						<?php echo ($_SESSION['username']);?>
 					</div>
-					<div class="profile-usertitle-job">
-						Administrador
-					</div>
+					
+					<?php
+				if ($row['esAdmin']){
+				  	echo ('<div class="profile-usertitle-job">Administrador</div>');
+				  	}
+				  	
+				  	if ($row['esCliente']){
+				  		echo ('<div class="profile-usertitle-job">Cliente</div>');
+				  	} else if (!($row['esAdmin']) && !($row['esCliente'])){
+				  		echo ('<div class="profile-usertitle-job">Miembro</div>');
+				  }
+					
+  	?>
+				
 				</div>
 				<!-- END SIDEBAR USER TITLE -->
 				<!-- SIDEBAR BUTTONS -->
@@ -169,32 +180,34 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
     <div class="span10">
     <h3><span class="colored">///</span> Tu información:</h3>
     <table class="table table-striped table-bordered table-condensed">
+       <!-- 
         <thead>
           <tr>
-          <th>Campo</th>
-            <th>Contenido</th>
+          <th width="30%">Campo</th>
+          <th width="70%">Contenido</th>
           </tr>
         </thead>
+         -->
         <tbody>
           <tr>
-            <td class="text-right">Username:</td>
-            <td><?php echo $username; ?></td>
+            <td width="30%" style="text-align: right">Username:</td>
+            <td width="70%"><?php echo $username; ?></td>
           </tr>
           <tr>
-            <td class="text-right">Nombre:</td>
-            <td><?php echo $nombre; ?></td>
+            <td width="30%" style="text-align: right">Nombre:</td>
+            <td width="70%"><?php echo $nombre; ?></td>
           </tr>
           <tr>
-            <td class="text-right">Apellido:</td>
-            <td><?php echo $apellido; ?></td>
+            <td width="30%" style="text-align: right">Apellido:</td>
+            <td width="70%"><?php echo $apellido; ?></td>
           </tr>
           <tr>
-            <td class="text-right">Genero:</td>
-            <td><?php echo $genero; ?></td>
+            <td width="30%" style="text-align: right">Genero:</td>
+            <td width="70%"><?php echo $genero; ?></td>
           </tr>
           <tr>
-            <td class="text-right">Fecha de nacimiento:</td>
-            <td><?php echo $fechaNac; ?></td>
+            <td width="30%" style="text-align: right">Fecha de nacimiento:</td>
+            <td width="70%"><?php echo $fechaNac; ?></td>
           </tr>
          
         </tbody>        
