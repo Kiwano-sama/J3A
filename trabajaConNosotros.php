@@ -122,7 +122,7 @@ include 'header.php';
                             <br>
                              <!-- Buttons -->
                          
-                         <input onSubmit="return Enviar()" type="submit" value="Enviar" class="btn-large btn-success mega" style="width:500px">
+                         <input onSubmit="return Enviar()" type="submit" value="Enviar" class="btn-large btn-success mega" style="width:250px">
                          
                         </form>
                         <!-- form end -->
