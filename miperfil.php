@@ -268,7 +268,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
       
        <h3><span class="colored">///</span> Deja un comentario</h3>
                 <div class="row" style="margin-top:20px;">
-                	<div class="span12">
+                	<div class="span10">
                         <form class="form">
                             <textarea type="text" placeholder="Comentario" rows="5" class="span12"></textarea>
                             <button type="submit"  class="btn btn-success">Enviar</button>
