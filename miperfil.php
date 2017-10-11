@@ -108,7 +108,11 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
 	$nombre = $row['Nombre'];
 	$apellido = $row['Apellido'];
 	$fechaNac = $row['fechaNac'];
-	$genero = $row['genero'];
+	if ($row['genero'] === "h"){
+		$genero = "Hombre";
+	} else if ($row['genero'] === "m"){
+		$genero = "Mujer";
+	}
 }
 ?>
   

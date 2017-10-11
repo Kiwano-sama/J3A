@@ -185,3 +185,8 @@ td a{width:100%;display:block;}
 	line-height: 30px;
 	font-weight: 800;
 }
+
+/* Textarea comentarios */
+.textarea {
+    width: 100%;
+}
