@@ -101,11 +101,14 @@ if($now > $_SESSION['expire']) {
 
 $username = $_SESSION['username'];
 
-$sqlInfoUsuario = "SELECT Nombre, Apellido, fechaNac, esCliente, esAdmin FROM `usuario` WHERE username = '$username'";
+$sqlInfoUsuario = "SELECT Nombre, Apellido, fechaNac, genero, esCliente, esAdmin FROM `usuario` WHERE username = '$username'";
 $resultInfoUsuario = mysqli_query($link, $sql);
 
 if (mysqli_num_rows($resultInfoUsuario) > 0) {
-	$nombre;
+	$nombre = $row['Nombre'];
+	$apellido = $row['Apellido'];
+	$fechaNac = $row['fechaNac'];
+	$genero = $row['genero'];
 }
 ?>
   
@@ -175,15 +178,23 @@ if (mysqli_num_rows($resultInfoUsuario) > 0) {
         <tbody>
           <tr>
             <td>Username:</td>
-            <td>savandy</td>
+            <td><?php echo $username; ?></td>
           </tr>
           <tr>
             <td>Nombre:</td>
-            <td>Valeriu</td>
+            <td><?php echo $nombre; ?></td>
           </tr>
           <tr>
             <td>Apellido:</td>
-            <td>Sanautanu</td>
+            <td><?php echo $apellido; ?></td>
+          </tr>
+          <tr>
+            <td>Genero:</td>
+            <td><?php echo $genero; ?></td>
+          </tr>
+          <tr>
+            <td>Fecha de nacimiento:</td>
+            <td><?php echo $fechaNac; ?></td>
           </tr>
          
         </tbody>        
@@ -202,8 +213,7 @@ if (mysqli_num_rows($resultInfoUsuario) > 0) {
   echo ('<h3><span class="colored">///</span> ' . $cantidadComentarios . ' Comentario(s):</h3>');
   
   
-	while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
-  {
+	while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
 
   	if (($row['respuestaAcomentario'] === NULL)) {
   		$idComentario = $row['idComentario'];
