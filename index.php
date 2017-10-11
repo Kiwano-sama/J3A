@@ -342,7 +342,49 @@ include 'header.php';
                                                         <p>Visca Catalonya Lliure! Visca Gothic!</p>
                                                         <small>The Quadels</cite></small>
                                                     </blockquote>
-                                                </li>                                                                                                                                             
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>No estáis preparados.</p>
+                                                        <small>Illidan Tempestira</cite></small>
+                                                    </blockquote>
+                                                </li> 
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Habéis probado reiniciando el router?</p>
+                                                        <small>Servicio Técnico</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Habéis probado apagando el ordenador?</p>
+                                                        <small>Servicio Técnico again</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Está conectado a la corriente el equipo?</p>
+                                                        <small>Servicio Técnico again again</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Habéis iniciado la sesión con el usuario con la contraseña?</p>
+                                                        <small>Servicio Técnico one more time</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Estáis contratados.</p>
+                                                        <small>Bill Gates</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Os habría robado las ideas de seguir vivo.</p>
+                                                        <small>Steve Jobs</cite></small>
+                                                    </blockquote>
+                                                </li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
                                             </ul>
                                         </div>
                                     </div>
