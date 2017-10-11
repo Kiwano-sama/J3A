@@ -102,9 +102,9 @@ include 'header.php';
                                      <div class="form-group">                                   
                                     <fieldset>
                                         <legend>Selecciona un puesto de trabajo:  </legend>
-                                     	<input required type="radio"  value="diseñador">Diseñador de paginas Web&nbsp;&nbsp; 
-                                     	<input required type="radio"  value="desarrollador">Desarrollador de Software&nbsp;&nbsp; 
-                                     	<input required type="radio"  value="administrador">Administrador de paginas Web&nbsp;&nbsp; 
+                                     	<input required type="radio"  value="diseñador">&nbsp;Diseñador de paginas Web&nbsp;&nbsp; 
+                                     	<input required type="radio"  value="desarrollador">&nbsp;Desarrollador de Software&nbsp;&nbsp; 
+                                     	<input required type="radio"  value="administrador">&nbsp;Administrador de paginas Web&nbsp;&nbsp; 
                                     <br>
                                     <br>
                                     </fieldset>
