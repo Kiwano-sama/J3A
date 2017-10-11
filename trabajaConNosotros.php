@@ -38,10 +38,10 @@
     <link href='http://fonts.googleapis.com/css?family=Days+One|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
     <!--/GOOGLE FONTS-->
-</head>
-    <body>
-    <!--TOP-->
     
+</head>
+    <body onload="swal('Here's a message!')">
+    <!--TOP-->
     <div class="top_line"></div>
     <div class="panel hidden-phone">
         <div id="map">
