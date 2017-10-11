@@ -21,6 +21,7 @@
     <!--[if IE 8]>
     	<link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
     <![endif]-->
+    
     <!-- fav and touch icons -->
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon.png">
