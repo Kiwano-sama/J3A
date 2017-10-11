@@ -263,7 +263,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
   }
   ?>
                 <div class="row">
-                	<div class="span8"><hr></div>
+                	<div class="span10"><hr></div>
                 </div>
       
        <h3><span class="colored">///</span> Deja un comentario</h3>
