@@ -9,7 +9,7 @@
     <!-- styles -->
    <script src="assets/js/trabajaConNosotrosJS.js"></script>
    <script src="assets/js/sweetalert.min.js"></script>
-   <link href="assets/css/sweetalert.css" rel="stylesheet">      
+   <link rel="stylesheet" type="text/css" href="assets/css/sweetalert.css" >      
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -38,6 +38,11 @@
     <link href='http://fonts.googleapis.com/css?family=Days+One|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
     <!--/GOOGLE FONTS-->
+    
+    <!-- PopUp de bienvenida a la pagina  -->
+    <script type="text/javascript">swal('Hola, bienvenido a nuestra seccion trabaja con nosotros, a continuacion, se te mostrará un formulario que deberás rellenar con todos tus datos y enviarnoslo');</script>
+    
+
 </head>
     <body>
     <!--TOP-->
