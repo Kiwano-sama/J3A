@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>VALERA - Responsiv HTML Template based on Bootstrap, from Twitter</title>
+    <title>J3A - Diseño Gráfico y Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -50,7 +50,7 @@ include 'header.php';
         <div class="container">
             <div class="row welcome_inner">
                 <div class="span12">
-                    <h1><span class="colored">///</span> Contact Us</h1>
+                    <h1><span class="colored">///</span> Contacta con Nosotros</h1>
                 </div>
             </div>
         </div>
@@ -64,28 +64,26 @@ include 'header.php';
     		<div class="row">
             	<div class="span4">
                 	<div class="well">
-					<h4><span class="colored">///</span> Fontact information</h4>
-                    <p>Valera is designed to help people of all skill levels designer or developer, huge nerd or early beginner. Use it as a complete kit or use to start something more complex.</p>
+					<h4><span class="colored">///</span> Información de Contact</h4>
+                    <p>Puedes ponerte en contacto con nosotros ya sea vía e-mail, por teléfono o visitando nuestra oficina física, si lo que buscas es trabajar con nosotros puedes rellenar el formulario en dicho apartado.</p>
                 	<hr>
-                    <span><strong class="colored"> Aress:</strong> 123456 Street Name, Los Angeles</span>
+                    <span><strong class="colored"> Dirección:</strong>  Zornotza FP S/N, Zornotza</span>
                     <br>
-                    <span><strong class="colored">Phone:</strong> (1800) 765-4321</span>
+                    <span><strong class="colored">Teléfono:</strong> 666 52 58 46</span>
                     <br>
-                    <span><strong class="colored">Fax:</strong> (1800) 765-4321</span>
+                    <span><strong class="colored">Fax:</strong> 666 52 58 46</span>
                     <br>
-                    <span><strong class="colored">Website:</strong> http://yoursitename.com</span>
-                    <br>
-                    <span><strong class="colored">Email:</strong> info@yoursitename.com</span>
+                    <span><strong class="colored">Email:</strong> ethazitalde4@gmail.com</span>
                 	</div>
                 </div>
                 <div class="span8">
-                    <h3><span class="colored">///</span> Feel free to contact us</h3>
+                    <h3><span class="colored">///</span> Ponte en Contacto con Nosotros para Exponer tus Proyectos</h3>
                     <div id="note"></div>
                         <form class="form" id="ajax-contact-form" action="javascript:alert('Was send!');">
                             <input type="text" name="name" class="span4" style="margin-right:25px;" placeholder="Name" />
                             <input  class="span4" name="email" placeholder="Email" />
                             <textarea type="text" name="message" placeholder="Message" rows="8" class="span8"></textarea>
-                            <button type="submit"  class="btn btn-success">Send message</button>
+                            <button type="submit"  class="btn btn-success">Enviar mensaje</button>
                         </form>
                 </div>
         	</div>
