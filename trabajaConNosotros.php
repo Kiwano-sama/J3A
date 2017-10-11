@@ -72,13 +72,13 @@ include 'header.php';
                     <hr>
                     
                     <div class="well-block">                       
-                        <form name="trabaja" action="" method="POST" onSubmit="return validar()">
+                        <form name="trabaja" action="" method="post" onSubmit="return validar()">
                             <!-- Form start -->
                             <div class="row-fluid">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                          <label  class="control-label" for="nome">Nombre: </label>
-                                        <input required  id="numero" name="numero" type="text"  onKeyPress="return numero(event)"class="form-control input-md"  >
+                                        <input required  id="numero" name="numero" type="text"  onKeyPress="return comprobarLetra(event)"class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
@@ -91,7 +91,7 @@ include 'header.php';
                                   <div class="col-md-6">
                                     <div class="form-group">
                                     <label  class="control-label" for="number">Numero de Contacto: </label>
-                                        <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarTeclaNom(event)" class="form-control input-md">
+                                        <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarNumero(event)" class="form-control input-md">
                                        
                                     </div>                           
                                 </div>
