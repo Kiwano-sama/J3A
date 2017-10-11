@@ -8,7 +8,7 @@ $first_part = $components[1];
     <header>
         <div class="container"> 
            <div class="row hidden-phone">
-                <img class="flip" src="assets/img/panel.jpg" style="float: right;"/><span class="header_social">Siguenos en <span class="badge"><a href="#">Twitter</a></span> y <span class="badge"><a href="#">Facebook</a></span></span>
+                <img class="flip" src="assets/img/panel.jpg" style="float: right;"/><span class="header_social">Siguenos en <span class="badge"><a href="https://twitter.com/j3a_design">Twitter</a></span> y <span class="badge"><a href="https://www.facebook.com/jtresa.designdevelopment.5">Facebook</a></span></span>
             </div>
             <div class="row">
                 <div class="span4 logo">
