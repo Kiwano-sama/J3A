@@ -40,7 +40,11 @@
     <!--/GOOGLE FONTS-->
     
     <!-- PopUp de bienvenida a la pagina  -->
-    <script type="text/javascript">swal('Hola, bienvenido a nuestra seccion trabaja con nosotros, a continuacion, se te mostrará un formulario que deberás rellenar con todos tus datos y enviarnoslo');</script>
+    <script type="text/javascript">
+
+    swal("Here's a message!");
+    </script>
+   
     
 
 </head>
