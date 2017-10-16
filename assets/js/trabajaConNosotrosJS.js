@@ -1,4 +1,4 @@
-alert('Hola, bienvenido a nuestra seccion trabaja con nostros, en este apartado deberá rellenar el formulario que se mostrará a continuación');
+alert('Hola, bienvenido a nuestra seccion trabaja con nosotros, en este apartado deberá rellenar el formulario que se mostrará a continuación');
 ////Funcion para validar el formulario
 function validar() {
 	alert('hola validar');
