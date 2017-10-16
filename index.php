@@ -110,7 +110,7 @@ include 'header.php';
                         </div>
                     </div>
                     <hr>
-                    <a href="123" class="btn btn-large btn-success mega"></i> Mira nuestros diseños</a>
+                    <a href="servicios.php" class="btn btn-large btn-success mega"></i> Mira nuestros diseños</a>
                 </div>
                 <div class="span8 mainslider">
                     <div class="flexslider">
