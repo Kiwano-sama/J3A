@@ -22,18 +22,7 @@ function validarEmail() {
 		return false;
 	}
 }
-// Funcion para comprobar que el email cumple con los requisitos
-function validarEmail() {
-	alert('hola prueba validarEmail');
-	var valor = document.getElementById('email').value
 
-	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/test(valor)) {
-		return true;
-	} else {
-		alert("La dirección lllllllde email es incorrecta, por favor, compruebe que el email sea correcto.");
-		return false;
-	}
-}
 /* 	
  * Funcion para determinar que parametros tiene que tener el 'Numero de
  * contacto' y que debe tener 9 numeros si no da error y que no se pueda
