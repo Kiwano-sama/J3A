@@ -75,8 +75,8 @@ include 'header.php';
     <fieldset>
     	<p class="intro">¿Quieres cambiar el color de la fuente? Aquí te dejamos una paleta para que selecciones el color que deseas</p>
     	<form name="formPaleta" action="" method="get">
-			<input name="paleta" type="color" value="" onChange="cambiarColor()"/>
-			<input name="botonModificar" type="button" value="modificar Color" onclick="cambiarColor()">	
+			<input name="paleta" type="color" value="" onchange="cambiarColor()"/>
+			<input name="botonModificar" type="button" value="modificar Color"/>	
 		</form>
    	</fieldset>        
     <!--/AREA BIENVENIDA-->
@@ -119,7 +119,7 @@ include 'header.php';
                                 <img src="assets/img/slide2.jpg" />
                             </li>
                             <li>
-                                <a href="http://flex.madebymufffin.com"><img src="assets/img/slide3.jpg" /></a>
+                                <img src="assets/img/slide3.jpg" />
                             </li>
                             <li>
                                 <img src="assets/img/slide4.jpg" />
@@ -333,16 +333,52 @@ include 'header.php';
                                                 </li>   
                                                 <li>
                                                     <blockquote>
-                                                        <p>Me pagaron la coca al primer aviso y sin recurrir al plata o plomo.</p>
-                                                        <small>Pablo Emilio Escobar Gaviria</cite></small>
+                                                        <p>Visca Catalonya Lliure! Visca Gothic!</p>
+                                                        <small>The Quadels</cite></small>
                                                     </blockquote>
                                                 </li>
                                                 <li>
                                                     <blockquote>
-                                                        <p>Visca Catalonya Lliure! Visca Gothic!</p>
-                                                        <small>The Quadels</cite></small>
+                                                        <p>No estáis preparados.</p>
+                                                        <small>Illidan Tempestira</cite></small>
                                                     </blockquote>
-                                                </li>                                                                                                                                             
+                                                </li> 
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Habéis probado reiniciando el router?</p>
+                                                        <small>Servicio Técnico</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Habéis probado apagando el ordenador?</p>
+                                                        <small>Servicio Técnico again</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Está conectado a la corriente el equipo?</p>
+                                                        <small>Servicio Técnico again again</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Habéis iniciado la sesión con el usuario con la contraseña?</p>
+                                                        <small>Servicio Técnico one more time</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Estáis contratados.</p>
+                                                        <small>Bill Gates</cite></small>
+                                                    </blockquote>
+                                                </li>
+                                                <li>
+                                                    <blockquote>
+                                                        <p>Os habría robado las ideas de seguir vivo.</p>
+                                                        <small>Steve Jobs</cite></small>
+                                                    </blockquote>
+                                                </li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
                                             </ul>
                                         </div>
                                     </div>
@@ -464,7 +500,7 @@ include 'footer.php';
                             <span>Copyright 2017 J3A - Diseñado por <span class="undercolored"><a href="#">Julen, Jon Ander, Jenifer y Ander</a></span></span>
                         </div>
                         <div class="span6">
-                            <span class="pull-right visible-desktop"><span class="undercolored"><a href="index.php">portal</a></span> / <span class="undercolored"><a href="sobrenosotros.php">Sobre Nosotros</a></span> / <span class="undercolored"><a href="trabajaConNosotros.php">Trabaja con Nosotros</a></span> / <span class="undercolored"><a href="servicios.php">Qué hacemos</a></span> / <span class="undercolored"><a href="miembros.php">Miembros</a></span> /  <span class="undercolored"><a href="contacto.php">Contacto</a></span></span>
+                            <span class="pull-right visible-desktop"><span class="undercolored"><a href="index.php">Portal</a></span> / <span class="undercolored"><a href="sobrenosotros.php">Sobre Nosotros</a></span> / <span class="undercolored"><a href="trabajaConNosotros.php">Trabaja con Nosotros</a></span> / <span class="undercolored"><a href="servicios.php">Qué hacemos</a></span> / <span class="undercolored"><a href="miembros.php">Miembros</a></span> /  <span class="undercolored"><a href="contacto.php">Contacto</a></span></span>
                         </div>
                     </div>
                 </div>

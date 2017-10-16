@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +14,7 @@
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" />
     <link href="assets/css/miembros.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -46,7 +49,7 @@
     <!--HEADER-->
 <?php 
 include 'header.php';
-$link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
+require_once 'conf/conexion.php';
 ?>
 	<!--/HEADER-->
     <!--AREA BIENVENIDA-->
@@ -54,7 +57,7 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
         <div class="container">
             <div class="row welcome_inner">
                 <div class="span12">
-                    <h1><span class="colored">///</span> PERFIL</h1>
+                    <h1><span class="colored">///</span> MI PERFIL</h1>
                 </div>
             </div>
         </div>
@@ -69,7 +72,6 @@ $link = mysqli_connect('127.0.0.1:56624', 'j3a', 'Qwerty123_', 'j3a');
     <section>
     
     <?php
-session_start();
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 	
@@ -222,11 +224,28 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
       
       
       <?php 
+      echo (now());
+      if ($_POST) {
+      	
+      	$usernameComentario = $_SESSION['username'];
+      	$comentario = (filter_input(INPUT_POST, 'comentario'));
+      	
+      	
+      	$insertarComentario = ("INSERT INTO comentario (enPerfilUsuario, username, comentario, fecha) VALUES ('$usernameComentario', '$usernameComentario', '$comentario', 'now()'");
+      	mysqli_query($link, $insertarComentario);
+      	
+     
+      }
+      
+      
   // Selección de todos los comentarios de la BBDD, para éste usuario
   $sql = "SELECT * FROM comentario WHERE enPerfilUsuario = '$username'";
   $result = mysqli_query($link, $sql);
   
-  $cantidadComentarios = (mysqli_num_rows($result) + mysqli_num_rows($resultInfoUsuario));
+  // Contar el total de comentarios del perfil:
+  $sqlComentarios = "SELECT count(enPerfilUsuario) from comentario where enPerfilUsuario = '$username'";
+  $resultComentarios = mysqli_query($link, $sql);
+  $cantidadComentarios = (mysqli_num_rows($resultComentarios));
   
   echo ('<h3><span class="colored">///</span> ' . $cantidadComentarios . ' Comentario(s):</h3>');
   
@@ -264,17 +283,17 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
                   	echo ('</div>');                  
                   }
   	}
-  }
+  }  
   ?>
                 <div class="row">
                 	<div class="span10"><hr></div>
                 </div>
       
        <h3><span class="colored">///</span> Deja un comentario</h3>
-                <div class="row" style="margin-top:20px;">
+                <div class="row" style="margin-top: 20px;">
                 	<div class="span10">
-                        <form class="form">
-                            <textarea type="text" placeholder="Comentario" rows="5" class="span12"></textarea>
+                        <form name="loginForm" class="form" action="miperfil.php" method="post">
+                            <textarea name="comentario" placeholder="comentario" rows="5" class="span10" cols=""></textarea>
                             <button type="submit"  class="btn btn-success">Enviar</button>
                         </form>
                     </div>
@@ -336,31 +355,31 @@ include 'footer.php';
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>	
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/google-code-prettify/prettify.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-modal.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/bootstrap-tab.js"></script>
-    <script src="assets/js/bootstrap-tooltip.js"></script>
-    <script src="assets/js/bootstrap-popover.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/bootstrap-collapse.js"></script>
-    <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>
-    <script src="assets/js/jquery.easing.1.3.js"></script>
-    <script src="assets/js/jquery.slabtext.min.js"></script>
-    <script src="assets/js/jquery.flexslider-min.js"></script>
-    <script src="assets/js/superfish-menu/superfish.js"></script>
-    <script src="assets/js/plugin.js"></script>
-    <script src="assets/js/jquery.prettyPhoto.js"></script>
-    <script src="assets/js/twitter.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="assets/js/jquery.gmap.min.js"></script>
-    <script src="assets/js/jquery.preloader.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/jquery.js" type="text/javascript"></script>
+    <script src="assets/js/google-code-prettify/prettify.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-transition.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-alert.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-modal.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-dropdown.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-scrollspy.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-tab.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-tooltip.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-popover.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-button.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-collapse.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-carousel.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-typeahead.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.slabtext.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="assets/js/superfish-menu/superfish.js" type="text/javascript"></script>
+    <script src="assets/js/plugin.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <script src="assets/js/twitter.js" type="text/javascript"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script src="assets/js/jquery.gmap.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.preloader.js" type="text/javascript"></script>
+    <script src="assets/js/custom.js" type="text/javascript"></script>
 	<script type="text/javascript">var runFancy = true;</script>
     <!--[if IE]>
     <script type="text/javascript">
