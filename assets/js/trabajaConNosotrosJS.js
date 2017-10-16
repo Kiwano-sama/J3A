@@ -27,7 +27,7 @@ alert('Hola, bienvenido a nuestra seccion trabaja con nostros, aqui deberás rel
 // * contacto' y que debe tener 9 numeros si no da error y que no se pueda
 // * insertar letras en vez de numeros en 'Numero de
 // * contacto'
-//*/
+//*/ 
 //function comprobarNumero(e) {
 //	var keychar;
 //	var teclanum;
