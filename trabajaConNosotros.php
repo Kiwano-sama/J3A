@@ -8,8 +8,14 @@
     <meta name="author" content="">
     <!-- styles -->
    <script src="assets/js/trabajaConNosotrosJS.js"></script>
-   <script src="assets/js/sweetalert.min.js"></script>
-   <link rel="stylesheet" type="text/css" href="assets/css/sweetalert.css" >      
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Custom functions file -->
+<script src="js/functions.js"></script>
+<!-- Sweet Alert Script -->
+<script src="js/sweetalert.min.js"></script>
+<!-- Sweet Alert Styles -->
+<link href="css/sweetalert.css" rel="stylesheet">    
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -23,7 +29,6 @@
     <!--[if IE 8]>
     	<link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
     <![endif]-->
-    
     <!-- fav and touch icons -->
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon.png">
@@ -38,9 +43,9 @@
     <link href='http://fonts.googleapis.com/css?family=Days+One|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
     <!--/GOOGLE FONTS-->
-    
+
 </head>
-    <body onload="alert('Here's a message!')">
+    <body onload="">
     <!--TOP-->
     <div class="top_line"></div>
     <div class="panel hidden-phone">
@@ -70,10 +75,8 @@ include 'header.php';
         <div class="container">
             <div class="row">
                 <div class="span6">
-                    <h2><span class="label">¿Quieres trabajar con nosotros?</span></h2>
-                    
-                    <hr>
-                    
+                    <h2><span class="label">¿Quieres trabajar con nosotros?</span></h2>                    
+                    <hr>                    
                     <div class="well-block">                       
                         <form name="trabaja" action="" method="post" onSubmit="return validar()">
                             <!-- Form start -->
@@ -94,8 +97,7 @@ include 'header.php';
                                   <div class="col-md-6">
                                     <div class="form-group">
                                     <label  class="control-label" for="number">Numero de Contacto: </label>
-                                        <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarNumero(event)" class="form-control input-md">
-                                       
+                                        <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarNumero(event)" class="form-control input-md">                                       
                                     </div>                           
                                 </div>
                                 <br>
@@ -119,19 +121,13 @@ include 'header.php';
                                 <p>Mandanos tu CV aquí: </p>
                                     <input required type="file" name="cv">
                                 </div>
-                            </div>
-                            
+                            </div>                            
                             <br>
-                             <!-- Buttons -->
-                         
-                         <input  onSubmit="return Enviar()" type="submit" value="Enviar" class="btn-large btn-success mega" style="width:400px">
-                         
+                             <!-- Buttons -->                         
+                         <input  onSubmit="return Enviar()" type="submit" value="Enviar" class="btn-large btn-success mega" style="width:400px">                         
                         </form>
                         <!-- form end -->
                     </div>
-                    
-                    
-                    
                 </div>
                 <div class="span6 mainslider">
                     <div class="flexslider">
