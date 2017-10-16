@@ -75,8 +75,8 @@ include 'header.php';
     <fieldset>
     	<p class="intro">¿Quieres cambiar el color de la fuente? Aquí te dejamos una paleta para que selecciones el color que deseas</p>
     	<form name="formPaleta" action="" method="get">
-			<input name="paleta" type="color" value="" onChange="cambiarColor()"/>
-			<input name="botonModificar" type="button" value="modificar Color" onclick="cambiarColor()">	
+			<input name="paleta" type="color" value="" onchange="cambiarColor()"/>
+			<input name="botonModificar" type="button" value="modificar Color"/>	
 		</form>
    	</fieldset>        
     <!--/AREA BIENVENIDA-->
@@ -119,7 +119,7 @@ include 'header.php';
                                 <img src="assets/img/slide2.jpg" />
                             </li>
                             <li>
-                                <a href="http://flex.madebymufffin.com"><img src="assets/img/slide3.jpg" /></a>
+                                <img src="assets/img/slide3.jpg" />
                             </li>
                             <li>
                                 <img src="assets/img/slide4.jpg" />
@@ -331,12 +331,6 @@ include 'header.php';
                                                         <small>Pablo Emilio Escobar Gaviria</cite></small>
                                                     </blockquote>
                                                 </li>   
-                                                <li>
-                                                    <blockquote>
-                                                        <p>Me pagaron la coca al primer aviso y sin recurrir al plata o plomo.</p>
-                                                        <small>Pablo Emilio Escobar Gaviria</cite></small>
-                                                    </blockquote>
-                                                </li>
                                                 <li>
                                                     <blockquote>
                                                         <p>Visca Catalonya Lliure! Visca Gothic!</p>
