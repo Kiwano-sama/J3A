@@ -133,7 +133,7 @@ include 'header.php';
                     <div class="flexslider">
                         <ul class="slides">
                             <li>
-                                <img src="assets/img/Julen2.jpg" />
+                                <img src="assets/img/slide2.jpg" />
                             </li>
                             <li>
                                 <a href="http://flex.madebymufffin.com"><img src="assets/img/slide3.jpg" /></a>
