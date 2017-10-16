@@ -5,6 +5,11 @@ $components = explode('/', $path);
 $first_part = $components[1];
 ?>
    
+<script type="text/javascript">
+function mostrar(){
+document.getElementById('Registro').style.display = 'block';}
+</script>
+
     <header>
         <div class="container"> 
            <div class="row hidden-phone">
@@ -47,9 +52,10 @@ $first_part = $components[1];
            <div id="myModal" class="modal hide fade">
             <div class="modal-header">
               <a class="close" data-dismiss="modal" >&times;</a>
-              <h3 style="float: center;"><a href="#">Login</a> | <a href="#">Registro</a></h3>
+              <h3 style="float: center;"><a href="#" onclick="mostrar()">Login</a> | <a href="#">Registro</a></h3>
             </div>
             <div class="modal-body">
+            <div id="login">
               <form name="loginForm" action="login.php" method="post">
 			
 				<div class="input-group input-group-icon">
@@ -68,8 +74,104 @@ $first_part = $components[1];
 				</div>
 			<a href="#">¿Has olvidado la contraseña? </a><br>
 			<input class="btn btn-success" type="submit" value="Loguearse">
-		</form>
-            </div>
+			</form>
+			</div>
             
+            
+            <div id='Registro' style='display:none;'>
+					<form name="miForm" action="registro.php"
+					onsubmit="return validarForm()" method="post" enctype="multipart/form-data">
+					
+						<h2>Nueva Cuenta</h2>
+						<h4>Datos</h4>
+						<div class="input-group input-group-icon">
+							<input type="text" name="username"
+								placeholder="Username (min 4 caracteres, maximo 10)" required
+								minlength="4" maxlength="10" />
+							<div class="input-icon">
+								<i class="fa fa-user"></i>
+							</div>
+						</div>
+						<div class="input-group input-group-icon">
+							<input type="text" name="nombre" placeholder="Nombre" required />
+							<div class="input-icon">
+								<i class="fa fa-user"></i>
+							</div>
+						</div>
+						<div class="input-group input-group-icon">
+							<input type="text" name="apellido" placeholder="Apellido" required />
+							<div class="input-icon">
+								<i class="fa fa-user"></i>
+							</div>
+						</div>
+						<div class="input-group input-group-icon">
+							<input type="email" name="email" placeholder="Dirección Email"
+								required />
+							<div class="input-icon">
+								<i class="fa fa-envelope"></i>
+							</div>
+						</div>
+						<div class="input-group input-group-icon">
+							<input type="password" name="pass" placeholder="Contraseña"
+								required />
+							<div class="input-icon">
+								<i class="fa fa-key"></i>
+							</div>
+						</div>
+						
+						<div class="input-group input-group-icon">
+							<input class="input-group" type="file" name="user_image" accept="image/*" />
+							<div class="input-icon">
+								<i class="fa fa-file-image-o"></i>
+							</div>
+						</div>
+						
+						
+					
+					
+						<div class="col-half">
+							<h4>Fecha de Nacimiento</h4>
+							<div class="input-group">
+								<div class="col-third">
+									<input type="text" name="dia" placeholder="DIA"
+										onkeypress="return TeclaPulsada(event)" />
+								</div>
+								<div class="col-third">
+									<input type="text" name="mes" placeholder="MES"
+										onkeypress="return TeclaPulsada(event)" />
+								</div>
+								<div class="col-third">
+									<input type="text" name="anio" placeholder="AÑO"
+										onkeypress="return TeclaPulsada(event)" />
+								</div>
+								<span id="fechaNac" class="texto-rojo"></span>
+							</div>
+						</div>
+						<div class="col-half">
+							<h4>Genero</h4>
+							<div class="input-group">
+								<input type="radio" name="genero" value="h"
+									id="genero-hombre" checked="checked" /> <label
+									for="genero-hombre">Hombre</label> <input type="radio"
+									name="genero" value="m" id="genero-mujer" /> <label
+									for="genero-mujer">Mujer</label>
+							</div>
+						</div>
+					
+		
+					
+						<h4>Terminos y Condiciones</h4>
+						<div class="input-group">
+							<input type="checkbox" id="terms" name="terminos" /> <label
+								for="terms">Acepto los términos y condiciones para
+								inscribirme en este servicio y confirmo que he leído la política
+								de privacidad.</label>
+							<span id="terminos" class="texto-rojo"></span>
+						</div>
+					
+					<input class="btn btn-success" type="submit" value="Registrarse">
+				</form>
+			</div>
+            </div>
           </div>
 	</header>
