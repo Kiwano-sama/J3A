@@ -116,16 +116,16 @@ include 'header.php';
                     <div class="flexslider">
                         <ul class="slides">
                             <li>
-                                <img src="assets/img/slide2.jpg" />
+                                <img src="assets/img/slide1.jpg" />
                             </li>
                             <li>
-                                <img src="assets/img/slide3.jpg" />
+                                <img src="assets/img/slide1-1.jpg" />
                             </li>
                             <li>
-                                <img src="assets/img/slide4.jpg" />
+                                <img src="assets/img/slide1-2.jpg" />
                             </li>
                             <li>
-                                <img src="assets/img/slide5.jpg" />
+                                <img src="assets/img/slide1-3.jpg" />
                             </li>
                         </ul>
                     </div>
