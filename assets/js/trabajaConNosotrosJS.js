@@ -28,29 +28,29 @@ function validarEmail() {
 // * insertar letras en vez de numeros en 'Numero de
 // * contacto'
 //*/ 
-//function comprobarNumero(e) {
-//	var keychar;
-//	var teclanum;
-//	var miNumero = document.getElementById('numero');
-//	// alert('holaa prueba 2 comprobarNumero');
-//	teclanum = e.which;
-//	keychar = String.fromCharCode(teclanum);
-//
-//	// alert('holaa prueba comprobarNumero');
-//	if (keychar < '0' || keychar > '9') {
-//		// alert('holaa prueba 1 comprobarNumero');
-//		return false;
-//	} else {
-//		return true;
-//	}
-//	// alert('holaa prueba 2 comprobarNumero');
-//	if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)) {
-//		return true;
-//	} else {
-//		alert("El numero insertado " + miNumero + " es erroneo");
-//		return false;
-//	}
-//}
+function comprobarNumero(e) {
+	var keychar;
+	var teclanum;
+	var miNumero = document.getElementById('numero');
+	// alert('holaa prueba 2 comprobarNumero');
+	teclanum = e.which;
+	keychar = String.fromCharCode(teclanum);
+
+	// alert('holaa prueba comprobarNumero');
+	if (keychar < '0' || keychar > '9') {
+		// alert('holaa prueba 1 comprobarNumero');
+		return false;
+	} else {
+		return true;
+	}
+	// alert('holaa prueba 2 comprobarNumero');
+	if (/^\d{9}/.test(miNumero) && (miNumero.length <= 9)) {
+		return true;
+	} else {
+		alert("El numero insertado " + miNumero + " es erroneo");
+		return false;
+	}
+}
 ////Funcion para que no se puedan insertar numeros en el campo 'Nombre'
 //function comprobarLetra(e) {
 //	var keychar;
