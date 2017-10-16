@@ -36,7 +36,7 @@ function comprobarNumero(e) {
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
 
-	// alert('holaa prueba comprobarNumero');
+	alert(keychar);
 	if (keychar < '0' || keychar > '9') {
 		// alert('holaa prueba 1 comprobarNumero');
 		return false;
