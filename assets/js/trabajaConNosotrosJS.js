@@ -2,7 +2,7 @@ alert('Hola, bienvenido a nuestra seccion trabaja con nostros');
 ////Funcion para validar el formulario
 function validar() {
 	alert('hola validar');
-	if (validarEmail() /* && comprobarnombre() && numero() */) {
+	if (validarEmail()) {
 		alert("Sus datos son correcto, enviando...");
 		return true;
 	} else {
