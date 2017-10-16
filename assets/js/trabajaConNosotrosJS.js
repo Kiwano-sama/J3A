@@ -67,22 +67,22 @@ function comprobarLetra(e) {
 	}
 }
 //// Funcion para que no se pueda insertar mas de una '@'
-//function comprobarArroba(e) {
-//	var caracterTecla;
-//	var codigoTecla;
-//
-//	if (window.event) {
-//		codigoTecla = e.keyCode;
-//	} else if (e.which) {
-//		codigoTecla = e.which;
-//	}
-//	caracterTecla = String.fromCharCode(codigoTecla);
-//
-//	if (caracterTecla == "@") {
-//		if (document.trabaja.email.value.indexOf('@') >= 0) {
-//			return false;
-//		} else {
-//			return true;
-//		}
-//	}
-//}
+function comprobarArroba(e) {
+	var caracterTecla;
+	var codigoTecla;
+
+	if (window.event) {
+		codigoTecla = e.keyCode;
+	} else if (e.which) {
+		codigoTecla = e.which;
+	}
+	caracterTecla = String.fromCharCode(codigoTecla);
+
+	if (caracterTecla == "@") {
+		if (document.trabaja.email.value.indexOf('@') >= 0) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+}
