@@ -1,27 +1,27 @@
 alert('Hola, bienvenido a nuestra seccion trabaja con nostros');
-////Funcion para validar el formulario
-//function validar() {
-//	alert('hola validar');
-//	if (validarEmail() /* && comprobarnombre() && numero() */) {
-//		alert("Sus datos son correcto, enviando...");
-//		return true;
-//	} else {
-//
-//		alert("Datos incorrectos, compruebe que todos los datos sean correctos");
-//		return false;
-//	}
-//}
-//// Funcion para comprobar que el email cumple con los requisitos
-//function validarEmail() {
-//	 //alert('hola prueba validarEmail');
-//	var valor = document.getElementById('email').value
-//	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(valor)) {
-//		return true;
-//	} else {
-//		alert("La dirección de email es incorrecta, por favor, compruebe que el email sea correcto.");
-//		return false;
-//	}
-//}
+//Funcion para validar el formulario
+function validar() {
+	alert('hola validar');
+	if (validarEmail() /* && comprobarnombre() && numero() */) {
+		alert("Sus datos son correcto, enviando...");
+		return true;
+	} else {
+
+		alert("Datos incorrectos, compruebe que todos los datos sean correctos");
+		return false;
+	}
+}
+// Funcion para comprobar que el email cumple con los requisitos
+function validarEmail() {
+	 //alert('hola prueba validarEmail');
+	var valor = document.getElementById('email').value
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(valor)) {
+		return true;
+	} else {
+		alert("La dirección de email es incorrecta, por favor, compruebe que el email sea correcto.");
+		return false;
+	}
+}
 ///* 	
 // * Funcion para determinar que parametros tiene que tener el 'Numero de
 // * contacto' y que debe tener 9 numeros si no da error y que no se pueda
