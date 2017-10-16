@@ -75,7 +75,7 @@ include 'header.php';
                             <div class="row-fluid">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                         <label  class="control-label" for="nome">Nombre: </label>
+                                         <label  class="control-label" for="nome">Nombreeeee: </label>
                                         <input required  id="nombre" name="nombre" type="text"  onKeyPress="return comprobarLetra(event)"class="form-control input-md"  >
                                     </div>                                   
                                 </div>
