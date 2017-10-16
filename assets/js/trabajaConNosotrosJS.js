@@ -36,7 +36,7 @@ function comprobarNumero(e) {
 	teclanum = e.which;
 	keychar = String.fromCharCode(teclanum);
 
-	alert(keychar);
+	//alert(keychar);
 	if (keychar < '0' || keychar > '9') {
 		// alert('holaa prueba 1 comprobarNumero');
 		return false;
@@ -52,21 +52,20 @@ function comprobarNumero(e) {
 	}
 }
 ////Funcion para que no se puedan insertar numeros en el campo 'Nombre'
-//function comprobarLetra(e) {
-//	var keychar;
-//	var teclanum;
-//
-//	teclanum = e.which;
-//	keychar = String.fromCharCode(teclanum);
-//
-//	// alert(keychar);
-//	if ((keychar >= 'a' && keychar <= 'z') || (keychar >= 'A' && keychar <= 'Z')) {
-//		return true;
-//	} else {
-//		return false;
-//	}
-//}
-//// // alert('holaa prueba 2 comprobarNumero');
+function comprobarLetra(e) {
+	var keychar;
+	var teclanum;
+
+	teclanum = e.which;
+	keychar = String.fromCharCode(teclanum);
+
+	// alert(keychar);
+	if ((keychar >= 'a' && keychar <= 'z') || (keychar >= 'A' && keychar <= 'Z')) {
+		return true;
+	} else {
+		return false;
+	}
+}
 //// Funcion para que no se pueda insertar mas de una '@'
 //function comprobarArroba(e) {
 //	var caracterTecla;
