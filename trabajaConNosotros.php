@@ -136,13 +136,13 @@ include 'header.php';
                                 <img src="assets/img/slideN2.jpg" />
                             </li>
                             <li>
-                                <a href="http://flex.madebymufffin.com"><img src="assets/img/slide3.jpg" /></a>
+                                <a href="http://flex.madebymufffin.com"><img src="assets/img/slideN3.jpg" /></a>
                             </li>
                             <li>
-                                <img src="assets/img/slide4.jpg" />
+                                <img src="assets/img/slideN4.jpg" />
                             </li>
                             <li>
-                                <img src="assets/img/slide5.jpg" />
+                                <img src="assets/img/slideN5.jpg" />
                             </li>
                         </ul>
                     </div>
