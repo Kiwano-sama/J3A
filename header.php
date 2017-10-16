@@ -47,7 +47,7 @@ $first_part = $components[1];
            <div id="myModal" class="modal hide fade">
             <div class="modal-header">
               <a class="close" data-dismiss="modal" >&times;</a>
-              <h3 style="align: center;">Login | Registro</h3>
+              <h3 style="float: center;"><a href="#">Login</a> | <a href="#">Registro</a></h3>
             </div>
             <div class="modal-body">
               <form name="loginForm" action="login.php" method="post">
@@ -66,7 +66,7 @@ $first_part = $components[1];
 						<i class="fa fa-key"></i>
 					</div>
 				</div>
-			
+			<a href="#">¿Has olvidado la contraseña? </a><br>
 			<input class="btn btn-success" type="submit" value="Loguearse">
 		</form>
             </div>
