@@ -7,15 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- styles -->
-   <script src="assets/js/trabajaConNosotrosJS.js"></script>
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- Custom functions file -->
-<script src="js/functions.js"></script>
-<!-- Sweet Alert Script -->
-<script src="js/sweetalert.min.js"></script>
-<!-- Sweet Alert Styles -->
-<link href="css/sweetalert.css" rel="stylesheet">    
+   	<script src="assets/js/trabajaConNosotrosJS.js"></script> 
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
