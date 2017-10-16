@@ -166,10 +166,10 @@ include 'header.php';
                     <div class="modal hade fade" id="myModal">
                         <div class="modal-header">
                         <a class="close" data-dismiss="modal">x</a>
-                        <h3>Modal header</h3>
+                        <h3>Cabecera</h3>
                         </div>
                         <div class="modal-body">
-                        <p>One fine body...</p>
+                        <p>Portfolio en construcción</p>
                         </div>
                         <div class="modal-footer">
                         </div>
@@ -201,7 +201,7 @@ include 'header.php';
                 </div>
                 <div class="span4 block">
                     <div class="view view-first">
-                        <a href="assets/img/gal/1.jpg" rel="prettyPhoto"><img src="assets/img/gal/1.jpg" alt="" /></a>
+                        <a href="assets/img/gal/11.jpg" rel="prettyPhoto"><img src="assets/img/gal/1.jpg" alt="" /></a>
                         <div class="mask">
                             <a href="assets/img/gal/1.jpg" rel="prettyPhoto" class="info"><img src="assets/img/plus.png" alt="Hanging Note Sign Psd" /></a>
                             <a href="#" class="link"><img src="assets/img/link.png" alt="Visit link" /></a>
