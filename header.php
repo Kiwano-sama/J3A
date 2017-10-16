@@ -8,7 +8,7 @@ $first_part = $components[1];
     <header>
         <div class="container"> 
            <div class="row hidden-phone">
-                <img class="flip" src="assets/img/panel.jpg" style="float: right;"/><span class="header_social">Siguenos en <span class="badge"><a href="https://twitter.com/j3a_design">Twitter</a></span> y <span class="badge"><a href="https://www.facebook.com/jtresa.designdevelopment.5">Facebook</a></span></span>
+                <a class="btn" data-toggle="modal" href="#myModal" style="float: right; margin-left:7px;"><img src="img/login.png" width="20px"/></a><img class="flip" src="assets/img/panel.jpg" style="float: right;"/><span class="header_social">Siguenos en <span class="badge"><a href="https://twitter.com/j3a_design">Twitter</a></span> y <span class="badge"><a href="https://www.facebook.com/jtresa.designdevelopment.5">Facebook</a></span></span>
             </div>
             <div class="row">
                 <div class="span4 logo">
@@ -41,4 +41,35 @@ $first_part = $components[1];
                 </div>
             </div>
 		</div>
+		
+		
+		<!-- login dentro del modulo -->
+           <div id="myModal" class="modal hide fade">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal" >&times;</a>
+              <h3 style="align: center;">Login | Registro</h3>
+            </div>
+            <div class="modal-body">
+              <form name="loginForm" action="login.php" method="post">
+			
+				<div class="input-group input-group-icon">
+					<input type="text" name="username" placeholder="Username" required
+						maxlength="10" />
+					<div class="input-icon">
+						<i class="fa fa-user"></i>
+					</div>
+				</div>
+				<div class="input-group input-group-icon">
+					<input type="password" name="password" placeholder="Contraseña"
+						required />
+					<div class="input-icon">
+						<i class="fa fa-key"></i>
+					</div>
+				</div>
+			
+			<input class="btn btn-success" type="submit" value="Loguearse">
+		</form>
+            </div>
+            
+          </div>
 	</header>
