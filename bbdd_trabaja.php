@@ -73,7 +73,7 @@ $nombre = $_POST["nombre"];
 $email = $_POST["email"];    
 $numero = $_POST["numero"];
 $puesto = $_POST["puesto"];
-$cv = $_POST["cv"];
+$cv = $_FILES["cv"];
 
 // Abrimos la conexion a la base de datos    
 $conexion = new mysqli ($host_db, $user_db, $pass_db, $db_name);
@@ -93,4 +93,4 @@ mysqli_close($conexion);
 <script type="text/javascript">
 alert('Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)');
 </script>    
-<input  href="index.php" type="submit" value="Volver" class="btn-large btn-success mega">
+<input href="index.php" type="submit" value="Volver" class="btn-large btn-success mega">
