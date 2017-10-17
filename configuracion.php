@@ -159,7 +159,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
 				<div class="profile-usermenu">
 					<ul class="nav">
 						<li>
-							<a href="#">
+							<a href="miperfil.php">
 							<i class="icon-home"></i>
 							Perfil </a>
 						</li>
@@ -184,9 +184,41 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
     </div>
        
     <div class="span10">
-    <h3><span class="colored">///</span> Información:</h3>
     
-    <form name="miForm" action="login/cambio-datos.php"
+    <div id="alerta-datos"></div>
+    <h3><span class="colored">///</span> Cambia tus datos:</h3>
+    <?php 
+    if ($_POST) {
+      	
+    	$nombre = (filter_input(INPUT_POST, 'nombre'));
+    	$apellido = (filter_input(INPUT_POST, 'apellido'));
+    	$email = (filter_input(INPUT_POST, 'email'));
+    	$genero = (filter_input(INPUT_POST, 'genero')); 	
+    	$fechaNac = (filter_input(INPUT_POST, 'fecha'));
+      	
+      	
+    	$modificarUsuario = ("UPDATE `usuario` SET `Nombre` = '$nombre', `Apellido` = '$apellido', `Email` = '$email', `Genero` = '$genero', `FechaNac` = '$fechaNac'  WHERE `usuario`.`username` = '$username';");
+      	
+    	
+    	
+    	
+    	if (mysqli_query($link, $modificarUsuario)) {
+    		echo '<div class="alert alert-success">';
+    		echo '<strong>Exito!</strong> Has modificado tus datos.';
+    		echo '</div>';
+    		
+    		
+    	} else {    		
+    		echo '<div class="alert alert-danger">';
+    		echo '<strong>Error!</strong> No se han podido modificar los datos, intentalo de nuevo.' . mysqli_error($link);
+    		echo '</div>';
+    	}
+    	
+    	
+      }
+      ?>
+    
+    <form name="miForm" action="configuracion.php"
 			onsubmit="return validarForm()" method="post" enctype="multipart/form-data">
         
     <table class="table table-striped table-bordered table-condensed">

@@ -223,8 +223,20 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
       	$comentario = (filter_input(INPUT_POST, 'comentario'));
       	
       	
-      	$insertarComentario = ("INSERT INTO comentario (enPerfilUsuario, username, comentario, fecha) VALUES ('$usernameComentario', '$usernameComentario', '$comentario', 'now()'");
-      	mysqli_query($link, $insertarComentario);
+      	$insertarComentario = ("INSERT INTO `comentario` (`idComentario`, `enPerfilUsuario`, `respuestaAcomentario`, `username`, `comentario`, `fecha`) VALUES (NULL, '$usernameComentario', NULL, '$usernameComentario', '$comentario', now())");
+
+      	
+      	if (mysqli_query($link, $insertarComentario)) {
+      		echo '<div class="alert alert-success">';
+      		echo '<strong>Exito!</strong> Has añadido un comentario';
+      		echo '</div>';
+      		
+      		
+      	} else {
+      		echo '<div class="alert alert-danger">';
+      		echo '<strong>Error!</strong> No se ha podido añadir el comentario, intentalo de nuevo. ' . mysqli_error($link);
+      		echo '</div>';
+      	}
       }
       
       
