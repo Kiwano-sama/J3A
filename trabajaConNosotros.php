@@ -119,13 +119,13 @@ include 'header.php';
                          <input  onSubmit="return Enviar()" type="submit" value="Enviar" class="btn-large btn-success mega" style="width:400px">                         
                         </form>
 <?php    
-
-// Recibimos por POST los datos procedentes del formulario    
 $host_db = "127.0.0.1:56624";
 $user_db = "j3a";
 $pass_db = "Qwerty123_";
 $db_name = "j3a";
 $tbl_name = "trabajadores";
+
+// Recibimos por POST los datos procedentes del formulario    
 
 $nombre = $_POST["nombre"];    
 $email = $_POST["email"];    
