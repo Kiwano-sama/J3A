@@ -95,8 +95,8 @@ include 'header.php';
         <div class="container">
             <div class="row">
                 <div class="span3 header">
-                    <h5><span class="colored">///</span> Our Twitter Feed</h5>
-                    <p>Find out what's happening, right now, with the people and organizations you care about.</p>
+                    <h5><span class="colored">///</span><a href="https://twitter.com/j3a_design"></h5>
+                    <p>Descubre lo que está ocurriendo, al momento, con la gente y la empresa que os interesa.</p>
                 </div>
                 <div class="span9">
                     <div class="well">
