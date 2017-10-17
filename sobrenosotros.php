@@ -419,7 +419,7 @@
             <div class="container">
                 <div class="row">
                     <div class="span3 header">
-                        <h5><span class="colored">///</span> Nuestro Contenido en Twitter</h5>
+                        <h5><span class="colored">///</span><a href="https://twitter.com/j3a_design"> Nuestro Contenido en Twitter</a></h5>
                         <p>Descubre lo que está ocurriendo, al momento, con la gente y la empresa que os interesa.</p>
                     </div>
                     <div class="span9">
