@@ -159,7 +159,7 @@ include 'footer.php';
     <script src="assets/js/plugin.js"></script>
     <script src="assets/js/jquery.prettyPhoto.js"></script>
     <script src="assets/js/twitter.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCA9V2gqqaCC6cJH-gR8BCxMAaqXXQ6kewcontent_copy"></script>
     <script src="assets/js/jquery.gmap.min.js"></script>
     <script src="assets/js/jquery.preloader.js"></script>
     <script src="assets/js/jquery.isotope.min.js"></script>
