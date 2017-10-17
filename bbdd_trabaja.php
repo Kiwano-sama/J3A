@@ -90,9 +90,9 @@ mysqli_close($conexion);
 // Confirmamos que el registro ha sido insertado con exito    
 
 echo "    
-<p>Los datos han sido guardados con exito.</p>    
+alert('Los datos han sido guardados con exito.')    
 
-<p><a href='javascript:history.go(-1)'>VOLVER ATRÁS</a></p>    
+<p><a href='javascript:history.go('index.php')'>Volver al Portal </a></p>    
 ";    
 ?>  
 
