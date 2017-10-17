@@ -43,7 +43,7 @@
 
                 $hash = password_hash($pass, PASSWORD_DEFAULT);
                 
-                require_once 'conf/conexion.php';
+                require_once '../conf/conexion.php';
                 $sql = "SELECT * FROM usuario WHERE username='$username' LIMIT 1";
                 $result = mysqli_query($link, $sql);
 
