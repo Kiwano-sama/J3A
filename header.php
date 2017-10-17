@@ -65,7 +65,7 @@ function cambiaVisibilidad(opcion) {
             </div>
             <div class="modal-body">
             <div id="login">
-              <form name="loginForm" action="login.php" method="post">
+              <form name="loginForm" action="login/login.php" method="post">
 			
 				<div class="input-group input-group-icon">
 					<input type="text" name="username" placeholder="Username" required
@@ -88,7 +88,7 @@ function cambiaVisibilidad(opcion) {
             
             
             <div id='Registro' style='display:none;'>
-					<form name="miForm" action="registro.php"
+					<form name="miForm" action="login/registro.php"
 					onsubmit="return validarForm()" method="post" enctype="multipart/form-data">
 					
 						<h2>Nueva Cuenta</h2>
