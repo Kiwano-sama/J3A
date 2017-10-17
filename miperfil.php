@@ -223,8 +223,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
       <hr>
       
       
-      <?php 
-      echo (now());
+      <?php
       if ($_POST) {
       	
       	$usernameComentario = $_SESSION['username'];
