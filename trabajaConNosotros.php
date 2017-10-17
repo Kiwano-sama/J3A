@@ -91,7 +91,7 @@ include 'header.php';
                                     <label  class="control-label" for="number">Numero de Contacto: *</label>
                                         <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarNumero(event)" class="form-control input-md">                                       
                                     </div>                           
-                                </div>
+                                </div> 
                                 <br>
                                 <br>                        
                                 <div class="col-md-6">
