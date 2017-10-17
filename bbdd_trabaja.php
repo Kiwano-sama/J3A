@@ -73,7 +73,6 @@ $nombre = $_POST["nombre"];
 $email = $_POST["email"];    
 $numero = $_POST["numero"];
 $puesto = $_POST["puesto"];
-$cv = $_FILES["cv"];
 
 // Abrimos la conexion a la base de datos    
 $conexion = new mysqli ($host_db, $user_db, $pass_db, $db_name);
@@ -81,7 +80,7 @@ if ($conexion->connect_error) {
 	die("La conexion falló: " . $conexion->connect_error);
 }
 
-$_GRABAR_SQL = "INSERT INTO $tbl_name (nombre,email,numero,puesto,cv) VALUES ('$nombre','$email','$numero','$puesto','$cv')";    
+$_GRABAR_SQL = "INSERT INTO $tbl_name (nombre,email,numero,puesto) VALUES ('$nombre','$email','$numero','$puesto')";    
 mysql_query($conexion, $_GRABAR_SQL);   
 
 // Cerramos la conexion a la base de datos    
@@ -90,9 +89,29 @@ mysqli_close($conexion);
 ?>
   
 <!-- Confirmamos que el registro ha sido insertado con exito     -->
-<script type="text/javascript">
-alert('Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)');
-</script>  
 <br>
 <br>  
-<input href="index.php" type="submit" value="Volver" class="btn-large btn-success mega" tyle="width:350px">
+  <script>
+  $( function() {
+    $( "#dialog-message" ).dialog({
+      modal: true,
+      buttons: {
+        Ok: function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="dialog-message" title="Download complete">
+  <p>
+    <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+   Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)
+  </p>
+</div>
+ 
+ 
+<!-- <input href="index.php" type="submit" value="Volver" class="btn-large btn-success mega" tyle="width:350px"> -->
