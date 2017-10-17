@@ -103,12 +103,13 @@ if($now > $_SESSION['expire']) {
 
 $username = $_SESSION['username'];
 
-$sqlInfoUsuario = "SELECT Nombre, Apellido, fechaNac, genero, esCliente, esAdmin FROM `usuario` WHERE username = '$username'";
+$sqlInfoUsuario = "SELECT Nombre, Apellido, Email, fechaNac, genero, esCliente, esAdmin FROM `usuario` WHERE username = '$username'";
 $resultInfoUsuario = mysqli_query($link, $sqlInfoUsuario);
 
 while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
 	$nombre = $row['Nombre'];
 	$apellido = $row['Apellido'];
+	$email = $row['Email'];
 	$fechaNac = $row['fechaNac'];
 	if ($row['genero'] === "h"){
 		$genero = "Hombre";
@@ -189,6 +190,10 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
           <tr>
             <td width="30%" style="text-align: right">Username:</td>
             <td width="70%"><?php echo $username; ?></td>
+          </tr>          
+           <tr>
+            <td width="30%" style="text-align: right">Email:</td>
+            <td width="70%"><?php echo $email; ?></td>
           </tr>
           <tr>
             <td width="30%" style="text-align: right">Nombre:</td>
