@@ -75,20 +75,20 @@ include 'header.php';
                             <div class="row-fluid">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                         <label  class="control-label" for="nome">Nombre: *</label>
+                                         <label  class="control-label" for="nome">Nombre: </label>
                                         <input required  id="nombre" name="nombre" type="text"  onKeyPress="return comprobarLetra(event)"class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                       <label  class="control-label" for="email">Email: *</label>
+                                       <label  class="control-label" for="email">Email: </label>
                                         <input required  id="email" name="email" type="text" onKeyPress="return comprobarArroba(event)" placeholder="juan@tuemail.com" class="form-control input-md" >
                                     </div>
                                 </div>
                                   <div class="col-md-6">
                                     <div class="form-group">
-                                    <label  class="control-label" for="number">Numero de Contacto: *</label>
+                                    <label  class="control-label" for="number">Numero de Contacto: </label>
                                         <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarNumero(event)" class="form-control input-md">                                       
                                     </div>                           
                                 </div> 
@@ -109,10 +109,10 @@ include 'header.php';
                                 <br>
                                 <br>
                                 <br>
-                                <div class="col-md-12">
-                                <p>Mandanos tu CV aquí: </p>
-                                    <input required type="file" name="cv">
-                                </div>
+<!--                                 <div class="col-md-12"> -->
+<!--                                 <p>Mandanos tu CV aquí: </p> -->
+<!--                                     <input required type="file" name="cv"> -->
+<!--                                 </div> -->
                             </div>                            
                             <br>
                              <!-- Buttons -->                         
