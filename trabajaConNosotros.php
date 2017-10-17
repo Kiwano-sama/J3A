@@ -134,7 +134,7 @@ $puesto = $_POST["puesto"];
 $cv = $_POST["cv"];
 
 // Abrimos la conexion a la base de datos    
-$conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
+$conexion = new mysqli ($host_db, $user_db, $pass_db, $db_name);
 if ($conexion->connect_error) {
 	die("La conexion falló: " . $conexion->connect_error);
 }
