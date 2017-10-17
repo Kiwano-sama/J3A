@@ -314,7 +314,7 @@ $usernameLogueado = $_SESSION['username'];
        <h3><span class="colored">///</span> Deja un comentario</h3>
                 <div class="row" style="margin-top: 20px;">
                 	<div class="span10">
-                        <form name="loginForm" class="form" action="verperfil.php?<?php $linkPerfilDeUsuario?>" method="post">
+                        <form name="loginForm" class="form" action="verperfil.php?<?php echo $linkPerfilDeUsuario;?>" method="post">
                             <textarea name="comentario" placeholder="comentario" rows="5" class="span10" cols=""></textarea>
                             <button type="submit"  class="btn btn-success">Enviar</button>
                         </form>
