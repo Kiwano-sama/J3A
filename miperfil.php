@@ -124,7 +124,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
     <div class="span2">
       <!--Contenido Sidebar-->
       
-      <div class="profile-userpic">
+      <div class="profilepic">
 					<img src="assets/img/miembros/savandy.jpg" class="img-responsive" alt="">
 				</div>
 				<!-- END SIDEBAR USERPIC -->
@@ -150,10 +150,10 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
 				</div>
 				<!-- END SIDEBAR USER TITLE -->
 				<!-- SIDEBAR BUTTONS -->
-				<div class="profile-userbuttons">
-					<button type="button" class="btn btn-success btn-sm">Añadir</button>
-					<button type="button" class="btn btn-danger btn-sm">Mensaje</button>
-				</div>
+<!-- 				<div class="profile-userbuttons"> -->
+<!-- 					<button type="button" class="btn btn-success btn-sm">Añadir</button> -->
+<!-- 					<button type="button" class="btn btn-danger btn-sm">Mensaje</button> -->
+<!-- 				</div> -->
 				<!-- END SIDEBAR BUTTONS -->
 				<!-- SIDEBAR MENU -->
 				<div class="profile-usermenu">

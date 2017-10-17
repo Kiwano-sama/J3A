@@ -103,20 +103,20 @@ function cambiaVisibilidad(opcion) {
 							</div>
 						</div>
 						<div class="input-group input-group-icon">
-							<input type="text" name="nombre" placeholder="Nombre" required />
+							<input type="text" name="nombre" placeholder="Nombre" required maxlength="15"/>
 							<div class="input-icon">
 								<i class="fa fa-user"></i>
 							</div>
 						</div>
 						<div class="input-group input-group-icon">
-							<input type="text" name="apellido" placeholder="Apellido" required />
+							<input type="text" name="apellido" placeholder="Apellido" required maxlength="15" />
 							<div class="input-icon">
 								<i class="fa fa-user"></i>
 							</div>
 						</div>
 						<div class="input-group input-group-icon">
 							<input type="email" name="email" placeholder="Dirección Email"
-								required />
+								required  maxlength="20"/>
 							<div class="input-icon">
 								<i class="fa fa-envelope"></i>
 							</div>
