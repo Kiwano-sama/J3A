@@ -268,6 +268,25 @@ echo "
     });
     </script>
     <!--/MAIN CONTENT AREA-->
+        <!--TWITTER AREA-->
+    <div class="twitter-block">
+        <div class="container">
+            <div class="row">
+                <div class="span3 header">
+                    <h5><span class="colored">///</span><a href="https://twitter.com/j3a_design"> Nuestro Contenido en Twitter</a></h5>
+                    <p>Descubre lo que está ocurriendo, al momento, con la gente y la empresa que os interesa.</p>
+                </div>
+                <div class="span9">
+                    <div class="well">
+                        <img class="twit_img" src="assets/img/twitter.png" alt="Visit link"/>
+                        <div id="jstwitter" class="clearfix">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/TWITTER AREA-->
 <?php 
 include 'footer.php';
 ?>

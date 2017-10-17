@@ -6,14 +6,23 @@ $first_part = $components[1];
 ?>
    
 <script type="text/javascript">
-function mostrar(){
-document.getElementById('Registro').style.display = 'block';}
+function cambiaVisibilidad(opcion) {
+    var login = document.getElementById('login');
+    var registro = document.getElementById('Registro');
+    if(opcion=="log"){
+    	registro.style.display = 'none';
+    	login.style.display = 'block';
+    }else if (opcion=="reg"){
+    	registro.style.display = 'block';
+    	login.style.display = 'none';
+      }
+}
 </script>
 
     <header>
         <div class="container"> 
            <div class="row hidden-phone">
-                <a class="btn" data-toggle="modal" href="#myModal" style="float: right; margin-left:7px;"><img src="img/login.png" width="20px"/></a><img class="flip" src="assets/img/panel.jpg" style="float: right;"/><span class="header_social">Siguenos en <span class="badge"><a href="https://twitter.com/j3a_design">Twitter</a></span> y <span class="badge"><a href="https://www.facebook.com/jtresa.designdevelopment.5">Facebook</a></span></span>
+                <a class="btn" data-toggle="modal" href="#myModal" style="float: right;"><img src="img/login.png" width="20px"/></a><span class="header_social">Siguenos en <span class="badge"><a href="https://twitter.com/j3a_design">Twitter</a></span> y <span class="badge"><a href="https://www.facebook.com/jtresa.designdevelopment.5">Facebook</a></span></span>
             </div>
             <div class="row">
                 <div class="span4 logo">
@@ -52,11 +61,11 @@ document.getElementById('Registro').style.display = 'block';}
            <div id="myModal" class="modal hide fade">
             <div class="modal-header">
               <a class="close" data-dismiss="modal" >&times;</a>
-              <h3 style="float: center;"><a href="#" onclick="mostrar()">Login</a> | <a href="#">Registro</a></h3>
+              <h3 style="float: center;"><a onclick="cambiaVisibilidad('log')">Login</a> | <a onclick="cambiaVisibilidad('reg')">Registro</a></h3>
             </div>
             <div class="modal-body">
             <div id="login">
-              <form name="loginForm" action="login.php" method="post">
+              <form name="loginForm" action="login/login.php" method="post">
 			
 				<div class="input-group input-group-icon">
 					<input type="text" name="username" placeholder="Username" required
@@ -79,7 +88,7 @@ document.getElementById('Registro').style.display = 'block';}
             
             
             <div id='Registro' style='display:none;'>
-					<form name="miForm" action="registro.php"
+					<form name="miForm" action="login/registro.php"
 					onsubmit="return validarForm()" method="post" enctype="multipart/form-data">
 					
 						<h2>Nueva Cuenta</h2>
