@@ -22,7 +22,7 @@ function cambiaVisibilidad(opcion) {
     <header>
         <div class="container"> 
            <div class="row hidden-phone">
-                <a class="btn" data-toggle="modal" href="#myModal" style="float: right; margin-left:7px;"><img src="img/login.png" width="20px"/></a><img class="flip" src="assets/img/panel.jpg" style="float: right;"/><span class="header_social">Siguenos en <span class="badge"><a href="https://twitter.com/j3a_design">Twitter</a></span> y <span class="badge"><a href="https://www.facebook.com/jtresa.designdevelopment.5">Facebook</a></span></span>
+                <a class="btn" data-toggle="modal" href="#myModal" style="float: right;"><img src="img/login.png" width="20px"/></a><span class="header_social">Siguenos en <span class="badge"><a href="https://twitter.com/j3a_design">Twitter</a></span> y <span class="badge"><a href="https://www.facebook.com/jtresa.designdevelopment.5">Facebook</a></span></span>
             </div>
             <div class="row">
                 <div class="span4 logo">
