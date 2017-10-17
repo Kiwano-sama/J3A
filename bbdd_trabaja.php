@@ -91,11 +91,11 @@ mysqli_close($conexion);
   
 <!-- Confirmamos que el registro ha sido insertado con exito     -->
 <script type="text/javascript">
-alert('Los datos han sido guardados con exito.');
+alert('Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)');
 </script>    
 <input href="index.php" type="submit" value="Volver" class="btn-large btn-success mega">
-   
-// <?php 
+
+<?php 
 
 // // Recibimos por POST los datos procedentes del formulario 
 
