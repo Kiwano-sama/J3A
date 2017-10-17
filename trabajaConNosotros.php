@@ -7,9 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- styles -->
-   <script src="assets/js/trabajaConNosotrosJS.js"></script>
-   <script src="assets/js/sweetalert.min.js"></script>
-   <link rel="stylesheet" type="text/css" href="assets/css/sweetalert.css" >      
+   	<script src="assets/js/trabajaConNosotrosJS.js"></script> 
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -23,7 +21,6 @@
     <!--[if IE 8]>
     	<link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
     <![endif]-->
-    
     <!-- fav and touch icons -->
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon.png">
@@ -38,9 +35,9 @@
     <link href='http://fonts.googleapis.com/css?family=Days+One|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
     <!--/GOOGLE FONTS-->
-    
+
 </head>
-    <body onload="alert('Here's a message!')">
+    <body>
     <!--TOP-->
     <div class="top_line"></div>
     <div class="panel hidden-phone">
@@ -70,10 +67,8 @@ include 'header.php';
         <div class="container">
             <div class="row">
                 <div class="span6">
-                    <h2><span class="label">¿Quieres trabajar con nosotros?</span></h2>
-                    
-                    <hr>
-                    
+                    <h2><span class="label">¿Quieres trabajar con nosotros?</span></h2>                    
+                    <hr>                    
                     <div class="well-block">                       
                         <form name="trabaja" action="" method="post" onSubmit="return validar()">
                             <!-- Form start -->
@@ -81,7 +76,7 @@ include 'header.php';
                                 <div class="col-md-6">
                                     <div class="form-group">
                                          <label  class="control-label" for="nome">Nombre: </label>
-                                        <input required  id="numero" name="numero" type="text"  onKeyPress="return comprobarLetra(event)"class="form-control input-md"  >
+                                        <input required  id="nombre" name="nombre" type="text"  onKeyPress="return comprobarLetra(event)"class="form-control input-md"  >
                                     </div>                                   
                                 </div>
                                 <!-- Text input-->                                
@@ -94,8 +89,7 @@ include 'header.php';
                                   <div class="col-md-6">
                                     <div class="form-group">
                                     <label  class="control-label" for="number">Numero de Contacto: </label>
-                                        <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarNumero(event)" class="form-control input-md">
-                                       
+                                        <input required  id="numero" name="numero" type="text" onKeyPress="return comprobarNumero(event)" class="form-control input-md">                                       
                                     </div>                           
                                 </div>
                                 <br>
@@ -119,34 +113,28 @@ include 'header.php';
                                 <p>Mandanos tu CV aquí: </p>
                                     <input required type="file" name="cv">
                                 </div>
-                            </div>
-                            
+                            </div>                            
                             <br>
-                             <!-- Buttons -->
-                         
-                         <input  onSubmit="return Enviar()" type="submit" value="Enviar" class="btn-large btn-success mega" style="width:400px">
-                         
+                             <!-- Buttons -->                         
+                         <input  onSubmit="return Enviar()" type="submit" value="Enviar" class="btn-large btn-success mega" style="width:400px">                         
                         </form>
                         <!-- form end -->
                     </div>
-                    
-                    
-                    
                 </div>
                 <div class="span6 mainslider">
                     <div class="flexslider">
                         <ul class="slides">
                             <li>
-                                <img src="assets/img/Julen2.jpg" />
+                                <img src="assets/img/slideN2.jpg" />
                             </li>
                             <li>
-                                <a href="http://flex.madebymufffin.com"><img src="assets/img/slide3.jpg" /></a>
+                                <a href="http://flex.madebymufffin.com"><img src="assets/img/slideN3.jpg" /></a>
                             </li>
                             <li>
-                                <img src="assets/img/slide4.jpg" />
+                                <img src="assets/img/slideN4.jpg" />
                             </li>
                             <li>
-                                <img src="assets/img/slide5.jpg" />
+                                <img src="assets/img/slideN5.jpg" />
                             </li>
                         </ul>
                     </div>

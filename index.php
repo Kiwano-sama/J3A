@@ -75,8 +75,8 @@ include 'header.php';
     <fieldset>
     	<p class="intro">¿Quieres cambiar el color de la fuente? Aquí te dejamos una paleta para que selecciones el color que deseas</p>
     	<form name="formPaleta" action="" method="get">
-			<input name="paleta" type="color" value="" onChange="cambiarColor()"/>
-			<input name="botonModificar" type="button" value="modificar Color" onclick="cambiarColor()">	
+			<input name="paleta" type="color" value="" onchange="cambiarColor()"/>
+			<input name="botonModificar" type="button" value="modificar Color"/>	
 		</form>
    	</fieldset>        
     <!--/AREA BIENVENIDA-->
@@ -110,22 +110,22 @@ include 'header.php';
                         </div>
                     </div>
                     <hr>
-                    <a href="123" class="btn btn-large btn-success mega"></i> Mira nuestros diseños</a>
+                    <a href="servicios.php" class="btn btn-large btn-success mega"></i> Mira nuestros diseños</a>
                 </div>
                 <div class="span8 mainslider">
                     <div class="flexslider">
                         <ul class="slides">
                             <li>
-                                <img src="assets/img/slide2.jpg" />
+                                <img src="assets/img/slide1.jpg" />
                             </li>
                             <li>
-                                <a href="http://flex.madebymufffin.com"><img src="assets/img/slide3.jpg" /></a>
+                                <img src="assets/img/slide1-1.jpg" />
                             </li>
                             <li>
-                                <img src="assets/img/slide4.jpg" />
+                                <img src="assets/img/slide1-2.jpg" />
                             </li>
                             <li>
-                                <img src="assets/img/slide5.jpg" />
+                                <img src="assets/img/slide1-3.jpg" />
                             </li>
                         </ul>
                     </div>
@@ -166,10 +166,10 @@ include 'header.php';
                     <div class="modal hade fade" id="myModal">
                         <div class="modal-header">
                         <a class="close" data-dismiss="modal">x</a>
-                        <h3>Modal header</h3>
+                        <h3>Cabecera</h3>
                         </div>
                         <div class="modal-body">
-                        <p>One fine body...</p>
+                        <p>Portfolio en construcción</p>
                         </div>
                         <div class="modal-footer">
                         </div>
@@ -201,9 +201,9 @@ include 'header.php';
                 </div>
                 <div class="span4 block">
                     <div class="view view-first">
-                        <a href="assets/img/gal/1.jpg" rel="prettyPhoto"><img src="assets/img/gal/1.jpg" alt="" /></a>
+                        <a href="assets/img/gal/11.jpg" rel="prettyPhoto"><img src="assets/img/gal/11.jpg" alt="" /></a>
                         <div class="mask">
-                            <a href="assets/img/gal/1.jpg" rel="prettyPhoto" class="info"><img src="assets/img/plus.png" alt="Hanging Note Sign Psd" /></a>
+                            <a href="assets/img/gal/11.jpg" rel="prettyPhoto" class="info"><img src="assets/img/plus.png" alt="Hanging Note Sign Psd" /></a>
                             <a href="#" class="link"><img src="assets/img/link.png" alt="Visit link" /></a>
                         </div>
                     </div>
@@ -331,12 +331,6 @@ include 'header.php';
                                                         <small>Pablo Emilio Escobar Gaviria</cite></small>
                                                     </blockquote>
                                                 </li>   
-                                                <li>
-                                                    <blockquote>
-                                                        <p>Me pagaron la coca al primer aviso y sin recurrir al plata o plomo.</p>
-                                                        <small>Pablo Emilio Escobar Gaviria</cite></small>
-                                                    </blockquote>
-                                                </li>
                                                 <li>
                                                     <blockquote>
                                                         <p>Visca Catalonya Lliure! Visca Gothic!</p>
