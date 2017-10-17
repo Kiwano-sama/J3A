@@ -181,19 +181,10 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
 				</div>
             
     </div>
-    
-    
+       
     <div class="span10">
     <h3><span class="colored">///</span> Tu información:</h3>
     <table class="table table-striped table-bordered table-condensed">
-       <!-- 
-        <thead>
-          <tr>
-          <th width="30%">Campo</th>
-          <th width="70%">Contenido</th>
-          </tr>
-        </thead>
-         -->
         <tbody>
           <tr>
             <td width="30%" style="text-align: right">Username:</td>
@@ -215,14 +206,11 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
             <td width="30%" style="text-align: right">Fecha de nacimiento:</td>
             <td width="70%"><?php echo $fechaNac; ?></td>
           </tr>
-         
         </tbody>        
       </table>
-      
 
       <hr>
-      
-      
+
       <?php
       if ($_POST) {
       	
@@ -232,8 +220,6 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
       	
       	$insertarComentario = ("INSERT INTO comentario (enPerfilUsuario, username, comentario, fecha) VALUES ('$usernameComentario', '$usernameComentario', '$comentario', 'now()'");
       	mysqli_query($link, $insertarComentario);
-      	
-     
       }
       
       
