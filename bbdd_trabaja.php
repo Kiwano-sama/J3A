@@ -60,7 +60,6 @@ include 'header.php';
             </div>
         </div>
     </div>
-
 <?php    
 $host_db = "127.0.0.1:56624";
 $user_db = "j3a";
@@ -82,8 +81,8 @@ if ($conexion->connect_error) {
 	die("La conexion falló: " . $conexion->connect_error);
 }
 
-$_GRABAR_SQL = "INSERT INTO trabajadores (nombre,email,numero,puesto,cv) VALUES ('$nombre','$email','$numero','$puesto','$cv')";    
-mysql_query($_GRABAR_SQL);   
+$_GRABAR_SQL = "INSERT INTO $tbl_name (nombre,email,numero,puesto,cv) VALUES ('$nombre','$email','$numero','$puesto','$cv')";    
+mysql_query($conexion, $_GRABAR_SQL);   
 
 // Cerramos la conexion a la base de datos    
 mysqli_close($conexion); 
