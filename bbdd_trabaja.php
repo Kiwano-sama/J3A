@@ -36,7 +36,7 @@
     <!--/GOOGLE FONTS-->
 
 </head>
-    <body>
+    <body align="center">
     <!--TOP-->
     <div class="top_line"></div>
     <div class="panel hidden-phone">
@@ -93,4 +93,4 @@ mysqli_close($conexion);
 <script type="text/javascript">
 alert('Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)');
 </script>    
-<input align="center" href="index.php" type="submit" value="Volver" class="btn-large btn-success mega">
+<input  href="index.php" type="submit" value="Volver" class="btn-large btn-success mega">
