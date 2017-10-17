@@ -6,8 +6,17 @@ $first_part = $components[1];
 ?>
    
 <script type="text/javascript">
-function mostrar(){
-document.getElementById('Registro').style.display = 'block';}
+function cambiaVisibilidad(opcion) {
+    var login = document.getElementById('login');
+    var registro = document.getElementById('Registro');
+    if(opcion=="log"){
+    	registro.style.display = 'none';
+    	login.style.display = 'block';
+    }else if (opcion=="reg"){
+    	registro.style.display = 'block';
+    	login.style.display = 'none';
+      }
+}
 </script>
 
     <header>
@@ -52,7 +61,7 @@ document.getElementById('Registro').style.display = 'block';}
            <div id="myModal" class="modal hide fade">
             <div class="modal-header">
               <a class="close" data-dismiss="modal" >&times;</a>
-              <h3 style="float: center;"><a href="#" onclick="mostrar()">Login</a> | <a href="#">Registro</a></h3>
+              <h3 style="float: center;"><a onclick="cambiaVisibilidad('log')">Login</a> | <a onclick="cambiaVisibilidad('reg')">Registro</a></h3>
             </div>
             <div class="modal-body">
             <div id="login">
