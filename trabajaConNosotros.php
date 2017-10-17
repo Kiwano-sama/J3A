@@ -109,10 +109,10 @@ include 'header.php';
                                 <br>
                                 <br>
                                 <br>
-                                <div class="col-md-12">
-                                <p>Mandanos tu CV aquí: </p>
-                                    <input required type="file" name="cv">
-                                </div>
+<!--                                 <div class="col-md-12"> -->
+<!--                                 <p>Mandanos tu CV aquí: </p> -->
+<!--                                     <input required type="file" name="cv"> -->
+<!--                                 </div> -->
                             </div>                            
                             <br>
                              <!-- Buttons -->                         
