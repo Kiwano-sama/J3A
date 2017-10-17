@@ -70,7 +70,7 @@ include 'header.php';
                     <h2><span class="label">¿Quieres trabajar con nosotros?</span></h2>                    
                     <hr>                    
                     <div class="well-block">                       
-                        <form name="trabaja" action="trabajaConNosotros.php" method="post" onSubmit="return validar()">
+                        <form name="trabaja" action="bbdd_trabaja.php" method="post" onSubmit="return validar()">
                             <!-- Form start -->
                             <div class="row-fluid">
                                 <div class="col-md-6">
