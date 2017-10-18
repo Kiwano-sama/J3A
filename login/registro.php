@@ -13,16 +13,6 @@
         <div class="container">
 
             <?php
-            // COMENTADO DATOS RECOGIDOS
-//            echo (filter_input(INPUT_POST, 'username'));
-//            echo (filter_input(INPUT_POST, 'nombre'));
-//            echo (filter_input(INPUT_POST, 'apellido'));
-//            echo (filter_input(INPUT_POST, 'email'));
-//            echo (filter_input(INPUT_POST, 'pass'));
-//            echo (filter_input(INPUT_POST, 'dia'));
-//            echo (filter_input(INPUT_POST, 'mes'));
-//            echo (filter_input(INPUT_POST, 'anio'));
-//            echo (filter_input(INPUT_POST, 'genero'));
             require_once 'config.php';
 
             $response = array();
@@ -42,9 +32,9 @@
                 $fechaNac = $anio . "/" . $mes . "/" . $dia;
                 
                 // Imagen de perfil:
-                $imgFile = $_FILES['user_image']['name'];
-                $tmp_dir = $_FILES['user_image']['tmp_name'];
-                $imgSize = $_FILES['user_image']['size'];
+//                 $imgFile = $_FILES['user_image']['name'];
+//                 $tmp_dir = $_FILES['user_image']['tmp_name'];
+//                 $imgSize = $_FILES['user_image']['size'];
 
                 // sha256 password hashing
                 //$password = hash('sha256', $pass);
@@ -53,7 +43,7 @@
 
                 $hash = password_hash($pass, PASSWORD_DEFAULT);
                 
-                require_once 'conf/conexion.php';
+                require_once '../conf/conexion.php';
                 $sql = "SELECT * FROM usuario WHERE username='$username' LIMIT 1";
                 $result = mysqli_query($link, $sql);
 

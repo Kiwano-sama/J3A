@@ -103,14 +103,14 @@ if($now > $_SESSION['expire']) {
 
 $username = $_SESSION['username'];
 
-$sqlInfoUsuario = "SELECT Nombre, Apellido, Email, fechaNac, genero, esCliente, esAdmin FROM `usuario` WHERE username = '$username'";
+$sqlInfoUsuario = "SELECT Nombre, Apellido, fechaNac, genero, Email, esCliente, esAdmin FROM `usuario` WHERE username = '$username'";
 $resultInfoUsuario = mysqli_query($link, $sqlInfoUsuario);
 
 while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
 	$nombre = $row['Nombre'];
 	$apellido = $row['Apellido'];
-	$email = $row['Email'];
 	$fechaNac = $row['fechaNac'];
+	$email = $row['Email'];
 	if ($row['genero'] === "h"){
 		$genero = "Hombre";
 	} else if ($row['genero'] === "m"){
@@ -124,7 +124,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
     <div class="span2">
       <!--Contenido Sidebar-->
       
-      <div class="profilepic">
+      <div class="profile-userpic">
 					<img src="assets/img/miembros/savandy.jpg" class="img-responsive" alt="">
 				</div>
 				<!-- END SIDEBAR USERPIC -->
@@ -150,16 +150,16 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
 				</div>
 				<!-- END SIDEBAR USER TITLE -->
 				<!-- SIDEBAR BUTTONS -->
-<!-- 				<div class="profile-userbuttons"> -->
-<!-- 					<button type="button" class="btn btn-success btn-sm">Añadir</button> -->
-<!-- 					<button type="button" class="btn btn-danger btn-sm">Mensaje</button> -->
-<!-- 				</div> -->
+				<div class="profile-userbuttons">
+					<button type="button" class="btn btn-success btn-sm">Añadir</button>
+					<button type="button" class="btn btn-danger btn-sm">Mensaje</button>
+				</div>
 				<!-- END SIDEBAR BUTTONS -->
 				<!-- SIDEBAR MENU -->
 				<div class="profile-usermenu">
 					<ul class="nav">
-						<li class="active">
-							<a href="#">
+						<li>
+							<a href="miperfil.php">
 							<i class="icon-home"></i>
 							Perfil </a>
 						</li>
@@ -173,7 +173,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
 							<i class="icon-book"></i>
 							Tickets </a>
 						</li>
-						<li>
+						<li class="active">
 							<a href="configuracion.php">
 							<i class="icon-cog"></i>
 							Configuración </a>
@@ -184,123 +184,128 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
     </div>
        
     <div class="span10">
-    <h3><span class="colored">///</span> Tu información:</h3>
+    
+    <div id="alerta-datos"></div>
+    <h3><span class="colored">///</span> Cambia tus datos:</h3>
+    <?php 
+    if ($_POST) {
+      	
+    	$nombre = (filter_input(INPUT_POST, 'nombre'));
+    	$apellido = (filter_input(INPUT_POST, 'apellido'));
+    	$email = (filter_input(INPUT_POST, 'email'));
+    	$genero = (filter_input(INPUT_POST, 'genero')); 	
+    	$fechaNac = (filter_input(INPUT_POST, 'fecha'));
+      	
+      	
+    	$modificarUsuario = ("UPDATE `usuario` SET `Nombre` = '$nombre', `Apellido` = '$apellido', `Email` = '$email', `Genero` = '$genero', `FechaNac` = '$fechaNac'  WHERE `usuario`.`username` = '$username';");
+      	
+    	
+    	
+    	
+    	if (mysqli_query($link, $modificarUsuario)) {
+    		echo '<div class="alert alert-success">';
+    		echo '<strong>Exito!</strong> Has modificado tus datos.';
+    		echo '</div>';
+    		
+    		
+    	} else {    		
+    		echo '<div class="alert alert-danger">';
+    		echo '<strong>Error!</strong> No se han podido modificar los datos, intentalo de nuevo.' . mysqli_error($link);
+    		echo '</div>';
+    	}
+    	
+    	
+      }
+      ?>
+    
+    <form name="miForm" action="configuracion.php"
+			onsubmit="return validarForm()" method="post" enctype="multipart/form-data">
+        
     <table class="table table-striped table-bordered table-condensed">
         <tbody>
+        
+        
+        
           <tr>
-            <td width="30%" style="text-align: right">Username:</td>
-            <td width="70%"><?php echo $username; ?></td>
-          </tr>          
-           <tr>
-            <td width="30%" style="text-align: right">Email:</td>
-            <td width="70%"><?php echo $email; ?></td>
+            <td width="30%" style="text-align: right">Email:<br><i>Actual: <?php echo $email; ?></i></td>
+            <td width="70%">
+
+
+<div class="input-group input-group-icon">
+					<input type="email" name="email" placeholder="Dirección Email"
+						required value="<?php echo $email; ?>"/>
+					<div class="input-icon">
+						<i class="fa fa-envelope"></i>
+					</div>
+				</div>
+
+
+			</td>
           </tr>
           <tr>
-            <td width="30%" style="text-align: right">Nombre:</td>
-            <td width="70%"><?php echo $nombre; ?></td>
+            <td width="30%" style="text-align: right">Nombre:<br><i>Actual: <?php echo $nombre; ?></i></td>
+            <td width="70%">
+
+<div class="input-group input-group-icon">
+					<input type="text" name="nombre" placeholder="Nombre" required value="<?php echo $nombre; ?>"/>
+					<div class="input-icon">
+						<i class="fa fa-user"></i>
+					</div>
+				</div>
+
+</td>
           </tr>
           <tr>
-            <td width="30%" style="text-align: right">Apellido:</td>
-            <td width="70%"><?php echo $apellido; ?></td>
+            <td width="30%" style="text-align: right">Apellido:<br><i>Actual: <?php echo $apellido; ?></i></td>
+            <td width="70%">
+            
+            <div class="input-group input-group-icon">
+					<input type="text" name="apellido" placeholder="Apellido" required value="<?php echo $apellido; ?>"/>
+					<div class="input-icon">
+						<i class="fa fa-user"></i>
+					</div>
+				</div>
+            
+            </td>
           </tr>
           <tr>
-            <td width="30%" style="text-align: right">Genero:</td>
-            <td width="70%"><?php echo $genero; ?></td>
+            <td width="30%" style="text-align: right">Genero:<br><i>Actual: <?php echo $genero; ?></i></td>
+            <td width="70%">
+            
+            
+					
+					<div class="input-group">
+						<input type="radio" name="genero" value="h"
+							id="genero-hombre" checked="checked" /> <label
+							for="genero-hombre">Hombre</label> <input type="radio"
+							name="genero" value="m" id="genero-mujer" /> <label
+							for="genero-mujer">Mujer</label>
+					</div>
+				
+            
+            </td>
           </tr>
           <tr>
-            <td width="30%" style="text-align: right">Fecha de nacimiento:</td>
-            <td width="70%"><?php echo $fechaNac; ?></td>
+            <td width="30%" style="text-align: right">Fecha de nacimiento:<br><i>Actual: <?php echo $fechaNac; ?></i></td>
+            <td width="70%">
+            
+            <div class="input-group">
+							
+<input type="date" name="fecha" max=”2017-10-18″ value="<?php echo $fechaNac; ?>"></div>
+            
+            </td>
           </tr>
+          
+          <tr>
+          <td style="text-align:center" colspan="2">
+          <input class="btn btn-success" type="submit" value="Cambiar datos">
+		
+          </td>
+          </tr>
+          
         </tbody>        
       </table>
-
-      <hr>
-
-      <?php
-      if ($_POST) {
-      	
-      	$usernameComentario = $_SESSION['username'];
-      	$comentario = (filter_input(INPUT_POST, 'comentario'));
-      	
-      	
-      	$insertarComentario = ("INSERT INTO `comentario` (`idComentario`, `enPerfilUsuario`, `respuestaAcomentario`, `username`, `comentario`, `fecha`) VALUES (NULL, '$usernameComentario', NULL, '$usernameComentario', '$comentario', now())");
-
-      	
-      	if (mysqli_query($link, $insertarComentario)) {
-      		echo '<div class="alert alert-success">';
-      		echo '<strong>Exito!</strong> Has añadido un comentario';
-      		echo '</div>';
-      		
-      		
-      	} else {
-      		echo '<div class="alert alert-danger">';
-      		echo '<strong>Error!</strong> No se ha podido añadir el comentario, intentalo de nuevo. ' . mysqli_error($link);
-      		echo '</div>';
-      	}
-      }
-      
-      
-  // Selección de todos los comentarios de la BBDD, para éste usuario
-  $sql = "SELECT * FROM comentario WHERE enPerfilUsuario = '$username'";
-  $result = mysqli_query($link, $sql);
-  
-  // Contar el total de comentarios del perfil:
-  $sqlComentarios = "SELECT count(enPerfilUsuario) from comentario where enPerfilUsuario = '$username'";
-  $resultComentarios = mysqli_query($link, $sql);
-  $cantidadComentarios = (mysqli_num_rows($resultComentarios));
-  
-  echo ('<h3><span class="colored">///</span> ' . $cantidadComentarios . ' Comentario(s):</h3>');
-  
-  
-	while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-
-  	if (($row['respuestaAcomentario'] === NULL)) {
-  		$idComentario = $row['idComentario'];
-  			echo ('<div class="comment">');
-            echo ('<div class="row">');
-  			echo ('<div class="span8">');
-            echo ('<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>');
-            echo ('<div>');
-            echo ('<h5><a href="#">' . $row['username'] . '</a> ' . $row['fecha'] . ' <span class="small"><a class="badge" href="#">Replay</a></span></h5>');
-            echo ('<em>' . $row['comentario'] . '</em>');
-            echo ('</div>');
-            echo ('</div>');
-            echo ('</div>');
-            echo ('</div>');
-                 
-            $sqlcom = "SELECT * FROM comentario WHERE respuestaAcomentario = '$idComentario'";
-            $resultado = mysqli_query($link, $sqlcom);
-                  while ($row = mysqli_fetch_array($resultado, MYSQLI_ASSOC)){
-                  
-                  	echo ('<div class="comment  pull-right">');
-                  	echo ('<div class="row">');
-                  	echo ('<div class="span8">');
-                  	echo ('<img src="assets/img/avatar.jpg" alt="" class="avatar"  align="left"/>');
-                  	echo ('<div>');
-                  	echo ('<h5><a href="#">' . $row['username'] . '</a> ' . $row['fecha'] . ' <span class="small"><a class="badge" href="#">Replay</a></span></h5>');
-                  	echo ('<em>' . $row['comentario'] . '</em>');
-                  	echo ('</div>');
-                  	echo ('</div>');
-                  	echo ('</div>');
-                  	echo ('</div>');                  
-                  }
-  	}
-  }  
-  ?>
-                <div class="row">
-                	<div class="span10"><hr></div>
-                </div>
-      
-       <h3><span class="colored">///</span> Deja un comentario</h3>
-                <div class="row" style="margin-top: 20px;">
-                	<div class="span10">
-                        <form name="loginForm" class="form" action="miperfil.php" method="post">
-                            <textarea name="comentario" placeholder="comentario" rows="5" class="span10" cols=""></textarea>
-                            <button type="submit"  class="btn btn-success">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-      
+</form>
                 
     </div>
   </div>

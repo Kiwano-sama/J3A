@@ -120,7 +120,7 @@ if($now > $_SESSION['expire']) {
   	
   	echo ("<tr>");
   	echo ("<td>");
-  	echo ($row['Username']);
+  	echo ('<a href="verperfil.php?' . $row['Username'] . '">' . $row['Username'] . '</a>');
   	echo ("</td>");
   	echo ("<td>");
   	echo ("Nombre: " . '<span class="undercolored">' . $row['Nombre'] . '</span>');

@@ -32,12 +32,7 @@ function cambiaVisibilidad(opcion) {
                 <!-- MENU PRINCIPAL -->
                     <nav id="main-nav">
                         <ul id="menu">
-                            <li <?php if (($first_part=="") || ($first_part=="index.php")) {echo ' class=current';}?>><a href="index.php">Portal</a>
-                                <ul>
-                                    <li><a href="index.php">Default</a></li>
-                                    <li><a href="index_compact.html">Compact</a></li>
-                                </ul>
-                            </li>
+                            <li <?php if (($first_part=="") || ($first_part=="index.php")) {echo ' class=current';}?>><a href="index.php">Portal</a></li>
                             <li<?php if ($first_part=="sobrenosotros.php") {echo (' class="current"');}?>><a href="sobrenosotros.php">Sobre nosotros</a></li>
                             <li<?php if ($first_part=="trabajaConNosotros.php") {echo (' class="current"');}?>><a href="trabajaConNosotros.php">Trabaja Con Nosotros</a></li>
                             <li<?php if ($first_part=="servicios.php") {echo (' class="current"');}?>><a href="servicios.php">Qué hacemos</a></li>
@@ -45,7 +40,8 @@ function cambiaVisibilidad(opcion) {
                                 <ul>
                                     <li><a href="miembros.php">Ver miembros</a></li>
                                     <li><a href="miperfil.php">Mi perfil</a></li>
-                                    <li><a href="ajustes.php">Ajustes</a></li>
+                                    <li><a href="configuracion.php">Ajustes</a></li>
+                                    <li><a href="login/logout.php">Salir</a></li>
                                 </ul>
                             </li>
                             <li<?php if ($first_part=="contacto.php") {echo (' class="current"');}?>><a href="contacto.php">Contacto</a></li>
@@ -102,20 +98,20 @@ function cambiaVisibilidad(opcion) {
 							</div>
 						</div>
 						<div class="input-group input-group-icon">
-							<input type="text" name="nombre" placeholder="Nombre" required />
+							<input type="text" name="nombre" placeholder="Nombre" required maxlength="15"/>
 							<div class="input-icon">
 								<i class="fa fa-user"></i>
 							</div>
 						</div>
 						<div class="input-group input-group-icon">
-							<input type="text" name="apellido" placeholder="Apellido" required />
+							<input type="text" name="apellido" placeholder="Apellido" required maxlength="15" />
 							<div class="input-icon">
 								<i class="fa fa-user"></i>
 							</div>
 						</div>
 						<div class="input-group input-group-icon">
 							<input type="email" name="email" placeholder="Dirección Email"
-								required />
+								required  maxlength="20"/>
 							<div class="input-icon">
 								<i class="fa fa-envelope"></i>
 							</div>

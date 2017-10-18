@@ -11,6 +11,18 @@ td a{width:100%;display:block;}
   background: #fff;
 }
 
+.div.profilepic {
+    height: 10em;
+    position: relative;
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+    }
+
 .profile-userpic img {
   float: none;
   margin: 0 auto;

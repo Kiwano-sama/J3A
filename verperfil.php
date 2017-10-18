@@ -1,5 +1,38 @@
 <?php 
 session_start();
+require_once 'conf/conexion.php';
+
+
+$linkPerfilDeUsuario = $_SERVER['QUERY_STRING'];
+
+$sqlInfoUsuario = "SELECT Username, Nombre, Apellido, Email, fechaNac, genero, esCliente, esAdmin FROM `usuario` WHERE username = '$linkPerfilDeUsuario'";
+if (mysqli_query($link, $sqlInfoUsuario)){
+	
+	$resultInfoUsuario = mysqli_query($link, $sqlInfoUsuario);
+	
+	while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
+		$username = $row['Username'];
+		$nombre = $row['Nombre'];
+		$apellido = $row['Apellido'];
+		$email = $row['Email'];
+		$fechaNac = $row['fechaNac'];
+		if ($row['genero'] === "h"){
+			$genero = "Hombre";
+		} else if ($row['genero'] === "m"){
+			$genero = "Mujer";
+		}
+	}
+} else {
+	echo('<div class="alert alert-danger">');
+	echo('<a class="close" data-dismiss="alert">×</a>');
+	echo('<h4 class="alert-heading">Error!</h4>');
+	echo('No existe este usuario.');
+	echo('</div>');
+	echo('</div>');
+	
+	exit;
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +82,7 @@ session_start();
     <!--HEADER-->
 <?php 
 include 'header.php';
-require_once 'conf/conexion.php';
+
 ?>
 	<!--/HEADER-->
     <!--AREA BIENVENIDA-->
@@ -57,7 +90,7 @@ require_once 'conf/conexion.php';
         <div class="container">
             <div class="row welcome_inner">
                 <div class="span12">
-                    <h1><span class="colored">///</span> MI PERFIL</h1>
+                    <h1><span class="colored">///</span> Perfil de <span class="colored"><?php echo $username;?></span></h1>
                 </div>
             </div>
         </div>
@@ -101,22 +134,8 @@ if($now > $_SESSION['expire']) {
 	exit;
 }
 
-$username = $_SESSION['username'];
+$usernameLogueado = $_SESSION['username'];
 
-$sqlInfoUsuario = "SELECT Nombre, Apellido, Email, fechaNac, genero, esCliente, esAdmin FROM `usuario` WHERE username = '$username'";
-$resultInfoUsuario = mysqli_query($link, $sqlInfoUsuario);
-
-while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
-	$nombre = $row['Nombre'];
-	$apellido = $row['Apellido'];
-	$email = $row['Email'];
-	$fechaNac = $row['fechaNac'];
-	if ($row['genero'] === "h"){
-		$genero = "Hombre";
-	} else if ($row['genero'] === "m"){
-		$genero = "Mujer";
-	}
-}
 ?>
   
   <div class="container-fluid">
@@ -131,7 +150,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
 				<!-- SIDEBAR USER TITLE -->
 				<div class="profile-usertitle">
 					<div class="profile-usertitle-name">
-						<?php echo ($_SESSION['username']);?>
+						<?php echo $username;?>
 					</div>
 					
 					<?php
@@ -150,10 +169,10 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
 				</div>
 				<!-- END SIDEBAR USER TITLE -->
 				<!-- SIDEBAR BUTTONS -->
-<!-- 				<div class="profile-userbuttons"> -->
-<!-- 					<button type="button" class="btn btn-success btn-sm">Añadir</button> -->
-<!-- 					<button type="button" class="btn btn-danger btn-sm">Mensaje</button> -->
-<!-- 				</div> -->
+				<div class="profile-userbuttons">
+					<button type="button" class="btn btn-success btn-sm">Añadir</button>
+					<button type="button" class="btn btn-danger btn-sm">Mensaje</button>
+				</div>
 				<!-- END SIDEBAR BUTTONS -->
 				<!-- SIDEBAR MENU -->
 				<div class="profile-usermenu">
@@ -185,6 +204,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
        
     <div class="span10">
     <h3><span class="colored">///</span> Tu información:</h3>
+    
     <table class="table table-striped table-bordered table-condensed">
         <tbody>
           <tr>
@@ -223,7 +243,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
       	$comentario = (filter_input(INPUT_POST, 'comentario'));
       	
       	
-      	$insertarComentario = ("INSERT INTO `comentario` (`idComentario`, `enPerfilUsuario`, `respuestaAcomentario`, `username`, `comentario`, `fecha`) VALUES (NULL, '$usernameComentario', NULL, '$usernameComentario', '$comentario', now())");
+      	$insertarComentario = ("INSERT INTO `comentario` (`idComentario`, `enPerfilUsuario`, `respuestaAcomentario`, `username`, `comentario`, `fecha`) VALUES (NULL, '$username', NULL, '$usernameComentario', '$comentario', now())");
 
       	
       	if (mysqli_query($link, $insertarComentario)) {
@@ -294,7 +314,7 @@ while ($row = mysqli_fetch_array($resultInfoUsuario, MYSQLI_ASSOC))  {
        <h3><span class="colored">///</span> Deja un comentario</h3>
                 <div class="row" style="margin-top: 20px;">
                 	<div class="span10">
-                        <form name="loginForm" class="form" action="miperfil.php" method="post">
+                        <form name="loginForm" class="form" action="verperfil.php?<?php echo $linkPerfilDeUsuario;?>" method="post">
                             <textarea name="comentario" placeholder="comentario" rows="5" class="span10" cols=""></textarea>
                             <button type="submit"  class="btn btn-success">Enviar</button>
                         </form>
