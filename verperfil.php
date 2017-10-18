@@ -143,7 +143,7 @@ $usernameLogueado = $_SESSION['username'];
     <div class="span2">
       <!--Contenido Sidebar-->
       
-      <div class="profile-userpic">
+      <div class="profilepic">
 					<img src="assets/img/miembros/savandy.jpg" class="img-responsive" alt="">
 				</div>
 				<!-- END SIDEBAR USERPIC -->
