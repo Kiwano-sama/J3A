@@ -111,6 +111,7 @@ mysqli_close($conexion);
     <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
    Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)
   </p>
+  <input href="index.php" type="button" value="Volver al Portal">
 </div>
  
  
