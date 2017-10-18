@@ -2,7 +2,6 @@
 session_start();
 require_once 'conf/conexion.php';
 
-
 $linkPerfilDeUsuario = $_SERVER['QUERY_STRING'];
 
 $sqlInfoUsuario = "SELECT Username, Nombre, Apellido, Email, fechaNac, genero, esCliente, esAdmin FROM `usuario` WHERE username = '$linkPerfilDeUsuario'";
@@ -97,17 +96,12 @@ include 'header.php';
     </div>
     <!--/AREA BIENVENIDA-->
 
-
-
-
     <!--AREA CONTENIDO-->
     <div class="container inner_content">
     <section>
     
     <?php
-
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-	
 } else {
 	
 	echo('<div class="alert alert-danger">');
@@ -146,8 +140,8 @@ $usernameLogueado = $_SESSION['username'];
       <div class="profilepic">
 					<img src="assets/img/miembros/savandy.jpg" class="img-responsive" alt="">
 				</div>
-				<!-- END SIDEBAR USERPIC -->
-				<!-- SIDEBAR USER TITLE -->
+				<!-- / PERFIL IMAGEN -->
+				<!-- PERFIL NOMBRE -->
 				<div class="profile-usertitle">
 					<div class="profile-usertitle-name">
 						<?php echo $username;?>
@@ -167,38 +161,14 @@ $usernameLogueado = $_SESSION['username'];
   	?>
 				
 				</div>
-				<!-- END SIDEBAR USER TITLE -->
-				<!-- SIDEBAR BUTTONS -->
+				<!-- / PERFIL NOMBRE -->
+				<!-- PERFIL BOTONES -->
 				<div class="profile-userbuttons">
 					<button type="button" class="btn btn-success btn-sm">Añadir</button>
 					<button type="button" class="btn btn-danger btn-sm">Mensaje</button>
 				</div>
-				<!-- END SIDEBAR BUTTONS -->
-				<!-- SIDEBAR MENU -->
-				<div class="profile-usermenu">
-					<ul class="nav">
-						<li class="active">
-							<a href="#">
-							<i class="icon-home"></i>
-							Perfil </a>
-						</li>
-						<li>
-							<a href="amigos.php">
-							<i class="icon-user"></i>
-							Amigos </a>
-						</li>
-						<li>
-							<a href="tickets.php" target="_blank">
-							<i class="icon-book"></i>
-							Tickets </a>
-						</li>
-						<li>
-							<a href="configuracion.php">
-							<i class="icon-cog"></i>
-							Configuración </a>
-						</li>
-					</ul>
-				</div>
+				<!-- / PERFIL BOTONES -->
+
             
     </div>
        
