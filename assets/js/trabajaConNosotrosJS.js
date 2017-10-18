@@ -1,11 +1,10 @@
 alert('Hola, bienvenido a nuestra seccion trabaja con nosotros, en este apartado deberá rellenar el formulario que se mostrará a continuación');
 ////Funcion para validar el formulario
 function validar() {
-	if (validarEmail()) {
+	if (validarEmail() && numero()) {
 		alert("Sus datos son correcto, enviando...");
 		return true;
 	} else {
-
 		alert("Datos incorrectos, compruebe que todos los datos sean correctos");
 		return false;
 	}
