@@ -60,6 +60,7 @@ include 'header.php';
             </div>
         </div>
     </div>
+    
 <?php    
 $host_db = "127.0.0.1:56624";
 $user_db = "j3a";
@@ -106,13 +107,9 @@ mysqli_close($conexion);
 </head>
 <body>
  
-<div id="dialog-message" title="Download complete">
-  <p>
-    <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
-   Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)
+  <p>Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)
   </p>
-  <input href="index.php" type="button" value="Volver al Portal">
-</div>
- 
+   <!-- <input src="index.php" type="submit" value="Volver al Portal" class="btn-large btn-success mega" style="width:350px"> -->
+ 	<meta http-equiv="acción" content="segundos"; url="http://j3a.azurewebsites.net/index.php"/>
  
 <!-- <input href="index.php" type="submit" value="Volver" class="btn-large btn-success mega" tyle="width:350px"> -->
