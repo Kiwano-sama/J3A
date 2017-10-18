@@ -7,5 +7,4 @@ function cambiarColor() {
 		// Ps[i].style.color = colorElegido;
 	for (var i = 0; i < Ps.length; i ++)
 		Ps[i].style.color = colorElegido;
-	
 }

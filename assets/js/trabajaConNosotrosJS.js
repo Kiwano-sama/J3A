@@ -1,7 +1,6 @@
 alert('Hola, bienvenido a nuestra seccion trabaja con nosotros, en este apartado deberá rellenar el formulario que se mostrará a continuación');
 ////Funcion para validar el formulario
 function validar() {
-	alert('hola validar');
 	if (validarEmail()) {
 		alert("Sus datos son correcto, enviando...");
 		return true;
@@ -85,4 +84,14 @@ function comprobarArroba(e) {
 			return true;
 		}
 	}
+}
+//Funcion numero de caracteres que dispone el campo 'numero de contacto'
+function numero(){
+    var miNumero=document.trabaja.numero.value;
+    if (miNumero.length = 9){    	
+        return true;
+    }else {
+    	 alert("Introduzca numero valido (9 caracteres)");
+        return false;
+    }
 }
