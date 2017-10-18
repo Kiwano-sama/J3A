@@ -32,12 +32,7 @@ function cambiaVisibilidad(opcion) {
                 <!-- MENU PRINCIPAL -->
                     <nav id="main-nav">
                         <ul id="menu">
-                            <li <?php if (($first_part=="") || ($first_part=="index.php")) {echo ' class=current';}?>><a href="index.php">Portal</a>
-                                <ul>
-                                    <li><a href="index.php">Default</a></li>
-                                    <li><a href="index_compact.html">Compact</a></li>
-                                </ul>
-                            </li>
+                            <li <?php if (($first_part=="") || ($first_part=="index.php")) {echo ' class=current';}?>><a href="index.php">Portal</a></li>
                             <li<?php if ($first_part=="sobrenosotros.php") {echo (' class="current"');}?>><a href="sobrenosotros.php">Sobre nosotros</a></li>
                             <li<?php if ($first_part=="trabajaConNosotros.php") {echo (' class="current"');}?>><a href="trabajaConNosotros.php">Trabaja Con Nosotros</a></li>
                             <li<?php if ($first_part=="servicios.php") {echo (' class="current"');}?>><a href="servicios.php">Qué hacemos</a></li>
