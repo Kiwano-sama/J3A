@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>J3A - Diseño Gráfico y Web</title>
+    <script src="assets/js/ciego.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -60,6 +61,10 @@ include 'header.php';
             </div>
         </div>
     </div>
+    <fieldset>
+    	<p class="intro">¿Te cuesta ver el tamaño de la letra? Pulsa aquí para aumentar el tamaño de la fuente.</p>
+			<input name="botonModificar" type="button" value="modificar Tamaño" onclick="Tamano()"/>	
+   	</fieldset>
     
 <?php  
 require_once 'config.php';
