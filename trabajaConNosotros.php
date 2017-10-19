@@ -3,13 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>J3A - Diseño Gráfico y Web</title>
-    <script src="assets/js/trabajaConNosotrosJS.js"></script> 
-    <!-- <script src="assets/js/ciego.js" type="text/javascript"></script>  -->
+    <script src="assets/js/trabajaConNosotrosJS.js" type="text/javascript"></script> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- styles -->
-   	
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -63,10 +61,6 @@ include 'header.php';
             </div>
         </div>
     </div>
-    <fieldset>
-    	<p class="intro">¿Te cuesta ver el tamaño de la letra? Pulsa aquí para aumentar el tamaño de la fuente.</p>
-			<input name="botonModificar" type="button" value="modificar Tamaño" onclick="Tamano()"/>	
-   	</fieldset>   
     <!--/AREA BIENVENIDA-->
     <!--AREA SLIDER-->
     <div class="slider_area">
