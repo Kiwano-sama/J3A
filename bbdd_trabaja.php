@@ -61,31 +61,63 @@ include 'header.php';
         </div>
     </div>
     
-<?php    
-$host_db = "127.0.0.1:56624";
-$user_db = "j3a";
-$pass_db = "Qwerty123_";
-$db_name = "j3a";
-$tbl_name = "trabajadores";
+<?php  
+require_once 'config.php';
 
-// Recibimos por POST los datos procedentes del formulario    
+$response = array();
 
-$nombre = $_POST["nombre"];    
-$email = $_POST["email"];    
-$numero = $_POST["numero"];
-$puesto = $_POST["puesto"];
-
-// Abrimos la conexion a la base de datos    
-$conexion = new mysqli ($host_db, $user_db, $pass_db, $db_name);
-if ($conexion->connect_error) {
-	die("La conexion falló: " . $conexion->connect_error);
+if ($_POST) {
+	
+	$nombre = (filter_input(INPUT_POST, 'nombre'));
+	$email = (filter_input(INPUT_POST, 'email'));
+	$numero = (filter_input(INPUT_POST, 'numero'));
+	$puesto = (filter_input(INPUT_POST, 'puesto'));
+	
+	// Imagen de perfil:
+	//                 $imgFile = $_FILES['user_image']['name'];
+	//                 $tmp_dir = $_FILES['user_image']['tmp_name'];
+	//                 $imgSize = $_FILES['user_image']['size'];
+	
+	// sha256 password hashing
+	//$password = hash('sha256', $pass);
+		
+	if (mysqli_num_rows($result) > 0) {
+		echo('<p class="texto-rojo"><b>Error!</b> Trabajador ' . $nombre . ' ya ha sido registrado</p>');
+		echo "<a href='registro.php'>Por favor escoja otro trabajador</a>";
+	} else {
+		$stmt = $DB_con->prepare('INSERT INTO trabajadores(nombre,email,numero,puesto) VALUES(:nombre, :email, :numero, :puesto)');
+		$stmt->bindParam(':nombre', $nombre);
+		$stmt->bindParam(':email', $email);
+		$stmt->bindParam(':numero', $numero);
+		$stmt->bindParam(':puesto', $puesto);
+		$stmt->execute();
+	}
 }
+// $host_db = "localhost";
+// $user_db = "j3a";
+// $pass_db = "Qwerty123_";
+// $db_name = "j3a";
+// $tbl_name = "trabajadores";
 
-$_GRABAR_SQL = "INSERT INTO $tbl_name (nombre,email,numero,puesto) VALUES ('$nombre','$email','$numero','$puesto')";    
-mysql_query($conexion, $_GRABAR_SQL);   
+// // Recibimos por POST los datos procedentes del formulario    
 
-// Cerramos la conexion a la base de datos    
-mysqli_close($conexion); 
+// $nombre = $_POST["nombre"];    
+// $email = $_POST["email"];    
+// $numero = $_POST["numero"];
+// $puesto = $_POST["puesto"];
+
+// // Abrimos la conexion a la base de datos    
+// $conexion = new mysqli ($host_db, $user_db, $pass_db, $db_name);
+
+// if ($conexion->connect_error) {
+// 	die("La conexion falló: " . $conexion->connect_error);
+// }
+
+// $_GRABAR_SQL = "INSERT INTO $tbl_name (nombre,email,numero,puesto) VALUES ('$nombre','$email','$numero','$puesto')";    
+// mysql_query($conexion, $_GRABAR_SQL);   
+
+// // Cerramos la conexion a la base de datos    
+// mysqli_close($conexion); 
 
 ?>
   
@@ -109,7 +141,9 @@ mysqli_close($conexion);
  
   <p>Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)
   </p>
-   <input src="http://j3a.azurewebsites.net/index.php" type="submit" value="Volver al Portal" class="btn-large btn-success mega" style="width:350px">
+  <br>
+  <br>
+   <input src="index.php" value="Volver al Portal" class="btn-large btn-success mega" style="width:350px">
  	<!-- <meta http-equiv="acción"; content="segundos"; url="http://j3a.azurewebsites.net/index.php"/> -->
  
 <!-- <input href="index.php" type="submit" value="Volver" class="btn-large btn-success mega" tyle="width:350px"> -->
