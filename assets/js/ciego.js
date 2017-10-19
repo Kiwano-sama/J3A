@@ -6,3 +6,12 @@ function Tamano() {
 	}
 	// se define la variable del tamaño de la fuente en todos los párrafos
 }
+function sendMail() {
+    var link = "mailto:ethazitalde4@gmail.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + escape(document.getElementByClassName('span4').value + document.getElementByClassName('email').value)
+             + "&body=" + escape(document.getElementByClassName('message').value)
+    ;
+
+    window.location.href = link;
+}
