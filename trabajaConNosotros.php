@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>J3A - Diseño Gráfico y Web</title>
+    <script src="assets/js/trabajaConNosotrosJS.js" type="text/javascript"></script> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- styles -->
-   	<script src="assets/js/trabajaConNosotrosJS.js"></script> 
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -37,7 +37,7 @@
     <!--/GOOGLE FONTS-->
 
 </head>
-    <body>
+    <body onload="return aviso()">
     <!--TOP-->
     <div class="top_line"></div>
     <div class="panel hidden-phone">
@@ -170,14 +170,7 @@ include 'header.php';
     <br>
     <br>
     <!--FEATURES AREA-->
-    <!--MAIN CONTENT AREA-->
-     <br>
-     <br>
-    <script>
-    $(document).ready(function(){
-    });
-    </script>
-    <!--/MAIN CONTENT AREA-->
+
         <!--TWITTER AREA-->
     <div class="twitter-block">
         <div class="container">

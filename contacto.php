@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>J3A - Diseño Gráfico y Web</title>
+    <script src="assets/js/ciego.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -55,6 +56,10 @@ include 'header.php';
             </div>
         </div>
     </div>
+        <fieldset>
+    	<p class="intro">¿Te cuesta ver el tamaño de la letra? Pulsa aquí para aumentar el tamaño de la fuente.</p>
+			<input name="botonModificar" type="button" value="modificar Tamaño" onclick="Tamano()"/>	
+   	</fieldset>   
     <!--/WELCOME AREA-->
     <!--MAIN CONTENT AREA-->
     <div id="map-contact">
@@ -67,7 +72,7 @@ include 'header.php';
 					<h4><span class="colored">///</span> Información de Contacto</h4>
                     <p>Puedes ponerte en contacto con nosotros ya sea vía e-mail, por teléfono o visitando nuestra oficina física, si lo que buscas es trabajar con nosotros puedes rellenar el formulario en dicho apartado.</p>
                 	<hr>
-                    <span><strong class="colored"> Dirección:</strong>  Zornotza FP S/N, Zornotza</span>
+                    <span><strong class="colored"> Dirección:</strong> 12401 NE Kirkland 100th St. Washington</span>
                     <br>
                     <span><strong class="colored">Teléfono:</strong> 666 52 58 46</span>
                     <br>

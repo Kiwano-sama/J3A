@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>J3A - Diseño Gráfico y Web</title>
+    <script src="assets/js/ciego.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -60,28 +61,34 @@ include 'header.php';
             </div>
         </div>
     </div>
+    <fieldset>
+    	<p class="intro">¿Te cuesta ver el tamaño de la letra? Pulsa aquí para aumentar el tamaño de la fuente.</p>
+			<input name="botonModificar" type="button" value="modificar Tamaño" onclick="Tamano()"/>	
+   	</fieldset>
     
-<?php    
+<?php  
+
 $host_db = "127.0.0.1:56624";
 $user_db = "j3a";
 $pass_db = "Qwerty123_";
 $db_name = "j3a";
-$tbl_name = "trabajadores";
+$tbl_name = "usuario";
 
 // Recibimos por POST los datos procedentes del formulario    
 
 $nombre = $_POST["nombre"];    
 $email = $_POST["email"];    
 $numero = $_POST["numero"];
-$puesto = $_POST["puesto"];
+// $puesto = $_POST["puesto"];
 
 // Abrimos la conexion a la base de datos    
 $conexion = new mysqli ($host_db, $user_db, $pass_db, $db_name);
+
 if ($conexion->connect_error) {
 	die("La conexion falló: " . $conexion->connect_error);
 }
 
-$_GRABAR_SQL = "INSERT INTO $tbl_name (nombre,email,numero,puesto) VALUES ('$nombre','$email','$numero','$puesto')";    
+$_GRABAR_SQL = "INSERT INTO $tbl_name (nombre,email,numero) VALUES ('$nombre','$email','$numero')";    
 mysql_query($conexion, $_GRABAR_SQL);   
 
 // Cerramos la conexion a la base de datos    
@@ -90,24 +97,13 @@ mysqli_close($conexion);
 ?>
 <br>
 <br>  
-  <script>
-  $( function() {
-    $( "#dialog-message" ).dialog({
-      modal: true,
-      buttons: {
-        Ok: function() {
-          $( this ).dialog( "close" );
-        }
-      }
-    });
-  } );
-  </script>
-</head>
-<body>
- 
-  <p>Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)
-  </p>
+  <p>Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)</p>
+  <br>
+  <br>
   	<a href="http://j3a.azurewebsites.net/index.php" class="btn-large btn-success mega" style="width:400px" title="Volver al Portal">Volver al Portal</a>
+	</body>
+</html>
+
  	<!-- <meta http-equiv="acción"; content="segundos"; url="http://j3a.azurewebsites.net/index.php"/> -->
  
 <!-- <input href="index.php" type="submit" value="Volver" class="btn-large btn-success mega" tyle="width:350px"> -->
