@@ -124,12 +124,12 @@ function cambiaVisibilidad(opcion) {
 							</div>
 						</div>
 						
-						<div class="input-group input-group-icon">
+						<!-- <div class="input-group input-group-icon">
 							<input class="input-group" type="file" name="user_image" accept="image/*" />
 							<div class="input-icon">
 								<i class="fa fa-file-image-o"></i>
 							</div>
-						</div>
+						</div> -->
 						
 						
 					
