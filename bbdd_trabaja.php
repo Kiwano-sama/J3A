@@ -93,7 +93,7 @@ if ($_POST) {
 		$stmt->execute();
 	}
 }
-?>
+
 // $host_db = "localhost";
 // $user_db = "j3a";
 // $pass_db = "Qwerty123_";
@@ -120,9 +120,7 @@ if ($_POST) {
 // // Cerramos la conexion a la base de datos    
 // mysqli_close($conexion); 
 
-
-  
-<!-- Confirmamos que el registro ha sido insertado con exito     -->
+?>
 <br>
 <br>  
   <script>
