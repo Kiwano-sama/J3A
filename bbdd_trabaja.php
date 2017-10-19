@@ -88,8 +88,6 @@ mysql_query($conexion, $_GRABAR_SQL);
 mysqli_close($conexion); 
 
 ?>
-  
-<!-- Confirmamos que el registro ha sido insertado con exito     -->
 <br>
 <br>  
   <script>
