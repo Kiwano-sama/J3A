@@ -87,7 +87,7 @@ function comprobarArroba(e) {
 //Funcion numero de caracteres que dispone el campo 'numero de contacto'
 function numero(){
     var miNumero=document.trabaja.numero.value;
-    if (miNumero.length = 9){    	
+    if (miNumero.length == 9){    	
         return true;
     }else {
     	 alert("Introduzca numero valido (9 caracteres)");
