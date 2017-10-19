@@ -133,7 +133,7 @@ if ($_POST) {
         }
       }
     });
-  } );
+  });
   </script>
   <p>Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)</p>
   <br>
