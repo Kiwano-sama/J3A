@@ -57,10 +57,7 @@
                 </div>
             </div>
         </div>
-    <fieldset>
-    	<p class="intro">¿Te cuesta ver el tamaño de la letra? Pulsa aquí para aumentar el tamaño de la fuente.</p>
-			<input name="botonModificar" type="button" value="modificar Tamaño" onclick="Tamano()"/>	
-   	</fieldset>   
+<?php include 'cambioTamanio.php';?>     
         <!--/AREA BIENVENIDA-->
         <!--MAIN CONTENT AREA-->
         <div class="container inner_content">

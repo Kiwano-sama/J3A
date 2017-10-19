@@ -53,10 +53,7 @@ include 'header.php';
 require_once 'conf/conexion.php';
 ?>
 	<!--/HEADER-->
-	<fieldset>
-    	<p class="intro">¿Te cuesta ver el tamaño de la letra? Pulsa aquí para aumentar el tamaño de la fuente.</p>
-			<input name="botonModificar" type="button" value="modificar Tamaño" onclick="Tamano()"/>	
-   	</fieldset>   
+     
     <!--AREA BIENVENIDA-->
      <div class="gray_bg">
         <div class="container">
@@ -67,6 +64,7 @@ require_once 'conf/conexion.php';
             </div>
         </div>
     </div>
+    <?php include 'cambioTamanio.php';?>  
     <!--/AREA BIENVENIDA-->
 
 

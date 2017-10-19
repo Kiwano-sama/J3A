@@ -94,6 +94,7 @@ include 'header.php';
             </div>
         </div>
     </div>
+    <?php include 'cambioTamanio.php';?>   
     <!--/AREA BIENVENIDA-->
 
     <!--AREA CONTENIDO-->

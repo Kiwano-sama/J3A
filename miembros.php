@@ -47,7 +47,8 @@
 include 'header.php';
 require_once 'conf/conexion.php';
 ?>
-	<!--/HEADER-->  
+	<!--/HEADER--> 
+	  
     <!--AREA BIENVENIDA-->
      <div class="gray_bg">
         <div class="container">
@@ -58,6 +59,7 @@ require_once 'conf/conexion.php';
             </div>
         </div>
     </div>
+    <?php include 'cambioTamanio.php';?>  
     <!--/AREA BIENVENIDA-->
 
 
