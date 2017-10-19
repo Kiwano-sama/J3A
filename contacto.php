@@ -84,11 +84,11 @@ include 'header.php';
                 <div class="span8">
                     <h3><span class="colored">///</span> Ponte en Contacto con Nosotros para Exponer tus Proyectos</h3>
                     <div id="note"></div>
-                        <form class="form" id="ajax-contact-form" action="javascript:alert('Was send!');">
+                        <form class="form" id="ajax-contact-form" action="mailto:ethazitalde4@gmail.com" method="GET">
                             <input type="text" name="name" class="span4" style="margin-right:25px;" placeholder="Name" />
                             <input  class="span4" name="email" placeholder="Email" />
                             <textarea type="text" name="message" placeholder="Message" rows="8" class="span8"></textarea>
-                            <button type="submit"  class="btn btn-success">Enviar mensaje</button>
+                            <button type="submit"  class="btn btn-success" value="Send">Enviar mensaje</button>
                         </form>
                 </div>
         	</div>
