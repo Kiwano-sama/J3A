@@ -154,26 +154,7 @@ if($now > $_SESSION['expire']) {
   </section>
   </div>
     <!--/AREA CONTENIDO-->
-    <!--TWITTER AREA-->
-    <div class="twitter-block">
-        <div class="container">
-            <div class="row">
-                <div class="span3 header">
-                    <h5><span class="colored">///</span> Our Twitter Feed</h5>
-                    <p>Find out what's happening, right now, with the people and organizations you care about.</p>
-                </div>
-                <div class="span9">
-                    <div class="well">
-                        <img class="twit_img" src="assets/img/twitter.png" alt="Visit link" />
-                        <div id="jstwitter" class="clearfix">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/TWITTER AREA-->
-    
+        
 <?php 
 include 'footer.php';
 ?>
