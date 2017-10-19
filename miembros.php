@@ -88,6 +88,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 }
 
 $now = time();
+$username = $_SESSION['username'];
 
 if($now > $_SESSION['expire']) {
 	session_destroy();
@@ -116,6 +117,16 @@ if($now > $_SESSION['expire']) {
     <tbody>
   <?php 
   // Selección de todos los usuarios de la BBDD, excepto contraseña
+  $esAdmin = NULL;
+  $sqlAdmin = "SELECT username, esAdmin FROM `usuario` where username='$username'";
+  $resultAdmin = mysqli_query($link, $sqlAdmin);
+  while ($row = mysqli_fetch_array($resultAdmin, MYSQLI_ASSOC)){
+  	$esAdmin = $row['esAdmin'];
+  }
+  
+  	
+  
+  
   $sql = "SELECT Username, Nombre, Apellido, fechaNac, esCliente, esAdmin FROM `usuario`";
   $result = mysqli_query($link, $sql);
   while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
@@ -141,6 +152,11 @@ if($now > $_SESSION['expire']) {
   	} else if (!($row['esAdmin']) && !($row['esCliente'])){
   		echo ('<span class="label label-default">Miembro</span>');
   	}
+  	
+  	if ($esAdmin){
+  		echo ('  <a href="#"><span class="label label-danger">Eliminar</span></a>');
+  	}
+  	
   	echo ("</td>");
   	echo ("</tr>");
   	
