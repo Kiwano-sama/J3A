@@ -170,14 +170,7 @@ include 'header.php';
     <br>
     <br>
     <!--FEATURES AREA-->
-    <!--MAIN CONTENT AREA-->
-     <br>
-     <br>
-    <script>
-    $(document).ready(function(){
-    });
-    </script>
-    <!--/MAIN CONTENT AREA-->
+
         <!--TWITTER AREA-->
     <div class="twitter-block">
         <div class="container">
