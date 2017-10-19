@@ -37,7 +37,7 @@
     <!--/GOOGLE FONTS-->
 
 </head>
-    <body>
+    <body onload="return aviso()">
     <!--TOP-->
     <div class="top_line"></div>
     <div class="panel hidden-phone">
