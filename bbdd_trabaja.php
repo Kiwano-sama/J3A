@@ -109,7 +109,7 @@ mysqli_close($conexion);
  
   <p>Los datos han sido guardados con éxito, uno de nuestros responsables se pondrá en contacto con usted :)
   </p>
-  	<a href="http://j3a.azurewebsites.net/index.php" title="Volver al Portal">Volver al Portal</a>
+  	<a href="http://j3a.azurewebsites.net/index.php" class="btn-large btn-success mega" style="width:400px" title="Volver al Portal">Volver al Portal</a>
  	<!-- <meta http-equiv="acción"; content="segundos"; url="http://j3a.azurewebsites.net/index.php"/> -->
  
 <!-- <input href="index.php" type="submit" value="Volver" class="btn-large btn-success mega" tyle="width:350px"> -->
