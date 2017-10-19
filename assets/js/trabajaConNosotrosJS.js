@@ -85,6 +85,7 @@ function comprobarArroba(e) {
 		}
 	}
 }
+<<<<<<< HEAD
 // Funcion numero de caracteres que dispone el campo 'numero de contacto'
 function numero() {
 	var miNumero = document.trabaja.numero.value;
@@ -94,4 +95,15 @@ function numero() {
 		alert("Introduzca numero valido (9 caracteres)");
 		return false;
 	}
+=======
+//Funcion numero de caracteres que dispone el campo 'numero de contacto'
+function numero(){
+    var miNumero=document.trabaja.numero.value;
+    if (miNumero.length == 9){    	
+        return true;
+    }else {
+    	 alert("Introduzca numero valido (9 caracteres)");
+        return false;
+    }
+>>>>>>> branch 'master' of https://github.com/Kiwano-sama/J3A.git
 }
